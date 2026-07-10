@@ -4,7 +4,7 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sprint 3 y Sprint 4 en ejecución continua.
+- Sin cambios. Sprint 3 no iniciado.
 
 ## 1.1.0-sprint2 — 2026-07-10
 
@@ -20,6 +20,12 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 - Análisis estático sin errores.
 - 6 pruebas automatizadas aprobadas.
+- Recorrido completo validado en un emulador Android.
+
+### Artifact
+
+- `releases/Aprender IA 1.1.apk`
+- Capturas reales: `screenshots/sprint2-*.png`
 
 ## 0.1.0-sprint1 — 2026-07-10
 

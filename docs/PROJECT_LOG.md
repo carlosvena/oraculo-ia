@@ -74,11 +74,19 @@ Revisión de producto de Sprint 1 con Carlos. Sprint 2 no iniciado.
 - `flutter analyze`: sin problemas.
 - 6 pruebas automatizadas aprobadas.
 
+### Entregables
+
+- APK release instalable: `releases/Aprender IA 1.1.apk`.
+- Capturas reales del recorrido completo: `screenshots/sprint2-*.png`.
+- Validación manual en emulador Android: bienvenida, misión, laboratorio,
+  autoevaluación y progreso final.
+
 ### Pendiente al cierre
 
 - Persistencia real: el estado se reinicia al cerrar el proceso.
-- Compilar el artefacto acumulado después del pulido de Sprint 4.
+- Revisión de producto y contenido con Carlos.
 
-### Próximo paso automático
+### Estado
 
-Sprint 3: consolidar la estructura educativa reutilizable.
+Sprint 2 cerrado. Sprint 3 no iniciado; el proyecto queda detenido hasta recibir
+nuevas instrucciones.
