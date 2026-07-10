@@ -1,0 +1,119 @@
+{
+  "@@locale": "es",
+  "appName": "ORÁCULO IA",
+  "welcomeTitle": "Aprender IA puede ser simple.",
+  "welcomeBody": "Cada día recibirás una misión clara y breve. Sin ruido. Sin perderte. Siempre sabrás qué aprender hoy.",
+  "start": "EMPEZAR",
+  "onboardingSaveError": "No pudimos guardar tu progreso.",
+  "todayMission": "Mi misión de hoy",
+  "mentorGreeting": "Buenos días Carlos.",
+  "mentorJourney": "Hoy comenzamos un viaje para aprender Inteligencia Artificial.",
+  "mentorSingleMission": "Tu única misión de hoy es completar la Misión 001.",
+  "defaultMissionTitle": "Entender qué es un modelo de IA",
+  "continueMission": "CONTINUAR MI MISIÓN",
+  "missionStatusNotStarted": "No iniciada",
+  "missionStatusInProgress": "En progreso",
+  "missionStatusCompleted": "Completada",
+  "estimatedTime": "Tiempo estimado: {minutes} min",
+  "@estimatedTime": {
+    "placeholders": {
+      "minutes": {"type": "int"}
+    }
+  },
+  "elapsedTime": "Tiempo empleado: {minutes} min (simulado)",
+  "@elapsedTime": {
+    "placeholders": {
+      "minutes": {"type": "int"}
+    }
+  },
+  "missionProgressLabel": "Progreso de la misión",
+  "nextActionStart": "Comenzá con el objetivo y avanzá bloque por bloque.",
+  "nextActionContinue": "Continuá desde tu misión actual.",
+  "nextActionCompleted": "Misión completada. Podés repasarla cuando quieras.",
+  "missionLoadError": "No pudimos cargar tu misión.",
+  "retry": "REINTENTAR",
+  "explanationTitle": "Explicación",
+  "whyItMattersTitle": "¿Por qué esto importa?",
+  "contextTitle": "Contexto",
+  "conceptTitle": "Concepto",
+  "examplesTitle": "Ejemplos",
+  "laboratoryTitle": "Laboratorio",
+  "challengeTitle": "Desafío",
+  "debateTitle": "Debate",
+  "toolsTitle": "Herramientas",
+  "commonMistakeTitle": "Error común",
+  "executiveSummaryTitle": "Resumen ejecutivo",
+  "nextStepTitle": "Siguiente paso",
+  "exampleTitle": "Ejemplo",
+  "exerciseTitle": "Ejercicio",
+  "summaryTitle": "Resumen",
+  "objectiveTitle": "Objetivo",
+  "miniAssessmentTitle": "Mini evaluación",
+  "temporaryContentLabel": "Contenido temporal para evaluar la experiencia de aprendizaje.",
+  "exerciseQuestion": "Para entrenar un modelo que detecte spam, ¿qué información sería más útil?",
+  "exerciseOptionOne": "El color favorito del usuario.",
+  "exerciseOptionTwo": "Ejemplos de correos marcados como spam y como válidos.",
+  "exerciseOptionThree": "La hora actual.",
+  "exerciseCorrect": "Muy bien. El modelo necesita ejemplos relacionados con la tarea que debe aprender.",
+  "exerciseTryAgain": "Esa información no le enseña a distinguir spam. Probá con otra opción.",
+  "quizQuestionOne": "¿Qué aprende un modelo de IA a partir de ejemplos?",
+  "quizOneOptionOne": "Patrones.",
+  "quizOneOptionTwo": "Contraseñas.",
+  "quizOneOptionThree": "Reglas secretas de Internet.",
+  "quizQuestionTwo": "¿Para qué puede usar un modelo los patrones aprendidos?",
+  "quizTwoOptionOne": "Para responder o clasificar casos nuevos.",
+  "quizTwoOptionTwo": "Sólo para repetir los ejemplos originales.",
+  "quizTwoOptionThree": "Para garantizar respuestas perfectas.",
+  "quizQuestionThree": "¿Qué influye en la calidad de las respuestas de un modelo?",
+  "quizThreeOptionOne": "El nombre de la aplicación.",
+  "quizThreeOptionTwo": "La hora del dispositivo.",
+  "quizThreeOptionThree": "Los ejemplos aprendidos y la información recibida.",
+  "quizCorrect": "Respuesta correcta.",
+  "quizTryAgain": "Revisá la explicación e intentá nuevamente.",
+  "quizProgress": "{answered} de 3 respuestas correctas",
+  "@quizProgress": {
+    "placeholders": {
+      "answered": {"type": "int"}
+    }
+  },
+  "assessmentOptionOne": "Memoriza siempre una única respuesta.",
+  "assessmentOptionTwo": "Aprende patrones y los aplica a casos nuevos.",
+  "assessmentOptionThree": "Busca todas sus respuestas en Internet.",
+  "assessmentCorrect": "Exacto. Un modelo aprende patrones para trabajar con situaciones nuevas.",
+  "assessmentTryAgain": "Casi. Volvé a leer la explicación y probá otra vez.",
+  "completeMission": "MISIÓN COMPLETADA",
+  "lessonLoadError": "No pudimos cargar la lección.",
+  "missionCompleteError": "No pudimos completar la misión.",
+  "progressTitle": "Progreso",
+  "congratulations": "¡Excelente trabajo!",
+  "missionCompletedMessage": "Completaste la Misión 001.",
+  "xpEarned": "+{xp} XP",
+  "@xpEarned": {
+    "placeholders": {
+      "xp": {"type": "int"}
+    }
+  },
+  "nextMission": "Misión 002",
+  "comingSoon": "Próximamente",
+  "levelLabel": "Nivel",
+  "levelValue": "Nivel {level}",
+  "@levelValue": {
+    "placeholders": {
+      "level": {"type": "int"}
+    }
+  },
+  "streakLabel": "Racha",
+  "streakValue": "{days} día",
+  "@streakValue": {
+    "placeholders": {
+      "days": {"type": "int"}
+    }
+  },
+  "completedMissions": "{count, plural, =0{Todavía no completaste misiones.} =1{Completaste 1 misión.} other{Completaste {count} misiones.}}",
+  "@completedMissions": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "backToMission": "CONTINUAR MI MISIÓN"
+}
