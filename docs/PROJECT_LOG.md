@@ -172,3 +172,12 @@ Sprint 4 cerrado. Sprint 5 no iniciado.
 ### Estado
 
 Sprint 5 cerrado. Sprint 6 no iniciado.
+
+## Sprint 6 — Biblioteca de pensamiento
+
+- Biblioteca offline por temas, autores, ideas y conceptos relacionados.
+- Seis autores y ocho temas iniciales; contenido rotulado como paráfrasis o
+  interpretación editorial, sin citas inventadas ni imitación de voces.
+- Buscador, filtros, favoritos y sección «Qué puedo aplicar yo».
+- Contenido desacoplado en `knowledge/thought_library_v1.json` con validación.
+- Calidad: `flutter analyze` limpio y suite de pruebas ampliada.

@@ -17,6 +17,7 @@ class CurrentMissionScreen extends ConsumerWidget {
     required this.onManual,
     required this.onDictionary,
     required this.onCatalog,
+    required this.onThoughtLibrary,
     super.key,
   });
 
@@ -28,6 +29,7 @@ class CurrentMissionScreen extends ConsumerWidget {
   final VoidCallback onManual;
   final VoidCallback onDictionary;
   final VoidCallback onCatalog;
+  final VoidCallback onThoughtLibrary;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -125,6 +127,11 @@ class CurrentMissionScreen extends ConsumerWidget {
                       onPressed: onCatalog,
                       icon: const Icon(Icons.grid_view_outlined),
                       label: const Text('Catálogo'),
+                    ),
+                    TextButton.icon(
+                      onPressed: onThoughtLibrary,
+                      icon: const Icon(Icons.lightbulb_outline),
+                      label: const Text('Ideas'),
                     ),
                   ],
                 ),

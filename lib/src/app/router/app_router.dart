@@ -10,6 +10,7 @@ import 'package:oraculo_ia/src/features/onboarding/presentation/welcome_screen.d
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/progress_screen.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/simulated_progress.dart';
+import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
 
 abstract final class AppRoute {
   static const splash = '/';
@@ -20,6 +21,7 @@ abstract final class AppRoute {
   static const manual = '/manual';
   static const dictionary = '/dictionary';
   static const catalog = '/catalog';
+  static const thoughts = '/thoughts';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -88,6 +90,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onManual: () => context.push(AppRoute.manual),
                   onDictionary: () => context.push(AppRoute.dictionary),
                   onCatalog: () => context.push(AppRoute.catalog),
+                  onThoughtLibrary: () => context.push(AppRoute.thoughts),
                 );
               },
             ),
@@ -137,6 +140,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 ),
           );
         },
+      ),
+      GoRoute(
+        path: AppRoute.thoughts,
+        builder: (context, state) => const ThoughtLibraryScreen(),
       ),
     ],
   );

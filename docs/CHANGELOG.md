@@ -4,7 +4,13 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 6 no iniciado.
+- Sin cambios. Sprint 7 no iniciado.
+
+## 1.5.0-sprint6 — 2026-07-11
+
+- Biblioteca de pensamiento offline con búsqueda, filtros y favoritos.
+- Ocho ideas editoriales iniciales de seis referentes, claramente tipificadas.
+- Validación y pruebas del nuevo contenido desacoplado.
 
 ## 1.4.0-sprint5 — 2026-07-11
 
