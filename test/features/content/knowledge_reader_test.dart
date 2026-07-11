@@ -11,8 +11,8 @@ void main() {
     content = const KnowledgeReader().parse(source);
   });
 
-  test('loads two versioned missions and validates Mission 002', () {
-    expect(content.lessons, hasLength(2));
+  test('loads five versioned missions and validates Mission 002', () {
+    expect(content.lessons, hasLength(5));
     final mission = content.lesson('lesson-prompts-002');
     expect(mission.blocks, hasLength(12));
     expect(mission.blocks.expand((block) => block.questions), hasLength(9));
@@ -31,6 +31,10 @@ void main() {
       contains('evaluacion'),
     );
     expect(content.search('inexistente'), isEmpty);
+    expect(
+      content.search('ventana').map((article) => article.id),
+      contains('contexto-tokens'),
+    );
   });
 
   test('dictionary links resolve to existing terms', () {

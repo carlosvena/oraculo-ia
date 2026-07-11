@@ -119,6 +119,8 @@ final class KnowledgeReader {
       contentVersion: item['version'] as int,
       title: _text(item, 'title'),
       objective: _text(item, 'objective'),
+      estimatedMinutes: item['duration'] as int? ?? 15,
+      concepts: _strings(item, 'concepts', optional: true),
       blocks: blocks,
     );
   }

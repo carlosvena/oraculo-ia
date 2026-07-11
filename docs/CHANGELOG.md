@@ -4,7 +4,35 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 5 no iniciado.
+- Sin cambios. Sprint 6 no iniciado.
+
+## 1.4.0-sprint5 — 2026-07-11
+
+### Added
+
+- Persistencia local completa del recorrido de aprendizaje.
+- Restauración exacta de bloque y respuestas.
+- Modos esencial e intensivo persistentes.
+- Misiones 003, 004 y 005 con contenido profesional y evaluaciones exigentes.
+- Progreso real, autoevaluación y sección visible de repaso.
+- Favoritos para manual y diccionario.
+- Diez términos nuevos y tres artículos del manual.
+- Pruebas de restauración, modo, repaso, desbloqueo y búsqueda.
+
+### Changed
+
+- El catálogo muestra cinco misiones con desbloqueo secuencial.
+- XP deja de ser el indicador principal de progreso.
+
+### Verified
+
+- Análisis estático sin errores y 13 pruebas aprobadas.
+- APK x86_64 ejecutada y persistencia validada tras relanzar la aplicación.
+
+### Artifact
+
+- `releases/Aprender IA 1.4.apk` (ARM64).
+- `releases/Aprender IA 1.4 Emulator x64.apk`.
 
 ## 1.3.0-sprint4 — 2026-07-11
 

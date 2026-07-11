@@ -8,6 +8,7 @@ import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart' as domain;
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_block.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_providers.dart';
+import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 
 class LessonScreen extends ConsumerStatefulWidget {
   const LessonScreen({
@@ -30,6 +31,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   var _isCompleting = false;
   int? _laboratoryAnswer;
   final List<int?> _quizAnswers = List<int?>.filled(8, null);
+  var _restored = false;
 
   bool get _laboratoryComplete => _laboratoryAnswer == 1;
 
@@ -41,13 +43,33 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     _ => true,
   };
 
-  Future<void> _continue(domain.Lesson lesson) async {
-    if (_currentBlock < lesson.blocks.length - 1) {
+  List<domain.LessonBlock> _visibleBlocks(
+    domain.Lesson lesson,
+    LearningMode mode,
+  ) {
+    if (mode == LearningMode.intensive) return lesson.blocks;
+    return lesson.blocks
+        .where(
+          (block) =>
+              block.type != domain.LessonBlockType.challenge &&
+              block.type != domain.LessonBlockType.analogy,
+        )
+        .toList();
+  }
+
+  Future<void> _continue(domain.Lesson lesson, int blockCount) async {
+    if (_currentBlock < blockCount - 1) {
       setState(() => _currentBlock++);
+      await ref
+          .read(learningStateProvider.notifier)
+          .savePosition(widget.lessonId, _currentBlock, _quizAnswers);
       return;
     }
     setState(() => _isCompleting = true);
     try {
+      await ref
+          .read(learningStateProvider.notifier)
+          .complete(widget.lessonId, lesson.estimatedMinutes, lesson.concepts);
       await widget.onComplete();
     } on Object {
       if (!mounted) return;
@@ -65,18 +87,41 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final l10n = AppLocalizations.of(context);
     final lessonValue = ref.watch(lessonProvider(widget.lessonId));
     final lesson = lessonValue.value;
-    final block = lesson?.blocks[_currentBlock];
+    final persisted = ref.watch(learningStateProvider).value;
+    final visible =
+        lesson == null
+            ? const <domain.LessonBlock>[]
+            : _visibleBlocks(lesson, persisted?.mode ?? LearningMode.intensive);
+    if (_currentBlock >= visible.length && visible.isNotEmpty) {
+      _currentBlock = visible.length - 1;
+    }
+    final block = visible.isEmpty ? null : visible[_currentBlock];
+    if (!_restored &&
+        lesson != null &&
+        persisted != null &&
+        persisted.currentLessonId == widget.lessonId) {
+      _restored = true;
+      _currentBlock = persisted.currentBlock.clamp(0, visible.length - 1);
+      final saved = persisted.answers[widget.lessonId] ?? const <int?>[];
+      for (
+        var index = 0;
+        index < saved.length && index < _quizAnswers.length;
+        index++
+      ) {
+        _quizAnswers[index] = saved[index];
+      }
+    }
 
     return OraculoScaffold(
       bottomAction: PrimaryMissionAction(
         label:
-            _currentBlock == (lesson?.blocks.length ?? 1) - 1
+            _currentBlock == (visible.isEmpty ? 1 : visible.length) - 1
                 ? l10n.completeMission
                 : 'CONTINUAR',
         isLoading: _isCompleting,
         onPressed:
             lesson != null && block != null && _canContinue(block)
-                ? () => _continue(lesson)
+                ? () => _continue(lesson, visible.length)
                 : null,
       ),
       body: AsyncContent<domain.Lesson>(
@@ -85,8 +130,12 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         retryLabel: l10n.retry,
         onRetry: () => ref.invalidate(lessonProvider(widget.lessonId)),
         data: (value) {
-          final current = value.blocks[_currentBlock];
-          final progress = (_currentBlock + 1) / value.blocks.length;
+          final blocks = _visibleBlocks(
+            value,
+            persisted?.mode ?? LearningMode.intensive,
+          );
+          final current = blocks[_currentBlock];
+          final progress = (_currentBlock + 1) / blocks.length;
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
@@ -94,7 +143,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      'Bloque ${_currentBlock + 1} de ${value.blocks.length}',
+                      'Bloque ${_currentBlock + 1} de ${blocks.length}',
                       style: Theme.of(context).textTheme.labelLarge,
                     ),
                   ),
@@ -118,6 +167,26 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                   ),
                 ],
               ),
+              if (persisted != null) ...<Widget>[
+                const SizedBox(height: AppSpacing.sm),
+                SegmentedButton<LearningMode>(
+                  segments: const <ButtonSegment<LearningMode>>[
+                    ButtonSegment(
+                      value: LearningMode.essential,
+                      label: Text('Esencial'),
+                    ),
+                    ButtonSegment(
+                      value: LearningMode.intensive,
+                      label: Text('Intensivo'),
+                    ),
+                  ],
+                  selected: <LearningMode>{persisted.mode},
+                  onSelectionChanged:
+                      (values) => ref
+                          .read(learningStateProvider.notifier)
+                          .setMode(values.single),
+                ),
+              ],
               const SizedBox(height: AppSpacing.lg),
               Expanded(
                 child: SingleChildScrollView(
@@ -133,6 +202,13 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                           selectedAnswer: _laboratoryAnswer,
                           onSelected: (answer) {
                             setState(() => _laboratoryAnswer = answer);
+                            ref
+                                .read(learningStateProvider.notifier)
+                                .savePosition(
+                                  widget.lessonId,
+                                  _currentBlock,
+                                  _quizAnswers,
+                                );
                           },
                         ),
                         domain.LessonBlockType.quiz => _Quiz(
@@ -140,6 +216,13 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                           answers: _quizAnswers,
                           onSelected: (question, answer) {
                             setState(() => _quizAnswers[question] = answer);
+                            ref
+                                .read(learningStateProvider.notifier)
+                                .savePosition(
+                                  widget.lessonId,
+                                  _currentBlock,
+                                  _quizAnswers,
+                                );
                           },
                         ),
                         _ => null,

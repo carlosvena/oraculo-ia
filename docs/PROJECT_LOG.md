@@ -147,3 +147,28 @@ Sprint 3 cerrado. Sprint 4 no iniciado; el proyecto queda detenido para revisió
 ### Estado
 
 Sprint 4 cerrado. Sprint 5 no iniciado.
+
+## Sprint 5 — Aprendizaje continuo y persistente
+
+### Terminado
+
+- Estado local persistente con `SharedPreferencesAsync`: misión y bloque actual,
+  respuestas, completadas, minutos, conceptos, modo, repaso y favoritos.
+- Restauración del punto exacto después de cerrar y volver a abrir la aplicación.
+- Modo esencial e intensivo; intensivo seleccionado y recordado por defecto.
+- Misiones 003 «Qué es un LLM», 004 «Tokens y ventana de contexto» y 005
+  «Cómo construir prompts profesionales», con contenido real en `knowledge/`.
+- Cinco misiones con desbloqueo secuencial y evaluaciones de ocho preguntas.
+- Progreso centrado en misiones, horas, conceptos dominados, revisión y próxima meta.
+- Autoevaluación: Entendido, Necesito repasar y Todavía no lo entendí.
+- Manual ampliado y diccionario con quince términos en total.
+
+### Calidad y entregables
+
+- `flutter analyze`: sin problemas; 13 pruebas aprobadas.
+- APK ARM64: `releases/Aprender IA 1.4.apk`.
+- APK de validación x86_64 y capturas reales: `screenshots/sprint5-*.png`.
+
+### Estado
+
+Sprint 5 cerrado. Sprint 6 no iniciado.

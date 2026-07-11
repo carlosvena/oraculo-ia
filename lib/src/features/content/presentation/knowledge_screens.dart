@@ -6,6 +6,7 @@ import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_providers.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
+import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 
 class ManualScreen extends ConsumerStatefulWidget {
   const ManualScreen({required this.onOpenDictionary, super.key});
@@ -68,27 +69,41 @@ class _ArticleCard extends StatelessWidget {
   final KnowledgeArticle article;
   final ValueChanged<String> onOpen;
   @override
-  Widget build(BuildContext context) => Card(
-    child: ExpansionTile(
-      title: Text(article.title),
-      childrenPadding: const EdgeInsets.all(AppSpacing.md),
-      children: <Widget>[
-        Text(article.body),
-        const SizedBox(height: AppSpacing.md),
-        Wrap(
-          spacing: 8,
-          children:
-              article.links
-                  .map(
-                    (id) => ActionChip(
-                      label: Text(id),
-                      onPressed: () => onOpen(id),
-                    ),
-                  )
-                  .toList(),
+  Widget build(BuildContext context) => Consumer(
+    builder: (context, ref, child) {
+      final learning = ref.watch(learningStateProvider).value;
+      final favorite =
+          learning?.favorites.contains('article:${article.id}') ?? false;
+      return Card(
+        child: ExpansionTile(
+          title: Text(article.title),
+          trailing: IconButton(
+            icon: Icon(favorite ? Icons.favorite : Icons.favorite_border),
+            onPressed:
+                () => ref
+                    .read(learningStateProvider.notifier)
+                    .toggleFavorite('article:${article.id}'),
+          ),
+          childrenPadding: const EdgeInsets.all(AppSpacing.md),
+          children: <Widget>[
+            Text(article.body),
+            const SizedBox(height: AppSpacing.md),
+            Wrap(
+              spacing: 8,
+              children:
+                  article.links
+                      .map(
+                        (id) => ActionChip(
+                          label: Text(id),
+                          onPressed: () => onOpen(id),
+                        ),
+                      )
+                      .toList(),
+            ),
+          ],
         ),
-      ],
-    ),
+      );
+    },
   );
 }
 
@@ -150,6 +165,25 @@ class _DictionaryScreenState extends ConsumerState<DictionaryScreen> {
                     ),
                     const SizedBox(height: AppSpacing.sm),
                     Text(term.definition),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: IconButton(
+                        icon: Icon(
+                          (ref
+                                      .watch(learningStateProvider)
+                                      .value
+                                      ?.favorites
+                                      .contains('term:${term.id}') ??
+                                  false)
+                              ? Icons.favorite
+                              : Icons.favorite_border,
+                        ),
+                        onPressed:
+                            () => ref
+                                .read(learningStateProvider.notifier)
+                                .toggleFavorite('term:${term.id}'),
+                      ),
+                    ),
                     _Field('Explicación', term.explanation),
                     _Field('Analogía', term.analogy),
                     _Field('Ejemplo práctico', term.example),
@@ -202,13 +236,8 @@ class _Field extends StatelessWidget {
 }
 
 class CatalogScreen extends ConsumerWidget {
-  const CatalogScreen({
-    required this.mission002Unlocked,
-    required this.onOpenMission002,
-    super.key,
-  });
-  final bool mission002Unlocked;
-  final VoidCallback onOpenMission002;
+  const CatalogScreen({required this.onOpenLesson, super.key});
+  final ValueChanged<Lesson> onOpenLesson;
   @override
   Widget build(BuildContext context, WidgetRef ref) => OraculoScaffold(
     body: AsyncContent<KnowledgeContent>(
@@ -216,35 +245,43 @@ class CatalogScreen extends ConsumerWidget {
       errorMessage: 'No pudimos abrir el catálogo.',
       retryLabel: 'REINTENTAR',
       onRetry: () => ref.invalidate(knowledgeProvider),
-      data:
-          (content) => ListView(
-            children: <Widget>[
-              Text(
-                'Catálogo',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              const SizedBox(height: AppSpacing.sm),
-              const Text(
-                'Misiones disponibles para desarrollar criterio profesional.',
-              ),
-              const SizedBox(height: AppSpacing.lg),
+      data: (content) {
+        final learning =
+            ref.watch(learningStateProvider).value ?? const LearningState();
+        return ListView(
+          children: <Widget>[
+            Text('Catálogo', style: Theme.of(context).textTheme.headlineMedium),
+            const SizedBox(height: AppSpacing.sm),
+            const Text(
+              'Misiones disponibles para desarrollar criterio profesional.',
+            ),
+            const SizedBox(height: AppSpacing.lg),
+            for (var index = 0; index < content.lessons.length; index++)
               _MissionCard(
-                lesson: content.lessons[0],
-                duration: 15,
-                difficulty: 'Inicial',
-                status: mission002Unlocked ? 'Completada' : 'Disponible',
-                concepts: const ['LLM', 'Token'],
+                lesson: content.lessons[index],
+                duration: content.lessons[index].estimatedMinutes,
+                difficulty: index < 2 ? 'Intensiva' : 'Profesional',
+                status:
+                    learning.completed.contains(content.lessons[index].id)
+                        ? 'Completada'
+                        : index == 0 ||
+                            learning.completed.contains(
+                              content.lessons[index - 1].id,
+                            )
+                        ? 'Desbloqueada'
+                        : 'Bloqueada',
+                concepts: content.lessons[index].concepts,
+                onTap:
+                    index == 0 ||
+                            learning.completed.contains(
+                              content.lessons[index - 1].id,
+                            )
+                        ? () => onOpenLesson(content.lessons[index])
+                        : null,
               ),
-              _MissionCard(
-                lesson: content.lessons[1],
-                duration: 40,
-                difficulty: 'Intensiva',
-                status: mission002Unlocked ? 'Desbloqueada' : 'Bloqueada',
-                concepts: const ['Prompt', 'Contexto', 'Agentes'],
-                onTap: mission002Unlocked ? onOpenMission002 : null,
-              ),
-            ],
-          ),
+          ],
+        );
+      },
     ),
   );
 }

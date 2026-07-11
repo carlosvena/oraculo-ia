@@ -7,6 +7,7 @@ import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_screen.dart';
 import 'package:oraculo_ia/src/features/onboarding/presentation/splash_screen.dart';
 import 'package:oraculo_ia/src/features/onboarding/presentation/welcome_screen.dart';
+import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/progress_screen.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/simulated_progress.dart';
 
@@ -52,6 +53,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
               builder: (context, ref, child) {
                 final l10n = AppLocalizations.of(context);
                 final progress = ref.watch(simulatedProgressProvider);
+                final learning = ref.watch(learningStateProvider).value;
                 final statusLabel = switch (progress.status) {
                   MissionProgressStatus.notStarted =>
                     l10n.missionStatusNotStarted,
@@ -71,6 +73,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   progress: progress.progress,
                   estimatedMinutes: progress.estimatedMinutes,
                   onContinue: (mission) {
+                    if (learning != null &&
+                        learning.currentLessonId != 'lesson-models-001') {
+                      context.go(
+                        '${AppRoute.lesson}/${learning.currentLessonId}/${learning.currentLessonId}',
+                      );
+                      return;
+                    }
                     ref
                         .read(simulatedProgressProvider.notifier)
                         .startMission001();
@@ -121,14 +130,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.catalog,
         builder: (context, state) {
-          final unlocked =
-              ref.watch(simulatedProgressProvider).status ==
-              MissionProgressStatus.completed;
           return CatalogScreen(
-            mission002Unlocked: unlocked,
-            onOpenMission002:
-                () => context.push(
-                  '${AppRoute.lesson}/mission-prompts-002/lesson-prompts-002',
+            onOpenLesson:
+                (lesson) => context.push(
+                  '${AppRoute.lesson}/${lesson.id}/${lesson.id}',
                 ),
           );
         },

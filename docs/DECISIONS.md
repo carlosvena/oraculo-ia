@@ -56,3 +56,9 @@ independiente del versionado técnico interno y del nombre comercial ORÁCULO IA
 
 La versión 0.1 necesita una estrategia de persistencia. No se implementará hasta que
 Product Owner apruebe alcance y experiencia del Sprint 1.
+# Persistencia local de aprendizaje — Sprint 5
+
+Se usa `SharedPreferencesAsync` con un documento JSON versionado para el estado
+pequeño del MVP. Ya era una dependencia del proyecto, funciona offline y mantiene
+el estado desacoplado de widgets. Si el volumen crece hacia historial detallado o
+analítica, deberá evaluarse una base local transaccional en un Sprint futuro.

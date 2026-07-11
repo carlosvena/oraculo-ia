@@ -39,6 +39,8 @@ final class Lesson {
     required this.contentVersion,
     required this.title,
     required this.objective,
+    this.estimatedMinutes = 15,
+    this.concepts = const <String>[],
     required List<LessonBlock> blocks,
   }) : blocks = List<LessonBlock>.unmodifiable(blocks);
 
@@ -46,5 +48,7 @@ final class Lesson {
   final int contentVersion;
   final String title;
   final String objective;
+  final int estimatedMinutes;
+  final List<String> concepts;
   final List<LessonBlock> blocks;
 }
