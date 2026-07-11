@@ -201,4 +201,6 @@ final class LearningStateNotifier extends AsyncNotifier<LearningState> {
         ].take(20).toList();
     await _set(current.copyWith(promptHistory: values));
   }
+
+  Future<void> restore(LearningState restored) => _set(restored);
 }

@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="oraculo_ia"
+        android:label="Aprender IA"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@drawable/app_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

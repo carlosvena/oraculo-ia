@@ -59,6 +59,18 @@ void main() {
       'lesson-llm-003',
     ]);
   });
+
+  test('backup roundtrip preserves daily learning data', () {
+    const state = LearningState(
+      studyMinutes: 125,
+      promptHistory: <String>['Prompt profesional'],
+      reviewConcepts: <String>{'RAG'},
+    );
+    final restored = LearningState.fromJson(state.toJson());
+    expect(restored.studyMinutes, 125);
+    expect(restored.promptHistory.single, 'Prompt profesional');
+    expect(restored.reviewConcepts, contains('RAG'));
+  });
 }
 
 final class _MemoryStore implements LearningStateStore {

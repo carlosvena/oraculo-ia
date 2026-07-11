@@ -6,6 +6,7 @@ import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/components/primary_mission_action.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_view_model.dart';
+import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 
 class CurrentMissionScreen extends ConsumerWidget {
   const CurrentMissionScreen({
@@ -20,26 +21,28 @@ class CurrentMissionScreen extends ConsumerWidget {
     required this.onThoughtLibrary,
     required this.onPromptLab,
     required this.onKnowledgeMap,
+    required this.onAbout,
+    required this.onBackup,
     super.key,
   });
-
-  final String statusLabel;
-  final String nextAction;
+  final String statusLabel, nextAction;
   final double progress;
   final int estimatedMinutes;
   final ValueChanged<Mission> onContinue;
-  final VoidCallback onManual;
-  final VoidCallback onDictionary;
-  final VoidCallback onCatalog;
-  final VoidCallback onThoughtLibrary;
-  final VoidCallback onPromptLab;
-  final VoidCallback onKnowledgeMap;
-
+  final VoidCallback onManual,
+      onDictionary,
+      onCatalog,
+      onThoughtLibrary,
+      onPromptLab,
+      onKnowledgeMap,
+      onAbout,
+      onBackup;
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final mission = ref.watch(currentMissionViewModelProvider);
-
+    final learning =
+        ref.watch(learningStateProvider).value ?? const LearningState();
     return OraculoScaffold(
       body: AsyncContent<Mission>(
         value: mission,
@@ -48,110 +51,139 @@ class CurrentMissionScreen extends ConsumerWidget {
         onRetry:
             () => ref.read(currentMissionViewModelProvider.notifier).retry(),
         data:
-            (value) => Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+            (value) => ListView(
               children: <Widget>[
                 Text(
                   l10n.mentorGreeting,
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
+                const SizedBox(height: 8),
+                Text(
+                  learning.reviewConcepts.isEmpty
+                      ? 'Hoy tenés una misión clara para seguir avanzando.'
+                      : 'Tenés ${learning.reviewConcepts.length} concepto para repasar antes de avanzar.',
+                ),
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Expanded(
+                      child: _Metric(
+                        label: 'Estudiado',
+                        value: '${learning.studyMinutes} min',
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: _Metric(
+                        label: 'Meta semanal',
+                        value: '${learning.completed.length}/2 misiones',
+                      ),
+                    ),
+                  ],
+                ),
                 const SizedBox(height: 16),
                 Text(
-                  l10n.mentorJourney,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  l10n.mentorSingleMission,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
-                const Spacer(),
-                Text(
-                  l10n.todayMission,
-                  textAlign: TextAlign.center,
+                  'Misión recomendada',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
-                const SizedBox(height: 12),
-                Text(
-                  value.title,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headlineMedium,
-                ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 8),
                 Card(
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Icon(
-                              Icons.adjust_rounded,
-                              color: Theme.of(context).colorScheme.primary,
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              statusLabel,
-                              style: Theme.of(context).textTheme.titleMedium,
-                            ),
-                            const Spacer(),
-                            Text(l10n.estimatedTime(estimatedMinutes)),
-                          ],
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          value.title,
+                          style: Theme.of(context).textTheme.titleLarge,
                         ),
-                        const SizedBox(height: 16),
-                        LinearProgressIndicator(value: progress),
+                        const SizedBox(height: 8),
+                        Text(
+                          '$statusLabel · ${l10n.estimatedTime(estimatedMinutes)}',
+                        ),
                         const SizedBox(height: 12),
+                        LinearProgressIndicator(value: progress),
+                        const SizedBox(height: 8),
                         Text(nextAction),
                       ],
                     ),
                   ),
                 ),
-                const Spacer(),
+                const SizedBox(height: 12),
                 PrimaryMissionAction(
                   label: l10n.continueMission,
                   onPressed: () => onContinue(value),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 16),
+                if (learning.reviewConcepts.isNotEmpty)
+                  Card(
+                    child: ListTile(
+                      leading: const Icon(Icons.replay),
+                      title: const Text('Repaso pendiente'),
+                      subtitle: Text(learning.reviewConcepts.join(' · ')),
+                    ),
+                  ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(Icons.flag_outlined),
+                    title: const Text('Próximo objetivo'),
+                    subtitle: Text(
+                      learning.completed.length >= 5
+                          ? 'Aplicar y revisar lo aprendido.'
+                          : 'Completar la próxima misión desbloqueada.',
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text('Explorar', style: Theme.of(context).textTheme.titleLarge),
                 Wrap(
-                  alignment: WrapAlignment.center,
                   spacing: 4,
-                  children: <Widget>[
-                    TextButton.icon(
-                      onPressed: onManual,
-                      icon: const Icon(Icons.menu_book_outlined),
-                      label: const Text('Manual'),
-                    ),
-                    TextButton.icon(
-                      onPressed: onDictionary,
-                      icon: const Icon(Icons.translate_rounded),
-                      label: const Text('Diccionario'),
-                    ),
-                    TextButton.icon(
-                      onPressed: onCatalog,
-                      icon: const Icon(Icons.grid_view_outlined),
-                      label: const Text('Catálogo'),
-                    ),
-                    TextButton.icon(
-                      onPressed: onThoughtLibrary,
-                      icon: const Icon(Icons.lightbulb_outline),
-                      label: const Text('Ideas'),
-                    ),
-                    TextButton.icon(
-                      onPressed: onPromptLab,
-                      icon: const Icon(Icons.edit_note),
-                      label: const Text('Laboratorio'),
-                    ),
-                    TextButton.icon(
-                      onPressed: onKnowledgeMap,
-                      icon: const Icon(Icons.hub_outlined),
-                      label: const Text('Mapa'),
-                    ),
+                  runSpacing: 4,
+                  children: [
+                    _Access('Manual', Icons.menu_book_outlined, onManual),
+                    _Access('Diccionario', Icons.translate, onDictionary),
+                    _Access('Catálogo', Icons.grid_view, onCatalog),
+                    _Access('Ideas', Icons.lightbulb_outline, onThoughtLibrary),
+                    _Access('Laboratorio', Icons.edit_note, onPromptLab),
+                    _Access('Mapa', Icons.hub_outlined, onKnowledgeMap),
+                    _Access('Respaldo', Icons.save_alt, onBackup),
+                    _Access('Acerca', Icons.info_outline, onAbout),
                   ],
+                ),
+                const SizedBox(height: 12),
+                const Center(
+                  child: Text('ORÁCULO IA Beta local · versión 1.8'),
                 ),
               ],
             ),
       ),
     );
   }
+}
+
+class _Metric extends StatelessWidget {
+  const _Metric({required this.label, required this.value});
+  final String label, value;
+  @override
+  Widget build(BuildContext context) => Card(
+    child: Padding(
+      padding: const EdgeInsets.all(12),
+      child: Column(
+        children: [
+          Text(value, style: Theme.of(context).textTheme.titleLarge),
+          Text(label),
+        ],
+      ),
+    ),
+  );
+}
+
+class _Access extends StatelessWidget {
+  const _Access(this.label, this.icon, this.action);
+  final String label;
+  final IconData icon;
+  final VoidCallback action;
+  @override
+  Widget build(BuildContext context) =>
+      TextButton.icon(onPressed: action, icon: Icon(icon), label: Text(label));
 }

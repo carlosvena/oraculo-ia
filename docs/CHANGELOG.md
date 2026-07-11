@@ -4,7 +4,15 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 9 no iniciado.
+- Próximo: Sprint 10 pendiente de definición.
+
+## 1.8.0-beta — 2026-07-11
+
+- Home diaria con plan, meta semanal, repaso y recomendación local.
+- Continuidad persistente y navegación consolidada a todos los módulos.
+- Acerca del proyecto, versión visible y respaldo JSON exportable/importable.
+- Icono profesional provisional y splash nativo oscuro.
+- APK ARM64: `releases/Aprender IA 1.8 Beta.apk`.
 
 ## 1.7.0-sprint8 — 2026-07-11
 

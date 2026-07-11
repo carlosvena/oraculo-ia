@@ -195,3 +195,21 @@ Sprint 5 cerrado. Sprint 6 no iniciado.
 - Estados: no visto, en aprendizaje, comprendido, necesita repaso y dominado.
 - Cada concepto muestra precedentes, desbloqueos y acceso a su misión.
 - Relaciones generadas desde contenido existente y cubiertas por pruebas.
+
+## Sprint 9 — Experiencia diaria y Beta local
+
+- Home diaria con recomendación, repaso, tiempo, meta semanal y próximo objetivo.
+- Continuidad desde el último punto y modo intensivo predeterminado.
+- Acceso integrado a Manual, Laboratorio, Mapa, Ideas, Catálogo y Diccionario.
+- Beta local con versión visible, Acerca del proyecto, icono y splash provisionales.
+- Exportación al portapapeles e importación validada de progreso JSON.
+- Calidad final, APK ARM64 y validación visual de todos los módulos.
+- APK final: `releases/Aprender IA 1.8 Beta.apk`; capturas reales:
+  `screenshots/beta-*.png`.
+
+### Pendientes propuestos para Sprint 10
+
+- Pruebas en varios teléfonos físicos y accesibilidad con escalado de texto.
+- Firma privada de distribución y automatización reproducible de releases.
+- Revisión editorial con fuentes y autoría formal para ampliar la biblioteca.
+- Evolución del almacenamiento si el historial supera el alcance de preferencias.
