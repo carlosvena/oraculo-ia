@@ -90,3 +90,36 @@ Revisión de producto de Sprint 1 con Carlos. Sprint 2 no iniciado.
 
 Sprint 2 cerrado. Sprint 3 no iniciado; el proyecto queda detenido hasta recibir
 nuevas instrucciones.
+
+## Sprint 3 — Experiencia educativa v1
+
+### Terminado
+
+- Misión 001 reorganizada en nueve bloques navegables: título, objetivo,
+  explicación, analogía, ejemplo, laboratorio, quiz, resumen y cierre.
+- Renderizador reutilizable `LessonBlock` con identidad visual por tipo de bloque.
+- Mini laboratorio obligatorio con explicación pedagógica.
+- Quiz de cinco preguntas; cada respuesta muestra una explicación específica y
+  el avance requiere cinco respuestas correctas.
+- Progreso visible por bloque y porcentaje, con tiempo estimado y transcurrido
+  simulado.
+- Cierre con 100 XP, 12 minutos empleados, conceptos aprendidos y Misión 002
+  desbloqueada.
+- Jerarquía, aire, tarjetas y adaptación a pantallas angostas mejorados con
+  Material 3.
+
+### Calidad
+
+- `flutter analyze`: sin problemas.
+- 6 pruebas automatizadas aprobadas.
+- Recorrido completo validado con la APK release en emulador Android.
+
+### Entregables
+
+- APK: `releases/Aprender IA 1.2.apk`.
+- Capturas reales: `screenshots/sprint3-*.png`.
+- Commit y publicación en GitHub.
+
+### Estado
+
+Sprint 3 cerrado. Sprint 4 no iniciado; el proyecto queda detenido para revisión.

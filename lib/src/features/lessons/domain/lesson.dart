@@ -1,20 +1,17 @@
 enum LessonBlockType {
-  context,
-  concept,
-  examples,
-  laboratory,
+  title,
+  text,
+  analogy,
+  example,
   challenge,
-  debate,
-  tools,
-  commonMistake,
-  miniAssessment,
-  executiveSummary,
-  nextStep,
+  quiz,
+  summary,
 }
 
 final class LessonBlock {
   const LessonBlock({
     required this.type,
+    required this.title,
     required this.content,
     required this.sequence,
     this.items = const <String>[],
@@ -22,6 +19,7 @@ final class LessonBlock {
   });
 
   final LessonBlockType type;
+  final String title;
   final String content;
   final int sequence;
   final List<String> items;

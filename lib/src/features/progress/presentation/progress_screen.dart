@@ -63,6 +63,27 @@ class ProgressScreen extends ConsumerWidget {
           const SizedBox(height: AppSpacing.md),
           LinearProgressIndicator(value: progress.progress),
           const SizedBox(height: AppSpacing.lg),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.md),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'Conceptos aprendidos',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  const Text('• Los modelos aprenden patrones de ejemplos.'),
+                  const SizedBox(height: AppSpacing.xs),
+                  const Text('• Aplican esos patrones a información nueva.'),
+                  const SizedBox(height: AppSpacing.xs),
+                  const Text('• Sus resultados necesitan evaluación humana.'),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.lg),
           Row(
             children: <Widget>[
               Expanded(
@@ -85,10 +106,14 @@ class ProgressScreen extends ConsumerWidget {
           const SizedBox(height: AppSpacing.xxl),
           Card(
             child: ListTile(
-              enabled: false,
-              leading: const Icon(Icons.lock_outline_rounded),
-              title: Text(l10n.nextMission),
-              subtitle: Text(l10n.comingSoon),
+              leading: Icon(
+                Icons.lock_open_rounded,
+                color: Theme.of(context).colorScheme.primary,
+              ),
+              title: Text('${l10n.nextMission} desbloqueada'),
+              subtitle: const Text(
+                'Cómo dar instrucciones claras a una Inteligencia Artificial',
+              ),
             ),
           ),
         ],

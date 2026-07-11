@@ -11,95 +11,85 @@ final class SimulatedLessonRepository implements LessonRepository {
     }
     return Lesson(
       id: lessonId,
-      contentVersion: 1,
-      title: 'Qué es un modelo de Inteligencia Artificial',
+      contentVersion: 2,
+      title: 'Qué es realmente un modelo de IA',
       objective:
-          'Entender qué hace un modelo de IA y reconocerlo en ejemplos cotidianos.',
+          'Comprender cómo aprende un modelo, qué puede hacer y por qué sus respuestas necesitan criterio humano.',
       blocks: const <LessonBlock>[
         LessonBlock(
-          type: LessonBlockType.context,
-          content:
-              '[TEMPORAL] Los modelos están detrás de asistentes, recomendaciones, filtros y herramientas profesionales. Entenderlos permite evaluar sus posibilidades y límites.',
+          type: LessonBlockType.title,
+          title: 'Misión 001',
+          content: 'Qué es realmente un modelo de Inteligencia Artificial',
+          prompt: 'Hoy vas a construir una idea clara que te servirá para entender todo lo que viene después.',
           sequence: 1,
         ),
         LessonBlock(
-          type: LessonBlockType.concept,
+          type: LessonBlockType.text,
+          title: 'Objetivo de aprendizaje',
           content:
-              '[TEMPORAL] Un modelo de IA aprende relaciones estadísticas a partir de datos y las utiliza para generar, clasificar o predecir resultados ante información nueva.',
+              'Al terminar vas a poder explicar, con tus propias palabras, qué es un modelo de IA y distinguir aprendizaje de patrones de comprensión humana.',
           sequence: 2,
         ),
         LessonBlock(
-          type: LessonBlockType.examples,
+          type: LessonBlockType.text,
+          title: 'Explicación',
           content:
-              '[TEMPORAL] Tres aplicaciones reales para reconocer el concepto:',
+              'Un modelo de IA es un sistema matemático que aprende relaciones y patrones a partir de muchos ejemplos. Cuando recibe información nueva, usa esos patrones para predecir, clasificar o generar una respuesta. No guarda una lista perfecta de respuestas ni entiende como una persona: calcula qué resultado es más probable según lo aprendido.',
           items: <String>[
-            'Un filtro de correo clasifica mensajes como spam o válidos.',
-            'Un asistente genera una respuesta a partir de instrucciones y contexto.',
-            'Un sistema de recomendación ordena contenido según patrones de uso.',
+            'Aprende de datos y ejemplos.',
+            'Aplica patrones a situaciones nuevas.',
+            'Puede equivocarse aunque su respuesta parezca convincente.',
           ],
           sequence: 3,
         ),
         LessonBlock(
-          type: LessonBlockType.laboratory,
+          type: LessonBlockType.analogy,
+          title: 'Analogía',
           content:
-              '[TEMPORAL] Aplicá el concepto eligiendo los datos adecuados para una tarea concreta.',
-          prompt: 'Completá la actividad interactiva antes de continuar.',
+              'Imaginá a una persona que escuchó miles de canciones. Al oír los primeros segundos de una canción nueva puede anticipar el estilo, el ritmo o qué instrumento aparecerá. No conoce el futuro: reconoce patrones. Un modelo hace algo parecido, pero con números y a una escala enorme.',
           sequence: 4,
         ),
         LessonBlock(
-          type: LessonBlockType.challenge,
+          type: LessonBlockType.example,
+          title: 'Ejemplo práctico',
           content:
-              '[TEMPORAL] Una empresa quiere automatizar soporte, pero sólo posee diez conversaciones antiguas y contradictorias.',
-          prompt:
-              '¿Qué riesgos identificarías antes de elegir o entrenar un modelo?',
+              'Un filtro de spam aprende observando miles de correos ya clasificados. Detecta relaciones entre palabras, enlaces, remitentes y decisiones anteriores. Ante un correo nuevo calcula si se parece más a los mensajes válidos o al spam.',
+          prompt: 'La calidad del resultado depende de los ejemplos, la tarea y la información disponible.',
           sequence: 5,
         ),
         LessonBlock(
-          type: LessonBlockType.debate,
+          type: LessonBlockType.challenge,
+          title: 'Mini laboratorio',
           content:
-              '[TEMPORAL] Compará dos perspectivas sobre el mismo problema:',
-          items: <String>[
-            'Automatizar primero permite aprender rápidamente mediante uso real.',
-            'Evaluar primero reduce errores, riesgos y falsas expectativas.',
-          ],
+              'Una empresa quiere detectar automáticamente mensajes urgentes de sus clientes. Elegí el conjunto de datos que mejor le enseñaría esa tarea al modelo.',
           sequence: 6,
         ),
         LessonBlock(
-          type: LessonBlockType.tools,
+          type: LessonBlockType.quiz,
+          title: 'Quiz',
           content:
-              '[TEMPORAL] Distintos modelos pueden resolver la tarea con fortalezas, límites y costos diferentes.',
-          items: <String>[
-            'ChatGPT: conversación, análisis y herramientas integradas.',
-            'Gemini: contexto multimodal e integración con Google.',
-            'Claude: trabajo con documentos y respuestas extensas.',
-            'DeepSeek, Qwen y GLM: alternativas con distintos modelos y despliegues.',
-          ],
+              'Comprobá tu comprensión. Cada error incluye una explicación para ayudarte a ajustar el concepto.',
           sequence: 7,
         ),
         LessonBlock(
-          type: LessonBlockType.commonMistake,
+          type: LessonBlockType.summary,
+          title: 'Resumen',
           content:
-              '[TEMPORAL] El error más común es tratar la respuesta del modelo como verdad garantizada. Un modelo produce resultados plausibles que deben evaluarse.',
+              'Un modelo de IA aprende patrones estadísticos de ejemplos y los aplica a información nueva. Puede clasificar, predecir o generar, pero no garantiza verdad ni comprensión humana.',
+          items: <String>[
+            'Datos de calidad producen mejores patrones.',
+            'La respuesta depende también del contexto recibido.',
+            'El criterio humano sigue siendo necesario para evaluar resultados.',
+          ],
           sequence: 8,
         ),
         LessonBlock(
-          type: LessonBlockType.miniAssessment,
+          type: LessonBlockType.summary,
+          title: 'Misión lista para completar',
           content:
-              '[TEMPORAL] Comprobá los conceptos esenciales de esta misión.',
+              'Ya tenés el concepto base para analizar cualquier herramienta de IA con más criterio.',
+          prompt: 'Continuá para registrar tu progreso simulado y ver lo que aprendiste.',
           sequence: 9,
-        ),
-        LessonBlock(
-          type: LessonBlockType.executiveSummary,
-          content:
-              '[TEMPORAL] Un modelo aprende patrones, los aplica a información nueva y debe elegirse y evaluarse según la tarea, los datos y el riesgo.',
-          sequence: 10,
-        ),
-        LessonBlock(
-          type: LessonBlockType.nextStep,
-          content:
-              '[TEMPORAL] En la próxima misión aprenderás a formular instrucciones claras y criterios para evaluar una respuesta.',
-          prompt: 'Completá la misión para registrar tu avance simulado.',
-          sequence: 11,
         ),
       ],
     );

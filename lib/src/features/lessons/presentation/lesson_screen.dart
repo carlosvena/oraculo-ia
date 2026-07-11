@@ -5,7 +5,8 @@ import 'package:oraculo_ia/src/design_system/components/async_content.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/components/primary_mission_action.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
-import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
+import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart' as domain;
+import 'package:oraculo_ia/src/features/lessons/presentation/lesson_block.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_providers.dart';
 
 class LessonScreen extends ConsumerStatefulWidget {
@@ -25,35 +26,33 @@ class LessonScreen extends ConsumerStatefulWidget {
 }
 
 class _LessonScreenState extends ConsumerState<LessonScreen> {
+  var _currentBlock = 0;
   var _isCompleting = false;
-  int? _exerciseAnswer;
-  final List<int?> _quizAnswers = List<int?>.filled(3, null);
+  int? _laboratoryAnswer;
+  final List<int?> _quizAnswers = List<int?>.filled(5, null);
 
-  static const _correctQuizAnswers = <int>[0, 0, 2];
+  static const _correctQuizAnswers = <int>[0, 1, 2, 0, 1];
 
-  bool get _exerciseIsCorrect => _exerciseAnswer == 1;
+  bool get _laboratoryComplete => _laboratoryAnswer == 1;
 
-  bool get _quizIsCorrect {
+  bool get _quizComplete {
     for (var index = 0; index < _correctQuizAnswers.length; index++) {
       if (_quizAnswers[index] != _correctQuizAnswers[index]) return false;
     }
     return true;
   }
 
-  int get _correctQuizCount {
-    var count = 0;
-    for (var index = 0; index < _correctQuizAnswers.length; index++) {
-      if (_quizAnswers[index] == _correctQuizAnswers[index]) count++;
+  bool _canContinue(domain.LessonBlockType type) => switch (type) {
+    domain.LessonBlockType.challenge => _laboratoryComplete,
+    domain.LessonBlockType.quiz => _quizComplete,
+    _ => true,
+  };
+
+  Future<void> _continue(domain.Lesson lesson) async {
+    if (_currentBlock < lesson.blocks.length - 1) {
+      setState(() => _currentBlock++);
+      return;
     }
-    return count;
-  }
-
-  double get _missionProgress {
-    final completedSteps = 1 + (_exerciseIsCorrect ? 1 : 0) + _correctQuizCount;
-    return completedSteps / 5;
-  }
-
-  Future<void> _complete() async {
     setState(() => _isCompleting = true);
     try {
       await widget.onComplete();
@@ -71,251 +70,265 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final lesson = ref.watch(lessonProvider(widget.lessonId));
+    final lessonValue = ref.watch(lessonProvider(widget.lessonId));
+    final lesson = lessonValue.value;
+    final block = lesson?.blocks[_currentBlock];
 
     return OraculoScaffold(
       bottomAction: PrimaryMissionAction(
-        label: l10n.completeMission,
+        label:
+            _currentBlock == (lesson?.blocks.length ?? 1) - 1
+                ? l10n.completeMission
+                : 'CONTINUAR',
         isLoading: _isCompleting,
         onPressed:
-            lesson.hasValue && _exerciseIsCorrect && _quizIsCorrect
-                ? _complete
+            lesson != null && block != null && _canContinue(block.type)
+                ? () => _continue(lesson)
                 : null,
       ),
-      body: AsyncContent<Lesson>(
-        value: lesson,
+      body: AsyncContent<domain.Lesson>(
+        value: lessonValue,
         errorMessage: l10n.lessonLoadError,
         retryLabel: l10n.retry,
         onRetry: () => ref.invalidate(lessonProvider(widget.lessonId)),
-        data:
-            (value) => ListView(
-              children: <Widget>[
-                Text(
-                  value.title,
-                  style: Theme.of(context).textTheme.headlineMedium,
-                ),
-                const SizedBox(height: AppSpacing.md),
-                Text(l10n.missionProgressLabel),
-                const SizedBox(height: AppSpacing.xs),
-                TweenAnimationBuilder<double>(
-                  duration: const Duration(milliseconds: 300),
-                  tween: Tween<double>(begin: 0, end: _missionProgress),
-                  builder: (context, value, child) {
-                    return LinearProgressIndicator(value: value);
-                  },
-                ),
-                const SizedBox(height: AppSpacing.md),
-                Card(
-                  color: Theme.of(context).colorScheme.surfaceContainerHighest,
-                  child: Padding(
-                    padding: const EdgeInsets.all(AppSpacing.md),
-                    child: Row(
-                      children: <Widget>[
-                        const Icon(Icons.science_outlined),
-                        const SizedBox(width: AppSpacing.sm),
-                        Expanded(child: Text(l10n.temporaryContentLabel)),
-                      ],
+        data: (value) {
+          final current = value.blocks[_currentBlock];
+          final progress = (_currentBlock + 1) / value.blocks.length;
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      'Bloque ${_currentBlock + 1} de ${value.blocks.length}',
+                      style: Theme.of(context).textTheme.labelLarge,
+                    ),
+                  ),
+                  Text('${(progress * 100).round()}%'),
+                ],
+              ),
+              const SizedBox(height: AppSpacing.sm),
+              LinearProgressIndicator(value: progress, minHeight: 8),
+              const SizedBox(height: AppSpacing.sm),
+              Wrap(
+                spacing: AppSpacing.lg,
+                runSpacing: AppSpacing.xs,
+                children: <Widget>[
+                  const _TimeMetric(
+                    icon: Icons.schedule_rounded,
+                    label: 'Estimado: 15 minutos',
+                  ),
+                  _TimeMetric(
+                    icon: Icons.timer_outlined,
+                    label: 'Transcurrido: ${2 + (_currentBlock * 2)} min',
+                  ),
+                ],
+              ),
+              const SizedBox(height: AppSpacing.lg),
+              Expanded(
+                child: SingleChildScrollView(
+                  key: ValueKey<int>(_currentBlock),
+                  child: AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 220),
+                    child: LessonBlock(
+                      key: ValueKey<int>(current.sequence),
+                      block: current,
+                      child: switch (current.type) {
+                        domain.LessonBlockType.challenge => _Laboratory(
+                          selectedAnswer: _laboratoryAnswer,
+                          onSelected: (answer) {
+                            setState(() => _laboratoryAnswer = answer);
+                          },
+                        ),
+                        domain.LessonBlockType.quiz => _Quiz(
+                          answers: _quizAnswers,
+                          onSelected: (question, answer) {
+                            setState(() => _quizAnswers[question] = answer);
+                          },
+                        ),
+                        _ => null,
+                      },
                     ),
                   ),
                 ),
-                const SizedBox(height: AppSpacing.xl),
-                _LessonSection(
-                  title: l10n.objectiveTitle,
-                  body: value.objective,
-                ),
-                for (final block in value.blocks)
-                  if (block.type == LessonBlockType.laboratory)
-                    _InteractiveExercise(
-                      selectedAnswer: _exerciseAnswer,
-                      onSelected: (answer) {
-                        setState(() => _exerciseAnswer = answer);
-                      },
-                    )
-                  else if (block.type == LessonBlockType.miniAssessment)
-                    _MiniQuiz(
-                      answers: _quizAnswers,
-                      onSelected: (question, answer) {
-                        setState(() => _quizAnswers[question] = answer);
-                      },
-                    )
-                  else
-                    _LessonSection(
-                      title: _blockTitle(l10n, block.type),
-                      body: block.content,
-                      items: block.items,
-                      prompt: block.prompt,
-                    ),
-              ],
-            ),
+              ),
+            ],
+          );
+        },
       ),
     );
   }
+}
 
-  String _blockTitle(AppLocalizations l10n, LessonBlockType type) {
-    return switch (type) {
-      LessonBlockType.context => l10n.contextTitle,
-      LessonBlockType.concept => l10n.conceptTitle,
-      LessonBlockType.examples => l10n.examplesTitle,
-      LessonBlockType.laboratory => l10n.laboratoryTitle,
-      LessonBlockType.challenge => l10n.challengeTitle,
-      LessonBlockType.debate => l10n.debateTitle,
-      LessonBlockType.tools => l10n.toolsTitle,
-      LessonBlockType.commonMistake => l10n.commonMistakeTitle,
-      LessonBlockType.miniAssessment => l10n.miniAssessmentTitle,
-      LessonBlockType.executiveSummary => l10n.executiveSummaryTitle,
-      LessonBlockType.nextStep => l10n.nextStepTitle,
-    };
+class _TimeMetric extends StatelessWidget {
+  const _TimeMetric({required this.icon, required this.label});
+
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        Icon(icon, size: 18),
+        const SizedBox(width: AppSpacing.xs),
+        Text(label),
+      ],
+    );
   }
 }
 
-class _InteractiveExercise extends StatelessWidget {
-  const _InteractiveExercise({
-    required this.selectedAnswer,
-    required this.onSelected,
-  });
+class _Laboratory extends StatelessWidget {
+  const _Laboratory({required this.selectedAnswer, required this.onSelected});
 
   final int? selectedAnswer;
   final ValueChanged<int> onSelected;
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-    final options = <String>[
-      l10n.exerciseOptionOne,
-      l10n.exerciseOptionTwo,
-      l10n.exerciseOptionThree,
-    ];
-
     return _QuestionCard(
-      title: l10n.laboratoryTitle,
-      question: l10n.exerciseQuestion,
-      options: options,
+      question: '¿Qué datos elegirías?',
+      options: const <String>[
+        'La edad y el color favorito de cada cliente.',
+        'Mensajes reales etiquetados como urgentes y no urgentes.',
+        'Una lista de productos de la empresa.',
+      ],
       selectedAnswer: selectedAnswer,
       correctAnswer: 1,
-      correctMessage: l10n.exerciseCorrect,
-      incorrectMessage: l10n.exerciseTryAgain,
+      explanation:
+          'El modelo necesita ejemplos directamente relacionados con la decisión que debe aprender: urgencia frente a no urgencia.',
       onSelected: onSelected,
     );
   }
 }
 
-class _MiniQuiz extends StatelessWidget {
-  const _MiniQuiz({required this.answers, required this.onSelected});
+class _Quiz extends StatelessWidget {
+  const _Quiz({required this.answers, required this.onSelected});
 
   final List<int?> answers;
   final void Function(int question, int answer) onSelected;
 
+  static const questions = <_QuestionData>[
+    _QuestionData(
+      '¿Qué aprende principalmente un modelo de IA?',
+      <String>[
+        'Patrones en los datos.',
+        'Verdades absolutas.',
+        'Intenciones humanas.',
+      ],
+      0,
+      'Un modelo ajusta relaciones estadísticas; no descubre automáticamente verdades ni intenciones.',
+    ),
+    _QuestionData(
+      '¿Qué hace con información nueva?',
+      <String>[
+        'La ignora.',
+        'Aplica los patrones aprendidos.',
+        'Busca siempre en Internet.',
+      ],
+      1,
+      'Usa los patrones aprendidos para predecir, clasificar o generar un resultado nuevo.',
+    ),
+    _QuestionData(
+      '¿Por qué una respuesta convincente puede ser incorrecta?',
+      <String>[
+        'Porque el teléfono es lento.',
+        'Porque falta una contraseña.',
+        'Porque estima probabilidades, no garantiza verdad.',
+      ],
+      2,
+      'La fluidez no demuestra exactitud: el modelo produce resultados probables según datos y contexto.',
+    ),
+    _QuestionData(
+      '¿Qué mejora un modelo para detectar spam?',
+      <String>[
+        'Ejemplos bien clasificados.',
+        'Cambiar el nombre de la app.',
+        'Usar una pantalla más grande.',
+      ],
+      0,
+      'Los ejemplos relevantes y bien etiquetados permiten aprender mejor la diferencia entre categorías.',
+    ),
+    _QuestionData(
+      '¿Cuál es el rol del criterio humano?',
+      <String>[
+        'Aceptar toda respuesta.',
+        'Evaluar resultados y riesgos.',
+        'Evitar aportar contexto.',
+      ],
+      1,
+      'Las personas deben comprobar calidad, contexto y consecuencias antes de usar un resultado.',
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-    final questions = <_QuestionData>[
-      _QuestionData(
-        question: l10n.quizQuestionOne,
-        options: <String>[
-          l10n.quizOneOptionOne,
-          l10n.quizOneOptionTwo,
-          l10n.quizOneOptionThree,
-        ],
-        correctAnswer: 0,
-      ),
-      _QuestionData(
-        question: l10n.quizQuestionTwo,
-        options: <String>[
-          l10n.quizTwoOptionOne,
-          l10n.quizTwoOptionTwo,
-          l10n.quizTwoOptionThree,
-        ],
-        correctAnswer: 0,
-      ),
-      _QuestionData(
-        question: l10n.quizQuestionThree,
-        options: <String>[
-          l10n.quizThreeOptionOne,
-          l10n.quizThreeOptionTwo,
-          l10n.quizThreeOptionThree,
-        ],
-        correctAnswer: 2,
-      ),
-    ];
-    var correctAnswers = 0;
-    for (var index = 0; index < questions.length; index++) {
-      if (answers[index] == questions[index].correctAnswer) correctAnswers++;
-    }
-
-    return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpacing.xl),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Text(
-            l10n.miniAssessmentTitle,
-            style: Theme.of(context).textTheme.titleLarge,
+    return Column(
+      children: <Widget>[
+        for (var index = 0; index < questions.length; index++)
+          _QuestionCard(
+            number: index + 1,
+            question: questions[index].question,
+            options: questions[index].options,
+            selectedAnswer: answers[index],
+            correctAnswer: questions[index].correctAnswer,
+            explanation: questions[index].explanation,
+            onSelected: (answer) => onSelected(index, answer),
           ),
-          const SizedBox(height: AppSpacing.sm),
-          Text(l10n.quizProgress(correctAnswers)),
-          const SizedBox(height: AppSpacing.md),
-          for (var index = 0; index < questions.length; index++)
-            _QuestionCard(
-              title: '${index + 1}.',
-              question: questions[index].question,
-              options: questions[index].options,
-              selectedAnswer: answers[index],
-              correctAnswer: questions[index].correctAnswer,
-              correctMessage: l10n.quizCorrect,
-              incorrectMessage: l10n.quizTryAgain,
-              onSelected: (answer) => onSelected(index, answer),
-            ),
-        ],
-      ),
+      ],
     );
   }
 }
 
 final class _QuestionData {
-  const _QuestionData({
-    required this.question,
-    required this.options,
-    required this.correctAnswer,
-  });
+  const _QuestionData(
+    this.question,
+    this.options,
+    this.correctAnswer,
+    this.explanation,
+  );
 
   final String question;
   final List<String> options;
   final int correctAnswer;
+  final String explanation;
 }
 
 class _QuestionCard extends StatelessWidget {
   const _QuestionCard({
-    required this.title,
     required this.question,
     required this.options,
     required this.selectedAnswer,
     required this.correctAnswer,
-    required this.correctMessage,
-    required this.incorrectMessage,
+    required this.explanation,
     required this.onSelected,
+    this.number,
   });
 
-  final String title;
+  final int? number;
   final String question;
   final List<String> options;
   final int? selectedAnswer;
   final int correctAnswer;
-  final String correctMessage;
-  final String incorrectMessage;
+  final String explanation;
   final ValueChanged<int> onSelected;
 
   @override
   Widget build(BuildContext context) {
     final isCorrect = selectedAnswer == correctAnswer;
+    final colors = Theme.of(context).colorScheme;
     return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpacing.xl),
+      padding: const EdgeInsets.only(bottom: AppSpacing.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Text(title, style: Theme.of(context).textTheme.titleLarge),
+          Text(
+            number == null ? question : '$number. $question',
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
           const SizedBox(height: AppSpacing.sm),
-          Text(question, style: Theme.of(context).textTheme.bodyLarge),
-          const SizedBox(height: AppSpacing.md),
           for (var index = 0; index < options.length; index++)
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.xs),
@@ -329,73 +342,22 @@ class _QuestionCard extends StatelessWidget {
               ),
             ),
           if (selectedAnswer != null)
-            Text(
-              isCorrect ? correctMessage : incorrectMessage,
-              style: TextStyle(
-                color:
-                    isCorrect
-                        ? Theme.of(context).colorScheme.primary
-                        : Theme.of(context).colorScheme.error,
+            Container(
+              margin: const EdgeInsets.only(top: AppSpacing.xs),
+              padding: const EdgeInsets.all(AppSpacing.sm),
+              decoration: BoxDecoration(
+                color: (isCorrect ? colors.primary : colors.error).withValues(
+                  alpha: 0.10,
+                ),
+                borderRadius: BorderRadius.circular(12),
               ),
-            ),
-        ],
-      ),
-    );
-  }
-}
-
-class _LessonSection extends StatelessWidget {
-  const _LessonSection({
-    required this.title,
-    required this.body,
-    this.items = const <String>[],
-    this.prompt,
-  });
-
-  final String title;
-  final String body;
-  final List<String> items;
-  final String? prompt;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpacing.xl),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(title, style: Theme.of(context).textTheme.titleLarge),
-          const SizedBox(height: AppSpacing.sm),
-          Text(body, style: Theme.of(context).textTheme.bodyLarge),
-          if (items.isNotEmpty) ...<Widget>[
-            const SizedBox(height: AppSpacing.md),
-            for (final item in items)
-              Padding(
-                padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text('• ', style: Theme.of(context).textTheme.bodyLarge),
-                    Expanded(
-                      child: Text(
-                        item,
-                        style: Theme.of(context).textTheme.bodyLarge,
-                      ),
-                    ),
-                  ],
+              child: Text(
+                '${isCorrect ? 'Correcto.' : 'Todavía no.'} $explanation',
+                style: TextStyle(
+                  color: isCorrect ? colors.primary : colors.error,
                 ),
               ),
-          ],
-          if (prompt != null) ...<Widget>[
-            const SizedBox(height: AppSpacing.md),
-            Text(
-              prompt!,
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                color: Theme.of(context).colorScheme.primary,
-                fontWeight: FontWeight.w600,
-              ),
             ),
-          ],
         ],
       ),
     );

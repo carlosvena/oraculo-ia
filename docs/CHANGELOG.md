@@ -4,7 +4,34 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 3 no iniciado.
+- Sin cambios. Sprint 4 no iniciado.
+
+## 1.2.0-sprint3 — 2026-07-11
+
+### Added
+
+- Experiencia educativa de nueve bloques para la Misión 001.
+- Componente visual reutilizable `LessonBlock`.
+- Analogía, ejemplo práctico y mini laboratorio.
+- Quiz obligatorio de cinco preguntas con explicaciones específicas.
+- Progreso por bloque, porcentaje y tiempo simulado dentro de la misión.
+- Conceptos aprendidos y Misión 002 desbloqueada en el cierre.
+
+### Changed
+
+- Jerarquía visual, espaciado y tarjetas de la misión mejorados.
+- Métricas de tiempo adaptadas a pantallas angostas.
+
+### Verified
+
+- Análisis estático sin errores.
+- 6 pruebas automatizadas aprobadas.
+- APK recorrida de principio a fin en emulador Android.
+
+### Artifact
+
+- `releases/Aprender IA 1.2.apk`
+- Capturas reales: `screenshots/sprint3-*.png`
 
 ## 1.1.0-sprint2 — 2026-07-10
 
