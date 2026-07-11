@@ -14,6 +14,9 @@ class CurrentMissionScreen extends ConsumerWidget {
     required this.progress,
     required this.estimatedMinutes,
     required this.onContinue,
+    required this.onManual,
+    required this.onDictionary,
+    required this.onCatalog,
     super.key,
   });
 
@@ -22,6 +25,9 @@ class CurrentMissionScreen extends ConsumerWidget {
   final double progress;
   final int estimatedMinutes;
   final ValueChanged<Mission> onContinue;
+  final VoidCallback onManual;
+  final VoidCallback onDictionary;
+  final VoidCallback onCatalog;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -99,6 +105,28 @@ class CurrentMissionScreen extends ConsumerWidget {
                 PrimaryMissionAction(
                   label: l10n.continueMission,
                   onPressed: () => onContinue(value),
+                ),
+                const SizedBox(height: 12),
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 4,
+                  children: <Widget>[
+                    TextButton.icon(
+                      onPressed: onManual,
+                      icon: const Icon(Icons.menu_book_outlined),
+                      label: const Text('Manual'),
+                    ),
+                    TextButton.icon(
+                      onPressed: onDictionary,
+                      icon: const Icon(Icons.translate_rounded),
+                      label: const Text('Diccionario'),
+                    ),
+                    TextButton.icon(
+                      onPressed: onCatalog,
+                      icon: const Icon(Icons.grid_view_outlined),
+                      label: const Text('Catálogo'),
+                    ),
+                  ],
                 ),
               ],
             ),

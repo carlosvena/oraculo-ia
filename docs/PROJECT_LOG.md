@@ -123,3 +123,27 @@ nuevas instrucciones.
 ### Estado
 
 Sprint 3 cerrado. Sprint 4 no iniciado; el proyecto queda detenido para revisión.
+
+## Sprint 4 — Plataforma educativa offline
+
+### Terminado
+
+- Contenido de las Misiones 001 y 002 separado del código en JSON versionado
+  dentro de `knowledge/`, con validación y errores editoriales explícitos.
+- Misión 002 «Anatomía de un prompt profesional»: 40 minutos, doce bloques,
+  laboratorio, ocho preguntas y desafío aplicado a supervisión bancaria.
+- Manual offline con índice, artículos, búsqueda y enlaces internos.
+- Diccionario con LLM, Prompt, Token, Ventana de contexto y Agente de IA.
+- Catálogo con duración, dificultad, estado, conceptos y desbloqueo de Misión 002.
+- Accesos secundarios sin desplazar «CONTINUAR MI MISIÓN».
+
+### Calidad y entregables
+
+- `flutter analyze`: sin problemas; 10 pruebas aprobadas.
+- APK ARM64: `releases/Aprender IA 1.3.apk`.
+- APK de validación x86_64: `releases/Aprender IA 1.3 Emulator x64.apk`.
+- Capturas reales: `screenshots/sprint4-*.png`.
+
+### Estado
+
+Sprint 4 cerrado. Sprint 5 no iniciado.

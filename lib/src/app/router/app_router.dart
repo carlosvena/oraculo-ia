@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/features/content/presentation/knowledge_screens.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_screen.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_screen.dart';
@@ -15,6 +16,9 @@ abstract final class AppRoute {
   static const mission = '/mission';
   static const lesson = '/lesson';
   static const progress = '/progress';
+  static const manual = '/manual';
+  static const dictionary = '/dictionary';
+  static const catalog = '/catalog';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -72,6 +76,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                         .startMission001();
                     context.go(AppRoute.lessonFor(mission));
                   },
+                  onManual: () => context.push(AppRoute.manual),
+                  onDictionary: () => context.push(AppRoute.dictionary),
+                  onCatalog: () => context.push(AppRoute.catalog),
                 );
               },
             ),
@@ -95,6 +102,36 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder:
             (context, state) =>
                 ProgressScreen(onContinue: () => context.go(AppRoute.mission)),
+      ),
+      GoRoute(
+        path: AppRoute.manual,
+        builder:
+            (context, state) => ManualScreen(
+              onOpenDictionary:
+                  (id) => context.push('${AppRoute.dictionary}?term=$id'),
+            ),
+      ),
+      GoRoute(
+        path: AppRoute.dictionary,
+        builder:
+            (context, state) => DictionaryScreen(
+              initialTerm: state.uri.queryParameters['term'],
+            ),
+      ),
+      GoRoute(
+        path: AppRoute.catalog,
+        builder: (context, state) {
+          final unlocked =
+              ref.watch(simulatedProgressProvider).status ==
+              MissionProgressStatus.completed;
+          return CatalogScreen(
+            mission002Unlocked: unlocked,
+            onOpenMission002:
+                () => context.push(
+                  '${AppRoute.lesson}/mission-prompts-002/lesson-prompts-002',
+                ),
+          );
+        },
       ),
     ],
   );

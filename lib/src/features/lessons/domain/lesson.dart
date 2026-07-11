@@ -1,11 +1,16 @@
-enum LessonBlockType {
-  title,
-  text,
-  analogy,
-  example,
-  challenge,
-  quiz,
-  summary,
+enum LessonBlockType { title, text, analogy, example, challenge, quiz, summary }
+
+final class LessonQuestion {
+  const LessonQuestion({
+    required this.question,
+    required this.options,
+    required this.correctAnswer,
+    required this.explanation,
+  });
+  final String question;
+  final List<String> options;
+  final int correctAnswer;
+  final String explanation;
 }
 
 final class LessonBlock {
@@ -16,6 +21,7 @@ final class LessonBlock {
     required this.sequence,
     this.items = const <String>[],
     this.prompt,
+    this.questions = const <LessonQuestion>[],
   });
 
   final LessonBlockType type;
@@ -24,6 +30,7 @@ final class LessonBlock {
   final int sequence;
   final List<String> items;
   final String? prompt;
+  final List<LessonQuestion> questions;
 }
 
 final class Lesson {

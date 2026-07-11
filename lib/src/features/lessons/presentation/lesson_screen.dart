@@ -29,22 +29,15 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   var _currentBlock = 0;
   var _isCompleting = false;
   int? _laboratoryAnswer;
-  final List<int?> _quizAnswers = List<int?>.filled(5, null);
-
-  static const _correctQuizAnswers = <int>[0, 1, 2, 0, 1];
+  final List<int?> _quizAnswers = List<int?>.filled(8, null);
 
   bool get _laboratoryComplete => _laboratoryAnswer == 1;
 
-  bool get _quizComplete {
-    for (var index = 0; index < _correctQuizAnswers.length; index++) {
-      if (_quizAnswers[index] != _correctQuizAnswers[index]) return false;
-    }
-    return true;
-  }
-
-  bool _canContinue(domain.LessonBlockType type) => switch (type) {
+  bool _canContinue(domain.LessonBlock block) => switch (block.type) {
     domain.LessonBlockType.challenge => _laboratoryComplete,
-    domain.LessonBlockType.quiz => _quizComplete,
+    domain.LessonBlockType.quiz => block.questions.indexed.every(
+      (entry) => _quizAnswers[entry.$1] == entry.$2.correctAnswer,
+    ),
     _ => true,
   };
 
@@ -82,7 +75,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                 : 'CONTINUAR',
         isLoading: _isCompleting,
         onPressed:
-            lesson != null && block != null && _canContinue(block.type)
+            lesson != null && block != null && _canContinue(block)
                 ? () => _continue(lesson)
                 : null,
       ),
@@ -136,12 +129,14 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                       block: current,
                       child: switch (current.type) {
                         domain.LessonBlockType.challenge => _Laboratory(
+                          questions: current.questions,
                           selectedAnswer: _laboratoryAnswer,
                           onSelected: (answer) {
                             setState(() => _laboratoryAnswer = answer);
                           },
                         ),
                         domain.LessonBlockType.quiz => _Quiz(
+                          questions: current.questions,
                           answers: _quizAnswers,
                           onSelected: (question, answer) {
                             setState(() => _quizAnswers[question] = answer);
@@ -181,87 +176,40 @@ class _TimeMetric extends StatelessWidget {
 }
 
 class _Laboratory extends StatelessWidget {
-  const _Laboratory({required this.selectedAnswer, required this.onSelected});
+  const _Laboratory({
+    required this.questions,
+    required this.selectedAnswer,
+    required this.onSelected,
+  });
 
+  final List<domain.LessonQuestion> questions;
   final int? selectedAnswer;
   final ValueChanged<int> onSelected;
 
   @override
   Widget build(BuildContext context) {
+    final data = questions.single;
     return _QuestionCard(
-      question: '¿Qué datos elegirías?',
-      options: const <String>[
-        'La edad y el color favorito de cada cliente.',
-        'Mensajes reales etiquetados como urgentes y no urgentes.',
-        'Una lista de productos de la empresa.',
-      ],
+      question: data.question,
+      options: data.options,
       selectedAnswer: selectedAnswer,
-      correctAnswer: 1,
-      explanation:
-          'El modelo necesita ejemplos directamente relacionados con la decisión que debe aprender: urgencia frente a no urgencia.',
+      correctAnswer: data.correctAnswer,
+      explanation: data.explanation,
       onSelected: onSelected,
     );
   }
 }
 
 class _Quiz extends StatelessWidget {
-  const _Quiz({required this.answers, required this.onSelected});
+  const _Quiz({
+    required this.questions,
+    required this.answers,
+    required this.onSelected,
+  });
 
+  final List<domain.LessonQuestion> questions;
   final List<int?> answers;
   final void Function(int question, int answer) onSelected;
-
-  static const questions = <_QuestionData>[
-    _QuestionData(
-      '¿Qué aprende principalmente un modelo de IA?',
-      <String>[
-        'Patrones en los datos.',
-        'Verdades absolutas.',
-        'Intenciones humanas.',
-      ],
-      0,
-      'Un modelo ajusta relaciones estadísticas; no descubre automáticamente verdades ni intenciones.',
-    ),
-    _QuestionData(
-      '¿Qué hace con información nueva?',
-      <String>[
-        'La ignora.',
-        'Aplica los patrones aprendidos.',
-        'Busca siempre en Internet.',
-      ],
-      1,
-      'Usa los patrones aprendidos para predecir, clasificar o generar un resultado nuevo.',
-    ),
-    _QuestionData(
-      '¿Por qué una respuesta convincente puede ser incorrecta?',
-      <String>[
-        'Porque el teléfono es lento.',
-        'Porque falta una contraseña.',
-        'Porque estima probabilidades, no garantiza verdad.',
-      ],
-      2,
-      'La fluidez no demuestra exactitud: el modelo produce resultados probables según datos y contexto.',
-    ),
-    _QuestionData(
-      '¿Qué mejora un modelo para detectar spam?',
-      <String>[
-        'Ejemplos bien clasificados.',
-        'Cambiar el nombre de la app.',
-        'Usar una pantalla más grande.',
-      ],
-      0,
-      'Los ejemplos relevantes y bien etiquetados permiten aprender mejor la diferencia entre categorías.',
-    ),
-    _QuestionData(
-      '¿Cuál es el rol del criterio humano?',
-      <String>[
-        'Aceptar toda respuesta.',
-        'Evaluar resultados y riesgos.',
-        'Evitar aportar contexto.',
-      ],
-      1,
-      'Las personas deben comprobar calidad, contexto y consecuencias antes de usar un resultado.',
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -280,20 +228,6 @@ class _Quiz extends StatelessWidget {
       ],
     );
   }
-}
-
-final class _QuestionData {
-  const _QuestionData(
-    this.question,
-    this.options,
-    this.correctAnswer,
-    this.explanation,
-  );
-
-  final String question;
-  final List<String> options;
-  final int correctAnswer;
-  final String explanation;
 }
 
 class _QuestionCard extends StatelessWidget {

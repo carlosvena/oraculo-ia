@@ -4,7 +4,32 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 4 no iniciado.
+- Sin cambios. Sprint 5 no iniciado.
+
+## 1.3.0-sprint4 — 2026-07-11
+
+### Added
+
+- Contenido educativo JSON versionado y validado desde `knowledge/`.
+- Misión 002 profesional con doce bloques, laboratorio y ocho preguntas.
+- Manual offline navegable con búsqueda local y diccionario enlazado.
+- Catálogo de misiones con desbloqueo de Misión 002.
+- Pruebas de carga, errores editoriales, búsqueda, enlaces y desbloqueo.
+
+### Changed
+
+- Misión 001 se carga desde contenido separado del código.
+- Accesos secundarios a Manual, Diccionario y Catálogo.
+
+### Verified
+
+- Análisis estático sin errores y 10 pruebas aprobadas.
+- APK x86_64 ejecutada en emulador Android.
+
+### Artifact
+
+- `releases/Aprender IA 1.3.apk` (ARM64).
+- `releases/Aprender IA 1.3 Emulator x64.apk`.
 
 ## 1.2.0-sprint3 — 2026-07-11
 

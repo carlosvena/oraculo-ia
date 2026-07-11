@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "missions": [
+    {
+      "id": "lesson-models-001", "missionId": "mission-foundations-001", "version": 3,
+      "title": "Qué es realmente un modelo de IA", "objective": "Comprender cómo aprende un modelo y por qué sus respuestas necesitan criterio humano.",
+      "duration": 15, "difficulty": "Inicial", "concepts": ["LLM", "Token"],
+      "blocks": [
+        {"type":"title","title":"Misión 001","content":"Qué es realmente un modelo de Inteligencia Artificial","prompt":"Hoy vas a construir una idea clara que te servirá para entender todo lo que viene después."},
+        {"type":"text","title":"Objetivo de aprendizaje","content":"Al terminar vas a poder explicar qué es un modelo de IA y distinguir patrones estadísticos de comprensión humana."},
+        {"type":"text","title":"Explicación","content":"Un modelo de IA es un sistema matemático que aprende relaciones y patrones a partir de ejemplos. Ante información nueva usa esos patrones para predecir, clasificar o generar.","items":["Aprende de datos.","Aplica patrones a casos nuevos.","Puede equivocarse aunque parezca convincente."]},
+        {"type":"analogy","title":"Analogía","content":"Como una persona que escuchó miles de canciones y anticipa el estilo de una nueva: reconoce patrones, no conoce el futuro."},
+        {"type":"example","title":"Ejemplo práctico","content":"Un filtro de spam aprende observando correos clasificados y calcula si un mensaje nuevo se parece más al spam o al correo válido.","prompt":"Leer más: LLM"},
+        {"type":"challenge","title":"Mini laboratorio","content":"Una empresa quiere detectar mensajes urgentes. Elegí los datos adecuados.","questions":[{"question":"¿Qué datos elegirías?","options":["Edad y color favorito.","Mensajes reales etiquetados como urgentes y no urgentes.","Lista de productos."],"correct":1,"explanation":"El modelo necesita ejemplos directamente relacionados con la decisión."}]},
+        {"type":"quiz","title":"Quiz","content":"Comprobá tu comprensión.","questions":[
+          {"question":"¿Qué aprende un modelo?","options":["Patrones.","Verdades absolutas.","Intenciones."],"correct":0,"explanation":"Ajusta relaciones estadísticas presentes en datos."},
+          {"question":"¿Qué hace con información nueva?","options":["La ignora.","Aplica patrones.","Siempre busca en Internet."],"correct":1,"explanation":"Usa lo aprendido para producir un resultado nuevo."},
+          {"question":"¿Por qué puede equivocarse?","options":["El teléfono es lento.","Falta una clave.","Estima probabilidades, no verdad."],"correct":2,"explanation":"Fluidez no equivale a exactitud."},
+          {"question":"¿Qué mejora un filtro de spam?","options":["Ejemplos bien clasificados.","Otro nombre.","Pantalla grande."],"correct":0,"explanation":"Datos relevantes mejoran los patrones."},
+          {"question":"¿Rol del criterio humano?","options":["Aceptar todo.","Evaluar resultados y riesgos.","Evitar contexto."],"correct":1,"explanation":"Las personas comprueban calidad y consecuencias."}
+        ]},
+        {"type":"summary","title":"Resumen","content":"Un modelo aprende patrones y los aplica a información nueva, pero no garantiza verdad.","items":["Importan los datos.","Importa el contexto.","Hace falta criterio humano."]},
+        {"type":"summary","title":"Misión lista","content":"Ya tenés el concepto base para analizar herramientas de IA.","prompt":"Continuá para registrar tu progreso."}
+      ]
+    },
+    {
+      "id":"lesson-prompts-002","missionId":"mission-prompts-002","version":1,
+      "title":"Anatomía de un prompt profesional","objective":"Diseñar instrucciones que produzcan resultados útiles, verificables y adaptados al contexto.",
+      "duration":40,"difficulty":"Intensiva","concepts":["Prompt","LLM","Token","Ventana de contexto","Agente de IA"],
+      "blocks":[
+        {"type":"title","title":"Misión 002","content":"Anatomía de un prompt profesional","prompt":"Una misión intensiva para transformar pedidos vagos en instrucciones de trabajo."},
+        {"type":"text","title":"Contexto","content":"Los equipos adoptan IA más rápido de lo que aprenden a dirigirla. La diferencia entre probar y producir valor suele estar en la calidad de la instrucción."},
+        {"type":"text","title":"Objetivo de aprendizaje","content":"Vas a construir prompts con propósito, contexto, tarea, restricciones, formato y criterios de calidad."},
+        {"type":"text","title":"Por qué importa","content":"Un prompt profesional reduce ambigüedad, facilita evaluar el resultado y permite repetir un proceso con otras personas."},
+        {"type":"text","title":"Explicación rigurosa","content":"Un prompt es una especificación operativa. Define el resultado buscado, aporta contexto relevante, delimita la tarea, fija restricciones, solicita un formato y declara cómo juzgar calidad. No controla totalmente al modelo: modifica las probabilidades de respuesta dentro de su ventana de contexto."},
+        {"type":"example","title":"Tres ejemplos progresivos","content":"1. Resumí este informe. 2. Resumí el informe para un supervisor en cinco puntos. 3. Identificá riesgos, evidencia y decisiones; separá hechos de inferencias y marcá datos faltantes.","items":["Pedido básico: intención.","Pedido útil: audiencia y formato.","Pedido profesional: criterios y control de incertidumbre."]},
+        {"type":"analogy","title":"Pobre vs. profesional","content":"Pobre: «Analizá estos reclamos». Profesional: «Actuá como analista de calidad. Clasificá los reclamos por causa, citá evidencia, no inventes datos y entregá una tabla con prioridad y acción sugerida»."},
+        {"type":"challenge","title":"Laboratorio","content":"Corregí el prompt deficiente: «Haceme un informe de los clientes». Elegí la mejora profesional.","questions":[{"question":"¿Cuál versión es más sólida?","options":["Hacelo mejor y rápido.","Analizá reclamos del mes para el supervisor; agrupá causas, citá evidencia, señalá datos faltantes y entregá tabla con prioridad.","Escribí muchas páginas."],"correct":1,"explanation":"Define datos, audiencia, tarea, formato y criterio de calidad."}]},
+        {"type":"quiz","title":"Evaluación intensiva","content":"Ocho preguntas de dificultad creciente.","questions":[
+          {"question":"¿Qué reduce primero la ambigüedad?","options":["Propósito claro.","Más adjetivos.","Mayúsculas."],"correct":0,"explanation":"El propósito orienta todas las decisiones posteriores."},
+          {"question":"¿Qué contexto conviene incluir?","options":["Todo lo disponible.","El relevante para la tarea.","Ninguno."],"correct":1,"explanation":"Contexto relevante mejora señal y evita ruido."},
+          {"question":"¿Para qué sirve pedir formato?","options":["Decorar.","Gastar tokens.","Hacer el resultado utilizable y comparable."],"correct":2,"explanation":"Un formato explícito facilita uso y evaluación."},
+          {"question":"¿Cómo tratar datos faltantes?","options":["Pedir que los marque.","Permitir que invente.","Ignorarlos siempre."],"correct":0,"explanation":"Declarar incertidumbre evita falsa precisión."},
+          {"question":"¿Qué ocupa la ventana de contexto?","options":["Solo la respuesta.","Instrucciones, datos e historial relevante.","La batería."],"correct":1,"explanation":"El modelo procesa tokens de entrada y salida dentro de un límite."},
+          {"question":"¿Prompt largo significa mejor?","options":["Siempre.","Nunca puede funcionar.","No; debe ser suficiente y relevante."],"correct":2,"explanation":"Longitud sin propósito agrega ruido y costo."},
+          {"question":"¿Qué vuelve repetible un prompt?","options":["Criterios verificables.","Tono misterioso.","Una sola palabra."],"correct":0,"explanation":"Los criterios permiten comparar ejecuciones."},
+          {"question":"¿Qué agrega un agente?","options":["Solo texto más largo.","Capacidad de planificar, usar herramientas y actuar con controles.","Verdad garantizada."],"correct":1,"explanation":"Un agente combina modelo, objetivos, estado, herramientas y límites."}
+        ]},
+        {"type":"challenge","title":"Desafío: supervisor bancario","content":"Diseñá una instrucción para revisar reclamos por débitos desconocidos. Debe proteger datos, separar hechos de hipótesis, priorizar riesgo y proponer próximos pasos auditables.","prompt":"Antes de continuar, contrastá tu diseño con: propósito, contexto, tarea, restricciones, formato y criterios."},
+        {"type":"summary","title":"Resumen ejecutivo","content":"Un prompt profesional es una especificación evaluable, no una frase mágica. Reduce ambigüedad y explicita calidad, límites e incertidumbre."},
+        {"type":"text","title":"LLM, contexto, tokens y agentes","content":"El LLM procesa el prompt como tokens dentro de una ventana de contexto. Un agente agrega planificación, memoria operativa y herramientas, pero sigue necesitando instrucciones, permisos y controles claros.","prompt":"Leer más: Prompt · LLM · Token · Ventana de contexto · Agente de IA"}
+      ]
+    }
+  ],
+  "articles":[
+    {"id":"modelos","title":"Cómo aprende un modelo","body":"Los modelos ajustan parámetros para capturar regularidades en datos. Su salida es probabilística y debe evaluarse.","links":["llm","token"]},
+    {"id":"prompts-profesionales","title":"Prompts como especificaciones","body":"Un prompt profesional declara propósito, contexto, tarea, restricciones, formato y criterios de aceptación.","links":["prompt","context-window","agent"]},
+    {"id":"evaluacion","title":"Evaluar respuestas de IA","body":"Evaluar implica verificar evidencia, detectar incertidumbre, medir utilidad y considerar riesgo.","links":["llm","agent"]}
+  ],
+  "dictionary":[
+    {"id":"llm","term":"LLM","definition":"Modelo de lenguaje de gran escala.","explanation":"Predice y genera secuencias de tokens aprendiendo patrones de grandes volúmenes de texto y otros datos.","analogy":"Un lector extremadamente entrenado que anticipa cómo continúa un texto.","example":"Redactar un resumen a partir de un informe.","mistake":"Confundir fluidez con comprensión o verdad.","related":["prompt","token","context-window","agent"]},
+    {"id":"prompt","term":"Prompt","definition":"Instrucción y contexto enviados a un modelo.","explanation":"Especifica qué resultado se busca y bajo qué condiciones.","analogy":"Un encargo profesional escrito.","example":"Clasificá reclamos por causa y citá evidencia.","mistake":"Creer que existe una frase mágica universal.","related":["llm","token","context-window"]},
+    {"id":"token","term":"Token","definition":"Unidad en la que el modelo divide la información.","explanation":"Puede ser una palabra, parte de ella, un signo o fragmento de código.","analogy":"Piezas con las que el modelo arma y lee mensajes.","example":"Una oración se convierte en varios tokens.","mistake":"Suponer que un token equivale siempre a una palabra.","related":["llm","context-window","prompt"]},
+    {"id":"context-window","term":"Ventana de contexto","definition":"Cantidad de tokens que un modelo puede considerar en una interacción.","explanation":"Incluye instrucciones, historial, documentos y respuesta generada.","analogy":"Una mesa de trabajo con espacio limitado.","example":"Un documento extenso puede desplazar información anterior.","mistake":"Agregar información irrelevante creyendo que siempre ayuda.","related":["token","prompt","llm"]},
+    {"id":"agent","term":"Agente de IA","definition":"Sistema que usa modelos para planificar y ejecutar acciones con herramientas.","explanation":"Combina objetivo, estado, decisiones, herramientas y controles.","analogy":"Un operador digital con procedimientos y permisos.","example":"Revisar archivos, producir un informe y solicitar aprobación antes de enviarlo.","mistake":"Dar permisos amplios sin límites ni supervisión.","related":["llm","prompt","context-window"]}
+  ]
+}

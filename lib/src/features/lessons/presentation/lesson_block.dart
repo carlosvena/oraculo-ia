@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart' as domain;
 
@@ -45,14 +46,19 @@ class LessonBlock extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Icon(Icons.check_rounded, size: 20, color: visual.foreground),
+                      Icon(
+                        Icons.check_rounded,
+                        size: 20,
+                        color: visual.foreground,
+                      ),
                       const SizedBox(width: AppSpacing.sm),
                       Expanded(child: Text(item)),
                     ],
                   ),
                 ),
             ],
-            if (block.prompt != null) ...<Widget>[
+            if (block.prompt != null &&
+                !block.prompt!.startsWith('Leer más:')) ...<Widget>[
               const SizedBox(height: AppSpacing.lg),
               Container(
                 width: double.infinity,
@@ -71,6 +77,30 @@ class LessonBlock extends StatelessWidget {
                 ),
               ),
             ],
+            if (block.prompt?.startsWith('Leer más:') ?? false) ...<Widget>[
+              const SizedBox(height: AppSpacing.lg),
+              OutlinedButton.icon(
+                onPressed: () {
+                  final first =
+                      block.prompt!
+                          .substring('Leer más:'.length)
+                          .trim()
+                          .split(' · ')
+                          .first;
+                  final id = switch (first) {
+                    'LLM' => 'llm',
+                    'Prompt' => 'prompt',
+                    'Token' => 'token',
+                    'Ventana de contexto' => 'context-window',
+                    'Agente de IA' => 'agent',
+                    _ => 'llm',
+                  };
+                  context.push('/dictionary?term=$id');
+                },
+                icon: const Icon(Icons.menu_book_outlined),
+                label: const Text('LEER MÁS'),
+              ),
+            ],
             if (child != null) ...<Widget>[
               const SizedBox(height: AppSpacing.lg),
               child!,
@@ -81,10 +111,7 @@ class LessonBlock extends StatelessWidget {
     );
   }
 
-  _BlockVisual _visualFor(
-    domain.LessonBlockType type,
-    ColorScheme colors,
-  ) {
+  _BlockVisual _visualFor(domain.LessonBlockType type, ColorScheme colors) {
     return switch (type) {
       domain.LessonBlockType.title => _BlockVisual(
         Icons.auto_awesome_rounded,

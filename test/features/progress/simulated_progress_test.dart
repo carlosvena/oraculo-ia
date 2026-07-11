@@ -22,6 +22,11 @@ void main() {
     expect(progress.streakDays, 1);
     expect(progress.progress, 1);
     expect(progress.elapsedMinutes, 12);
+    expect(
+      progress.status,
+      MissionProgressStatus.completed,
+      reason: 'Completar Misión 001 desbloquea Misión 002 en el catálogo.',
+    );
     expect(progress.status, MissionProgressStatus.completed);
   });
 }
