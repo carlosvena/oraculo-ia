@@ -4,7 +4,13 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 8 no iniciado.
+- Sin cambios. Sprint 9 no iniciado.
+
+## 1.7.0-sprint8 — 2026-07-11
+
+- Mapa de conocimiento navegable con cinco estados visuales.
+- Relaciones entre conceptos y misiones con apertura contextual.
+- Implementación liviana orientada a rendimiento Android.
 
 ## 1.6.0-sprint7 — 2026-07-11
 

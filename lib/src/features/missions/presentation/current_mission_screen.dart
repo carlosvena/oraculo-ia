@@ -19,6 +19,7 @@ class CurrentMissionScreen extends ConsumerWidget {
     required this.onCatalog,
     required this.onThoughtLibrary,
     required this.onPromptLab,
+    required this.onKnowledgeMap,
     super.key,
   });
 
@@ -32,6 +33,7 @@ class CurrentMissionScreen extends ConsumerWidget {
   final VoidCallback onCatalog;
   final VoidCallback onThoughtLibrary;
   final VoidCallback onPromptLab;
+  final VoidCallback onKnowledgeMap;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -139,6 +141,11 @@ class CurrentMissionScreen extends ConsumerWidget {
                       onPressed: onPromptLab,
                       icon: const Icon(Icons.edit_note),
                       label: const Text('Laboratorio'),
+                    ),
+                    TextButton.icon(
+                      onPressed: onKnowledgeMap,
+                      icon: const Icon(Icons.hub_outlined),
+                      label: const Text('Mapa'),
                     ),
                   ],
                 ),

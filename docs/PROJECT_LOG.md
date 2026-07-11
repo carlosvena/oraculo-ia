@@ -188,3 +188,10 @@ Sprint 5 cerrado. Sprint 6 no iniciado.
 - 20 ejercicios en siete categorías y tres niveles de dificultad.
 - Evaluación local reutilizable basada en cinco reglas editoriales.
 - Historial y favoritos persistentes; contrato preparado para comparaciones futuras.
+
+## Sprint 8 — Mapa de conocimiento
+
+- Mapa liviano derivado de misiones y conceptos, sin motor gráfico pesado.
+- Estados: no visto, en aprendizaje, comprendido, necesita repaso y dominado.
+- Cada concepto muestra precedentes, desbloqueos y acceso a su misión.
+- Relaciones generadas desde contenido existente y cubiertas por pruebas.

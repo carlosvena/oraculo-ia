@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_screens.dart';
+import 'package:oraculo_ia/src/features/knowledge_map/presentation/knowledge_map_screen.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_screen.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_screen.dart';
@@ -24,6 +25,7 @@ abstract final class AppRoute {
   static const catalog = '/catalog';
   static const thoughts = '/thoughts';
   static const promptLab = '/prompt-lab';
+  static const knowledgeMap = '/knowledge-map';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -94,6 +96,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onCatalog: () => context.push(AppRoute.catalog),
                   onThoughtLibrary: () => context.push(AppRoute.thoughts),
                   onPromptLab: () => context.push(AppRoute.promptLab),
+                  onKnowledgeMap: () => context.push(AppRoute.knowledgeMap),
                 );
               },
             ),
@@ -151,6 +154,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.promptLab,
         builder: (context, state) => const PromptLabScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.knowledgeMap,
+        builder:
+            (context, state) => KnowledgeMapScreen(
+              onOpenMission: (id) => context.push('${AppRoute.lesson}/$id/$id'),
+            ),
       ),
     ],
   );
