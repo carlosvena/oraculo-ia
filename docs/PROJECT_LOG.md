@@ -226,3 +226,14 @@ Sprint 5 cerrado. Sprint 6 no iniciado.
 - Prueba de recuperación de datos para la vista previa del respaldo.
 
 Pendiente deliberado: publicación en Google Play.
+# Sprint 11 — Misiones 006 a 015
+
+**Estado:** finalizado.
+
+- Diez misiones profesionales nuevas, versionadas en `knowledge/advanced_missions_v1.json`.
+- Duraciones entre 55 y 75 minutos, modos esencial e intensivo soportados por el lector existente.
+- Cada misión contiene al menos diez bloques, laboratorio, actividad de explicación o construcción y ocho preguntas.
+- Misión 015 integra prompt profesional, selección de modelo, verificación y automatización conceptual.
+- Validación editorial automática del número de bloques, preguntas, duración y conceptos.
+
+Calidad: `flutter analyze` sin problemas; 21 pruebas aprobadas.

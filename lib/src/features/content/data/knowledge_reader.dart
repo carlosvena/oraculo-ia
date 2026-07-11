@@ -5,8 +5,112 @@ import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
 
 final class KnowledgeReader {
   const KnowledgeReader();
-  Future<KnowledgeContent> load() async =>
-      parse(await rootBundle.loadString('knowledge/oraculo_content_v1.json'));
+  Future<KnowledgeContent> load() async {
+    final base = parse(
+      await rootBundle.loadString('knowledge/oraculo_content_v1.json'),
+    );
+    final advanced = parseAdvanced(
+      await rootBundle.loadString('knowledge/advanced_missions_v1.json'),
+    );
+    return KnowledgeContent(
+      lessons: <Lesson>[...base.lessons, ...advanced],
+      articles: base.articles,
+      terms: base.terms,
+    );
+  }
+
+  List<Lesson> parseAdvanced(String source) {
+    try {
+      final root = jsonDecode(source);
+      if (root is! Map<String, dynamic> || root['schemaVersion'] != 1) {
+        throw const EditorialContentException(
+          'Versión de misiones avanzadas incompatible.',
+        );
+      }
+      return _list(root, 'missions').map((mission) {
+        final sections = mission['sections'];
+        final quiz = mission['quiz'];
+        if (sections is! List || sections.length < 10) {
+          throw EditorialContentException(
+            '${_text(mission, 'id')} debe tener al menos 10 bloques.',
+          );
+        }
+        if (quiz is! List || quiz.length < 8) {
+          throw EditorialContentException(
+            '${_text(mission, 'id')} debe tener al menos 8 preguntas.',
+          );
+        }
+        final blocks = <LessonBlock>[];
+        for (final (index, raw) in sections.indexed) {
+          final values = (raw as List).cast<String>();
+          if (values.length != 3) {
+            throw const EditorialContentException(
+              'Cada sección avanzada requiere tipo, título y contenido.',
+            );
+          }
+          final type = LessonBlockType.values.firstWhere(
+            (item) => item.name == values[0],
+            orElse: () => throw EditorialContentException(
+              'Tipo avanzado desconocido: ${values[0]}.',
+            ),
+          );
+          blocks.add(
+            LessonBlock(
+              type: type,
+              title: values[1],
+              content: values[2],
+              sequence: index + 1,
+              questions: type == LessonBlockType.challenge
+                  ? const <LessonQuestion>[
+                      LessonQuestion(
+                        question: '¿Completaste esta actividad por escrito?',
+                        options: <String>['Todavía no', 'Sí, la completé'],
+                        correctAnswer: 1,
+                        explanation:
+                            'El aprendizaje activo exige producir una respuesta propia.',
+                      ),
+                    ]
+                  : const <LessonQuestion>[],
+            ),
+          );
+        }
+        blocks.add(
+          LessonBlock(
+            type: LessonBlockType.quiz,
+            title: 'Autoevaluación',
+            content:
+                'Respondé las ocho preguntas. Cada error incluye una explicación para volver a pensar.',
+            sequence: blocks.length + 1,
+            questions: quiz.map((raw) {
+              final values = raw as List;
+              final options = (values[1] as List).cast<String>();
+              final correct = values[2] as int;
+              return LessonQuestion(
+                question: values[0] as String,
+                options: options,
+                correctAnswer: correct,
+                explanation:
+                    'La opción correcta es "${options[correct]}" porque aplica la definición y los controles desarrollados en esta misión.',
+              );
+            }).toList(),
+          ),
+        );
+        return Lesson(
+          id: _text(mission, 'id'),
+          contentVersion: 1,
+          title: 'MISIÓN ${_text(mission, 'number')} — ${_text(mission, 'title')}',
+          objective: _text(mission, 'objective'),
+          estimatedMinutes: mission['duration'] as int,
+          concepts: _strings(mission, 'concepts'),
+          blocks: blocks,
+        );
+      }).toList();
+    } on EditorialContentException {
+      rethrow;
+    } on Object catch (error) {
+      throw EditorialContentException('Misiones avanzadas inválidas: $error');
+    }
+  }
 
   KnowledgeContent parse(String source) {
     try {

@@ -157,9 +157,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                 spacing: AppSpacing.lg,
                 runSpacing: AppSpacing.xs,
                 children: <Widget>[
-                  const _TimeMetric(
+                  _TimeMetric(
                     icon: Icons.schedule_rounded,
-                    label: 'Estimado: 15 minutos',
+                    label: 'Estimado: ${lesson?.estimatedMinutes ?? 15} minutos',
                   ),
                   _TimeMetric(
                     icon: Icons.timer_outlined,

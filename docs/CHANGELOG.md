@@ -168,3 +168,10 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Mejorados texto grande, pantallas pequeñas, contraste semántico y legibilidad.
 - Añadidos metadatos y notas de versión visibles.
 - Añadidos script reproducible de release e instrucciones de instalación.
+# 2.0.0-beta — Sprint 11
+
+- Incorporadas las Misiones 006 a 015 con contenido profesional offline.
+- Incorporados laboratorios, casos reales, actividades de palabras propias y desafíos de construcción.
+- Añadidas 80 preguntas con explicación editorial.
+- Añadido lector y validador para el catálogo avanzado versionado.
+- Corregido el tiempo estimado de cada misión en la interfaz.

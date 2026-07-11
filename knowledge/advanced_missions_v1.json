@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "missions": [
+    {
+      "id":"lesson-transformers-006","number":"006","title":"Transformers y atención","duration":60,"concepts":["Transformer","Atención","Contexto"],
+      "objective":"Explicar cómo la atención relaciona tokens y por qué los Transformers cambiaron la IA.",
+      "sections":[
+        ["title","Tu misión","Vas a desmontar un Transformer sin fórmulas innecesarias y reconstruir su lógica."],
+        ["text","Por qué importa","Los asistentes, traductores y modelos multimodales modernos dependen de esta arquitectura. Entenderla permite razonar sobre contexto, costo y errores."],
+        ["text","Concepto esencial","Un Transformer procesa tokens en paralelo y calcula qué otros tokens son relevantes para interpretar cada uno. Atención no significa conciencia: es ponderación matemática de relaciones."],
+        ["analogy","Analogía","En una reunión, cada palabra consulta el resto de la conversación y asigna más peso a las intervenciones necesarias para comprenderla."],
+        ["example","Caso real","En 'el banco aprobó el crédito porque estaba solvente', la atención ayuda a vincular 'estaba solvente' con el solicitante según el contexto, no solo por cercanía."],
+        ["text","Aplicación laboral","Al redactar instrucciones, ubicá criterios y datos relacionados cerca y con etiquetas claras. Reducís ambigüedad y competencia entre señales."],
+        ["challenge","Laboratorio","Marcá en un procedimiento cinco palabras que cambian el significado de una instrucción. Reescribilo agrupando contexto, tarea y restricciones."],
+        ["challenge","Explicalo con tus palabras","Explicá atención a un colega sin usar 'inteligencia', 'cerebro' ni 'comprender'."],
+        ["text","Errores frecuentes","Confundir atención con razonamiento garantizado; asumir que más contexto siempre mejora; ignorar que el costo crece con la longitud."],
+        ["summary","Resumen ejecutivo","Transformer: arquitectura paralela. Atención: pesos entre tokens. El contexto orienta, pero no garantiza verdad." ]
+      ],
+      "quiz":[
+        ["La atención calcula principalmente...",["Relaciones ponderadas entre tokens","Verdad objetiva","Emociones"],0],
+        ["Un Transformer se diferencia de un enfoque secuencial porque...",["Procesa relaciones en paralelo","No usa datos","Siempre verifica fuentes"],0],
+        ["Atención equivale a conciencia.",["Verdadero","Falso","Solo en modelos grandes"],1],
+        ["Agrupar contexto y restricciones ayuda a...",["Reducir ambigüedad","Eliminar tokens","Entrenar el modelo"],0],
+        ["Más contexto siempre produce mejor resultado.",["Sí","No","Solo en español"],1],
+        ["La posición de los tokens...",["Debe representarse","No importa","Es una fuente externa"],0],
+        ["Una limitación práctica es...",["Costo y ventana finita","No admite texto","No puede comparar"],0],
+        ["La mejor explicación profesional evita...",["Antropomorfizar el mecanismo","Definir tokens","Usar ejemplos"],0]
+      ]
+    },
+    {
+      "id":"lesson-embeddings-007","number":"007","title":"Embeddings: significado como distancia","duration":55,"concepts":["Embedding","Vector","Similitud"],
+      "objective":"Interpretar embeddings y diseñar una búsqueda semántica conceptual.",
+      "sections":[
+        ["title","Tu misión","Convertir significado en una herramienta medible, sin confundir proximidad con verdad."],
+        ["text","Por qué importa","Búsqueda semántica, recomendaciones, clustering y RAG dependen de representaciones vectoriales."],
+        ["text","Concepto esencial","Un embedding es una lista de números aprendida que ubica contenido en un espacio. Elementos usados de forma parecida tienden a quedar cerca."],
+        ["analogy","Analogía","Es un mapa con muchas dimensiones: no marca latitud y longitud, sino rasgos latentes como tema, tono o función."],
+        ["example","Caso real","'Cancelar tarjeta robada' puede encontrar 'bloqueo urgente de plástico' aunque no compartan palabras exactas."],
+        ["text","Aplicación laboral","Un buscador interno puede recuperar procedimientos por intención. Debe filtrar permisos y mostrar la fuente original."],
+        ["challenge","Laboratorio","Creá seis consultas distintas para tres procedimientos y agrupá manualmente cuáles deberían quedar cerca."],
+        ["challenge","Desafío de construcción","Diseñá criterios de aceptación para un buscador semántico bancario: relevancia, seguridad y trazabilidad."],
+        ["text","Errores frecuentes","Creer que cercanía implica exactitud, mezclar datos incompatibles o evaluar solo con ejemplos favorables."],
+        ["summary","Resumen ejecutivo","Los embeddings representan similitud útil. Recuperan candidatos; no certifican hechos ni autorizaciones."]
+      ],
+      "quiz":[
+        ["Un embedding es...",["Una representación vectorial","Una base SQL","Una respuesta verificada"],0],
+        ["Dos textos cercanos son necesariamente verdaderos.",["Sí","No","Si son largos"],1],
+        ["La búsqueda semántica compara...",["Significado aproximado","Solo caracteres","Contraseñas"],0],
+        ["Un uso adecuado es...",["Recuperar documentos candidatos","Autorizar créditos sin control","Firmar contratos"],0],
+        ["La similitud suele medirse con...",["Distancia o coseno","Fecha del archivo","Tamaño de pantalla"],0],
+        ["Antes de mostrar resultados internos hay que...",["Aplicar permisos","Traducir todo","Borrar fuentes"],0],
+        ["Una evaluación seria incluye...",["Casos difíciles y falsos positivos","Solo demos exitosas","Una consulta"],0],
+        ["Embedding y generación son...",["Capacidades distintas","Sinónimos","Siempre online"],0]
+      ]
+    },
+    {
+      "id":"lesson-training-008","number":"008","title":"Inferencia y entrenamiento","duration":60,"concepts":["Inferencia","Entrenamiento","Parámetros"],
+      "objective":"Distinguir construcción y uso de un modelo para tomar decisiones técnicas correctas.",
+      "sections":[
+        ["title","Tu misión","Separar con precisión cuándo un modelo aprende y cuándo solamente calcula una salida."],
+        ["text","Por qué importa","Costos, privacidad, latencia y capacidad de actualizar conocimiento dependen de esta distinción."],
+        ["text","Concepto esencial","Entrenar ajusta parámetros usando datos y una función de pérdida. Inferir mantiene esos parámetros y calcula una salida para una entrada."],
+        ["analogy","Analogía","Entrenar es preparar y evaluar a un analista durante meses; inferir es pedirle resolver un caso hoy con lo aprendido."],
+        ["example","Caso real","Escribir un prompt no reentrena el modelo. Aporta contexto temporal durante la inferencia."],
+        ["text","Aplicación laboral","Si cambia una norma, primero probá aportar la fuente vigente mediante contexto o RAG antes de plantear fine-tuning."],
+        ["challenge","Laboratorio","Clasificá diez acciones como entrenamiento, inferencia, recuperación o evaluación."],
+        ["challenge","Desafío de construcción","Proponé cómo actualizar respuestas normativas sin entrenar un modelo desde cero."],
+        ["text","Errores frecuentes","Decir que el modelo aprende cada conversación, confundir memoria de producto con parámetros y usar fine-tuning para conocimiento volátil."],
+        ["summary","Resumen ejecutivo","Entrenamiento cambia parámetros; inferencia usa parámetros. Contexto y memoria no son entrenamiento."]
+      ],
+      "quiz":[
+        ["Entrenar implica...",["Ajustar parámetros","Escribir un prompt","Copiar una respuesta"],0],
+        ["Inferencia ocurre cuando...",["El modelo genera una salida","Se etiqueta el dataset","Se actualiza Android"],0],
+        ["Un prompt reentrena el modelo.",["Sí","No","Siempre en local"],1],
+        ["Para normas cambiantes conviene primero...",["Contexto recuperado y fuentes","Entrenar desde cero","Ocultar fechas"],0],
+        ["La memoria del producto equivale a pesos.",["No","Sí","Solo en RAG"],0],
+        ["Latencia de inferencia afecta...",["Experiencia de uso","Etiquetado previo","Licencia del dataset"],0],
+        ["Fine-tuning suele servir para...",["Patrones estables de conducta o formato","Noticias diarias","Permisos de archivos"],0],
+        ["Una evaluación debe separar...",["Calidad del modelo y del sistema","Usuario y pantalla","Texto y teclado"],0]
+      ]
+    },
+    {
+      "id":"lesson-hallucinations-009","number":"009","title":"Alucinaciones y verificación","duration":70,"concepts":["Alucinación","Verificación","Fuente"],
+      "objective":"Diseñar un protocolo de verificación proporcional al riesgo.",
+      "sections":[
+        ["title","Tu misión","Pasar de confiar en textos convincentes a operar con evidencia."],
+        ["text","Por qué importa","Un modelo optimiza una continuación plausible; puede producir datos, citas o conclusiones falsas con tono seguro."],
+        ["text","Concepto esencial","Alucinación es contenido no sustentado por la realidad o las fuentes disponibles. No siempre es absurda: suele ser verosímil."],
+        ["analogy","Analogía","Es un expositor brillante que completa huecos para no quedarse callado. Fluidez no equivale a evidencia."],
+        ["example","Caso real","Una respuesta cita una circular inexistente. El control correcto abre la fuente oficial, verifica vigencia y contrasta el alcance."],
+        ["text","Aplicación laboral","Clasificá el riesgo: bajo para ideas, medio para resúmenes, alto para decisiones financieras, legales o personales."],
+        ["challenge","Laboratorio","Auditá una respuesta: separá afirmaciones, marcá verificables, buscá fuente primaria y registrá discrepancias."],
+        ["challenge","Desafío de construcción","Creá una lista de control previa al envío de un informe bancario asistido por IA."],
+        ["text","Errores frecuentes","Pedir 'no alucines', aceptar enlaces por su formato, verificar con otra respuesta del mismo modelo o ignorar fechas."],
+        ["summary","Resumen ejecutivo","La confianza se diseña con fuentes, trazabilidad, controles humanos y acciones proporcionales al riesgo."]
+      ],
+      "quiz":[
+        ["Una respuesta fluida es evidencia.",["No","Sí","Si es extensa"],0],
+        ["La verificación fuerte usa...",["Fuente primaria vigente","Otra redacción","Más adjetivos"],0],
+        ["El riesgo define...",["La intensidad del control","El color de pantalla","La cantidad de emojis"],0],
+        ["'No inventes' elimina alucinaciones.",["No","Sí","En modo intensivo"],0],
+        ["Una cita debe comprobar...",["Existencia, contexto y vigencia","Solo URL","Solo autor"],0],
+        ["Verificar con el mismo modelo es suficiente.",["No","Sí","Si repite"],0],
+        ["En alto riesgo corresponde...",["Revisión humana y evidencia","Publicar rápido","Ocultar incertidumbre"],0],
+        ["Trazabilidad significa...",["Poder reconstruir fuentes y decisiones","Guardar colores","Usar más tokens"],0]
+      ]
+    },
+    {
+      "id":"lesson-open-closed-010","number":"010","title":"Modelos abiertos y cerrados","duration":55,"concepts":["Modelo abierto","Modelo cerrado","Gobernanza"],
+      "objective":"Elegir un enfoque considerando capacidad, control, costo y riesgo.",
+      "sections":[
+        ["title","Tu misión","Evaluar modelos sin reducir la decisión a un ranking."],
+        ["text","Por qué importa","La licencia, los pesos, el despliegue y las condiciones de uso cambian control, responsabilidad y dependencia."],
+        ["text","Concepto esencial","Abierto y cerrado no son etiquetas binarias perfectas. Hay grados de acceso a pesos, código, datos, licencia y servicio."],
+        ["analogy","Analogía","Comprar comida preparada, recibir la receta o administrar la cocina ofrecen distintos niveles de comodidad y control."],
+        ["example","Caso real","Datos sensibles pueden favorecer despliegue controlado; una tarea general puede justificar un servicio administrado con mejores capacidades."],
+        ["text","Aplicación laboral","Evaluá residencia de datos, contrato, auditoría, latencia, capacidades, soporte y costo total."],
+        ["challenge","Laboratorio","Construí una matriz ponderada para tres escenarios: borrador público, documentos internos y decisión regulada."],
+        ["challenge","Desafío de construcción","Defendé dos elecciones distintas para el mismo modelo según cambie la sensibilidad del dato."],
+        ["text","Errores frecuentes","Asumir que abierto es gratis, que cerrado es siempre mejor o comparar solo benchmarks."],
+        ["summary","Resumen ejecutivo","Elegir modelo es elegir un sistema operativo, contractual y de gobernanza, no solo calidad de salida."]
+      ],
+      "quiz":[
+        ["Abierto significa siempre sin costo.",["No","Sí","Solo empresarial"],0],
+        ["Una dimensión clave es...",["Licencia","Color del logo","País del usuario"],0],
+        ["El costo total incluye...",["Infraestructura y operación","Solo tokens","Solo descarga"],0],
+        ["Para datos sensibles importa...",["Gobernanza y residencia","Popularidad","Cantidad de seguidores"],0],
+        ["Un benchmark decide por sí solo.",["No","Sí","Si es reciente"],0],
+        ["Pesos disponibles implican datos de entrenamiento abiertos.",["No necesariamente","Siempre","Nunca hay pesos"],0],
+        ["El soporte es parte de...",["La decisión operativa","La atención","El embedding"],0],
+        ["La elección correcta depende de...",["Tarea, riesgo y restricciones","Una marca universal","El prompt más largo"],0]
+      ]
+    },
+    {
+      "id":"lesson-rag-011","number":"011","title":"RAG: respuestas con evidencia","duration":70,"concepts":["RAG","Recuperación","Chunk"],
+      "objective":"Diseñar conceptualmente un sistema RAG evaluable y trazable.",
+      "sections":[
+        ["title","Tu misión","Construir una cadena de respuesta que pueda mostrar de dónde obtuvo la información."],
+        ["text","Por qué importa","RAG conecta un modelo con conocimiento externo actualizado sin cambiar sus pesos."],
+        ["text","Concepto esencial","El sistema prepara documentos, recupera fragmentos relevantes y los incluye como contexto para generar una respuesta citada."],
+        ["analogy","Analogía","Un analista recibe una pregunta, busca expedientes autorizados, selecciona páginas y redacta citándolas."],
+        ["example","Caso real","Una consulta de procedimiento recupera la versión vigente, sección exacta y fecha antes de responder."],
+        ["text","Aplicación laboral","Separá calidad de recuperación, fidelidad de respuesta, permisos, vigencia y experiencia de usuario."],
+        ["challenge","Laboratorio","Dividí un procedimiento en fragmentos con título, fecha y alcance; formulá cinco consultas de prueba."],
+        ["challenge","Desafío de construcción","Diseñá qué debe hacer el sistema cuando las fuentes se contradicen o no alcanzan."],
+        ["text","Errores frecuentes","Cargar documentos sin metadatos, recuperar demasiados fragmentos, omitir permisos y medir solo respuestas agradables."],
+        ["summary","Resumen ejecutivo","RAG no elimina errores: hace posible fundamentar, actualizar y auditar una respuesta si toda la cadena está bien diseñada."]
+      ],
+      "quiz":[
+        ["RAG cambia los pesos del modelo.",["No","Sí","Siempre"],0],
+        ["La recuperación selecciona...",["Fragmentos relevantes","Parámetros","Usuarios"],0],
+        ["Un chunk necesita...",["Contexto y metadatos","Solo longitud","Una imagen"],0],
+        ["Los permisos deben aplicarse...",["Antes de recuperar y mostrar","Después de publicar","Nunca"],0],
+        ["Más fragmentos siempre mejora.",["No","Sí","En PDFs"],0],
+        ["Sin evidencia suficiente conviene...",["Declararlo y no inventar","Completar huecos","Ocultar fuentes"],0],
+        ["Una métrica de recuperación es...",["Relevancia de candidatos","Color del texto","Velocidad de tipeo"],0],
+        ["La vigencia se controla con...",["Metadatos y reglas","Temperatura","Nombre del modelo"],0]
+      ]
+    },
+    {
+      "id":"lesson-mcp-012","number":"012","title":"MCP: conectar herramientas con contexto","duration":60,"concepts":["MCP","Herramienta","Permiso"],
+      "objective":"Entender el rol de MCP y diseñar una integración con permisos mínimos.",
+      "sections":[
+        ["title","Tu misión","Diseñar conexiones útiles sin convertir al modelo en un usuario todopoderoso."],
+        ["text","Por qué importa","Los modelos necesitan acceder de forma estandarizada a recursos y herramientas para actuar sobre sistemas reales."],
+        ["text","Concepto esencial","MCP define una forma de exponer recursos, prompts y herramientas a clientes compatibles. El protocolo no reemplaza autenticación ni gobierno."],
+        ["analogy","Analogía","Es un enchufe estándar; que un dispositivo encaje no significa que deba recibir acceso a toda la instalación."],
+        ["example","Caso real","Un servidor puede exponer lectura de procedimientos y otra herramienta separada para crear un borrador, sin permiso para aprobarlo."],
+        ["text","Aplicación laboral","Definí operaciones estrechas, validá entradas, registrá llamadas y pedí confirmación para acciones sensibles."],
+        ["challenge","Laboratorio","Diseñá tres herramientas: consultar caso, crear borrador y escalar. Especificá entrada, salida y permiso."],
+        ["challenge","Desafío de construcción","Creá un modelo de amenazas para una herramienta que accede a documentos internos."],
+        ["text","Errores frecuentes","Confundir estándar con seguridad, ofrecer herramientas demasiado amplias y no tratar el contenido externo como no confiable."],
+        ["summary","Resumen ejecutivo","MCP estandariza conexión; la seguridad surge de identidad, autorización, validación, confirmación y auditoría."]
+      ],
+      "quiz":[
+        ["MCP es principalmente...",["Un protocolo de conexión","Un modelo","Una base vectorial"],0],
+        ["MCP reemplaza permisos.",["No","Sí","Solo offline"],0],
+        ["Una herramienta segura debe ser...",["Estrecha y validada","Todopoderosa","Anónima"],0],
+        ["Una acción sensible requiere...",["Confirmación y auditoría","Más creatividad","Menos contexto"],0],
+        ["El contenido externo puede contener...",["Instrucciones maliciosas","Pesos del modelo","Batería"],0],
+        ["Un recurso suele ofrecer...",["Datos para leer","Acciones irreversibles","Entrenamiento"],0],
+        ["El menor privilegio significa...",["Solo acceso necesario","Acceso administrador","Sin registros"],0],
+        ["Una integración madura registra...",["Quién hizo qué y cuándo","Solo errores visuales","Solo prompts"],0]
+      ]
+    },
+    {
+      "id":"lesson-agents-013","number":"013","title":"Agentes de IA","duration":70,"concepts":["Agente de IA","Planificación","Herramienta"],
+      "objective":"Diseñar un agente limitado, observable y recuperable.",
+      "sections":[
+        ["title","Tu misión","Pasar de un chatbot que responde a un sistema que persigue un objetivo bajo control."],
+        ["text","Por qué importa","Un agente combina modelo, estado, herramientas y bucle de decisión; multiplica capacidad y también riesgo."],
+        ["text","Concepto esencial","El agente observa, decide una acción, usa una herramienta, evalúa el resultado y repite hasta terminar o detenerse."],
+        ["analogy","Analogía","Es delegar a un asistente con agenda y llaves: necesita objetivo, límites, presupuesto y puntos de aprobación."],
+        ["example","Caso real","Un agente prepara un informe: recopila datos autorizados, detecta faltantes, redacta y entrega borrador; no lo envía sin aprobación."],
+        ["text","Aplicación laboral","Usá estados explícitos, límite de pasos, herramientas idempotentes, registro y escalamiento humano."],
+        ["challenge","Laboratorio","Dibujá estados y transiciones para un agente que clasifica reclamos y prepara una respuesta."],
+        ["challenge","Desafío de construcción","Definí cinco condiciones de detención y tres acciones que siempre requieren aprobación."],
+        ["text","Errores frecuentes","Objetivo ambiguo, bucles infinitos, permisos amplios, memoria sin depurar y ausencia de evaluación por tarea."],
+        ["summary","Resumen ejecutivo","La autonomía profesional es limitada, observable y reversible. Más agencia exige más control."]
+      ],
+      "quiz":[
+        ["Un agente combina...",["Modelo, estado y herramientas","Solo un prompt","Solo una voz"],0],
+        ["El límite de pasos evita...",["Bucles y costos descontrolados","Embeddings","Versionado"],0],
+        ["Idempotencia permite...",["Reintentar sin duplicar efectos","Entrenar más rápido","Hablar"],0],
+        ["Acciones irreversibles requieren...",["Aprobación","Temperatura alta","Memoria larga"],0],
+        ["Un objetivo ambiguo...",["Dificulta evaluar y detener","Siempre inspira","Reduce riesgo"],0],
+        ["La observabilidad registra...",["Decisiones y acciones","Solo resultado final","Solo usuario"],0],
+        ["La memoria debe...",["Tener alcance y depuración","Guardar todo siempre","Ser pública"],0],
+        ["Más autonomía implica...",["Más controles","Menos pruebas","Sin permisos"],0]
+      ]
+    },
+    {
+      "id":"lesson-automation-014","number":"014","title":"Automatización con IA","duration":65,"concepts":["Automatización","Workflow","Control humano"],
+      "objective":"Seleccionar y diseñar automatizaciones confiables con IA.",
+      "sections":[
+        ["title","Tu misión","Automatizar decisiones repetibles sin automatizar irresponsablemente la incertidumbre."],
+        ["text","Por qué importa","La IA amplía qué partes no estructuradas de un proceso pueden asistirse, pero introduce variabilidad."],
+        ["text","Concepto esencial","Un workflow confiable separa pasos deterministas, pasos probabilísticos, validaciones y aprobaciones."],
+        ["analogy","Analogía","Una línea de producción usa máquinas para tareas repetibles e inspectores donde el error importa."],
+        ["example","Caso real","Clasificar correos puede ser probabilístico; consultar saldo y registrar una operación deben respetar reglas deterministas y permisos."],
+        ["text","Aplicación laboral","Priorizá alto volumen, bajo riesgo, datos disponibles y resultado verificable. Medí tiempo, calidad y excepciones."],
+        ["challenge","Laboratorio","Mapeá un proceso real y coloreá pasos: automatizable, asistible, humano obligatorio y prohibido."],
+        ["challenge","Desafío de construcción","Diseñá una automatización de informe diario con entradas, validaciones, fallback y auditoría."],
+        ["text","Errores frecuentes","Automatizar un proceso roto, omitir casos excepcionales, no definir dueño y medir solo velocidad."],
+        ["summary","Resumen ejecutivo","Automatizar bien es diseñar el proceso completo: valor, límites, controles, excepciones y mejora continua."]
+      ],
+      "quiz":[
+        ["Un paso probabilístico...",["Puede variar con la misma intención","Siempre es exacto","No usa datos"],0],
+        ["Primero conviene automatizar...",["Alto volumen y resultado verificable","Toda decisión crítica","Procesos desconocidos"],0],
+        ["Un fallback define...",["Qué hacer ante falla","El logo","El entrenamiento"],0],
+        ["Automatizar un proceso roto...",["Escala sus problemas","Lo corrige siempre","Reduce excepciones"],0],
+        ["Una métrica completa incluye...",["Calidad, tiempo y excepciones","Solo velocidad","Solo uso"],0],
+        ["La aprobación humana se ubica...",["Según riesgo e irreversibilidad","Al azar","Nunca"],0],
+        ["El dueño del proceso responde por...",["Resultado y controles","El color","El modelo solamente"],0],
+        ["Una automatización auditable conserva...",["Entradas, decisiones y resultados","Solo salida","Nada"],0]
+      ]
+    },
+    {
+      "id":"lesson-project-015","number":"015","title":"Proyecto integrador 1","duration":75,"concepts":["Prompt profesional","Selección de modelo","Verificación","Automatización"],
+      "objective":"Diseñar una solución completa, justificable y segura para un problema laboral.",
+      "sections":[
+        ["title","Tu proyecto","Diseñar un asistente para preparar el informe semanal de un supervisor bancario."],
+        ["text","Contexto","El informe resume incidentes, tendencias y acciones. Usa datos internos, requiere exactitud y termina en una decisión humana."],
+        ["text","Criterios de éxito","Reducir tiempo sin perder trazabilidad; citar fuentes; proteger datos; separar hechos, inferencias y recomendaciones."],
+        ["example","Prompt profesional","Definí rol, objetivo, entradas autorizadas, estructura, criterios de evidencia, manejo de faltantes y prohibiciones."],
+        ["text","Selección de modelo","Compará capacidad con documentos, privacidad, contexto, costo, latencia y condiciones contractuales. Justificá la elección."],
+        ["text","Verificación","Cada cifra debe reconciliarse con la fuente. Toda recomendación debe distinguirse de los hechos y pasar revisión humana."],
+        ["challenge","Laboratorio","Escribí el prompt completo y una tabla de cinco pruebas: normal, dato faltante, contradicción, instrucción maliciosa y volumen extremo."],
+        ["challenge","Automatización conceptual","Dibujá entrada, validación, recuperación, generación, verificación, aprobación, entrega y auditoría."],
+        ["text","Errores a prevenir","Enviar automáticamente, mezclar períodos, exponer datos, citar fuentes inexistentes y ocultar incertidumbre."],
+        ["summary","Reflexión final","Explicá qué delegaste, qué conservaste bajo juicio humano y qué evidencia demostraría que el sistema aporta valor."]
+      ],
+      "quiz":[
+        ["El prompt debe definir...",["Tarea, evidencia y límites","Solo tono","Solo extensión"],0],
+        ["La elección de modelo depende de...",["Tarea, datos y restricciones","Popularidad","Una marca fija"],0],
+        ["Una cifra se acepta cuando...",["Se reconcilia con la fuente","Suena razonable","Aparece dos veces"],0],
+        ["Un dato faltante debe...",["Declararse y escalarse","Inventarse","Ocultarse"],0],
+        ["La salida final requiere...",["Aprobación humana","Envío automático","Temperatura alta"],0],
+        ["Una prueba adversarial incluye...",["Instrucción maliciosa en datos","Solo caso ideal","Cambio de color"],0],
+        ["La auditoría permite...",["Reconstruir el proceso","Crear embeddings","Cambiar pesos"],0],
+        ["El éxito se mide con...",["Calidad, tiempo, riesgo y adopción","Solo velocidad","Cantidad de texto"],0]
+      ]
+    }
+  ]
+}
