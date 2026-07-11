@@ -4,7 +4,13 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Sin cambios. Sprint 7 no iniciado.
+- Sin cambios. Sprint 8 no iniciado.
+
+## 1.6.0-sprint7 — 2026-07-11
+
+- Laboratorio offline con editor, historial, favoritos y comparación explicada.
+- Veinte ejercicios reales organizados en siete categorías y tres niveles.
+- Motor local de evaluación editorial y pruebas asociadas.
 
 ## 1.5.0-sprint6 — 2026-07-11
 

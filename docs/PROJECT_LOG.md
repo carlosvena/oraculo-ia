@@ -181,3 +181,10 @@ Sprint 5 cerrado. Sprint 6 no iniciado.
 - Buscador, filtros, favoritos y sección «Qué puedo aplicar yo».
 - Contenido desacoplado en `knowledge/thought_library_v1.json` con validación.
 - Calidad: `flutter analyze` limpio y suite de pruebas ampliada.
+
+## Sprint 7 — Laboratorio de prompts
+
+- Editor, plantillas guiadas, comparación original/mejorado y explicación.
+- 20 ejercicios en siete categorías y tres niveles de dificultad.
+- Evaluación local reutilizable basada en cinco reglas editoriales.
+- Historial y favoritos persistentes; contrato preparado para comparaciones futuras.

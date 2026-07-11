@@ -27,6 +27,7 @@ final class LearningState {
     reviews: (json['reviews'] as Map<String, dynamic>? ?? const {}).map(
       (key, value) => MapEntry(key, ReviewLevel.values.byName(value as String)),
     ),
+    promptHistory: (json['promptHistory'] as List? ?? const []).cast<String>(),
   );
   const LearningState({
     this.currentLessonId = 'lesson-models-001',
@@ -39,6 +40,7 @@ final class LearningState {
     this.favorites = const <String>{},
     this.mode = LearningMode.intensive,
     this.reviews = const <String, ReviewLevel>{},
+    this.promptHistory = const <String>[],
   });
   final String currentLessonId;
   final int currentBlock;
@@ -50,6 +52,7 @@ final class LearningState {
   final Set<String> favorites;
   final LearningMode mode;
   final Map<String, ReviewLevel> reviews;
+  final List<String> promptHistory;
 
   Map<String, Object> toJson() => <String, Object>{
     'currentLessonId': currentLessonId,
@@ -62,6 +65,7 @@ final class LearningState {
     'favorites': favorites.toList(),
     'mode': mode.name,
     'reviews': reviews.map((key, value) => MapEntry(key, value.name)),
+    'promptHistory': promptHistory,
   };
   LearningState copyWith({
     String? currentLessonId,
@@ -74,6 +78,7 @@ final class LearningState {
     Set<String>? favorites,
     LearningMode? mode,
     Map<String, ReviewLevel>? reviews,
+    List<String>? promptHistory,
   }) => LearningState(
     currentLessonId: currentLessonId ?? this.currentLessonId,
     currentBlock: currentBlock ?? this.currentBlock,
@@ -85,6 +90,7 @@ final class LearningState {
     favorites: favorites ?? this.favorites,
     mode: mode ?? this.mode,
     reviews: reviews ?? this.reviews,
+    promptHistory: promptHistory ?? this.promptHistory,
   );
 }
 
@@ -184,5 +190,15 @@ final class LearningStateNotifier extends AsyncNotifier<LearningState> {
     final values = <String>{...current.favorites};
     values.contains(id) ? values.remove(id) : values.add(id);
     await _set(current.copyWith(favorites: values));
+  }
+
+  Future<void> addPromptHistory(String prompt) async {
+    final current = state.requireValue;
+    final values =
+        <String>[
+          prompt,
+          ...current.promptHistory.where((item) => item != prompt),
+        ].take(20).toList();
+    await _set(current.copyWith(promptHistory: values));
   }
 }
