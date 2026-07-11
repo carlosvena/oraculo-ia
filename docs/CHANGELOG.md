@@ -160,3 +160,11 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 ### Artifact
 
 - `releases/Aprender IA 1.apk`
+# 1.9.0-beta — Sprint 10
+
+- Añadida recuperación segura ante errores de navegación o contenido.
+- Añadida vista previa antes de importar un respaldo.
+- Añadido diagnóstico local exportable.
+- Mejorados texto grande, pantallas pequeñas, contraste semántico y legibilidad.
+- Añadidos metadatos y notas de versión visibles.
+- Añadidos script reproducible de release e instrucciones de instalación.

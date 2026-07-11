@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/core/error/app_error_boundary.dart';
 import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_screens.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/presentation/knowledge_map_screen.dart';
@@ -38,6 +39,10 @@ abstract final class AppRoute {
 final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: AppRoute.splash,
+    errorBuilder: (context, state) => RecoveryScreen(
+      message: state.error?.toString() ?? 'Ruta no disponible.',
+      onRecover: () => context.go(AppRoute.mission),
+    ),
     routes: <RouteBase>[
       GoRoute(
         path: AppRoute.splash,

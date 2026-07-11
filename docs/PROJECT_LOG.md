@@ -213,3 +213,16 @@ Sprint 5 cerrado. Sprint 6 no iniciado.
 - Firma privada de distribución y automatización reproducible de releases.
 - Revisión editorial con fuentes y autoría formal para ampliar la biblioteca.
 - Evolución del almacenamiento si el historial supera el alcance de preferencias.
+# Sprint 10 — Calidad Beta y distribución
+
+**Estado:** finalizado.
+
+- Recuperación centralizada ante rutas o contenido inválido.
+- Importación de respaldo en dos pasos: validación, vista previa y confirmación.
+- Diagnóstico local exportable sin respuestas ni datos personales.
+- Versión, compilación y notas visibles.
+- Diseño adaptable a pantallas angostas y escalado de texto hasta 200%.
+- Script reproducible de APK ARM64 y guía de instalación.
+- Prueba de recuperación de datos para la vista previa del respaldo.
+
+Pendiente deliberado: publicación en Google Play.

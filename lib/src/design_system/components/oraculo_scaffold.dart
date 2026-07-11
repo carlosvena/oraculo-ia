@@ -15,10 +15,14 @@ class OraculoScaffold extends StatelessWidget {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 640),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppSpacing.lg,
+              padding: EdgeInsets.fromLTRB(
+                MediaQuery.sizeOf(context).width < 360
+                    ? AppSpacing.md
+                    : AppSpacing.lg,
                 AppSpacing.xl,
-                AppSpacing.lg,
+                MediaQuery.sizeOf(context).width < 360
+                    ? AppSpacing.md
+                    : AppSpacing.lg,
                 AppSpacing.lg,
               ),
               child: Column(
