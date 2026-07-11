@@ -237,3 +237,14 @@ Pendiente deliberado: publicación en Google Play.
 - Validación editorial automática del número de bloques, preguntas, duración y conceptos.
 
 Calidad: `flutter analyze` sin problemas; 21 pruebas aprobadas.
+# Sprint 12 — Comparador de modelos
+
+**Estado:** finalizado.
+
+- Diez fichas de producto/modelo separadas del código.
+- Comparación por nueve tareas con explicación de fortalezas, límites, privacidad y usos desaconsejados.
+- Fecha de revisión, fuente y estado de verificación visibles.
+- Campo de costo local editable, deliberadamente sin precio fijo para evitar datos obsoletos.
+- Ejercicio de elección contextual en cada ficha.
+
+Calidad: `flutter analyze` sin problemas; 23 pruebas aprobadas.

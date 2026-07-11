@@ -23,6 +23,7 @@ class CurrentMissionScreen extends ConsumerWidget {
     required this.onKnowledgeMap,
     required this.onAbout,
     required this.onBackup,
+    required this.onModelComparator,
     super.key,
   });
   final String statusLabel, nextAction;
@@ -37,6 +38,7 @@ class CurrentMissionScreen extends ConsumerWidget {
       onKnowledgeMap,
       onAbout,
       onBackup;
+  final VoidCallback onModelComparator;
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
@@ -146,6 +148,7 @@ class CurrentMissionScreen extends ConsumerWidget {
                     _Access('Ideas', Icons.lightbulb_outline, onThoughtLibrary),
                     _Access('Laboratorio', Icons.edit_note, onPromptLab),
                     _Access('Mapa', Icons.hub_outlined, onKnowledgeMap),
+                    _Access('Modelos', Icons.compare_arrows, onModelComparator),
                     _Access('Respaldo', Icons.save_alt, onBackup),
                     _Access('Acerca', Icons.info_outline, onAbout),
                   ],

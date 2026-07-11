@@ -175,3 +175,9 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadidas 80 preguntas con explicación editorial.
 - Añadido lector y validador para el catálogo avanzado versionado.
 - Corregido el tiempo estimado de cada misión en la interfaz.
+# 2.1.0-beta — Sprint 12
+
+- Añadido comparador offline de ChatGPT, Gemini, Claude, Copilot, DeepSeek, Qwen, GLM, Grok, Mistral y Llama.
+- Añadidos filtros para nueve tipos de tarea.
+- Añadidos fuente, fecha editorial y estado de verificación por ficha.
+- Añadidas advertencias de privacidad y campos de costo editables.
