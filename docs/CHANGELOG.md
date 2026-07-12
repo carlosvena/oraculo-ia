@@ -210,3 +210,7 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadido Manual Maestro exportable en PDF, Markdown y HTML.
 - Añadidos filtros de exportación y modo lectura accesible.
 - Añadido PDF real de validación en releases.
+# 2.7.0-beta - Sprint 18
+
+- Añadido Constructor de proyectos con cinco recorridos completos.
+- Añadidos checklist, progreso, evaluación y documentación requerida.

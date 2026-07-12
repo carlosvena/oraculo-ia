@@ -310,3 +310,12 @@ Calidad: `flutter analyze` sin problemas; 32 pruebas aprobadas.
 - PDF real generado y renderizado para control visual.
 
 Calidad: `flutter analyze` limpio; 33 pruebas aprobadas.
+# Sprint 18 - Constructor de proyectos
+
+**Estado:** finalizado.
+
+- Cinco proyectos profesionales completos y separados del código.
+- Objetivos, conocimientos, misiones previas, pasos, entregables, criterios, riesgos y evaluación.
+- Checklist interactivo y progreso por proyecto.
+
+Calidad: `flutter analyze` limpio; 34 pruebas aprobadas.

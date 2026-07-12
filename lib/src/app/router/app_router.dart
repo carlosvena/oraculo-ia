@@ -18,6 +18,7 @@ import 'package:oraculo_ia/src/features/onboarding/presentation/welcome_screen.d
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/progress_screen.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/simulated_progress.dart';
+import 'package:oraculo_ia/src/features/projects/project_builder.dart';
 import 'package:oraculo_ia/src/features/prompt_lab/presentation/prompt_lab_screen.dart';
 import 'package:oraculo_ia/src/features/review/presentation/review_screen.dart';
 import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
@@ -42,6 +43,7 @@ abstract final class AppRoute {
   static const review = '/review';
   static const editorial = '/editorial';
   static const manualExport='/manual-export';
+  static const projects='/projects';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -125,6 +127,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onReview: () => context.push(AppRoute.review),
                   onEditorial: () => context.push(AppRoute.editorial),
                   onManualExport:()=>context.push(AppRoute.manualExport),
+                  onProjects:()=>context.push(AppRoute.projects),
                 );
               },
             ),
@@ -216,6 +219,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(path: AppRoute.editorial,builder:(context,state)=>const EditorialStatusScreen()),
       GoRoute(path:AppRoute.manualExport,builder:(context,state)=>const ManualExportScreen()),
+      GoRoute(path:AppRoute.projects,builder:(context,state)=>const ProjectBuilderScreen()),
     ],
   );
 });
