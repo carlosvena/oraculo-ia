@@ -200,3 +200,8 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadidas sesiones de tres duraciones con cuatro tipos de actividad.
 - Añadido registro persistente de errores y seguridad declarada.
 - Añadida explicación de recomendación y próxima fecha.
+# 2.5.0-beta - Sprint 16
+
+- Añadido manifiesto de gobierno editorial.
+- Añadidas validaciones de fuentes, citas, fechas y caducidad.
+- Añadida pantalla Estado del conocimiento.

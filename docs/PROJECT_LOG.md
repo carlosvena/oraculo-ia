@@ -289,3 +289,13 @@ Calidad: `flutter analyze` sin problemas; pruebas completas validadas tras corre
 - Persistencia compatible hacia atrás para errores, seguridad y último estudio.
 
 Calidad: `flutter analyze` sin problemas; 30 pruebas aprobadas.
+# Sprint 16 - Gobierno y calidad editorial
+
+**Estado:** finalizado.
+
+- Manifiesto editorial transversal con autor, versión, fechas, estado, fuentes, notas y próxima revisión.
+- Validación de fechas, enlaces vacíos, afirmaciones actuales y citas textuales sin fuente.
+- Detección automática de contenido vencido.
+- Pantalla interna Estado del conocimiento.
+
+Calidad: `flutter analyze` sin problemas; 32 pruebas aprobadas.
