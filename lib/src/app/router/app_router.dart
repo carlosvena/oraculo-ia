@@ -17,6 +17,7 @@ import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart'
 import 'package:oraculo_ia/src/features/progress/presentation/progress_screen.dart';
 import 'package:oraculo_ia/src/features/progress/presentation/simulated_progress.dart';
 import 'package:oraculo_ia/src/features/prompt_lab/presentation/prompt_lab_screen.dart';
+import 'package:oraculo_ia/src/features/review/presentation/review_screen.dart';
 import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
 
 abstract final class AppRoute {
@@ -36,6 +37,7 @@ abstract final class AppRoute {
   static const modelComparator = '/model-comparator';
   static const learnerProfile = '/learner-profile';
   static const assessment = '/assessment';
+  static const review = '/review';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -116,6 +118,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onModelComparator: () => context.push(AppRoute.modelComparator),
                   onLearnerProfile: () => context.push(AppRoute.learnerProfile),
                   onAssessment: () => context.push(AppRoute.assessment),
+                  onReview: () => context.push(AppRoute.review),
                 );
               },
             ),
@@ -200,6 +203,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.assessment,
         builder: (context, state) => const AssessmentScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.review,
+        builder: (context, state) => const ReviewScreen(),
       ),
     ],
   );

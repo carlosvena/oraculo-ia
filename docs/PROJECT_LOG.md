@@ -278,3 +278,14 @@ Calidad: `flutter analyze` sin problemas; 25 pruebas aprobadas.
 - Marcado para revisión personal y pruebas de dominio tras misiones 005, 010 y 015.
 
 Calidad: `flutter analyze` sin problemas; pruebas completas validadas tras corregir la expectativa editorial.
+# Sprint 15 - Repaso inteligente
+
+**Estado:** finalizado.
+
+- Motor local que pondera errores, conceptos difíciles, antigüedad, pruebas marcadas y seguridad declarada.
+- Sesiones de 5, 15 y 30 minutos.
+- Tarjetas de recuerdo, preguntas, casos y corrección de prompts.
+- Razón de selección y fecha de próxima aparición visibles.
+- Persistencia compatible hacia atrás para errores, seguridad y último estudio.
+
+Calidad: `flutter analyze` sin problemas; 30 pruebas aprobadas.

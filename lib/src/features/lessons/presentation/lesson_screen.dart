@@ -206,6 +206,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                           selectedAnswer: _laboratoryAnswer,
                           onSelected: (answer) {
                             setState(() => _laboratoryAnswer = answer);
+                            if (answer != current.questions.single.correctAnswer) {
+                              ref.read(learningStateProvider.notifier).recordMistake(widget.lessonId);
+                            }
                             ref
                                 .read(learningStateProvider.notifier)
                                 .savePosition(
@@ -220,6 +223,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                           answers: _quizAnswers,
                           onSelected: (question, answer) {
                             setState(() => _quizAnswers[question] = answer);
+                            if (answer != current.questions[question].correctAnswer) {
+                              ref.read(learningStateProvider.notifier).recordMistake(widget.lessonId);
+                            }
                             ref
                                 .read(learningStateProvider.notifier)
                                 .savePosition(

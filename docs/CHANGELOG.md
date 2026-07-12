@@ -194,3 +194,9 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadida rúbrica profesional local de seis criterios.
 - Añadidas pruebas de dominio cada cinco misiones.
 - Añadida revisión personal de respuestas y ejemplos sólidos.
+# 2.4.0-beta - Sprint 15
+
+- Añadido motor local de repaso espaciado y priorizado.
+- Añadidas sesiones de tres duraciones con cuatro tipos de actividad.
+- Añadido registro persistente de errores y seguridad declarada.
+- Añadida explicación de recomendación y próxima fecha.

@@ -28,6 +28,9 @@ final class LearningState {
       (key, value) => MapEntry(key, ReviewLevel.values.byName(value as String)),
     ),
     promptHistory: (json['promptHistory'] as List? ?? const []).cast<String>(),
+    mistakeConcepts: Set<String>.from(json['mistakeConcepts'] as List? ?? const []),
+    confidence: (json['confidence'] as Map<String, dynamic>? ?? const {}).map((key,value)=>MapEntry(key,value as int)),
+    lastStudyEpoch: json['lastStudyEpoch'] as int? ?? 0,
   );
   const LearningState({
     this.currentLessonId = 'lesson-models-001',
@@ -41,6 +44,9 @@ final class LearningState {
     this.mode = LearningMode.intensive,
     this.reviews = const <String, ReviewLevel>{},
     this.promptHistory = const <String>[],
+    this.mistakeConcepts = const <String>{},
+    this.confidence = const <String,int>{},
+    this.lastStudyEpoch = 0,
   });
   final String currentLessonId;
   final int currentBlock;
@@ -53,6 +59,9 @@ final class LearningState {
   final LearningMode mode;
   final Map<String, ReviewLevel> reviews;
   final List<String> promptHistory;
+  final Set<String> mistakeConcepts;
+  final Map<String,int> confidence;
+  final int lastStudyEpoch;
 
   Map<String, Object> toJson() => <String, Object>{
     'currentLessonId': currentLessonId,
@@ -66,6 +75,9 @@ final class LearningState {
     'mode': mode.name,
     'reviews': reviews.map((key, value) => MapEntry(key, value.name)),
     'promptHistory': promptHistory,
+    'mistakeConcepts': mistakeConcepts.toList(),
+    'confidence': confidence,
+    'lastStudyEpoch': lastStudyEpoch,
   };
   LearningState copyWith({
     String? currentLessonId,
@@ -79,6 +91,9 @@ final class LearningState {
     LearningMode? mode,
     Map<String, ReviewLevel>? reviews,
     List<String>? promptHistory,
+    Set<String>? mistakeConcepts,
+    Map<String,int>? confidence,
+    int? lastStudyEpoch,
   }) => LearningState(
     currentLessonId: currentLessonId ?? this.currentLessonId,
     currentBlock: currentBlock ?? this.currentBlock,
@@ -91,6 +106,9 @@ final class LearningState {
     mode: mode ?? this.mode,
     reviews: reviews ?? this.reviews,
     promptHistory: promptHistory ?? this.promptHistory,
+    mistakeConcepts: mistakeConcepts ?? this.mistakeConcepts,
+    confidence: confidence ?? this.confidence,
+    lastStudyEpoch: lastStudyEpoch ?? this.lastStudyEpoch,
   );
 }
 
@@ -165,6 +183,7 @@ final class LearningStateNotifier extends AsyncNotifier<LearningState> {
         studyMinutes: current.studyMinutes + minutes,
         masteredConcepts: <String>{...current.masteredConcepts, ...concepts},
         currentBlock: 0,
+        lastStudyEpoch: DateTime.now().millisecondsSinceEpoch,
       ),
     );
   }
@@ -200,6 +219,16 @@ final class LearningStateNotifier extends AsyncNotifier<LearningState> {
           ...current.promptHistory.where((item) => item != prompt),
         ].take(20).toList();
     await _set(current.copyWith(promptHistory: values));
+  }
+
+  Future<void> recordMistake(String concept) async {
+    final current=state.requireValue;
+    await _set(current.copyWith(mistakeConcepts:<String>{...current.mistakeConcepts,concept}));
+  }
+
+  Future<void> setConfidence(String concept,int value) async {
+    final current=state.requireValue;
+    await _set(current.copyWith(confidence:<String,int>{...current.confidence,concept:value}));
   }
 
   Future<void> restore(LearningState restored) => _set(restored);

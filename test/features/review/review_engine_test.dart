@@ -1,0 +1,4 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
+import 'package:oraculo_ia/src/features/review/domain/review_engine.dart';
+void main(){test('prioritizes mistakes and low confidence with reason and due date',(){final now=DateTime(2026,7,12);const state=LearningState(mistakeConcepts:{'RAG'},reviewConcepts:{'Token'},confidence:{'RAG':1});final plan=const LocalReviewEngine().create(state,5,now:now);expect(plan.items.first.concept,'RAG');expect(plan.items.first.reason,contains('error'));expect(plan.items.first.nextReview,now.add(const Duration(days:2)));});test('creates bounded sessions',(){const state=LearningState(reviewConcepts:{'a','b','c','d','e','f','g','h','i'});expect(const LocalReviewEngine().create(state,5).items.length,2);expect(const LocalReviewEngine().create(state,15).items.length,5);expect(const LocalReviewEngine().create(state,30).items.length,8);});}
