@@ -205,3 +205,8 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadido manifiesto de gobierno editorial.
 - Añadidas validaciones de fuentes, citas, fechas y caducidad.
 - Añadida pantalla Estado del conocimiento.
+# 2.6.0-beta - Sprint 17
+
+- Añadido Manual Maestro exportable en PDF, Markdown y HTML.
+- Añadidos filtros de exportación y modo lectura accesible.
+- Añadido PDF real de validación en releases.

@@ -299,3 +299,14 @@ Calidad: `flutter analyze` sin problemas; 30 pruebas aprobadas.
 - Pantalla interna Estado del conocimiento.
 
 Calidad: `flutter analyze` sin problemas; 32 pruebas aprobadas.
+# Sprint 17 - Manual Maestro exportable
+
+**Estado:** finalizado.
+
+- Exportación offline en PDF, Markdown y HTML.
+- Alcances: completo, capítulo, tema, favoritos y repaso.
+- PDF con portada, índice, fecha, versión, paginación, glosario y fuentes.
+- Modo lectura nocturna con texto entre 100% y 200%.
+- PDF real generado y renderizado para control visual.
+
+Calidad: `flutter analyze` limpio; 33 pruebas aprobadas.
