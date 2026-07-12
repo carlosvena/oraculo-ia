@@ -181,3 +181,10 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadidos filtros para nueve tipos de tarea.
 - Añadidos fuente, fecha editorial y estado de verificación por ficha.
 - Añadidas advertencias de privacidad y campos de costo editables.
+# 2.2.0-beta — Sprint 13
+
+- Añadida lectura en voz alta con velocidad, pausa y manos libres básico.
+- Añadidas tres reformulaciones editoriales locales por bloque.
+- Añadido perfil privado y offline de Carlos.
+- Ampliada la biblioteca de pensamiento a diez referentes.
+- Añadidos metadatos de fuente y verificación visibles.

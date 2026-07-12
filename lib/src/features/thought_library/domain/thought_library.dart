@@ -33,9 +33,14 @@ final class ThoughtIdea {
     required this.body,
     required this.application,
     required this.concepts,
+    this.source,
+    this.date,
+    this.context,
+    this.verification,
   });
   final String id, author, topic, kind, title, body, application;
   final List<String> concepts;
+  final String? source, date, context, verification;
 }
 
 final class ThoughtLibraryException implements Exception {

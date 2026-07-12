@@ -136,6 +136,13 @@ class _IdeaCard extends ConsumerWidget {
             ),
             const SizedBox(height: 4),
             Text(idea.application),
+            if (idea.source != null) ...[
+              const SizedBox(height: 12),
+              Text(
+                '${idea.verification} · ${idea.date}\n${idea.context}\nFuente: ${idea.source}',
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
             const SizedBox(height: 8),
             Wrap(
               spacing: 6,

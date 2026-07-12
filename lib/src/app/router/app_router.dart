@@ -6,6 +6,7 @@ import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_screens.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/presentation/knowledge_map_screen.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_screen.dart';
+import 'package:oraculo_ia/src/features/mentor/presentation/profile_screen.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_screen.dart';
 import 'package:oraculo_ia/src/features/model_comparator/presentation/model_comparator_screen.dart';
@@ -32,6 +33,7 @@ abstract final class AppRoute {
   static const about = '/about';
   static const backup = '/backup';
   static const modelComparator = '/model-comparator';
+  static const learnerProfile = '/learner-profile';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -110,6 +112,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onAbout: () => context.push(AppRoute.about),
                   onBackup: () => context.push(AppRoute.backup),
                   onModelComparator: () => context.push(AppRoute.modelComparator),
+                  onLearnerProfile: () => context.push(AppRoute.learnerProfile),
                 );
               },
             ),
@@ -186,6 +189,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.modelComparator,
         builder: (context, state) => const ModelComparatorScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.learnerProfile,
+        builder: (context, state) => const LearnerProfileScreen(),
       ),
     ],
   );

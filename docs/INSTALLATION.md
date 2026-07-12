@@ -2,7 +2,7 @@
 
 ## Android
 
-1. Copiar `Aprender IA 1.9 Beta ARM64.apk` al teléfono.
+1. Copiar `Aprender IA 2.2 Beta ARM64.apk` al teléfono.
 2. Abrir el archivo desde Descargas o el administrador de archivos.
 3. Si Android lo solicita, autorizar temporalmente la instalación desde esa fuente.
 4. Instalar y abrir **Aprender IA**.

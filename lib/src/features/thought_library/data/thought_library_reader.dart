@@ -4,8 +4,19 @@ import 'package:oraculo_ia/src/features/thought_library/domain/thought_library.d
 
 final class ThoughtLibraryReader {
   const ThoughtLibraryReader();
-  Future<ThoughtLibrary> load() =>
-      rootBundle.loadString('knowledge/thought_library_v1.json').then(parse);
+  Future<ThoughtLibrary> load() async {
+    final base = parse(
+      await rootBundle.loadString('knowledge/thought_library_v1.json'),
+    );
+    final extra = parse(
+      await rootBundle.loadString('knowledge/thought_library_expansion_v1.json'),
+    );
+    return ThoughtLibrary(
+      topics: <String>{...base.topics, ...extra.topics}.toList(),
+      authors: <String>{...base.authors, ...extra.authors}.toList(),
+      ideas: <ThoughtIdea>[...base.ideas, ...extra.ideas],
+    );
+  }
   ThoughtLibrary parse(String source) {
     final root = jsonDecode(source);
     if (root is! Map<String, dynamic> || root['schemaVersion'] != 1) {
@@ -46,6 +57,10 @@ final class ThoughtLibraryReader {
             body: text('body'),
             application: text('application'),
             concepts: (item['concepts'] as List).cast<String>(),
+            source: item['source'] as String?,
+            date: item['date'] as String?,
+            context: item['context'] as String?,
+            verification: item['verification'] as String?,
           );
         }).toList();
     return ThoughtLibrary(topics: topics, authors: authors, ideas: ideas);

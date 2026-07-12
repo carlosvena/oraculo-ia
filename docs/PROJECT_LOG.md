@@ -248,3 +248,22 @@ Calidad: `flutter analyze` sin problemas; 21 pruebas aprobadas.
 - Ejercicio de elección contextual en cada ficha.
 
 Calidad: `flutter analyze` sin problemas; 23 pruebas aprobadas.
+# Sprint 13 — Mentor por voz y experiencia personal
+
+**Estado:** finalizado.
+
+- Lectura de bloques con el motor de voz del dispositivo, control de velocidad, pausa y modo manos libres.
+- Voz elegida por Android: no se clona ni imita a ninguna persona real.
+- Reformulaciones locales: otra explicación, ejemplo difícil y aplicación bancaria.
+- Perfil offline de Carlos con nivel, intereses, rol laboral, modo intensivo, prioridades y dificultad.
+- Biblioteca ampliada con Geoffrey Hinton, Yann LeCun, Dario Amodei y Satya Nadella.
+- Metadatos editoriales visibles para fuente, fecha, contexto y verificación.
+
+Calidad: `flutter analyze` sin problemas; 25 pruebas aprobadas.
+
+## Propuesta Sprints 14 a 17
+
+1. **Sprint 14 — Evaluación de dominio:** respuestas abiertas, rúbricas locales y evidencia de transferencia.
+2. **Sprint 15 — Accesibilidad validada:** pruebas con TalkBack, dispositivos físicos y auditoría WCAG móvil.
+3. **Sprint 16 — Gobierno editorial:** flujo de revisión, caducidad de fuentes y firma de versiones de contenido.
+4. **Sprint 17 — Release candidate:** firma privada, migraciones, telemetría opcional con consentimiento y preparación para tienda.

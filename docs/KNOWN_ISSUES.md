@@ -45,4 +45,11 @@ pueden agotar memoria.
 **Solución actual:** límites en `android/gradle.properties` y un worker.
 
 **Alternativas:** ampliar archivo de paginación o compilar una ABI por vez.
+# Estado conocido tras Sprint 13
+
+- El motor de voz depende de las voces instaladas en Android; pronunciación y disponibilidad pueden variar por dispositivo.
+- El modo manos libres lee al avanzar, pero no acepta comandos hablados: no se incorporó reconocimiento de voz por privacidad y alcance.
+- Los precios y la disponibilidad del comparador cambian; por diseño se muestran como campos a verificar y editar.
+- OneDrive puede bloquear carpetas temporales de Flutter. El build reproducible debe ejecutarse fuera de una carpeta sincronizada si aparece un error de permisos.
+- La Beta todavía requiere validación manual en varios teléfonos físicos y con TalkBack.
 

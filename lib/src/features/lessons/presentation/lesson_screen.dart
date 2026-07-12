@@ -8,6 +8,7 @@ import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart' as domain;
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_block.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_providers.dart';
+import 'package:oraculo_ia/src/features/mentor/presentation/mentor_voice_panel.dart';
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 
 class LessonScreen extends ConsumerStatefulWidget {
@@ -188,6 +189,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                 ),
               ],
               const SizedBox(height: AppSpacing.lg),
+              if (block != null)
+                MentorVoicePanel(title: block.title, text: block.content),
+              if (block != null) const SizedBox(height: AppSpacing.sm),
               Expanded(
                 child: SingleChildScrollView(
                   key: ValueKey<int>(_currentBlock),
