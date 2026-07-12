@@ -188,3 +188,9 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 - Añadido perfil privado y offline de Carlos.
 - Ampliada la biblioteca de pensamiento a diez referentes.
 - Añadidos metadatos de fuente y verificación visibles.
+# 2.3.0-beta - Sprint 14
+
+- Añadido módulo de evaluación abierta con seis tipos de actividad.
+- Añadida rúbrica profesional local de seis criterios.
+- Añadidas pruebas de dominio cada cinco misiones.
+- Añadida revisión personal de respuestas y ejemplos sólidos.

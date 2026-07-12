@@ -267,3 +267,14 @@ Calidad: `flutter analyze` sin problemas; 25 pruebas aprobadas.
 2. **Sprint 15 — Accesibilidad validada:** pruebas con TalkBack, dispositivos físicos y auditoría WCAG móvil.
 3. **Sprint 16 — Gobierno editorial:** flujo de revisión, caducidad de fuentes y firma de versiones de contenido.
 4. **Sprint 17 — Release candidate:** firma privada, migraciones, telemetría opcional con consentimiento y preparación para tienda.
+# Sprint 14 - Evaluación real del aprendizaje
+
+**Estado:** finalizado.
+
+- Evaluaciones abiertas para explicación, corrección de prompts, detección de errores, casos, construcción y comparación.
+- Rúbrica local: comprensión, precisión, contexto, aplicación, pensamiento crítico y verificación.
+- Devolución con aciertos, faltantes, mejora sugerida y ejemplo sólido.
+- Advertencia explícita: la evaluación automática es orientativa, no perfecta.
+- Marcado para revisión personal y pruebas de dominio tras misiones 005, 010 y 015.
+
+Calidad: `flutter analyze` sin problemas; pruebas completas validadas tras corregir la expectativa editorial.

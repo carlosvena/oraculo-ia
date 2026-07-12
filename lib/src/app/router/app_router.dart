@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
 import 'package:oraculo_ia/src/core/error/app_error_boundary.dart';
+import 'package:oraculo_ia/src/features/assessment/presentation/assessment_screen.dart';
 import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_screens.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/presentation/knowledge_map_screen.dart';
@@ -34,6 +35,7 @@ abstract final class AppRoute {
   static const backup = '/backup';
   static const modelComparator = '/model-comparator';
   static const learnerProfile = '/learner-profile';
+  static const assessment = '/assessment';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -113,6 +115,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onBackup: () => context.push(AppRoute.backup),
                   onModelComparator: () => context.push(AppRoute.modelComparator),
                   onLearnerProfile: () => context.push(AppRoute.learnerProfile),
+                  onAssessment: () => context.push(AppRoute.assessment),
                 );
               },
             ),
@@ -193,6 +196,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.learnerProfile,
         builder: (context, state) => const LearnerProfileScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.assessment,
+        builder: (context, state) => const AssessmentScreen(),
       ),
     ],
   );
