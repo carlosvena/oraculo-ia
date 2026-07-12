@@ -319,3 +319,12 @@ Calidad: `flutter analyze` limpio; 33 pruebas aprobadas.
 - Checklist interactivo y progreso por proyecto.
 
 Calidad: `flutter analyze` limpio; 34 pruebas aprobadas.
+# Sprint 19 - Camino profesional personalizado
+
+**Estado:** finalizado.
+
+- Ocho caminos con requisitos, habilidades, misiones, proyectos, horas y evaluación.
+- Prioridad personalizada para Carlos: usuario avanzado, automatización, agentes, aplicaciones y banca/Excel.
+- Progreso y conocimientos pendientes visibles.
+
+Calidad: `flutter analyze` limpio; 35 pruebas aprobadas.

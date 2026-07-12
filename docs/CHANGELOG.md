@@ -214,3 +214,7 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 - Añadido Constructor de proyectos con cinco recorridos completos.
 - Añadidos checklist, progreso, evaluación y documentación requerida.
+# 2.8.0-beta - Sprint 19
+
+- Añadidos ocho caminos profesionales personalizados.
+- Añadidos progreso, pendientes y evaluación final por camino.

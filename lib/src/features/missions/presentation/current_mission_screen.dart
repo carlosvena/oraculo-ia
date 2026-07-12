@@ -30,6 +30,7 @@ class CurrentMissionScreen extends ConsumerWidget {
     required this.onEditorial,
     required this.onManualExport,
     required this.onProjects,
+    required this.onCareer,
     super.key,
   });
   final String statusLabel, nextAction;
@@ -51,6 +52,7 @@ class CurrentMissionScreen extends ConsumerWidget {
   final VoidCallback onEditorial;
   final VoidCallback onManualExport;
   final VoidCallback onProjects;
+  final VoidCallback onCareer;
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
@@ -167,6 +169,7 @@ class CurrentMissionScreen extends ConsumerWidget {
                     _Access('Estado del conocimiento', Icons.verified_outlined, onEditorial),
                     _Access('Manual Maestro',Icons.picture_as_pdf_outlined,onManualExport),
                     _Access('Proyectos',Icons.construction_outlined,onProjects),
+                    _Access('Caminos',Icons.route_outlined,onCareer),
                     _Access('Respaldo', Icons.save_alt, onBackup),
                     _Access('Acerca', Icons.info_outline, onAbout),
                   ],
