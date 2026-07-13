@@ -1,10 +1,14 @@
 import 'dart:convert';
-import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
 import 'package:oraculo_ia/src/features/model_comparator/domain/model_profile.dart';
 
 class ModelCatalogReader {
   const ModelCatalogReader();
-  Future<List<ModelProfile>> load() async => parse(await rootBundle.loadString('knowledge/model_catalog_v1.json'));
+  Future<List<ModelProfile>> load() async {
+    final engine = KnowledgeEngine.instance;
+    await engine.initialize();
+    return engine.modelCatalog;
+  }
   List<ModelProfile> parse(String source) {
     final root = jsonDecode(source) as Map<String, dynamic>;
     if (root['schemaVersion'] != 1) throw const FormatException('Catálogo de modelos incompatible.');

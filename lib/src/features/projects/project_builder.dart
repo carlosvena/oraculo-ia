@@ -1,48 +1,8 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
-
-class LearningProject {
-  const LearningProject(
-    this.id,
-    this.title,
-    this.objective,
-    this.knowledge,
-    this.missions,
-    this.steps,
-    this.deliverables,
-    this.success,
-    this.risks,
-    this.evaluation,
-  );
-
-  final String id, title, objective, evaluation;
-  final List<String> knowledge, missions, steps, deliverables, success, risks;
-}
-
-List<LearningProject> parseProjects(String s) {
-  final r = jsonDecode(s) as Map<String, dynamic>;
-  if (r['schemaVersion'] != 1) {
-    throw const FormatException('Proyectos incompatibles');
-  }
-  return (r['projects'] as List).cast<Map<String, dynamic>>().map((p) {
-    List<String> l(String k) => (p[k] as List).cast<String>();
-    return LearningProject(
-      p['id'] as String,
-      p['title'] as String,
-      p['objective'] as String,
-      l('knowledge'),
-      l('missions'),
-      l('steps'),
-      l('deliverables'),
-      l('success'),
-      l('risks'),
-      p['evaluation'] as String,
-    );
-  }).toList();
-}
+import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
+import 'package:oraculo_ia/src/features/projects/domain/learning_project.dart';
 
 class ProjectBuilderScreen extends StatefulWidget {
   const ProjectBuilderScreen({super.key});
@@ -58,7 +18,7 @@ class _ProjectBuilderScreenState extends State<ProjectBuilderScreen> {
   Widget build(BuildContext context) {
     return OraculoScaffold(
       body: FutureBuilder<List<LearningProject>>(
-        future: rootBundle.loadString('knowledge/projects_v1.json').then(parseProjects),
+        future: KnowledgeEngine.instance.initialize().then((_) => KnowledgeEngine.instance.projects),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(

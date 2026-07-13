@@ -4,7 +4,15 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 22-23 pendientes de definición.
+- Próximo: Sprints 23 pendiente de definición.
+
+## 2.2.0-sprint22 — 2026-07-13
+
+- **Consolidación del Motor de Conocimiento**: centralización total de contenidos curriculares.
+- Extensión de `KnowledgeEngine` para cargar todos los JSONs restantes: caminos profesionales (`career_paths_v1.json`), proyectos (`projects_v1.json`), ejercicios de prompt (`prompt_exercises_v1.json`), ideas (`thought_library_v1.json`/`thought_library_expansion_v1.json`) y catálogo de modelos (`model_catalog_v1.json`).
+- Separación física de los modelos de datos `CareerPath` y `LearningProject` a archivos de dominio propios, desacoplándolos de la presentación.
+- Refactorización de todas las pantallas y lectores para utilizar los datos validados y en caché del motor, eliminando redundancias de acceso a disco nativo.
+- Validación de integridad semántica cruzada en el arranque: comprobación de referencias de misiones contra metadatos cargados y taxonomías curriculares.
 
 ## 2.1.0-sprint21 — 2026-07-13
 

@@ -1,47 +1,10 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
+import 'package:oraculo_ia/src/features/career/domain/career_path.dart';
+import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
-
-class CareerPath {
-  const CareerPath(
-    this.id,
-    this.priority,
-    this.title,
-    this.level,
-    this.skills,
-    this.missions,
-    this.projects,
-    this.hours,
-    this.finalEvaluation,
-  );
-
-  final String id, title, level, finalEvaluation;
-  final int priority, hours;
-  final List<String> skills, missions, projects;
-}
-
-List<CareerPath> parseCareerPaths(String s) {
-  final r = jsonDecode(s) as Map<String, dynamic>;
-  return (r['paths'] as List).cast<Map<String, dynamic>>().map((p) {
-    List<String> l(String k) => (p[k] as List).cast<String>();
-    return CareerPath(
-      p['id'] as String,
-      p['priority'] as int,
-      p['title'] as String,
-      p['level'] as String,
-      l('skills'),
-      l('missions'),
-      l('projects'),
-      p['hours'] as int,
-      p['final'] as String,
-    );
-  }).toList()
-    ..sort((a, b) => a.priority.compareTo(b.priority));
-}
 
 class CareerPathsScreen extends ConsumerWidget {
   const CareerPathsScreen({super.key});
@@ -52,7 +15,7 @@ class CareerPathsScreen extends ConsumerWidget {
 
     return OraculoScaffold(
       body: FutureBuilder<List<CareerPath>>(
-        future: rootBundle.loadString('knowledge/career_paths_v1.json').then(parseCareerPaths),
+        future: KnowledgeEngine.instance.initialize().then((_) => KnowledgeEngine.instance.careerPaths),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(

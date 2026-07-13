@@ -1,21 +1,13 @@
 import 'dart:convert';
-import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
 import 'package:oraculo_ia/src/features/thought_library/domain/thought_library.dart';
 
 final class ThoughtLibraryReader {
   const ThoughtLibraryReader();
   Future<ThoughtLibrary> load() async {
-    final base = parse(
-      await rootBundle.loadString('knowledge/thought_library_v1.json'),
-    );
-    final extra = parse(
-      await rootBundle.loadString('knowledge/thought_library_expansion_v1.json'),
-    );
-    return ThoughtLibrary(
-      topics: <String>{...base.topics, ...extra.topics}.toList(),
-      authors: <String>{...base.authors, ...extra.authors}.toList(),
-      ideas: <ThoughtIdea>[...base.ideas, ...extra.ideas],
-    );
+    final engine = KnowledgeEngine.instance;
+    await engine.initialize();
+    return engine.thoughtLibrary;
   }
   ThoughtLibrary parse(String source) {
     final root = jsonDecode(source);

@@ -1,7 +1,5 @@
-import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
-import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -10,7 +8,6 @@ void main() {
     final engine = KnowledgeEngine.instance;
 
     setUpAll(() async {
-      // Inicializar el motor (usará el AssetBundle simulado en el contexto de pruebas)
       await engine.initialize();
     });
 
@@ -49,6 +46,35 @@ void main() {
 
       final emptyResults = engine.searchArticles('termino-inexistente-12345');
       expect(emptyResults, isEmpty);
+    });
+
+    test('Verifies career paths, projects and prompt exercises load correctly', () {
+      expect(engine.careerPaths, hasLength(8));
+      expect(engine.projects, hasLength(5));
+      expect(engine.promptExercises, hasLength(20));
+
+      final firstPath = engine.careerPaths.first;
+      expect(firstPath.id, 'advanced'); // prioridad 1
+    });
+
+    test('Verifies thought library and model catalog load correctly', () {
+      expect(engine.thoughtLibrary.ideas, isNotEmpty);
+      expect(engine.thoughtLibrary.topics, isNotEmpty);
+      expect(engine.thoughtLibrary.authors, isNotEmpty);
+
+      expect(engine.modelCatalog, isNotEmpty);
+      final model = engine.modelCatalog.firstWhere((m) => m.id == 'gemini');
+      expect(model.verified, isTrue);
+    });
+
+    test('Verifies modules, competencies and skills taxonomies load correctly', () {
+      expect(engine.tracks, hasLength(2));
+      expect(engine.competencies, hasLength(4));
+      expect(engine.skills, hasLength(6));
+
+      final firstTrack = engine.tracks.first;
+      expect(firstTrack.id, 'track-foundations');
+      expect(firstTrack.competencyIds, contains('comp-criterio'));
     });
   });
 }

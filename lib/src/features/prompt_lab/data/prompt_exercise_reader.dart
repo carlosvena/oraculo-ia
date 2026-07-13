@@ -1,11 +1,14 @@
 import 'dart:convert';
-import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
 import 'package:oraculo_ia/src/features/prompt_lab/domain/prompt_exercise.dart';
 
 final class PromptExerciseReader {
   const PromptExerciseReader();
-  Future<List<PromptExercise>> load() =>
-      rootBundle.loadString('knowledge/prompt_exercises_v1.json').then(parse);
+  Future<List<PromptExercise>> load() async {
+    final engine = KnowledgeEngine.instance;
+    await engine.initialize();
+    return engine.promptExercises;
+  }
   List<PromptExercise> parse(String source) {
     final root = jsonDecode(source) as Map<String, dynamic>;
     if (root['schemaVersion'] != 1) {

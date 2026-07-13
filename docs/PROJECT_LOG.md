@@ -357,3 +357,17 @@ Calidad: `flutter analyze` limpio; 35 pruebas aprobadas de forma secuencial.
 - Integración de búsqueda indexada semántica rápida sobre manual y diccionario en caché de memoria.
 
 Calidad: `flutter analyze` limpio; 36 pruebas unitarias aprobadas.
+
+# Sprint 22 — Consolidación del Motor de Conocimiento (Knowledge Engine Consolidation)
+
+**Estado:** finalizado.
+
+- Extensión de `KnowledgeEngine` para unificar la carga de todos los archivos JSON restantes en `knowledge/`: cursos (`career_paths_v1.json`), proyectos (`projects_v1.json`), ejercicios de laboratorio (`prompt_exercises_v1.json`), biblioteca de pensamiento (`thought_library_v1.json`/`thought_library_expansion_v1.json`) y comparador de modelos (`model_catalog_v1.json`).
+- Separación de modelos de dominio de entidades acopladas a la presentación (`CareerPath` y `LearningProject`) en archivos de dominio dedicados (`domain/career_path.dart` y `domain/learning_project.dart`), alineándose con la arquitectura de capas limpia.
+- Refactorización de todos los lectores de catálogo y pantallas de interfaz para recuperar los datos cacheados y centralizados en `KnowledgeEngine.instance`, eliminando el uso redundante y directo de `rootBundle` y previniendo lecturas repetidas de disco.
+- Implementación de reglas avanzadas de validación semántica cruzada en el arranque para garantizar que:
+  * Todas las misiones listadas en cursos o proyectos correspondan a misiones existentes.
+  * Todas las habilidades en las competencias y todas las competencias en los tracks taxonómicos existan.
+- Ampliación de la suite de pruebas unitarias cubriendo todos los cargadores de datos curriculares y lógicos del motor.
+
+Calidad: `flutter analyze` limpio; 36 pruebas unitarias aprobadas secuencialmente.

@@ -1,7 +1,15 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/features/career/domain/career_path.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
+import 'package:oraculo_ia/src/features/model_comparator/domain/model_profile.dart';
+import 'package:oraculo_ia/src/features/projects/domain/learning_project.dart';
+import 'package:oraculo_ia/src/features/prompt_lab/domain/prompt_exercise.dart';
+import 'package:oraculo_ia/src/features/thought_library/domain/thought_library.dart';
+import 'package:oraculo_ia/src/modules/academy/competency.dart';
+import 'package:oraculo_ia/src/modules/academy/skill.dart';
+import 'package:oraculo_ia/src/modules/academy/track.dart';
 
 /// Motor de contenido offline de ORÁCULO IA.
 ///
@@ -19,10 +27,27 @@ final class KnowledgeEngine {
   final _articles = <KnowledgeArticle>[];
   final _terms = <DictionaryTerm>[];
 
+  final _careerPaths = <CareerPath>[];
+  final _projects = <LearningProject>[];
+  final _promptExercises = <PromptExercise>[];
+  late final ThoughtLibrary _thoughtLibrary;
+  final _modelCatalog = <ModelProfile>[];
+  final _tracks = <Track>[];
+  final _competencies = <Competency>[];
+  final _skills = <Skill>[];
+
   // Getters expuestos
   bool get isInitialized => _initialized;
   List<KnowledgeArticle> get articles => List.unmodifiable(_articles);
   List<DictionaryTerm> get terms => List.unmodifiable(_terms);
+  List<CareerPath> get careerPaths => List.unmodifiable(_careerPaths);
+  List<LearningProject> get projects => List.unmodifiable(_projects);
+  List<PromptExercise> get promptExercises => List.unmodifiable(_promptExercises);
+  ThoughtLibrary get thoughtLibrary => _thoughtLibrary;
+  List<ModelProfile> get modelCatalog => List.unmodifiable(_modelCatalog);
+  List<Track> get tracks => List.unmodifiable(_tracks);
+  List<Competency> get competencies => List.unmodifiable(_competencies);
+  List<Skill> get skills => List.unmodifiable(_skills);
 
   /// Inicializa el motor cargando el manifiesto y los metadatos de las lecciones
   Future<void> initialize() async {
@@ -38,7 +63,15 @@ final class KnowledgeEngine {
       await _loadManual();
       await _loadMissionsMetadata();
 
-      // 3. Validar integridad semántica (relaciones, ciclos de prerrequisitos)
+      // 3. Cargar el resto de contenidos curriculares y de práctica
+      await _loadCareerPaths();
+      await _loadProjects();
+      await _loadPromptExercises();
+      await _loadThoughtLibrary();
+      await _loadModelCatalog();
+      await _loadModules();
+
+      // 4. Validar integridad semántica (relaciones, ciclos de prerrequisitos)
       _validateIntegrity();
 
       _initialized = true;
@@ -192,6 +225,242 @@ final class KnowledgeEngine {
     }
   }
 
+  Future<void> _loadCareerPaths() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'courses');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de caminos profesionales incompatible en $source');
+      }
+      final list = root['paths'] as List<dynamic>;
+      for (final p in list.cast<Map<String, dynamic>>()) {
+        List<String> getStringList(String k) => (p[k] as List<dynamic>).cast<String>();
+        _careerPaths.add(
+          CareerPath(
+            p['id'] as String,
+            p['priority'] as int,
+            p['title'] as String,
+            p['level'] as String,
+            getStringList('skills'),
+            getStringList('missions'),
+            getStringList('projects'),
+            p['hours'] as int,
+            p['final'] as String,
+          ),
+        );
+      }
+    }
+    _careerPaths.sort((a, b) => a.priority.compareTo(b.priority));
+  }
+
+  Future<void> _loadProjects() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'projects');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de proyectos incompatible en $source');
+      }
+      final list = root['projects'] as List<dynamic>;
+      for (final p in list.cast<Map<String, dynamic>>()) {
+        List<String> getStringList(String k) => (p[k] as List<dynamic>).cast<String>();
+        _projects.add(
+          LearningProject(
+            p['id'] as String,
+            p['title'] as String,
+            p['objective'] as String,
+            getStringList('knowledge'),
+            getStringList('missions'),
+            getStringList('steps'),
+            getStringList('deliverables'),
+            getStringList('success'),
+            getStringList('risks'),
+            p['evaluation'] as String,
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadPromptExercises() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'prompt-exercises');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de ejercicios de prompt incompatible en $source');
+      }
+      final list = root['exercises'] as List<dynamic>;
+      for (final e in list.cast<Map<String, dynamic>>()) {
+        _promptExercises.add(
+          PromptExercise(
+            id: e['id'] as String,
+            category: e['category'] as String,
+            level: e['level'] as int,
+            title: e['title'] as String,
+            original: e['original'] as String,
+            improved: e['improved'] as String,
+            why: e['why'] as String,
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadThoughtLibrary() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'thought-library');
+    final allTopics = <String>{};
+    final allAuthors = <String>{};
+    final allIdeas = <ThoughtIdea>[];
+
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de biblioteca de pensamiento incompatible en $source');
+      }
+      final topics = (root['topics'] as List<dynamic>).cast<String>();
+      final authors = (root['authors'] as List<dynamic>).cast<String>();
+      allTopics.addAll(topics);
+      allAuthors.addAll(authors);
+
+      final ideasList = root['ideas'] as List<dynamic>;
+      for (final itemMap in ideasList.cast<Map<String, dynamic>>()) {
+        String text(String key) {
+          final val = itemMap[key];
+          if (val is! String || val.isEmpty) {
+            throw const ThoughtLibraryException('Falta variable en idea de biblioteca.');
+          }
+          return val;
+        }
+
+        final author = text('author');
+        final topic = text('topic');
+        final kind = text('kind');
+        if (!authors.contains(author) || !topics.contains(topic)) {
+          throw const ThoughtLibraryException('Autor o tema no de biblioteca.');
+        }
+        if (!const [
+          'cita textual',
+          'paráfrasis',
+          'interpretación editorial',
+          'aplicación práctica',
+        ].contains(kind)) {
+          throw const ThoughtLibraryException('Tipo editorial inválido.');
+        }
+
+        allIdeas.add(
+          ThoughtIdea(
+            id: text('id'),
+            author: author,
+            topic: topic,
+            kind: kind,
+            title: text('title'),
+            body: text('body'),
+            application: text('application'),
+            concepts: (itemMap['concepts'] as List<dynamic>).cast<String>(),
+            source: itemMap['source'] as String?,
+            date: itemMap['date'] as String?,
+            context: itemMap['context'] as String?,
+            verification: itemMap['verification'] as String?,
+          ),
+        );
+      }
+    }
+    _thoughtLibrary = ThoughtLibrary(
+      topics: allTopics.toList(),
+      authors: allAuthors.toList(),
+      ideas: allIdeas,
+    );
+  }
+
+  Future<void> _loadModelCatalog() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'model-catalog');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de catálogo de modelos incompatible en $source');
+      }
+      final list = root['models'] as List<dynamic>;
+      for (final itemMap in list.cast<Map<String, dynamic>>()) {
+        String text(String key) => itemMap[key] as String;
+        List<String> getStrList(String key) => (itemMap[key] as List<dynamic>).cast<String>();
+        _modelCatalog.add(
+          ModelProfile(
+            id: text('id'),
+            name: text('name'),
+            what: text('what'),
+            strengths: getStrList('strengths'),
+            limits: getStrList('limits'),
+            uses: getStrList('uses'),
+            avoid: text('avoid'),
+            privacy: text('privacy'),
+            availability: text('availability'),
+            related: getStrList('related'),
+            source: text('source'),
+            verified: itemMap['verified'] as bool,
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadModules() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'modules');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de módulos incompatible en $source');
+      }
+
+      final skillsList = root['skills'] as List<dynamic>? ?? const [];
+      for (final s in skillsList.cast<Map<String, dynamic>>()) {
+        _skills.add(
+          Skill(
+            id: s['id'] as String,
+            name: s['name'] as String,
+            description: s['description'] as String,
+            tags: (s['tags'] as List<dynamic>).cast<String>().toSet(),
+          ),
+        );
+      }
+
+      final competenciesList = root['competencies'] as List<dynamic>? ?? const [];
+      for (final c in competenciesList.cast<Map<String, dynamic>>()) {
+        final levelStr = c['targetLevel'] as String;
+        final targetLevel = CompetencyLevel.values.firstWhere(
+          (item) => item.name == levelStr.toLowerCase(),
+          orElse: () => CompetencyLevel.foundational,
+        );
+        _competencies.add(
+          Competency(
+            id: c['id'] as String,
+            name: c['name'] as String,
+            description: c['description'] as String,
+            skillIds: (c['skillIds'] as List<dynamic>).cast<String>().toSet(),
+            targetLevel: targetLevel,
+          ),
+        );
+      }
+
+      final tracksList = root['tracks'] as List<dynamic>? ?? const [];
+      for (final t in tracksList.cast<Map<String, dynamic>>()) {
+        _tracks.add(
+          Track(
+            id: t['id'] as String,
+            name: t['name'] as String,
+            description: t['description'] as String,
+            competencyIds: (t['competencyIds'] as List<dynamic>).cast<String>().toSet(),
+            missionSequenceIds: (t['missionSequenceIds'] as List<dynamic>).cast<String>(),
+          ),
+        );
+      }
+    }
+  }
+
   Lesson _parseFullLesson(String source, String path) {
     final root = jsonDecode(source) as Map<String, dynamic>;
     final m = root['mission'] as Map<String, dynamic>;
@@ -204,7 +473,6 @@ final class KnowledgeEngine {
 
     final blocks = <LessonBlock>[];
 
-    // Detectar si es formato Core (blocks directo) o Avanzado (sections + quiz)
     if (m.containsKey('blocks')) {
       final list = m['blocks'] as List<dynamic>;
       for (final (index, blockRaw) in list.indexed) {
@@ -242,11 +510,9 @@ final class KnowledgeEngine {
         );
       }
     } else if (m.containsKey('sections') && m.containsKey('quiz')) {
-      // Formato avanzado
       final sections = m['sections'] as List<dynamic>;
       final quiz = m['quiz'] as List<dynamic>;
 
-      // Reglas editoriales de límites
       if (sections.length < 10) {
         throw EditorialContentException('$id debe tener al menos 10 bloques.');
       }
@@ -283,7 +549,6 @@ final class KnowledgeEngine {
         );
       }
 
-      // Añadir autoevaluación final (quiz)
       blocks.add(
         LessonBlock(
           type: LessonBlockType.quiz,
@@ -335,7 +600,7 @@ final class KnowledgeEngine {
       for (final relatedId in term.related) {
         if (!termIds.contains(relatedId)) {
           throw EditorialContentException(
-            'Error editorial: El término "${term.id}" enlaza a "$relatedId", que no existe en el diccionario.',
+            'Error editorial: El término "${term.id}" enlazaza a "$relatedId", que no existe.',
           );
         }
       }
@@ -354,6 +619,52 @@ final class KnowledgeEngine {
 
     // 3. Detección de ciclos de dependencias
     _detectCycles();
+
+    // 4. Validar integridad cruzada de módulos, competencias y habilidades
+    final skillIds = _skills.map((s) => s.id).toSet();
+    final competencyIds = _competencies.map((c) => c.id).toSet();
+
+    for (final comp in _competencies) {
+      for (final skillId in comp.skillIds) {
+        if (!skillIds.contains(skillId)) {
+          throw EditorialContentException(
+            'Error de integridad: La competencia "${comp.id}" refiere a la habilidad "$skillId", que no existe.',
+          );
+        }
+      }
+    }
+
+    for (final track in _tracks) {
+      for (final compId in track.competencyIds) {
+        if (!competencyIds.contains(compId)) {
+          throw EditorialContentException(
+            'Error de integridad: El track "${track.id}" refiere a la competencia "$compId", que no existe.',
+          );
+        }
+      }
+    }
+
+    // 5. Validar que misiones referenciadas en rutas de carrera y proyectos existan
+    final lessonNumbers = _lessonsMetadata.keys.map((id) => id.split('-').last).toSet();
+    for (final path in _careerPaths) {
+      for (final mNum in path.missions) {
+        if (!lessonNumbers.contains(mNum)) {
+          throw EditorialContentException(
+            'Error de integridad: La ruta de carrera "${path.id}" refiere a la misión "$mNum", que no existe.',
+          );
+        }
+      }
+    }
+
+    for (final proj in _projects) {
+      for (final mNum in proj.missions) {
+        if (!lessonNumbers.contains(mNum)) {
+          throw EditorialContentException(
+            'Error de integridad: El proyecto "${proj.id}" refiere a la misión "$mNum", que no existe.',
+          );
+        }
+      }
+    }
   }
 
   void _detectCycles() {
@@ -367,7 +678,7 @@ final class KnowledgeEngine {
       final metadata = _lessonsMetadata[node]!;
       for (final neighbor in metadata.prerequisites) {
         if (visited[neighbor] == 1) {
-          return true; // Ciclo encontrado
+          return true;
         }
         if (visited[neighbor] == 0) {
           if (dfs(neighbor)) return true;
