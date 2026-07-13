@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/src/design_system/components/async_content.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
+import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_providers.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/domain/knowledge_map.dart';
@@ -15,7 +16,7 @@ class KnowledgeMapScreen extends ConsumerWidget {
     body: AsyncContent<KnowledgeContent>(
       value: ref.watch(knowledgeProvider),
       errorMessage: 'No pudimos construir el mapa.',
-      retryLabel: 'REINTENTAR',
+      retryLabel: 'Reintentar',
       onRetry: () => ref.invalidate(knowledgeProvider),
       data: (content) {
         final learning =
@@ -27,11 +28,12 @@ class KnowledgeMapScreen extends ConsumerWidget {
               'Mapa de conocimiento',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.xs),
             const Text(
               'Una ruta clara entre conceptos. Tocá una tarjeta para ver relaciones y abrir su misión.',
+              style: TextStyle(color: Colors.grey),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.lg),
             for (final node in nodes)
               _NodeCard(
                 node: node,
@@ -83,21 +85,33 @@ class _NodeCard extends StatelessWidget {
         leading: Icon(Icons.hub_outlined, color: color),
         title: Text(node.label),
         subtitle: Text(_label(status)),
-        childrenPadding: const EdgeInsets.all(16),
+        shape: const Border(),
+        childrenPadding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.md,
+          vertical: AppSpacing.sm,
+        ),
         children: [
-          Text(
-            'Lo precede: ${node.precedes.isEmpty ? 'Inicio' : node.precedes.join(' · ')}',
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Lo precede: ${node.precedes.isEmpty ? 'Inicio' : node.precedes.join(' · ')}',
+                ),
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  'Desbloquea: ${node.unlocks.isEmpty ? 'Cierre del recorrido' : node.unlocks.join(' · ')}',
+                ),
+              ],
+            ),
           ),
-          const SizedBox(height: 8),
-          Text(
-            'Desbloquea: ${node.unlocks.isEmpty ? 'Cierre del recorrido' : node.unlocks.join(' · ')}',
-          ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.sm),
           Align(
             alignment: Alignment.centerRight,
             child: TextButton(
               onPressed: onOpen,
-              child: const Text('ABRIR MISIÓN'),
+              child: const Text('Abrir misión'),
             ),
           ),
         ],

@@ -328,3 +328,16 @@ Calidad: `flutter analyze` limpio; 34 pruebas aprobadas.
 - Progreso y conocimientos pendientes visibles.
 
 Calidad: `flutter analyze` limpio; 35 pruebas aprobadas.
+
+# Sprint 20 — Operación Pulido (Operation Polish)
+
+**Estado:** finalizado.
+
+- Unificación de componentes visuales en `app_theme.dart` (CardThemeData, ListTileThemeData, ChipThemeData, InputDecorationTheme, SegmentedButtonThemeData, SliderThemeData, SnackBarThemeData).
+- Rediseño del menú "Explorar" en `CurrentMissionScreen` utilizando un GridView dinámico y limpio de 2 columnas.
+- Refactorización, saneamiento y formateo de 6 archivos de presentación con código comprimido (`career_paths.dart`, `project_builder.dart`, `assessment_screen.dart`, `review_screen.dart`, `editorial_status_screen.dart`, `manual_export_screen.dart`).
+- Reemplazo de espaciados fijos y ad-hoc por los tokens de espaciado del Design System (`AppSpacing`).
+- Adopción de notificaciones interactivas Snackbars en importaciones, copias y exportaciones de datos.
+- Resolución de advertencias de lints (orden de imports, variables deprecadas en inputs).
+
+Calidad: `flutter analyze` limpio; 35 pruebas aprobadas de forma secuencial.

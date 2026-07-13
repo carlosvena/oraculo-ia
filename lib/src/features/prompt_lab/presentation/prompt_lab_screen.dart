@@ -47,13 +47,15 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
             'Laboratorio de prompts',
             style: Theme.of(context).textTheme.headlineMedium,
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.xs),
           const Text(
             'Práctica local basada en reglas editoriales. No envía datos a modelos externos.',
+            style: TextStyle(color: Colors.grey),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.md),
           Wrap(
             spacing: 8,
+            runSpacing: 4,
             children:
                 [
                       'trabajo',
@@ -73,7 +75,7 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
                     )
                     .toList(),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.xs),
           SegmentedButton<int>(
             segments: const [
               ButtonSegment(value: 1, label: Text('Inicial')),
@@ -83,7 +85,7 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
             selected: <int>{level},
             onSelectionChanged: (v) => setState(() => level = v.single),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.md),
           for (final exercise in filtered)
             Card(
               child: ListTile(
@@ -99,39 +101,46 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
               ),
             ),
           if (selected != null) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.md),
             TextField(
               controller: controller,
               maxLines: 6,
               onChanged: (_) => setState(() {}),
               decoration: const InputDecoration(
                 labelText: 'Editor de prompt',
-                border: OutlineInputBorder(),
               ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.sm),
             FilledButton(
-              onPressed:
-                  () => ref
-                      .read(learningStateProvider.notifier)
-                      .addPromptHistory(controller.text),
-              child: const Text('GUARDAR EN HISTORIAL'),
+              onPressed: () {
+                ref
+                    .read(learningStateProvider.notifier)
+                    .addPromptHistory(controller.text);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Guardado en el historial local.')),
+                );
+              },
+              child: const Text('Guardar en historial'),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.sm),
             Text(
               'Evaluación local: ${evaluation.score}/5',
               style: Theme.of(context).textTheme.titleMedium,
             ),
+            const SizedBox(height: AppSpacing.xs),
             Text(evaluation.feedback.join(' · ')),
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.md),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(AppSpacing.md),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Comparación'),
-                    const SizedBox(height: 8),
+                    const Text(
+                      'Comparación',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: AppSpacing.xs),
                     Text('Original\n${selected.original}'),
                     const Divider(),
                     Text('Mejorado\n${selected.improved}'),
@@ -162,13 +171,15 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
             ),
           ],
           if (history.isNotEmpty) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.md),
             Text(
               'Historial local',
               style: Theme.of(context).textTheme.titleLarge,
             ),
+            const SizedBox(height: AppSpacing.xs),
             for (final item in history.take(5))
               ListTile(
+                contentPadding: EdgeInsets.zero,
                 leading: const Icon(Icons.history),
                 title: Text(item, maxLines: 2, overflow: TextOverflow.ellipsis),
                 onTap: () {

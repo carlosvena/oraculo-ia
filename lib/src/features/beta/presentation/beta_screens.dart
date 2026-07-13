@@ -4,34 +4,56 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/src/core/app_metadata.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
+import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
+
   @override
   Widget build(BuildContext context) => OraculoScaffold(
-    body: ListView(
-      children: [
-        Text('Acerca de ORÁCULO IA', style: Theme.of(context).textTheme.headlineMedium),
-        const SizedBox(height: 16),
-        const Text('Beta local ${AppMetadata.version} (${AppMetadata.buildNumber})'),
-        const Text('Compilación: ${AppMetadata.buildDate}'),
-        const SizedBox(height: 20),
-        Text('Notas de versión', style: Theme.of(context).textTheme.titleLarge),
-        const SizedBox(height: 8),
-        for (final note in AppMetadata.releaseNotes)
-          ListTile(leading: const Icon(Icons.check_circle_outline), title: Text(note)),
-        const SizedBox(height: 12),
-        const Text(
-          'Mentor offline en español para desarrollar criterio y capacidad práctica en Inteligencia Artificial.',
+        body: ListView(
+          children: [
+            Text(
+              'Acerca de ORÁCULO IA',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: AppSpacing.sm),
+            Text(
+              'Beta local ${AppMetadata.version} (${AppMetadata.buildNumber})',
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'Compilación: ${AppMetadata.buildDate}',
+              style: const TextStyle(color: Colors.grey),
+            ),
+            const SizedBox(height: AppSpacing.lg),
+            Text(
+              'Notas de versión',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: AppSpacing.xs),
+            for (final note in AppMetadata.releaseNotes)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: const Icon(Icons.check_circle_outline, size: 20),
+                title: Text(note),
+              ),
+            const SizedBox(height: AppSpacing.md),
+            const Divider(),
+            const SizedBox(height: AppSpacing.sm),
+            const Text(
+              'Mentor offline en español para desarrollar criterio y capacidad práctica en Inteligencia Artificial.',
+              style: TextStyle(height: 1.4),
+            ),
+          ],
         ),
-      ],
-    ),
-  );
+      );
 }
 
 class BackupScreen extends ConsumerStatefulWidget {
   const BackupScreen({super.key});
+
   @override
   ConsumerState<BackupScreen> createState() => _BackupScreenState();
 }
@@ -39,7 +61,6 @@ class BackupScreen extends ConsumerStatefulWidget {
 class _BackupScreenState extends ConsumerState<BackupScreen> {
   final controller = TextEditingController();
   LearningState? preview;
-  String message = '';
 
   @override
   void dispose() {
@@ -49,30 +70,46 @@ class _BackupScreenState extends ConsumerState<BackupScreen> {
 
   LearningState _decode(String source) {
     final decoded = jsonDecode(source);
-    if (decoded is! Map<String, dynamic>) throw const FormatException('El respaldo debe ser un objeto JSON.');
+    if (decoded is! Map<String, dynamic>) {
+      throw const FormatException('El respaldo debe ser un objeto JSON.');
+    }
     return LearningState.fromJson(decoded);
+  }
+
+  void _showFeedback(String message) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message)),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final state = ref.watch(learningStateProvider).value ?? const LearningState();
     final exported = jsonEncode(state.toJson());
+
     return OraculoScaffold(
       body: ListView(
         children: [
-          Text('Respaldo local', style: Theme.of(context).textTheme.headlineMedium),
-          const SizedBox(height: 8),
-          const Text('Primero validaremos y mostraremos un resumen. Nada se sobrescribe sin tu confirmación.'),
-          const SizedBox(height: 16),
+          Text(
+            'Respaldo local',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+          const SizedBox(height: AppSpacing.xs),
+          const Text(
+            'Primero validaremos y mostraremos un resumen. Nada se sobrescribe sin tu confirmación.',
+            style: TextStyle(color: Colors.grey),
+          ),
+          const SizedBox(height: AppSpacing.lg),
           FilledButton.icon(
             onPressed: () async {
               await Clipboard.setData(ClipboardData(text: exported));
-              setState(() => message = 'Respaldo copiado al portapapeles.');
+              _showFeedback('Respaldo copiado al portapapeles.');
             },
             icon: const Icon(Icons.copy),
-            label: const Text('COPIAR RESPALDO JSON'),
+            label: const Text('Copiar respaldo JSON'),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpacing.xs),
           OutlinedButton.icon(
             onPressed: () async {
               final diagnostic = jsonEncode(<String, Object>{
@@ -86,60 +123,74 @@ class _BackupScreenState extends ConsumerState<BackupScreen> {
                 'reviewCount': state.reviewConcepts.length,
               });
               await Clipboard.setData(ClipboardData(text: diagnostic));
-              setState(() => message = 'Diagnóstico local copiado. No contiene respuestas ni datos personales.');
+              _showFeedback('Diagnóstico local copiado al portapapeles.');
             },
             icon: const Icon(Icons.monitor_heart_outlined),
-            label: const Text('COPIAR DIAGNÓSTICO'),
+            label: const Text('Copiar diagnóstico'),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpacing.lg),
           TextField(
             controller: controller,
             minLines: 5,
             maxLines: 10,
-            decoration: const InputDecoration(labelText: 'Pegar respaldo JSON', border: OutlineInputBorder()),
+            decoration: const InputDecoration(
+              labelText: 'Pegar respaldo JSON',
+            ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.md),
           OutlinedButton(
             onPressed: () {
               try {
                 setState(() {
                   preview = _decode(controller.text);
-                  message = 'Respaldo válido. Revisá la vista previa antes de importar.';
+                  _showFeedback('Respaldo válido. Revisá la vista previa antes de importar.');
                 });
               } catch (error) {
                 setState(() {
                   preview = null;
-                  message = 'No pudimos validar el respaldo: $error';
+                  _showFeedback('No pudimos validar el respaldo: $error');
                 });
               }
             },
-            child: const Text('VALIDAR Y VER VISTA PREVIA'),
+            child: const Text('Validar y ver vista previa'),
           ),
           if (preview case final value?) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.lg),
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text('Vista previa', style: Theme.of(context).textTheme.titleMedium),
-                  Text('Misiones completadas: ${value.completed.length}'),
-                  Text('Tiempo estudiado: ${value.studyMinutes} minutos'),
-                  Text('Misión actual: ${value.currentLessonId}'),
-                  Text('Conceptos para repasar: ${value.reviewConcepts.length}'),
-                  const SizedBox(height: 12),
-                  FilledButton(
-                    onPressed: () async {
-                      await ref.read(learningStateProvider.notifier).restore(value);
-                      if (mounted) setState(() { preview = null; message = 'Respaldo importado correctamente.'; });
-                    },
-                    child: const Text('CONFIRMAR IMPORTACIÓN'),
-                  ),
-                ]),
+                padding: const EdgeInsets.all(AppSpacing.md),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Vista previa del respaldo',
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                    const SizedBox(height: AppSpacing.xs),
+                    Text('Misiones completadas: ${value.completed.length}'),
+                    Text('Tiempo estudiado: ${value.studyMinutes} minutos'),
+                    Text('Misión actual: ${value.currentLessonId}'),
+                    Text('Conceptos para repasar: ${value.reviewConcepts.length}'),
+                    const SizedBox(height: AppSpacing.md),
+                    FilledButton(
+                      onPressed: () async {
+                        await ref.read(learningStateProvider.notifier).restore(value);
+                        if (mounted) {
+                          setState(() {
+                            preview = null;
+                            _showFeedback('Respaldo importado correctamente.');
+                          });
+                        }
+                      },
+                      child: const Text('Confirmar importación'),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
-          if (message.isNotEmpty)
-            Padding(padding: const EdgeInsets.only(top: 12), child: Semantics(liveRegion: true, child: Text(message))),
         ],
       ),
     );

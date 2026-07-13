@@ -4,6 +4,7 @@ import 'package:oraculo_ia/l10n/app_localizations.dart';
 import 'package:oraculo_ia/src/design_system/components/async_content.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/components/primary_mission_action.dart';
+import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_view_model.dart';
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
@@ -73,13 +74,13 @@ class CurrentMissionScreen extends ConsumerWidget {
                   l10n.mentorGreeting,
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppSpacing.xs),
                 Text(
                   learning.reviewConcepts.isEmpty
                       ? 'Hoy tenés una misión clara para seguir avanzando.'
                       : 'Tenés ${learning.reviewConcepts.length} concepto para repasar antes de avanzar.',
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.md),
                 Row(
                   children: [
                     Expanded(
@@ -88,7 +89,7 @@ class CurrentMissionScreen extends ConsumerWidget {
                         value: '${learning.studyMinutes} min',
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: AppSpacing.xs),
                     Expanded(
                       child: _Metric(
                         label: 'Meta semanal',
@@ -97,15 +98,15 @@ class CurrentMissionScreen extends ConsumerWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.md),
                 Text(
                   'Misión recomendada',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppSpacing.xs),
                 Card(
                   child: Padding(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(AppSpacing.md),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -113,24 +114,24 @@ class CurrentMissionScreen extends ConsumerWidget {
                           value.title,
                           style: Theme.of(context).textTheme.titleLarge,
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: AppSpacing.xs),
                         Text(
                           '$statusLabel · ${l10n.estimatedTime(estimatedMinutes)}',
                         ),
-                        const SizedBox(height: 12),
+                        const SizedBox(height: AppSpacing.sm),
                         LinearProgressIndicator(value: progress),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: AppSpacing.xs),
                         Text(nextAction),
                       ],
                     ),
                   ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: AppSpacing.sm),
                 PrimaryMissionAction(
                   label: l10n.continueMission,
                   onPressed: () => onContinue(value),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.md),
                 if (learning.reviewConcepts.isNotEmpty)
                   Card(
                     child: ListTile(
@@ -150,11 +151,18 @@ class CurrentMissionScreen extends ConsumerWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppSpacing.sm),
                 Text('Explorar', style: Theme.of(context).textTheme.titleLarge),
-                Wrap(
-                  spacing: 4,
-                  runSpacing: 4,
+                const SizedBox(height: AppSpacing.sm),
+                GridView(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 3.5,
+                    crossAxisSpacing: 8,
+                    mainAxisSpacing: 8,
+                  ),
                   children: [
                     _Access('Manual', Icons.menu_book_outlined, onManual),
                     _Access('Diccionario', Icons.translate, onDictionary),
@@ -166,17 +174,20 @@ class CurrentMissionScreen extends ConsumerWidget {
                     _Access('Mi perfil', Icons.person_outline, onLearnerProfile),
                     _Access('Evaluación', Icons.fact_check_outlined, onAssessment),
                     _Access('Repaso', Icons.replay_circle_filled_outlined, onReview),
-                    _Access('Estado del conocimiento', Icons.verified_outlined, onEditorial),
-                    _Access('Manual Maestro',Icons.picture_as_pdf_outlined,onManualExport),
-                    _Access('Proyectos',Icons.construction_outlined,onProjects),
-                    _Access('Caminos',Icons.route_outlined,onCareer),
+                    _Access('Conocimiento', Icons.verified_outlined, onEditorial),
+                    _Access('Manual Maestro', Icons.picture_as_pdf_outlined, onManualExport),
+                    _Access('Proyectos', Icons.construction_outlined, onProjects),
+                    _Access('Caminos', Icons.route_outlined, onCareer),
                     _Access('Respaldo', Icons.save_alt, onBackup),
                     _Access('Acerca', Icons.info_outline, onAbout),
                   ],
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: AppSpacing.sm),
                 const Center(
-                  child: Text('ORÁCULO IA Beta local · versión 1.8'),
+                  child: Text(
+                    'ORÁCULO IA Beta local · versión 1.8',
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
                 ),
               ],
             ),
@@ -190,16 +201,17 @@ class _Metric extends StatelessWidget {
   final String label, value;
   @override
   Widget build(BuildContext context) => Card(
-    child: Padding(
-      padding: const EdgeInsets.all(12),
-      child: Column(
-        children: [
-          Text(value, style: Theme.of(context).textTheme.titleLarge),
-          Text(label),
-        ],
-      ),
-    ),
-  );
+        margin: EdgeInsets.zero,
+        child: Padding(
+          padding: const EdgeInsets.all(AppSpacing.sm),
+          child: Column(
+            children: [
+              Text(value, style: Theme.of(context).textTheme.titleLarge),
+              Text(label, style: Theme.of(context).textTheme.bodySmall),
+            ],
+          ),
+        ),
+      );
 }
 
 class _Access extends StatelessWidget {
@@ -208,6 +220,32 @@ class _Access extends StatelessWidget {
   final IconData icon;
   final VoidCallback action;
   @override
-  Widget build(BuildContext context) =>
-      TextButton.icon(onPressed: action, icon: Icon(icon), label: Text(label));
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return Card(
+      margin: EdgeInsets.zero,
+      child: InkWell(
+        onTap: action,
+        borderRadius: BorderRadius.circular(16),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          child: Row(
+            children: [
+              Icon(icon, size: 20, color: colors.primary),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  label,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }

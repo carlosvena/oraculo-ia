@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/onboarding/presentation/splash_view_model.dart';
 
 class SplashScreen extends ConsumerWidget {
@@ -39,7 +40,7 @@ class _BrandMark extends StatelessWidget {
             size: 52,
             color: Theme.of(context).colorScheme.primary,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpacing.lg),
           Text(
             l10n.appName,
             style: Theme.of(

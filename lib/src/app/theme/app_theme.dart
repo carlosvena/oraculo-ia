@@ -27,15 +27,85 @@ abstract final class AppTheme {
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
-          minimumSize: const Size.fromHeight(64),
+          minimumSize: const Size.fromHeight(54),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(16),
           ),
           textStyle: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w800,
             letterSpacing: 1.2,
           ),
+        ),
+      ),
+      cardTheme: CardThemeData(
+        color: _surface,
+        elevation: 0,
+        margin: const EdgeInsets.only(bottom: 12),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+          side: BorderSide(
+            color: scheme.outlineVariant.withValues(alpha: 0.15),
+          ),
+        ),
+      ),
+      listTileTheme: ListTileThemeData(
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        iconColor: scheme.primary,
+      ),
+      chipTheme: ChipThemeData(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        secondarySelectedColor: scheme.primaryContainer,
+        selectedColor: scheme.primaryContainer,
+        backgroundColor: _background,
+        side: BorderSide(
+          color: scheme.outlineVariant.withValues(alpha: 0.15),
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: _surface,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: scheme.outlineVariant.withValues(alpha: 0.15),
+          ),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: scheme.outlineVariant.withValues(alpha: 0.15),
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(color: scheme.primary),
+        ),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      ),
+      segmentedButtonTheme: SegmentedButtonThemeData(
+        style: ButtonStyle(
+          shape: WidgetStateProperty.all(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          ),
+        ),
+      ),
+      sliderTheme: SliderThemeData(
+        activeTrackColor: scheme.primary,
+        inactiveTrackColor: scheme.outlineVariant.withValues(alpha: 0.2),
+        thumbColor: scheme.primary,
+        trackHeight: 6,
+      ),
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
         ),
       ),
       pageTransitionsTheme: const PageTransitionsTheme(

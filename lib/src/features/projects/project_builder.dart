@@ -1,4 +1,182 @@
-import 'dart:convert';import 'package:flutter/material.dart';import 'package:flutter/services.dart';import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
-class LearningProject{const LearningProject(this.id,this.title,this.objective,this.knowledge,this.missions,this.steps,this.deliverables,this.success,this.risks,this.evaluation);final String id,title,objective,evaluation;final List<String>knowledge,missions,steps,deliverables,success,risks;}
-List<LearningProject> parseProjects(String s){final r=jsonDecode(s)as Map<String,dynamic>;if(r['schemaVersion']!=1)throw const FormatException('Proyectos incompatibles');return(r['projects']as List).cast<Map<String,dynamic>>().map((p){List<String>l(String k)=>(p[k]as List).cast<String>();return LearningProject(p['id'] as String,p['title'] as String,p['objective'] as String,l('knowledge'),l('missions'),l('steps'),l('deliverables'),l('success'),l('risks'),p['evaluation'] as String);}).toList();}
-class ProjectBuilderScreen extends StatefulWidget{const ProjectBuilderScreen({super.key});@override State<ProjectBuilderScreen>createState()=>_S();}class _S extends State<ProjectBuilderScreen>{final done=<String>{};@override Widget build(BuildContext c)=>OraculoScaffold(body:FutureBuilder<List<LearningProject>>(future:rootBundle.loadString('knowledge/projects_v1.json').then(parseProjects),builder:(c,s){if(!s.hasData)return const Center(child:CircularProgressIndicator());return ListView(children:[Text('Constructor de proyectos',style:Theme.of(c).textTheme.headlineMedium),const Text('Elegí qué querés construir y convertí aprendizaje en entregables.'),for(final p in s.data!)Card(child:ExpansionTile(title:Text(p.title),subtitle:Text('${p.missions.length} misiones previas · ${done.where((x)=>x.startsWith(p.id)).length}/${p.steps.length} pasos'),childrenPadding:const EdgeInsets.all(16),children:[Text(p.objective),_f('Conocimientos',p.knowledge),_f('Misiones',p.missions),for(final(index,step)in p.steps.indexed)CheckboxListTile(value:done.contains('${p.id}:$index'),onChanged:(v)=>setState(()=>v!?done.add('${p.id}:$index'):done.remove('${p.id}:$index')),title:Text(step)),LinearProgressIndicator(value:done.where((x)=>x.startsWith(p.id)).length/p.steps.length),_f('Entregables',p.deliverables),_f('Criterios de éxito',p.success),_f('Riesgos',p.risks),_f('Evaluación final',[p.evaluation]),_f('Documentación creada',['Decisiones','Pruebas','Resultados','Próximos pasos'])]))]);}));Widget _f(String t,List<String>v)=>ListTile(title:Text(t),subtitle:Text(v.map((x)=>'• $x').join('\n')));}
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
+import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
+
+class LearningProject {
+  const LearningProject(
+    this.id,
+    this.title,
+    this.objective,
+    this.knowledge,
+    this.missions,
+    this.steps,
+    this.deliverables,
+    this.success,
+    this.risks,
+    this.evaluation,
+  );
+
+  final String id, title, objective, evaluation;
+  final List<String> knowledge, missions, steps, deliverables, success, risks;
+}
+
+List<LearningProject> parseProjects(String s) {
+  final r = jsonDecode(s) as Map<String, dynamic>;
+  if (r['schemaVersion'] != 1) {
+    throw const FormatException('Proyectos incompatibles');
+  }
+  return (r['projects'] as List).cast<Map<String, dynamic>>().map((p) {
+    List<String> l(String k) => (p[k] as List).cast<String>();
+    return LearningProject(
+      p['id'] as String,
+      p['title'] as String,
+      p['objective'] as String,
+      l('knowledge'),
+      l('missions'),
+      l('steps'),
+      l('deliverables'),
+      l('success'),
+      l('risks'),
+      p['evaluation'] as String,
+    );
+  }).toList();
+}
+
+class ProjectBuilderScreen extends StatefulWidget {
+  const ProjectBuilderScreen({super.key});
+
+  @override
+  State<ProjectBuilderScreen> createState() => _ProjectBuilderScreenState();
+}
+
+class _ProjectBuilderScreenState extends State<ProjectBuilderScreen> {
+  final done = <String>{};
+
+  @override
+  Widget build(BuildContext context) {
+    return OraculoScaffold(
+      body: FutureBuilder<List<LearningProject>>(
+        future: rootBundle.loadString('knowledge/projects_v1.json').then(parseProjects),
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            return Center(
+              child: Text(
+                'Error: ${snapshot.error}',
+                style: TextStyle(color: Theme.of(context).colorScheme.error),
+              ),
+            );
+          }
+          if (!snapshot.hasData) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          final projects = snapshot.data!;
+          return ListView(
+            children: [
+              Text(
+                'Constructor de proyectos',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              const SizedBox(height: AppSpacing.xs),
+              const Text(
+                'Elegí qué querés construir y convertí aprendizaje en entregables.',
+                style: TextStyle(color: Colors.grey),
+              ),
+              const SizedBox(height: AppSpacing.lg),
+              for (final p in projects)
+                Card(
+                  child: ExpansionTile(
+                    title: Text(p.title),
+                    subtitle: Text(
+                      '${p.missions.length} misiones previas · ${done.where((x) => x.startsWith(p.id)).length}/${p.steps.length} pasos',
+                    ),
+                    shape: const Border(),
+                    childrenPadding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.md,
+                      vertical: AppSpacing.sm,
+                    ),
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: AppSpacing.md),
+                        child: Text(
+                          p.objective,
+                          style: Theme.of(context).textTheme.bodyLarge,
+                        ),
+                      ),
+                      _buildBulletList('Conocimientos requeridos', p.knowledge),
+                      _buildBulletList('Misiones de referencia', p.missions),
+                      const Divider(),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: AppSpacing.xs),
+                        child: Text(
+                          'Pasos del proyecto',
+                          style: Theme.of(context).textTheme.titleSmall,
+                        ),
+                      ),
+                      for (final (index, step) in p.steps.indexed)
+                        CheckboxListTile(
+                          value: done.contains('${p.id}:$index'),
+                          contentPadding: EdgeInsets.zero,
+                          onChanged: (v) => setState(() => v!
+                              ? done.add('${p.id}:$index')
+                              : done.remove('${p.id}:$index')),
+                          title: Text(step),
+                        ),
+                      const SizedBox(height: AppSpacing.xs),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(4),
+                        child: LinearProgressIndicator(
+                          value: done.where((x) => x.startsWith(p.id)).length / p.steps.length,
+                          minHeight: 8,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.md),
+                      _buildBulletList('Entregables esperados', p.deliverables),
+                      _buildBulletList('Criterios de éxito', p.success),
+                      _buildBulletList('Riesgos a mitigar', p.risks),
+                      _buildBulletList('Evaluación final', [p.evaluation]),
+                      _buildBulletList(
+                        'Documentación que vas a crear',
+                        ['Decisiones tomadas', 'Pruebas ejecutadas', 'Resultados obtenidos', 'Próximos pasos'],
+                      ),
+                    ],
+                  ),
+                ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildBulletList(String title, List<String> items) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.md),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+          ),
+          const SizedBox(height: AppSpacing.xs),
+          for (final item in items)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('• ', style: TextStyle(fontWeight: FontWeight.bold)),
+                  Expanded(child: Text(item)),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}

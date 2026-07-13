@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/onboarding/presentation/welcome_view_model.dart';
 
 class WelcomeScreen extends ConsumerWidget {
@@ -16,7 +17,7 @@ class WelcomeScreen extends ConsumerWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -26,12 +27,12 @@ class WelcomeScreen extends ConsumerWidget {
                 size: 48,
                 color: Theme.of(context).colorScheme.primary,
               ),
-              const SizedBox(height: 28),
+              const SizedBox(height: AppSpacing.xl),
               Text(
                 l10n.welcomeTitle,
                 style: Theme.of(context).textTheme.displaySmall,
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: AppSpacing.lg),
               Text(
                 l10n.welcomeBody,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(

@@ -4,7 +4,18 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprint 10 pendiente de definición.
+- Próximo: Sprints 21-23 pendientes de definición.
+
+## 2.0.0-sprint20 — 2026-07-13
+
+- **Operación Pulido (Operation Polish)**: unificación estética global y refactorización visual.
+- Integración de temas de componentes Material 3 en `app_theme.dart` (tarjetas, listiles, inputs, chips, sliders y segmented buttons).
+- Rediseño de la sección de exploración en `CurrentMissionScreen` como un Grid unificado y premium.
+- Refactorización, formateo y saneamiento de 6 archivos de presentación minificados.
+- Adopción de `AppSpacing` en todas las vistas de la aplicación.
+- Notificaciones emergentes Snackbars para feedback visual interactivo.
+- Resolución de lints y deprecaciones de entrada.
+- Creación de la guía de estilos `docs/UI_GUIDELINES.md` y auditoría visual `docs/UI_AUDIT.md`.
 
 ## 1.8.0-beta — 2026-07-11
 
