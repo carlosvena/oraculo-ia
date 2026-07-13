@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-mcp-012",
+    "number": "012",
+    "title": "MCP: conectar herramientas con contexto",
+    "duration": 60,
+    "concepts": [
+      "MCP",
+      "Herramienta",
+      "Permiso"
+    ],
+    "objective": "Entender el rol de MCP y diseñar una integración con permisos mínimos.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Diseñar conexiones útiles sin convertir al modelo en un usuario todopoderoso."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "Los modelos necesitan acceder de forma estandarizada a recursos y herramientas para actuar sobre sistemas reales."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "MCP define una forma de exponer recursos, prompts y herramientas a clientes compatibles. El protocolo no reemplaza autenticación ni gobierno."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Es un enchufe estándar; que un dispositivo encaje no significa que deba recibir acceso a toda la instalación."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Un servidor puede exponer lectura de procedimientos y otra herramienta separada para crear un borrador, sin permiso para aprobarlo."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Definí operaciones estrechas, validá entradas, registrá llamadas y pedí confirmación para acciones sensibles."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Diseñá tres herramientas: consultar caso, crear borrador y escalar. Especificá entrada, salida y permiso."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Creá un modelo de amenazas para una herramienta que accede a documentos internos."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Confundir estándar con seguridad, ofrecer herramientas demasiado amplias y no tratar el contenido externo como no confiable."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "MCP estandariza conexión; la seguridad surge de identidad, autorización, validación, confirmación y auditoría."
+      ]
+    ],
+    "quiz": [
+      [
+        "MCP es principalmente...",
+        [
+          "Un protocolo de conexión",
+          "Un modelo",
+          "Una base vectorial"
+        ],
+        0
+      ],
+      [
+        "MCP reemplaza permisos.",
+        [
+          "No",
+          "Sí",
+          "Solo offline"
+        ],
+        0
+      ],
+      [
+        "Una herramienta segura debe ser...",
+        [
+          "Estrecha y validada",
+          "Todopoderosa",
+          "Anónima"
+        ],
+        0
+      ],
+      [
+        "Una acción sensible requiere...",
+        [
+          "Confirmación y auditoría",
+          "Más creatividad",
+          "Menos contexto"
+        ],
+        0
+      ],
+      [
+        "El contenido externo puede contener...",
+        [
+          "Instrucciones maliciosas",
+          "Pesos del modelo",
+          "Batería"
+        ],
+        0
+      ],
+      [
+        "Un recurso suele ofrecer...",
+        [
+          "Datos para leer",
+          "Acciones irreversibles",
+          "Entrenamiento"
+        ],
+        0
+      ],
+      [
+        "El menor privilegio significa...",
+        [
+          "Solo acceso necesario",
+          "Acceso administrador",
+          "Sin registros"
+        ],
+        0
+      ],
+      [
+        "Una integración madura registra...",
+        [
+          "Quién hizo qué y cuándo",
+          "Solo errores visuales",
+          "Solo prompts"
+        ],
+        0
+      ]
+    ]
+  }
+}

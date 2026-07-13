@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-project-015",
+    "number": "015",
+    "title": "Proyecto integrador 1",
+    "duration": 75,
+    "concepts": [
+      "Prompt profesional",
+      "Selección de modelo",
+      "Verificación",
+      "Automatización"
+    ],
+    "objective": "Diseñar una solución completa, justificable y segura para un problema laboral.",
+    "sections": [
+      [
+        "title",
+        "Tu proyecto",
+        "Diseñar un asistente para preparar el informe semanal de un supervisor bancario."
+      ],
+      [
+        "text",
+        "Contexto",
+        "El informe resume incidentes, tendencias y acciones. Usa datos internos, requiere exactitud y termina en una decisión humana."
+      ],
+      [
+        "text",
+        "Criterios de éxito",
+        "Reducir tiempo sin perder trazabilidad; citar fuentes; proteger datos; separar hechos, inferencias y recomendaciones."
+      ],
+      [
+        "example",
+        "Prompt profesional",
+        "Definí rol, objetivo, entradas autorizadas, estructura, criterios de evidencia, manejo de faltantes y prohibiciones."
+      ],
+      [
+        "text",
+        "Selección de modelo",
+        "Compará capacidad con documentos, privacidad, contexto, costo, latencia y condiciones contractuales. Justificá la elección."
+      ],
+      [
+        "text",
+        "Verificación",
+        "Cada cifra debe reconciliarse con la fuente. Toda recomendación debe distinguirse de los hechos y pasar revisión humana."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Escribí el prompt completo y una tabla de cinco pruebas: normal, dato faltante, contradicción, instrucción maliciosa y volumen extremo."
+      ],
+      [
+        "challenge",
+        "Automatización conceptual",
+        "Dibujá entrada, validación, recuperación, generación, verificación, aprobación, entrega y auditoría."
+      ],
+      [
+        "text",
+        "Errores a prevenir",
+        "Enviar automáticamente, mezclar períodos, exponer datos, citar fuentes inexistentes y ocultar incertidumbre."
+      ],
+      [
+        "summary",
+        "Reflexión final",
+        "Explicá qué delegaste, qué conservaste bajo juicio humano y qué evidencia demostraría que el sistema aporta valor."
+      ]
+    ],
+    "quiz": [
+      [
+        "El prompt debe definir...",
+        [
+          "Tarea, evidencia y límites",
+          "Solo tono",
+          "Solo extensión"
+        ],
+        0
+      ],
+      [
+        "La elección de modelo depende de...",
+        [
+          "Tarea, datos y restricciones",
+          "Popularidad",
+          "Una marca fija"
+        ],
+        0
+      ],
+      [
+        "Una cifra se acepta cuando...",
+        [
+          "Se reconcilia con la fuente",
+          "Suena razonable",
+          "Aparece dos veces"
+        ],
+        0
+      ],
+      [
+        "Un dato faltante debe...",
+        [
+          "Declararse y escalarse",
+          "Inventarse",
+          "Ocultarse"
+        ],
+        0
+      ],
+      [
+        "La salida final requiere...",
+        [
+          "Aprobación humana",
+          "Envío automático",
+          "Temperatura alta"
+        ],
+        0
+      ],
+      [
+        "Una prueba adversarial incluye...",
+        [
+          "Instrucción maliciosa en datos",
+          "Solo caso ideal",
+          "Cambio de color"
+        ],
+        0
+      ],
+      [
+        "La auditoría permite...",
+        [
+          "Reconstruir el proceso",
+          "Crear embeddings",
+          "Cambiar pesos"
+        ],
+        0
+      ],
+      [
+        "El éxito se mide con...",
+        [
+          "Calidad, tiempo, riesgo y adopción",
+          "Solo velocidad",
+          "Cantidad de texto"
+        ],
+        0
+      ]
+    ]
+  }
+}

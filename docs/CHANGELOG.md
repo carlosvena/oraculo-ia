@@ -4,7 +4,16 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 21-23 pendientes de definición.
+- Próximo: Sprints 22-23 pendientes de definición.
+
+## 2.1.0-sprint21 — 2026-07-13
+
+- **Motor de Conocimiento (Knowledge Engine)**: reestructuración modular offline de contenidos.
+- Fraccionamiento de los JSON monolíticos en archivos independientes: misiones individuales (`knowledge/missions/lesson-*.json`), diccionario (`dictionary_v1.json`), manual (`manual_v1.json`) y taxonomías curriculares (`modules_v1.json`).
+- Centralización y validación automática de datos en `KnowledgeEngine` al arrancar la aplicación.
+- Implementación de lazy loading en repositorios de lecciones para posibilitar miles de misiones sin penalización de memoria.
+- Detección estricta de errores editoriales: validación semántica de enlaces rotos y detección de ciclos cerrados en prerrequisitos de misiones (DFS).
+- Integración de búsqueda indexada semántica rápida sobre manual y diccionario.
 
 ## 2.0.0-sprint20 — 2026-07-13
 

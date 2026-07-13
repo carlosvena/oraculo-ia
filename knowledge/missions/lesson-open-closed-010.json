@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-open-closed-010",
+    "number": "010",
+    "title": "Modelos abiertos y cerrados",
+    "duration": 55,
+    "concepts": [
+      "Modelo abierto",
+      "Modelo cerrado",
+      "Gobernanza"
+    ],
+    "objective": "Elegir un enfoque considerando capacidad, control, costo y riesgo.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Evaluar modelos sin reducir la decisión a un ranking."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "La licencia, los pesos, el despliegue y las condiciones de uso cambian control, responsabilidad y dependencia."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "Abierto y cerrado no son etiquetas binarias perfectas. Hay grados de acceso a pesos, código, datos, licencia y servicio."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Comprar comida preparada, recibir la receta o administrar la cocina ofrecen distintos niveles de comodidad y control."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Datos sensibles pueden favorecer despliegue controlado; una tarea general puede justificar un servicio administrado con mejores capacidades."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Evaluá residencia de datos, contrato, auditoría, latencia, capacidades, soporte y costo total."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Construí una matriz ponderada para tres escenarios: borrador público, documentos internos y decisión regulada."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Defendé dos elecciones distintas para el mismo modelo según cambie la sensibilidad del dato."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Asumir que abierto es gratis, que cerrado es siempre mejor o comparar solo benchmarks."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "Elegir modelo es elegir un sistema operativo, contractual y de gobernanza, no solo calidad de salida."
+      ]
+    ],
+    "quiz": [
+      [
+        "Abierto significa siempre sin costo.",
+        [
+          "No",
+          "Sí",
+          "Solo empresarial"
+        ],
+        0
+      ],
+      [
+        "Una dimensión clave es...",
+        [
+          "Licencia",
+          "Color del logo",
+          "País del usuario"
+        ],
+        0
+      ],
+      [
+        "El costo total incluye...",
+        [
+          "Infraestructura y operación",
+          "Solo tokens",
+          "Solo descarga"
+        ],
+        0
+      ],
+      [
+        "Para datos sensibles importa...",
+        [
+          "Gobernanza y residencia",
+          "Popularidad",
+          "Cantidad de seguidores"
+        ],
+        0
+      ],
+      [
+        "Un benchmark decide por sí solo.",
+        [
+          "No",
+          "Sí",
+          "Si es reciente"
+        ],
+        0
+      ],
+      [
+        "Pesos disponibles implican datos de entrenamiento abiertos.",
+        [
+          "No necesariamente",
+          "Siempre",
+          "Nunca hay pesos"
+        ],
+        0
+      ],
+      [
+        "El soporte es parte de...",
+        [
+          "La decisión operativa",
+          "La atención",
+          "El embedding"
+        ],
+        0
+      ],
+      [
+        "La elección correcta depende de...",
+        [
+          "Tarea, riesgo y restricciones",
+          "Una marca universal",
+          "El prompt más largo"
+        ],
+        0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-embeddings-007",
+    "number": "007",
+    "title": "Embeddings: significado como distancia",
+    "duration": 55,
+    "concepts": [
+      "Embedding",
+      "Vector",
+      "Similitud"
+    ],
+    "objective": "Interpretar embeddings y diseñar una búsqueda semántica conceptual.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Convertir significado en una herramienta medible, sin confundir proximidad con verdad."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "Búsqueda semántica, recomendaciones, clustering y RAG dependen de representaciones vectoriales."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "Un embedding es una lista de números aprendida que ubica contenido en un espacio. Elementos usados de forma parecida tienden a quedar cerca."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Es un mapa con muchas dimensiones: no marca latitud y longitud, sino rasgos latentes como tema, tono o función."
+      ],
+      [
+        "example",
+        "Caso real",
+        "'Cancelar tarjeta robada' puede encontrar 'bloqueo urgente de plástico' aunque no compartan palabras exactas."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Un buscador interno puede recuperar procedimientos por intención. Debe filtrar permisos y mostrar la fuente original."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Creá seis consultas distintas para tres procedimientos y agrupá manualmente cuáles deberían quedar cerca."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Diseñá criterios de aceptación para un buscador semántico bancario: relevancia, seguridad y trazabilidad."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Creer que cercanía implica exactitud, mezclar datos incompatibles o evaluar solo con ejemplos favorables."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "Los embeddings representan similitud útil. Recuperan candidatos; no certifican hechos ni autorizaciones."
+      ]
+    ],
+    "quiz": [
+      [
+        "Un embedding es...",
+        [
+          "Una representación vectorial",
+          "Una base SQL",
+          "Una respuesta verificada"
+        ],
+        0
+      ],
+      [
+        "Dos textos cercanos son necesariamente verdaderos.",
+        [
+          "Sí",
+          "No",
+          "Si son largos"
+        ],
+        1
+      ],
+      [
+        "La búsqueda semántica compara...",
+        [
+          "Significado aproximado",
+          "Solo caracteres",
+          "Contraseñas"
+        ],
+        0
+      ],
+      [
+        "Un uso adecuado es...",
+        [
+          "Recuperar documentos candidatos",
+          "Autorizar créditos sin control",
+          "Firmar contratos"
+        ],
+        0
+      ],
+      [
+        "La similitud suele medirse con...",
+        [
+          "Distancia o coseno",
+          "Fecha del archivo",
+          "Tamaño de pantalla"
+        ],
+        0
+      ],
+      [
+        "Antes de mostrar resultados internos hay que...",
+        [
+          "Aplicar permisos",
+          "Traducir todo",
+          "Borrar fuentes"
+        ],
+        0
+      ],
+      [
+        "Una evaluación seria incluye...",
+        [
+          "Casos difíciles y falsos positivos",
+          "Solo demos exitosas",
+          "Una consulta"
+        ],
+        0
+      ],
+      [
+        "Embedding y generación son...",
+        [
+          "Capacidades distintas",
+          "Sinónimos",
+          "Siempre online"
+        ],
+        0
+      ]
+    ]
+  }
+}

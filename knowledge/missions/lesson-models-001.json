@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-models-001",
+    "missionId": "mission-foundations-001",
+    "version": 3,
+    "title": "Qué es realmente un modelo de IA",
+    "objective": "Comprender cómo aprende un modelo y por qué sus respuestas necesitan criterio humano.",
+    "duration": 15,
+    "difficulty": "Inicial",
+    "concepts": [
+      "LLM",
+      "Token"
+    ],
+    "blocks": [
+      {
+        "type": "title",
+        "title": "Misión 001",
+        "content": "Qué es realmente un modelo de Inteligencia Artificial",
+        "prompt": "Hoy vas a construir una idea clara que te servirá para entender todo lo que viene después."
+      },
+      {
+        "type": "text",
+        "title": "Objetivo de aprendizaje",
+        "content": "Al terminar vas a poder explicar qué es un modelo de IA y distinguir patrones estadísticos de comprensión humana."
+      },
+      {
+        "type": "text",
+        "title": "Explicación",
+        "content": "Un modelo de IA es un sistema matemático que aprende relaciones y patrones a partir de ejemplos. Ante información nueva usa esos patrones para predecir, clasificar o generar.",
+        "items": [
+          "Aprende de datos.",
+          "Aplica patrones a casos nuevos.",
+          "Puede equivocarse aunque parezca convincente."
+        ]
+      },
+      {
+        "type": "analogy",
+        "title": "Analogía",
+        "content": "Como una persona que escuchó miles de canciones y anticipa el estilo de una nueva: reconoce patrones, no conoce el futuro."
+      },
+      {
+        "type": "example",
+        "title": "Ejemplo práctico",
+        "content": "Un filtro de spam aprende observando correos clasificados y calcula si un mensaje nuevo se parece más al spam o al correo válido.",
+        "prompt": "Leer más: LLM"
+      },
+      {
+        "type": "challenge",
+        "title": "Mini laboratorio",
+        "content": "Una empresa quiere detectar mensajes urgentes. Elegí los datos adecuados.",
+        "questions": [
+          {
+            "question": "¿Qué datos elegirías?",
+            "options": [
+              "Edad y color favorito.",
+              "Mensajes reales etiquetados como urgentes y no urgentes.",
+              "Lista de productos."
+            ],
+            "correct": 1,
+            "explanation": "El modelo necesita ejemplos directamente relacionados con la decisión."
+          }
+        ]
+      },
+      {
+        "type": "quiz",
+        "title": "Quiz",
+        "content": "Comprobá tu comprensión.",
+        "questions": [
+          {
+            "question": "¿Qué aprende un modelo?",
+            "options": [
+              "Patrones.",
+              "Verdades absolutas.",
+              "Intenciones."
+            ],
+            "correct": 0,
+            "explanation": "Ajusta relaciones estadísticas presentes en datos."
+          },
+          {
+            "question": "¿Qué hace con información nueva?",
+            "options": [
+              "La ignora.",
+              "Aplica patrones.",
+              "Siempre busca en Internet."
+            ],
+            "correct": 1,
+            "explanation": "Usa lo aprendido para producir un resultado nuevo."
+          },
+          {
+            "question": "¿Por qué puede equivocarse?",
+            "options": [
+              "El teléfono es lento.",
+              "Falta una clave.",
+              "Estima probabilidades, no verdad."
+            ],
+            "correct": 2,
+            "explanation": "Fluidez no equivale a exactitud."
+          },
+          {
+            "question": "¿Qué mejora un filtro de spam?",
+            "options": [
+              "Ejemplos bien clasificados.",
+              "Otro nombre.",
+              "Pantalla grande."
+            ],
+            "correct": 0,
+            "explanation": "Datos relevantes mejoran los patrones."
+          },
+          {
+            "question": "¿Rol del criterio humano?",
+            "options": [
+              "Aceptar todo.",
+              "Evaluar resultados y riesgos.",
+              "Evitar contexto."
+            ],
+            "correct": 1,
+            "explanation": "Las personas comprueban calidad y consecuencias."
+          }
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Resumen",
+        "content": "Un modelo aprende patrones y los aplica a información nueva, pero no garantiza verdad.",
+        "items": [
+          "Importan los datos.",
+          "Importa el contexto.",
+          "Hace falta criterio humano."
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Misión lista",
+        "content": "Ya tenés el concepto base para analizar herramientas de IA.",
+        "prompt": "Continuá para registrar tu progreso."
+      }
+    ]
+  }
+}

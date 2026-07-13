@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-automation-014",
+    "number": "014",
+    "title": "Automatización con IA",
+    "duration": 65,
+    "concepts": [
+      "Automatización",
+      "Workflow",
+      "Control humano"
+    ],
+    "objective": "Seleccionar y diseñar automatizaciones confiables con IA.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Automatizar decisiones repetibles sin automatizar irresponsablemente la incertidumbre."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "La IA amplía qué partes no estructuradas de un proceso pueden asistirse, pero introduce variabilidad."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "Un workflow confiable separa pasos deterministas, pasos probabilísticos, validaciones y aprobaciones."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Una línea de producción usa máquinas para tareas repetibles e inspectores donde el error importa."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Clasificar correos puede ser probabilístico; consultar saldo y registrar una operación deben respetar reglas deterministas y permisos."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Priorizá alto volumen, bajo riesgo, datos disponibles y resultado verificable. Medí tiempo, calidad y excepciones."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Mapeá un proceso real y coloreá pasos: automatizable, asistible, humano obligatorio y prohibido."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Diseñá una automatización de informe diario con entradas, validaciones, fallback y auditoría."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Automatizar un proceso roto, omitir casos excepcionales, no definir dueño y medir solo velocidad."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "Automatizar bien es diseñar el proceso completo: valor, límites, controles, excepciones y mejora continua."
+      ]
+    ],
+    "quiz": [
+      [
+        "Un paso probabilístico...",
+        [
+          "Puede variar con la misma intención",
+          "Siempre es exacto",
+          "No usa datos"
+        ],
+        0
+      ],
+      [
+        "Primero conviene automatizar...",
+        [
+          "Alto volumen y resultado verificable",
+          "Toda decisión crítica",
+          "Procesos desconocidos"
+        ],
+        0
+      ],
+      [
+        "Un fallback define...",
+        [
+          "Qué hacer ante falla",
+          "El logo",
+          "El entrenamiento"
+        ],
+        0
+      ],
+      [
+        "Automatizar un proceso roto...",
+        [
+          "Escala sus problemas",
+          "Lo corrige siempre",
+          "Reduce excepciones"
+        ],
+        0
+      ],
+      [
+        "Una métrica completa incluye...",
+        [
+          "Calidad, tiempo y excepciones",
+          "Solo velocidad",
+          "Solo uso"
+        ],
+        0
+      ],
+      [
+        "La aprobación humana se ubica...",
+        [
+          "Según riesgo e irreversibilidad",
+          "Al azar",
+          "Nunca"
+        ],
+        0
+      ],
+      [
+        "El dueño del proceso responde por...",
+        [
+          "Resultado y controles",
+          "El color",
+          "El modelo solamente"
+        ],
+        0
+      ],
+      [
+        "Una automatización auditable conserva...",
+        [
+          "Entradas, decisiones y resultados",
+          "Solo salida",
+          "Nada"
+        ],
+        0
+      ]
+    ]
+  }
+}

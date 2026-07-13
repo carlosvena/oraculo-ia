@@ -30,3 +30,4 @@ flutter:
   generate: true
   assets:
     - knowledge/
+    - knowledge/missions/

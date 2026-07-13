@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "dictionary": [
+    {
+      "id": "llm",
+      "term": "LLM",
+      "definition": "Modelo de lenguaje de gran escala.",
+      "explanation": "Predice y genera secuencias de tokens aprendiendo patrones de grandes volúmenes de texto y otros datos.",
+      "analogy": "Un lector extremadamente entrenado que anticipa cómo continúa un texto.",
+      "example": "Redactar un resumen a partir de un informe.",
+      "mistake": "Confundir fluidez con comprensión o verdad.",
+      "related": [
+        "prompt",
+        "token",
+        "context-window",
+        "agent"
+      ]
+    },
+    {
+      "id": "prompt",
+      "term": "Prompt",
+      "definition": "Instrucción y contexto enviados a un modelo.",
+      "explanation": "Especifica qué resultado se busca y bajo qué condiciones.",
+      "analogy": "Un encargo profesional escrito.",
+      "example": "Clasificá reclamos por causa y citá evidencia.",
+      "mistake": "Creer que existe una frase mágica universal.",
+      "related": [
+        "llm",
+        "token",
+        "context-window"
+      ]
+    },
+    {
+      "id": "token",
+      "term": "Token",
+      "definition": "Unidad en la que el modelo divide la información.",
+      "explanation": "Puede ser una palabra, parte de ella, un signo o fragmento de código.",
+      "analogy": "Piezas con las que el modelo arma y lee mensajes.",
+      "example": "Una oración se convierte en varios tokens.",
+      "mistake": "Suponer que un token equivale siempre a una palabra.",
+      "related": [
+        "llm",
+        "context-window",
+        "prompt"
+      ]
+    },
+    {
+      "id": "context-window",
+      "term": "Ventana de contexto",
+      "definition": "Cantidad de tokens que un modelo puede considerar en una interacción.",
+      "explanation": "Incluye instrucciones, historial, documentos y respuesta generada.",
+      "analogy": "Una mesa de trabajo con espacio limitado.",
+      "example": "Un documento extenso puede desplazar información anterior.",
+      "mistake": "Agregar información irrelevante creyendo que siempre ayuda.",
+      "related": [
+        "token",
+        "prompt",
+        "llm"
+      ]
+    },
+    {
+      "id": "agent",
+      "term": "Agente de IA",
+      "definition": "Sistema que usa modelos para planificar y ejecutar acciones con herramientas.",
+      "explanation": "Combina objetivo, estado, decisiones, herramientas y controles.",
+      "analogy": "Un operador digital con procedimientos y permisos.",
+      "example": "Revisar archivos, producir un informe y solicitar aprobación antes de enviarlo.",
+      "mistake": "Dar permisos amplios sin límites ni supervisión.",
+      "related": [
+        "llm",
+        "prompt",
+        "context-window",
+        "mcp"
+      ]
+    },
+    {
+      "id": "transformer",
+      "term": "Transformer",
+      "definition": "Arquitectura neuronal basada en mecanismos de atención.",
+      "explanation": "Relaciona elementos de una secuencia y permite procesar contexto en paralelo.",
+      "analogy": "Un lector que conecta cada frase con las partes relevantes del documento.",
+      "example": "Relacionar un pronombre con la entidad correcta.",
+      "mistake": "Creer que atención equivale a conciencia.",
+      "related": [
+        "llm",
+        "training",
+        "inference"
+      ]
+    },
+    {
+      "id": "embedding",
+      "term": "Embedding",
+      "definition": "Representación numérica de significado o características.",
+      "explanation": "Ubica elementos similares cerca en un espacio matemático.",
+      "analogy": "Un mapa donde conceptos próximos comparten barrio.",
+      "example": "Recuperar políticas relacionadas con una consulta.",
+      "mistake": "Tratar similitud como equivalencia exacta.",
+      "related": [
+        "rag",
+        "llm",
+        "token"
+      ]
+    },
+    {
+      "id": "rag",
+      "term": "RAG",
+      "definition": "Generación aumentada por recuperación de información.",
+      "explanation": "Busca evidencia y la agrega al contexto antes de generar.",
+      "analogy": "Consultar el archivo antes de redactar una respuesta.",
+      "example": "Responder sobre una política citando su versión vigente.",
+      "mistake": "Asumir que recuperar una fuente elimina toda alucinación.",
+      "related": [
+        "embedding",
+        "context-window",
+        "hallucination"
+      ]
+    },
+    {
+      "id": "mcp",
+      "term": "MCP",
+      "definition": "Protocolo para conectar modelos con herramientas y recursos.",
+      "explanation": "Estandariza cómo una aplicación expone capacidades a sistemas de IA.",
+      "analogy": "Un enchufe común para herramientas diferentes.",
+      "example": "Permitir que un agente consulte un repositorio autorizado.",
+      "mistake": "Confundir conexión con permiso irrestricto.",
+      "related": [
+        "agent",
+        "prompt"
+      ]
+    },
+    {
+      "id": "inference",
+      "term": "Inferencia",
+      "definition": "Ejecución de un modelo entrenado para producir resultados.",
+      "explanation": "Aplica parámetros aprendidos a una entrada nueva.",
+      "analogy": "Usar lo estudiado para resolver un caso.",
+      "example": "Generar una clasificación de un reclamo.",
+      "mistake": "Creer que cada respuesta reentrena el modelo.",
+      "related": [
+        "training",
+        "llm",
+        "transformer"
+      ]
+    },
+    {
+      "id": "training",
+      "term": "Entrenamiento",
+      "definition": "Proceso de ajustar parámetros usando datos y objetivos.",
+      "explanation": "Reduce errores de predicción a través de muchas iteraciones.",
+      "analogy": "Práctica repetida con retroalimentación.",
+      "example": "Aprender patrones de lenguaje a gran escala.",
+      "mistake": "Confundir datos del prompt con entrenamiento inmediato.",
+      "related": [
+        "inference",
+        "llm",
+        "fine-tuning"
+      ]
+    },
+    {
+      "id": "fine-tuning",
+      "term": "Fine-tuning",
+      "definition": "Ajuste adicional de un modelo para un objetivo específico.",
+      "explanation": "Modifica parámetros con datos seleccionados después del entrenamiento base.",
+      "analogy": "Especialización profesional posterior a una formación general.",
+      "example": "Adaptar estilo o clasificación a un dominio.",
+      "mistake": "Usarlo para información que conviene recuperar con RAG.",
+      "related": [
+        "training",
+        "rag",
+        "llm"
+      ]
+    },
+    {
+      "id": "hallucination",
+      "term": "Alucinación",
+      "definition": "Resultado plausible pero falso o no sustentado.",
+      "explanation": "Surge porque el modelo optimiza generación probable, no verificación automática.",
+      "analogy": "Completar un recuerdo con detalles inventados sin advertirlo.",
+      "example": "Citar una norma inexistente.",
+      "mistake": "Evaluar exactitud solo por el tono seguro.",
+      "related": [
+        "llm",
+        "rag",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "multimodal",
+      "term": "Modelo multimodal",
+      "definition": "Modelo capaz de procesar o generar varias modalidades.",
+      "explanation": "Combina texto, imágenes, audio u otros tipos de información.",
+      "analogy": "Un analista que lee, mira y escucha un caso.",
+      "example": "Explicar un gráfico junto con su informe.",
+      "mistake": "Asumir que más modalidades garantizan mejor razonamiento.",
+      "related": [
+        "llm",
+        "prompt",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "benchmark",
+      "term": "Benchmark",
+      "definition": "Conjunto reproducible de casos y métricas de evaluación.",
+      "explanation": "Permite comparar modelos o prompts bajo criterios comunes.",
+      "analogy": "Una pista de prueba con reglas iguales para todos.",
+      "example": "Medir exactitud en cincuenta reclamos revisados.",
+      "mistake": "Generalizar un puntaje a cualquier contexto real.",
+      "related": [
+        "llm",
+        "prompt",
+        "hallucination"
+      ]
+    }
+  ]
+}

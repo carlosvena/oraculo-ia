@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-training-008",
+    "number": "008",
+    "title": "Inferencia y entrenamiento",
+    "duration": 60,
+    "concepts": [
+      "Inferencia",
+      "Entrenamiento",
+      "Parámetros"
+    ],
+    "objective": "Distinguir construcción y uso de un modelo para tomar decisiones técnicas correctas.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Separar con precisión cuándo un modelo aprende y cuándo solamente calcula una salida."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "Costos, privacidad, latencia y capacidad de actualizar conocimiento dependen de esta distinción."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "Entrenar ajusta parámetros usando datos y una función de pérdida. Inferir mantiene esos parámetros y calcula una salida para una entrada."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Entrenar es preparar y evaluar a un analista durante meses; inferir es pedirle resolver un caso hoy con lo aprendido."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Escribir un prompt no reentrena el modelo. Aporta contexto temporal durante la inferencia."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Si cambia una norma, primero probá aportar la fuente vigente mediante contexto o RAG antes de plantear fine-tuning."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Clasificá diez acciones como entrenamiento, inferencia, recuperación o evaluación."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Proponé cómo actualizar respuestas normativas sin entrenar un modelo desde cero."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Decir que el modelo aprende cada conversación, confundir memoria de producto con parámetros y usar fine-tuning para conocimiento volátil."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "Entrenamiento cambia parámetros; inferencia usa parámetros. Contexto y memoria no son entrenamiento."
+      ]
+    ],
+    "quiz": [
+      [
+        "Entrenar implica...",
+        [
+          "Ajustar parámetros",
+          "Escribir un prompt",
+          "Copiar una respuesta"
+        ],
+        0
+      ],
+      [
+        "Inferencia ocurre cuando...",
+        [
+          "El modelo genera una salida",
+          "Se etiqueta el dataset",
+          "Se actualiza Android"
+        ],
+        0
+      ],
+      [
+        "Un prompt reentrena el modelo.",
+        [
+          "Sí",
+          "No",
+          "Siempre en local"
+        ],
+        1
+      ],
+      [
+        "Para normas cambiantes conviene primero...",
+        [
+          "Contexto recuperado y fuentes",
+          "Entrenar desde cero",
+          "Ocultar fechas"
+        ],
+        0
+      ],
+      [
+        "La memoria del producto equivale a pesos.",
+        [
+          "No",
+          "Sí",
+          "Solo en RAG"
+        ],
+        0
+      ],
+      [
+        "Latencia de inferencia afecta...",
+        [
+          "Experiencia de uso",
+          "Etiquetado previo",
+          "Licencia del dataset"
+        ],
+        0
+      ],
+      [
+        "Fine-tuning suele servir para...",
+        [
+          "Patrones estables de conducta o formato",
+          "Noticias diarias",
+          "Permisos de archivos"
+        ],
+        0
+      ],
+      [
+        "Una evaluación debe separar...",
+        [
+          "Calidad del modelo y del sistema",
+          "Usuario y pantalla",
+          "Texto y teclado"
+        ],
+        0
+      ]
+    ]
+  }
+}

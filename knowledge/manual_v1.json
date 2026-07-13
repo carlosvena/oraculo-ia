@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "articles": [
+    {
+      "id": "modelos",
+      "title": "Cómo aprende un modelo",
+      "body": "Los modelos ajustan parámetros para capturar regularidades en datos. Su salida es probabilística y debe evaluarse.",
+      "links": [
+        "llm",
+        "token"
+      ]
+    },
+    {
+      "id": "prompts-profesionales",
+      "title": "Prompts como especificaciones",
+      "body": "Un prompt profesional declara propósito, contexto, tarea, restricciones, formato y criterios de aceptación.",
+      "links": [
+        "prompt",
+        "context-window",
+        "agent"
+      ]
+    },
+    {
+      "id": "evaluacion",
+      "title": "Evaluar respuestas de IA",
+      "body": "Evaluar implica verificar evidencia, detectar incertidumbre, medir utilidad y considerar riesgo.",
+      "links": [
+        "llm",
+        "agent"
+      ]
+    },
+    {
+      "id": "llm-profundo",
+      "title": "LLM: entrenamiento e inferencia",
+      "body": "Un LLM ajusta parámetros durante entrenamiento y los aplica durante inferencia para producir distribuciones de tokens.",
+      "links": [
+        "llm",
+        "transformer",
+        "training",
+        "inference",
+        "hallucination"
+      ]
+    },
+    {
+      "id": "contexto-tokens",
+      "title": "Diseñar contexto eficiente",
+      "body": "La ventana de contexto es finita. Seleccionar evidencia relevante reduce ruido, costo y respuestas contradictorias.",
+      "links": [
+        "token",
+        "context-window",
+        "embedding",
+        "rag"
+      ]
+    },
+    {
+      "id": "prompts-sistemas",
+      "title": "Prompts profesionales y agentes",
+      "body": "Una especificación profesional define propósito, evidencia, límites, formato, herramientas y aprobación humana.",
+      "links": [
+        "prompt",
+        "agent",
+        "mcp",
+        "benchmark",
+        "multimodal"
+      ]
+    }
+  ]
+}

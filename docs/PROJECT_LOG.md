@@ -341,3 +341,19 @@ Calidad: `flutter analyze` limpio; 35 pruebas aprobadas.
 - Resolución de advertencias de lints (orden de imports, variables deprecadas en inputs).
 
 Calidad: `flutter analyze` limpio; 35 pruebas aprobadas de forma secuencial.
+
+# Sprint 21 — Motor de Conocimiento (Knowledge Engine)
+
+**Estado:** finalizado.
+
+- Creación del `KnowledgeEngine` centralizado en `knowledge_engine.dart` que unifica la carga de recursos offline mediante assets locales.
+- Reestructuración de la base de datos estática: fraccionamiento del archivo monolítico `oraculo_content_v1.json` en colecciones separadas para diccionario (`dictionary_v1.json`), manual (`manual_v1.json`) y 15 misiones pedagógicas individuales bajo `knowledge/missions/`.
+- Creación del archivo curricular `modules_v1.json` que mapea la taxonomía de tracks, habilidades y competencias de `modules/academy`.
+- Implementación de lazy loading en `SimulatedLessonRepository`: los bloques didácticos de las lecciones se cargan y parsean de forma diferida únicamente al entrar en su visualización, reduciendo el consumo de memoria.
+- Validación automática y reporte de errores editoriales en el arranque, incluyendo:
+  - Detección de enlaces rotos o huérfanos entre términos del diccionario.
+  - Validación de límites de contenido para misiones avanzadas (mínimo 10 bloques y 8 preguntas).
+  - Algoritmo de detección de ciclos en los prerrequisitos de las misiones usando búsqueda en profundidad (DFS).
+- Integración de búsqueda indexada semántica rápida sobre manual y diccionario en caché de memoria.
+
+Calidad: `flutter analyze` limpio; 36 pruebas unitarias aprobadas.

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-llm-003",
+    "missionId": "mission-llm-003",
+    "version": 1,
+    "title": "Qué es un LLM",
+    "objective": "Comprender arquitectura, entrenamiento, inferencia, capacidades y límites de un modelo de lenguaje.",
+    "duration": 45,
+    "difficulty": "Profesional",
+    "concepts": [
+      "LLM",
+      "Transformer",
+      "Entrenamiento",
+      "Inferencia",
+      "Alucinación"
+    ],
+    "blocks": [
+      {
+        "type": "title",
+        "title": "Misión 003",
+        "content": "Qué es un LLM",
+        "prompt": "Modo intensivo: entender el motor detrás de los asistentes actuales."
+      },
+      {
+        "type": "text",
+        "title": "Contexto",
+        "content": "Los LLM pasaron de laboratorios de investigación a tareas cotidianas, pero usarlos bien exige comprender qué optimizan y qué no."
+      },
+      {
+        "type": "text",
+        "title": "Objetivo",
+        "content": "Explicar cómo un LLM procesa lenguaje, diferenciar entrenamiento de inferencia y evaluar sus límites."
+      },
+      {
+        "type": "text",
+        "title": "Por qué importa",
+        "content": "Sin un modelo mental correcto es fácil delegar decisiones inapropiadas o confundir una respuesta plausible con evidencia."
+      },
+      {
+        "type": "text",
+        "title": "Explicación profunda",
+        "content": "Un LLM es una red neuronal basada principalmente en Transformers. Durante el entrenamiento ajusta miles de millones de parámetros para predecir tokens. En inferencia usa esos parámetros para calcular una distribución de próximos tokens según el contexto."
+      },
+      {
+        "type": "example",
+        "title": "Tres ejemplos",
+        "content": "Un mismo mecanismo puede resumir, clasificar y generar.",
+        "items": [
+          "Resume un informe conservando decisiones.",
+          "Clasifica reclamos por causa.",
+          "Genera un borrador sujeto a verificación."
+        ]
+      },
+      {
+        "type": "analogy",
+        "title": "Analogía",
+        "content": "Es como un cartógrafo que estudió millones de rutas y propone el camino más probable: conoce patrones del mapa, pero no vivió el viaje."
+      },
+      {
+        "type": "text",
+        "title": "Error común",
+        "content": "Pensar que el modelo consulta una base de verdades. Puede combinar patrones de forma convincente y producir una alucinación."
+      },
+      {
+        "type": "challenge",
+        "title": "Laboratorio",
+        "content": "Elegí la tarea apropiada para un LLM con revisión humana.",
+        "questions": [
+          {
+            "question": "¿Cuál es el mejor uso inicial?",
+            "options": [
+              "Autorizar solo un crédito.",
+              "Borrador de síntesis de reclamos para revisar.",
+              "Modificar saldos."
+            ],
+            "correct": 1,
+            "explanation": "La síntesis reversible y revisable aprovecha el modelo sin delegar una decisión crítica."
+          }
+        ]
+      },
+      {
+        "type": "challenge",
+        "title": "Desafío aplicado",
+        "content": "Diseñá un proceso para resumir reclamos bancarios: definí datos permitidos, revisión humana, evidencia y criterio de escalamiento.",
+        "prompt": "No avances sin identificar dónde podría alucinar el modelo."
+      },
+      {
+        "type": "quiz",
+        "title": "Evaluación",
+        "content": "Ocho preguntas crecientes.",
+        "questions": [
+          {
+            "question": "¿Qué predice un LLM?",
+            "options": [
+              "Tokens probables.",
+              "Verdad.",
+              "Intenciones."
+            ],
+            "correct": 0,
+            "explanation": "Predice distribuciones de tokens condicionadas por contexto."
+          },
+          {
+            "question": "¿Qué cambia durante entrenamiento?",
+            "options": [
+              "Pantalla.",
+              "Parámetros.",
+              "Usuario."
+            ],
+            "correct": 1,
+            "explanation": "El aprendizaje ajusta parámetros de la red."
+          },
+          {
+            "question": "¿Qué ocurre en inferencia?",
+            "options": [
+              "Se reentrena siempre.",
+              "Borra datos.",
+              "Genera con parámetros aprendidos."
+            ],
+            "correct": 2,
+            "explanation": "Inferencia aplica el modelo ya entrenado."
+          },
+          {
+            "question": "¿Base de un LLM moderno?",
+            "options": [
+              "Transformer.",
+              "Planilla.",
+              "Blockchain."
+            ],
+            "correct": 0,
+            "explanation": "La atención del Transformer permite modelar relaciones contextuales."
+          },
+          {
+            "question": "¿Respuesta fluida implica verdad?",
+            "options": [
+              "Sí.",
+              "No.",
+              "Solo si es larga."
+            ],
+            "correct": 1,
+            "explanation": "Fluidez y exactitud son propiedades distintas."
+          },
+          {
+            "question": "¿Qué reduce riesgo?",
+            "options": [
+              "Confiar más.",
+              "Ocultar límites.",
+              "Verificar evidencia."
+            ],
+            "correct": 2,
+            "explanation": "La verificación conecta salida con fuentes y criterios."
+          },
+          {
+            "question": "¿Qué aporta contexto?",
+            "options": [
+              "Condiciona la salida.",
+              "Cambia parámetros.",
+              "Garantiza certeza."
+            ],
+            "correct": 0,
+            "explanation": "El contexto orienta probabilidades sin reentrenar."
+          },
+          {
+            "question": "¿Cuándo escalar a una persona?",
+            "options": [
+              "Nunca.",
+              "Ante impacto o incertidumbre alta.",
+              "Solo por longitud."
+            ],
+            "correct": 1,
+            "explanation": "Riesgo e incertidumbre determinan supervisión."
+          }
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Resumen ejecutivo",
+        "content": "Un LLM es un predictor probabilístico de tokens basado en parámetros aprendidos; puede producir valor, pero necesita contexto, evaluación y controles."
+      },
+      {
+        "type": "text",
+        "title": "Conceptos relacionados",
+        "content": "Transformer · Entrenamiento · Inferencia · Token · Alucinación",
+        "prompt": "Leer más: LLM · Token"
+      },
+      {
+        "type": "summary",
+        "title": "Cómo lo aplico mañana",
+        "content": "Elegí una tarea reversible, definí un criterio de calidad y verificá tres resultados antes de ampliar el uso."
+      }
+    ]
+  }
+}

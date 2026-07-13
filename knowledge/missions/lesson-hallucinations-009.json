@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-hallucinations-009",
+    "number": "009",
+    "title": "Alucinaciones y verificación",
+    "duration": 70,
+    "concepts": [
+      "Alucinación",
+      "Verificación",
+      "Fuente"
+    ],
+    "objective": "Diseñar un protocolo de verificación proporcional al riesgo.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Pasar de confiar en textos convincentes a operar con evidencia."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "Un modelo optimiza una continuación plausible; puede producir datos, citas o conclusiones falsas con tono seguro."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "Alucinación es contenido no sustentado por la realidad o las fuentes disponibles. No siempre es absurda: suele ser verosímil."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Es un expositor brillante que completa huecos para no quedarse callado. Fluidez no equivale a evidencia."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Una respuesta cita una circular inexistente. El control correcto abre la fuente oficial, verifica vigencia y contrasta el alcance."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Clasificá el riesgo: bajo para ideas, medio para resúmenes, alto para decisiones financieras, legales o personales."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Auditá una respuesta: separá afirmaciones, marcá verificables, buscá fuente primaria y registrá discrepancias."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Creá una lista de control previa al envío de un informe bancario asistido por IA."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Pedir 'no alucines', aceptar enlaces por su formato, verificar con otra respuesta del mismo modelo o ignorar fechas."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "La confianza se diseña con fuentes, trazabilidad, controles humanos y acciones proporcionales al riesgo."
+      ]
+    ],
+    "quiz": [
+      [
+        "Una respuesta fluida es evidencia.",
+        [
+          "No",
+          "Sí",
+          "Si es extensa"
+        ],
+        0
+      ],
+      [
+        "La verificación fuerte usa...",
+        [
+          "Fuente primaria vigente",
+          "Otra redacción",
+          "Más adjetivos"
+        ],
+        0
+      ],
+      [
+        "El riesgo define...",
+        [
+          "La intensidad del control",
+          "El color de pantalla",
+          "La cantidad de emojis"
+        ],
+        0
+      ],
+      [
+        "'No inventes' elimina alucinaciones.",
+        [
+          "No",
+          "Sí",
+          "En modo intensivo"
+        ],
+        0
+      ],
+      [
+        "Una cita debe comprobar...",
+        [
+          "Existencia, contexto y vigencia",
+          "Solo URL",
+          "Solo autor"
+        ],
+        0
+      ],
+      [
+        "Verificar con el mismo modelo es suficiente.",
+        [
+          "No",
+          "Sí",
+          "Si repite"
+        ],
+        0
+      ],
+      [
+        "En alto riesgo corresponde...",
+        [
+          "Revisión humana y evidencia",
+          "Publicar rápido",
+          "Ocultar incertidumbre"
+        ],
+        0
+      ],
+      [
+        "Trazabilidad significa...",
+        [
+          "Poder reconstruir fuentes y decisiones",
+          "Guardar colores",
+          "Usar más tokens"
+        ],
+        0
+      ]
+    ]
+  }
+}

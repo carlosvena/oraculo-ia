@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-context-004",
+    "missionId": "mission-context-004",
+    "version": 1,
+    "title": "Tokens y ventana de contexto",
+    "objective": "Gestionar límites de contexto, costo y relevancia para mejorar resultados.",
+    "duration": 45,
+    "difficulty": "Profesional",
+    "concepts": [
+      "Token",
+      "Ventana de contexto",
+      "Embedding",
+      "RAG"
+    ],
+    "blocks": [
+      {
+        "type": "title",
+        "title": "Misión 004",
+        "content": "Tokens y ventana de contexto"
+      },
+      {
+        "type": "text",
+        "title": "Contexto",
+        "content": "Cada interacción compite por un espacio finito: instrucciones, historial, documentos y respuesta ocupan tokens."
+      },
+      {
+        "type": "text",
+        "title": "Objetivo",
+        "content": "Estimar impacto de tokens y diseñar contexto relevante, estructurado y verificable."
+      },
+      {
+        "type": "text",
+        "title": "Por qué importa",
+        "content": "Más contexto no siempre es mejor: puede aumentar costo, latencia y ruido."
+      },
+      {
+        "type": "text",
+        "title": "Explicación profunda",
+        "content": "La tokenización divide información en unidades. La ventana limita cuántas unidades procesa el modelo. Embeddings representan significado para recuperar fragmentos; RAG incorpora solo evidencia relevante antes de responder."
+      },
+      {
+        "type": "example",
+        "title": "Tres ejemplos",
+        "content": "Distintas decisiones de contexto.",
+        "items": [
+          "Enviar una política completa agrega ruido.",
+          "Seleccionar secciones relevantes mejora señal.",
+          "RAG recupera fragmentos según la consulta."
+        ]
+      },
+      {
+        "type": "analogy",
+        "title": "Analogía",
+        "content": "La ventana es una mesa limitada: si acumulás papeles sin orden, lo importante queda tapado."
+      },
+      {
+        "type": "text",
+        "title": "Error común",
+        "content": "Pegar todos los documentos y asumir que el modelo priorizará correctamente cada detalle."
+      },
+      {
+        "type": "challenge",
+        "title": "Laboratorio",
+        "content": "Elegí el contexto más eficiente.",
+        "questions": [
+          {
+            "question": "Para responder una consulta de comisiones, ¿qué enviarías?",
+            "options": [
+              "Todo el archivo histórico.",
+              "Política vigente y datos del caso.",
+              "Nada."
+            ],
+            "correct": 1,
+            "explanation": "Relevancia y vigencia mejoran precisión y reducen tokens."
+          }
+        ]
+      },
+      {
+        "type": "challenge",
+        "title": "Desafío aplicado",
+        "content": "Diseñá la selección de contexto para responder un reclamo sin exponer información de otros clientes."
+      },
+      {
+        "type": "quiz",
+        "title": "Evaluación",
+        "content": "Ocho preguntas crecientes.",
+        "questions": [
+          {
+            "question": "¿Token equivale siempre a palabra?",
+            "options": [
+              "No.",
+              "Sí.",
+              "Solo en español."
+            ],
+            "correct": 0,
+            "explanation": "Puede ser palabra, fragmento o signo."
+          },
+          {
+            "question": "¿Qué limita la ventana?",
+            "options": [
+              "Color.",
+              "Tokens procesables.",
+              "Usuarios."
+            ],
+            "correct": 1,
+            "explanation": "Entrada y salida comparten capacidad finita."
+          },
+          {
+            "question": "¿Más contexto siempre mejora?",
+            "options": [
+              "Sí.",
+              "Nunca sirve.",
+              "No, puede agregar ruido."
+            ],
+            "correct": 2,
+            "explanation": "Importa relevancia, no volumen."
+          },
+          {
+            "question": "¿Qué representa un embedding?",
+            "options": [
+              "Relaciones semánticas.",
+              "Contraseña.",
+              "Pantalla."
+            ],
+            "correct": 0,
+            "explanation": "Ubica contenido por similitud de significado."
+          },
+          {
+            "question": "¿Qué hace RAG?",
+            "options": [
+              "Entrena siempre.",
+              "Recupera evidencia relevante.",
+              "Garantiza verdad."
+            ],
+            "correct": 1,
+            "explanation": "Añade fragmentos recuperados al contexto."
+          },
+          {
+            "question": "¿Qué consume tokens?",
+            "options": [
+              "Solo prompt.",
+              "Solo salida.",
+              "Entrada, historial y salida."
+            ],
+            "correct": 2,
+            "explanation": "Todo el contexto procesado cuenta."
+          },
+          {
+            "question": "¿Primera optimización?",
+            "options": [
+              "Eliminar ruido.",
+              "Duplicar todo.",
+              "Ocultar fuentes."
+            ],
+            "correct": 0,
+            "explanation": "Contexto conciso mejora señal."
+          },
+          {
+            "question": "¿Cómo verificar RAG?",
+            "options": [
+              "Por tono.",
+              "Con citas y fuentes.",
+              "Por longitud."
+            ],
+            "correct": 1,
+            "explanation": "Las fuentes permiten comprobar afirmaciones."
+          }
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Resumen ejecutivo",
+        "content": "Tokens son unidades de procesamiento; la ventana es finita y el contexto debe seleccionarse por relevancia y riesgo."
+      },
+      {
+        "type": "text",
+        "title": "Conceptos relacionados",
+        "content": "Embedding · RAG · LLM · Prompt",
+        "prompt": "Leer más: Token · Ventana de contexto"
+      },
+      {
+        "type": "summary",
+        "title": "Cómo lo aplico mañana",
+        "content": "Reducí un prompt real: quitá duplicados, separá evidencia y medí si mejora la respuesta."
+      }
+    ]
+  }
+}

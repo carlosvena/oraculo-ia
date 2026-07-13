@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-agents-013",
+    "number": "013",
+    "title": "Agentes de IA",
+    "duration": 70,
+    "concepts": [
+      "Agente de IA",
+      "Planificación",
+      "Herramienta"
+    ],
+    "objective": "Diseñar un agente limitado, observable y recuperable.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Pasar de un chatbot que responde a un sistema que persigue un objetivo bajo control."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "Un agente combina modelo, estado, herramientas y bucle de decisión; multiplica capacidad y también riesgo."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "El agente observa, decide una acción, usa una herramienta, evalúa el resultado y repite hasta terminar o detenerse."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Es delegar a un asistente con agenda y llaves: necesita objetivo, límites, presupuesto y puntos de aprobación."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Un agente prepara un informe: recopila datos autorizados, detecta faltantes, redacta y entrega borrador; no lo envía sin aprobación."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Usá estados explícitos, límite de pasos, herramientas idempotentes, registro y escalamiento humano."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Dibujá estados y transiciones para un agente que clasifica reclamos y prepara una respuesta."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Definí cinco condiciones de detención y tres acciones que siempre requieren aprobación."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Objetivo ambiguo, bucles infinitos, permisos amplios, memoria sin depurar y ausencia de evaluación por tarea."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "La autonomía profesional es limitada, observable y reversible. Más agencia exige más control."
+      ]
+    ],
+    "quiz": [
+      [
+        "Un agente combina...",
+        [
+          "Modelo, estado y herramientas",
+          "Solo un prompt",
+          "Solo una voz"
+        ],
+        0
+      ],
+      [
+        "El límite de pasos evita...",
+        [
+          "Bucles y costos descontrolados",
+          "Embeddings",
+          "Versionado"
+        ],
+        0
+      ],
+      [
+        "Idempotencia permite...",
+        [
+          "Reintentar sin duplicar efectos",
+          "Entrenar más rápido",
+          "Hablar"
+        ],
+        0
+      ],
+      [
+        "Acciones irreversibles requieren...",
+        [
+          "Aprobación",
+          "Temperatura alta",
+          "Memoria larga"
+        ],
+        0
+      ],
+      [
+        "Un objetivo ambiguo...",
+        [
+          "Dificulta evaluar y detener",
+          "Siempre inspira",
+          "Reduce riesgo"
+        ],
+        0
+      ],
+      [
+        "La observabilidad registra...",
+        [
+          "Decisiones y acciones",
+          "Solo resultado final",
+          "Solo usuario"
+        ],
+        0
+      ],
+      [
+        "La memoria debe...",
+        [
+          "Tener alcance y depuración",
+          "Guardar todo siempre",
+          "Ser pública"
+        ],
+        0
+      ],
+      [
+        "Más autonomía implica...",
+        [
+          "Más controles",
+          "Menos pruebas",
+          "Sin permisos"
+        ],
+        0
+      ]
+    ]
+  }
+}

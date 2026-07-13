@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-rag-011",
+    "number": "011",
+    "title": "RAG: respuestas con evidencia",
+    "duration": 70,
+    "concepts": [
+      "RAG",
+      "Recuperación",
+      "Chunk"
+    ],
+    "objective": "Diseñar conceptualmente un sistema RAG evaluable y trazable.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Construir una cadena de respuesta que pueda mostrar de dónde obtuvo la información."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "RAG conecta un modelo con conocimiento externo actualizado sin cambiar sus pesos."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "El sistema prepara documentos, recupera fragmentos relevantes y los incluye como contexto para generar una respuesta citada."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "Un analista recibe una pregunta, busca expedientes autorizados, selecciona páginas y redacta citándolas."
+      ],
+      [
+        "example",
+        "Caso real",
+        "Una consulta de procedimiento recupera la versión vigente, sección exacta y fecha antes de responder."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Separá calidad de recuperación, fidelidad de respuesta, permisos, vigencia y experiencia de usuario."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Dividí un procedimiento en fragmentos con título, fecha y alcance; formulá cinco consultas de prueba."
+      ],
+      [
+        "challenge",
+        "Desafío de construcción",
+        "Diseñá qué debe hacer el sistema cuando las fuentes se contradicen o no alcanzan."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Cargar documentos sin metadatos, recuperar demasiados fragmentos, omitir permisos y medir solo respuestas agradables."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "RAG no elimina errores: hace posible fundamentar, actualizar y auditar una respuesta si toda la cadena está bien diseñada."
+      ]
+    ],
+    "quiz": [
+      [
+        "RAG cambia los pesos del modelo.",
+        [
+          "No",
+          "Sí",
+          "Siempre"
+        ],
+        0
+      ],
+      [
+        "La recuperación selecciona...",
+        [
+          "Fragmentos relevantes",
+          "Parámetros",
+          "Usuarios"
+        ],
+        0
+      ],
+      [
+        "Un chunk necesita...",
+        [
+          "Contexto y metadatos",
+          "Solo longitud",
+          "Una imagen"
+        ],
+        0
+      ],
+      [
+        "Los permisos deben aplicarse...",
+        [
+          "Antes de recuperar y mostrar",
+          "Después de publicar",
+          "Nunca"
+        ],
+        0
+      ],
+      [
+        "Más fragmentos siempre mejora.",
+        [
+          "No",
+          "Sí",
+          "En PDFs"
+        ],
+        0
+      ],
+      [
+        "Sin evidencia suficiente conviene...",
+        [
+          "Declararlo y no inventar",
+          "Completar huecos",
+          "Ocultar fuentes"
+        ],
+        0
+      ],
+      [
+        "Una métrica de recuperación es...",
+        [
+          "Relevancia de candidatos",
+          "Color del texto",
+          "Velocidad de tipeo"
+        ],
+        0
+      ],
+      [
+        "La vigencia se controla con...",
+        [
+          "Metadatos y reglas",
+          "Temperatura",
+          "Nombre del modelo"
+        ],
+        0
+      ]
+    ]
+  }
+}

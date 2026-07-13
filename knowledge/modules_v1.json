@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "tracks": [
+    {
+      "id": "track-foundations",
+      "name": "Fundamentos de IA",
+      "description": "Conceptos clave y anatomía de modelos de lenguaje.",
+      "competencyIds": ["comp-criterio", "comp-prompts"],
+      "missionSequenceIds": ["seq-core"]
+    },
+    {
+      "id": "track-advanced",
+      "name": "IA Avanzada y Agentes",
+      "description": "Transformers, embeddings, RAG y automatización con agentes.",
+      "competencyIds": ["comp-verificacion", "comp-agentes"],
+      "missionSequenceIds": ["seq-advanced"]
+    }
+  ],
+  "competencies": [
+    {
+      "id": "comp-criterio",
+      "name": "Criterio Profesional",
+      "description": "Evaluar la idoneidad y los riesgos de aplicar un modelo a una tarea.",
+      "skillIds": ["skill-criterio", "skill-modelos"],
+      "targetLevel": "foundational"
+    },
+    {
+      "id": "comp-prompts",
+      "name": "Ingeniería de Prompts",
+      "description": "Diseñar instrucciones claras, estructuradas y con control de incertidumbre.",
+      "skillIds": ["skill-prompts"],
+      "targetLevel": "proficient"
+    },
+    {
+      "id": "comp-verificacion",
+      "name": "Verificación y Auditoría",
+      "description": "Diseñar e implementar controles de evidencia para evitar alucinaciones.",
+      "skillIds": ["skill-verificacion"],
+      "targetLevel": "advanced"
+    },
+    {
+      "id": "comp-agentes",
+      "name": "Sistemas Agentes y Workflows",
+      "description": "Diseñar agentes autónomos seguros, observables y reversibles.",
+      "skillIds": ["skill-agentes", "skill-workflows"],
+      "targetLevel": "advanced"
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-criterio",
+      "name": "Evaluación de Criterio",
+      "description": "Comprender la diferencia entre patrones probabilísticos y razonamiento verdadero.",
+      "tags": ["criterio", "seguridad"]
+    },
+    {
+      "id": "skill-modelos",
+      "name": "Selección de Modelos",
+      "description": "Comparar modelos abiertos y cerrados por costo, latencia y privacidad.",
+      "tags": ["modelos", "gobernanza"]
+    },
+    {
+      "id": "skill-prompts",
+      "name": "Diseño de Prompts",
+      "description": "Construir instrucciones profesionales utilizando plantillas evaluables.",
+      "tags": ["prompts", "laboratorio"]
+    },
+    {
+      "id": "skill-verificacion",
+      "name": "Control de Evidencia",
+      "description": "Comprobar afirmaciones contra fuentes primarias vigentes.",
+      "tags": ["verificación", "alucinaciones"]
+    },
+    {
+      "id": "skill-agentes",
+      "name": "Arquitectura de Agentes",
+      "description": "Diseñar bucles de decisión limitados y con confirmación humana.",
+      "tags": ["agentes", "MCP"]
+    },
+    {
+      "id": "skill-workflows",
+      "name": "Automatización Segura",
+      "description": "Separar pasos deterministas y probabilísticos en flujos de trabajo.",
+      "tags": ["workflows", "automatización"]
+    }
+  ]
+}

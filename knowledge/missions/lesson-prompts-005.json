@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-prompts-005",
+    "missionId": "mission-prompts-005",
+    "version": 1,
+    "title": "Cómo construir prompts profesionales",
+    "objective": "Construir especificaciones repetibles, evaluables y seguras para tareas reales.",
+    "duration": 60,
+    "difficulty": "Profesional",
+    "concepts": [
+      "Prompt",
+      "Agente de IA",
+      "MCP",
+      "Benchmark",
+      "Modelo multimodal"
+    ],
+    "blocks": [
+      {
+        "type": "title",
+        "title": "Misión 005",
+        "content": "Cómo construir prompts profesionales"
+      },
+      {
+        "type": "text",
+        "title": "Contexto",
+        "content": "Un prompt profesional convierte intención en una especificación que otra persona puede revisar y reutilizar."
+      },
+      {
+        "type": "text",
+        "title": "Objetivo",
+        "content": "Diseñar instrucciones con propósito, contexto, tarea, límites, formato y criterios de aceptación."
+      },
+      {
+        "type": "text",
+        "title": "Por qué importa",
+        "content": "La repetibilidad permite comparar modelos, detectar fallos y escalar procesos."
+      },
+      {
+        "type": "text",
+        "title": "Explicación profunda",
+        "content": "El prompt define contrato operativo. Los criterios de aceptación funcionan como benchmark local. En agentes, permisos y herramientas —incluidas integraciones MCP— deben quedar delimitados."
+      },
+      {
+        "type": "example",
+        "title": "Tres ejemplos",
+        "content": "De pedido a sistema.",
+        "items": [
+          "Borrador con audiencia y formato.",
+          "Análisis con evidencia e incertidumbre.",
+          "Agente con herramientas, permisos y aprobación humana."
+        ]
+      },
+      {
+        "type": "analogy",
+        "title": "Analogía",
+        "content": "Es una orden de trabajo: describe resultado, materiales, controles y condición de entrega."
+      },
+      {
+        "type": "text",
+        "title": "Error común",
+        "content": "Agregar rol y adjetivos, pero omitir datos, límites y criterios verificables."
+      },
+      {
+        "type": "challenge",
+        "title": "Laboratorio",
+        "content": "Elegí la especificación completa.",
+        "questions": [
+          {
+            "question": "¿Cuál prompt es profesional?",
+            "options": [
+              "Analizá bien.",
+              "Clasificá reclamos, citá evidencia, marcá incertidumbre y entregá tabla priorizada.",
+              "Sé experto."
+            ],
+            "correct": 1,
+            "explanation": "Define tarea, evidencia, incertidumbre y formato."
+          }
+        ]
+      },
+      {
+        "type": "challenge",
+        "title": "Desafío aplicado",
+        "content": "Creá un prompt para un supervisor bancario que revise alertas, use solo fuentes autorizadas y solicite aprobación antes de cualquier acción."
+      },
+      {
+        "type": "quiz",
+        "title": "Evaluación",
+        "content": "Ocho preguntas crecientes.",
+        "questions": [
+          {
+            "question": "¿Base del prompt?",
+            "options": [
+              "Propósito.",
+              "Adjetivos.",
+              "Longitud."
+            ],
+            "correct": 0,
+            "explanation": "El propósito orienta la especificación."
+          },
+          {
+            "question": "¿Qué hace un criterio?",
+            "options": [
+              "Decora.",
+              "Permite evaluar.",
+              "Oculta errores."
+            ],
+            "correct": 1,
+            "explanation": "Vuelve observable la calidad."
+          },
+          {
+            "question": "¿Cómo tratar incertidumbre?",
+            "options": [
+              "Ignorar.",
+              "Inventar.",
+              "Pedir que se declare."
+            ],
+            "correct": 2,
+            "explanation": "Declararla evita falsa precisión."
+          },
+          {
+            "question": "¿Qué limita un agente?",
+            "options": [
+              "Permisos explícitos.",
+              "Más texto.",
+              "Un avatar."
+            ],
+            "correct": 0,
+            "explanation": "Permisos reducen acciones indebidas."
+          },
+          {
+            "question": "¿Qué facilita MCP?",
+            "options": [
+              "Verdad.",
+              "Conexión estandarizada con herramientas.",
+              "Entrenamiento."
+            ],
+            "correct": 1,
+            "explanation": "MCP estructura acceso a recursos y herramientas."
+          },
+          {
+            "question": "¿Modelo multimodal?",
+            "options": [
+              "Solo texto.",
+              "Sin contexto.",
+              "Procesa varias modalidades."
+            ],
+            "correct": 2,
+            "explanation": "Puede combinar texto, imagen, audio u otros datos."
+          },
+          {
+            "question": "¿Benchmark local?",
+            "options": [
+              "Conjunto de casos y criterios.",
+              "Opinión aislada.",
+              "Logo."
+            ],
+            "correct": 0,
+            "explanation": "Casos repetibles permiten comparar."
+          },
+          {
+            "question": "¿Acción crítica de agente?",
+            "options": [
+              "Automática siempre.",
+              "Con aprobación humana.",
+              "Sin registro."
+            ],
+            "correct": 1,
+            "explanation": "La aprobación controla impacto alto."
+          }
+        ]
+      },
+      {
+        "type": "summary",
+        "title": "Resumen ejecutivo",
+        "content": "Un prompt profesional es un contrato verificable; en agentes también define herramientas, permisos y puntos de aprobación."
+      },
+      {
+        "type": "text",
+        "title": "Conceptos relacionados",
+        "content": "MCP · Agente de IA · Benchmark · Modelo multimodal",
+        "prompt": "Leer más: Prompt · Agente de IA"
+      },
+      {
+        "type": "summary",
+        "title": "Cómo lo aplico mañana",
+        "content": "Reescribí una tarea frecuente con seis campos y probala contra tres casos reales."
+      }
+    ]
+  }
+}

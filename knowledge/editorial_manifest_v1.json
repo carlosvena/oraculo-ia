@@ -1,7 +1,179 @@
-{"schemaVersion":1,"items":[
-{"id":"missions-core","title":"Misiones 001 a 005","author":"Dirección Académica ORÁCULO IA","version":"1.0","created":"2026-07-01","reviewed":"2026-07-11","status":"revisado","sources":["knowledge/oraculo_content_v1.json"],"notes":"Contenido formativo estable; ejemplos sujetos a revisión.","nextReview":"2026-10-01","currentClaims":false,"textualQuotes":[]},
-{"id":"missions-advanced","title":"Misiones 006 a 015","author":"Dirección Académica ORÁCULO IA","version":"1.0","created":"2026-07-11","reviewed":"2026-07-11","status":"revisado","sources":["knowledge/advanced_missions_v1.json"],"notes":"Revisión pedagógica pendiente con usuarios reales.","nextReview":"2026-10-11","currentClaims":false,"textualQuotes":[]},
-{"id":"model-catalog","title":"Comparador de modelos","author":"Equipo editorial ORÁCULO IA","version":"1.0","created":"2026-07-11","reviewed":"2026-07-11","status":"verificado","sources":["https://help.openai.com/","https://ai.google.dev/","https://docs.anthropic.com/","https://github.com/features/copilot"],"notes":"Disponibilidad y costo deben verificarse antes de decidir.","nextReview":"2026-08-11","currentClaims":true,"textualQuotes":[]},
-{"id":"thought-library","title":"Biblioteca de pensamiento","author":"Equipo editorial ORÁCULO IA","version":"1.1","created":"2026-07-01","reviewed":"2026-07-11","status":"revisado","sources":["knowledge/thought_library_v1.json","knowledge/thought_library_expansion_v1.json"],"notes":"Paráfrasis e interpretaciones; no contiene citas textuales.","nextReview":"2026-09-11","currentClaims":false,"textualQuotes":[]},
-{"id":"prompt-exercises","title":"Laboratorio de prompts","author":"Dirección Académica ORÁCULO IA","version":"1.0","created":"2026-07-05","reviewed":"2026-07-11","status":"revisado","sources":["knowledge/prompt_exercises_v1.json"],"notes":"Ejercicios editoriales locales.","nextReview":"2026-11-11","currentClaims":false,"textualQuotes":[]}
-]}
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "missions-core",
+      "title": "Misiones 001 a 005",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-01",
+      "reviewed": "2026-07-11",
+      "status": "revisado",
+      "sources": [
+        "knowledge/missions/lesson-models-001.json",
+        "knowledge/missions/lesson-prompts-002.json",
+        "knowledge/missions/lesson-llm-003.json",
+        "knowledge/missions/lesson-context-004.json",
+        "knowledge/missions/lesson-prompts-005.json"
+      ],
+      "notes": "Contenido formativo estable; ejemplos sujetos a revisión.",
+      "nextReview": "2026-10-01",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "missions-advanced",
+      "title": "Misiones 006 a 015",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-11",
+      "reviewed": "2026-07-11",
+      "status": "revisado",
+      "sources": [
+        "knowledge/missions/lesson-transformers-006.json",
+        "knowledge/missions/lesson-embeddings-007.json",
+        "knowledge/missions/lesson-training-008.json",
+        "knowledge/missions/lesson-hallucinations-009.json",
+        "knowledge/missions/lesson-open-closed-010.json",
+        "knowledge/missions/lesson-rag-011.json",
+        "knowledge/missions/lesson-mcp-012.json",
+        "knowledge/missions/lesson-agents-013.json",
+        "knowledge/missions/lesson-automation-014.json",
+        "knowledge/missions/lesson-project-015.json"
+      ],
+      "notes": "Revisión pedagógica pendiente con usuarios reales.",
+      "nextReview": "2026-10-11",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "model-catalog",
+      "title": "Comparador de modelos",
+      "author": "Equipo editorial ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-11",
+      "reviewed": "2026-07-11",
+      "status": "verificado",
+      "sources": [
+        "knowledge/model_catalog_v1.json"
+      ],
+      "notes": "Disponibilidad y costo deben verificarse antes de decidir.",
+      "nextReview": "2026-08-11",
+      "currentClaims": true,
+      "textualQuotes": []
+    },
+    {
+      "id": "thought-library",
+      "title": "Biblioteca de pensamiento",
+      "author": "Equipo editorial ORÁCULO IA",
+      "version": "1.1",
+      "created": "2026-07-01",
+      "reviewed": "2026-07-11",
+      "status": "revisado",
+      "sources": [
+        "knowledge/thought_library_v1.json",
+        "knowledge/thought_library_expansion_v1.json"
+      ],
+      "notes": "Paráfrasis e interpretaciones; no contiene citas textuales.",
+      "nextReview": "2026-09-11",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "prompt-exercises",
+      "title": "Laboratorio de prompts",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-05",
+      "reviewed": "2026-07-11",
+      "status": "revisado",
+      "sources": [
+        "knowledge/prompt_exercises_v1.json"
+      ],
+      "notes": "Ejercicios editoriales locales.",
+      "nextReview": "2026-11-11",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "dictionary",
+      "title": "Diccionario y Glosario",
+      "author": "Equipo editorial ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-01",
+      "reviewed": "2026-07-13",
+      "status": "revisado",
+      "sources": [
+        "knowledge/dictionary_v1.json"
+      ],
+      "notes": "Términos conceptuales y sus relaciones.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "manual",
+      "title": "Manual y Guías",
+      "author": "Equipo editorial ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-01",
+      "reviewed": "2026-07-13",
+      "status": "revisado",
+      "sources": [
+        "knowledge/manual_v1.json"
+      ],
+      "notes": "Artículos del manual de aprendizaje offline.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "courses",
+      "title": "Caminos Profesionales",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-11",
+      "reviewed": "2026-07-13",
+      "status": "verificado",
+      "sources": [
+        "knowledge/career_paths_v1.json"
+      ],
+      "notes": "Cursos y rutas de carrera del usuario.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "projects",
+      "title": "Constructor de Proyectos",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-11",
+      "reviewed": "2026-07-13",
+      "status": "revisado",
+      "sources": [
+        "knowledge/projects_v1.json"
+      ],
+      "notes": "Proyectos y entregables prácticos.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "modules",
+      "title": "Módulos y Habilidades",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-11",
+      "reviewed": "2026-07-13",
+      "status": "verificado",
+      "sources": [
+        "knowledge/modules_v1.json"
+      ],
+      "notes": "Competencias y habilidades curriculares.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
+    }
+  ]
+}

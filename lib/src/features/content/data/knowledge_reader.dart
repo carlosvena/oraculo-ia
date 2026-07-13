@@ -1,21 +1,18 @@
 import 'dart:convert';
-import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
 
 final class KnowledgeReader {
   const KnowledgeReader();
   Future<KnowledgeContent> load() async {
-    final base = parse(
-      await rootBundle.loadString('knowledge/oraculo_content_v1.json'),
-    );
-    final advanced = parseAdvanced(
-      await rootBundle.loadString('knowledge/advanced_missions_v1.json'),
-    );
+    final engine = KnowledgeEngine.instance;
+    await engine.initialize();
+    final lessons = await engine.getAllLessons();
     return KnowledgeContent(
-      lessons: <Lesson>[...base.lessons, ...advanced],
-      articles: base.articles,
-      terms: base.terms,
+      lessons: lessons,
+      articles: engine.articles,
+      terms: engine.terms,
     );
   }
 

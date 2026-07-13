@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-transformers-006",
+    "number": "006",
+    "title": "Transformers y atención",
+    "duration": 60,
+    "concepts": [
+      "Transformer",
+      "Atención",
+      "Contexto"
+    ],
+    "objective": "Explicar cómo la atención relaciona tokens y por qué los Transformers cambiaron la IA.",
+    "sections": [
+      [
+        "title",
+        "Tu misión",
+        "Vas a desmontar un Transformer sin fórmulas innecesarias y reconstruir su lógica."
+      ],
+      [
+        "text",
+        "Por qué importa",
+        "Los asistentes, traductores y modelos multimodales modernos dependen de esta arquitectura. Entenderla permite razonar sobre contexto, costo y errores."
+      ],
+      [
+        "text",
+        "Concepto esencial",
+        "Un Transformer procesa tokens en paralelo y calcula qué otros tokens son relevantes para interpretar cada uno. Atención no significa conciencia: es ponderación matemática de relaciones."
+      ],
+      [
+        "analogy",
+        "Analogía",
+        "En una reunión, cada palabra consulta el resto de la conversación y asigna más peso a las intervenciones necesarias para comprenderla."
+      ],
+      [
+        "example",
+        "Caso real",
+        "En 'el banco aprobó el crédito porque estaba solvente', la atención ayuda a vincular 'estaba solvente' con el solicitante según el contexto, no solo por cercanía."
+      ],
+      [
+        "text",
+        "Aplicación laboral",
+        "Al redactar instrucciones, ubicá criterios y datos relacionados cerca y con etiquetas claras. Reducís ambigüedad y competencia entre señales."
+      ],
+      [
+        "challenge",
+        "Laboratorio",
+        "Marcá en un procedimiento cinco palabras que cambian el significado de una instrucción. Reescribilo agrupando contexto, tarea y restricciones."
+      ],
+      [
+        "challenge",
+        "Explicalo con tus palabras",
+        "Explicá atención a un colega sin usar 'inteligencia', 'cerebro' ni 'comprender'."
+      ],
+      [
+        "text",
+        "Errores frecuentes",
+        "Confundir atención con razonamiento garantizado; asumir que más contexto siempre mejora; ignorar que el costo crece con la longitud."
+      ],
+      [
+        "summary",
+        "Resumen ejecutivo",
+        "Transformer: arquitectura paralela. Atención: pesos entre tokens. El contexto orienta, pero no garantiza verdad."
+      ]
+    ],
+    "quiz": [
+      [
+        "La atención calcula principalmente...",
+        [
+          "Relaciones ponderadas entre tokens",
+          "Verdad objetiva",
+          "Emociones"
+        ],
+        0
+      ],
+      [
+        "Un Transformer se diferencia de un enfoque secuencial porque...",
+        [
+          "Procesa relaciones en paralelo",
+          "No usa datos",
+          "Siempre verifica fuentes"
+        ],
+        0
+      ],
+      [
+        "Atención equivale a conciencia.",
+        [
+          "Verdadero",
+          "Falso",
+          "Solo en modelos grandes"
+        ],
+        1
+      ],
+      [
+        "Agrupar contexto y restricciones ayuda a...",
+        [
+          "Reducir ambigüedad",
+          "Eliminar tokens",
+          "Entrenar el modelo"
+        ],
+        0
+      ],
+      [
+        "Más contexto siempre produce mejor resultado.",
+        [
+          "Sí",
+          "No",
+          "Solo en español"
+        ],
+        1
+      ],
+      [
+        "La posición de los tokens...",
+        [
+          "Debe representarse",
+          "No importa",
+          "Es una fuente externa"
+        ],
+        0
+      ],
+      [
+        "Una limitación práctica es...",
+        [
+          "Costo y ventana finita",
+          "No admite texto",
+          "No puede comparar"
+        ],
+        0
+      ],
+      [
+        "La mejor explicación profesional evita...",
+        [
+          "Antropomorfizar el mecanismo",
+          "Definir tokens",
+          "Usar ejemplos"
+        ],
+        0
+      ]
+    ]
+  }
+}
