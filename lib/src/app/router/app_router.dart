@@ -6,6 +6,7 @@ import 'package:oraculo_ia/src/features/assessment/presentation/assessment_scree
 import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
 import 'package:oraculo_ia/src/features/career/career_paths.dart';
 import 'package:oraculo_ia/src/features/content/presentation/knowledge_screens.dart';
+import 'package:oraculo_ia/src/features/creator_studio/presentation/creator_studio_screen.dart';
 import 'package:oraculo_ia/src/features/editorial/presentation/editorial_status_screen.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/presentation/knowledge_map_screen.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_screen.dart';
@@ -46,6 +47,7 @@ abstract final class AppRoute {
   static const manualExport='/manual-export';
   static const projects='/projects';
   static const career='/career';
+  static const creatorStudio = '/creator-studio';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -224,6 +226,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(path:AppRoute.manualExport,builder:(context,state)=>const ManualExportScreen()),
       GoRoute(path:AppRoute.projects,builder:(context,state)=>const ProjectBuilderScreen()),
       GoRoute(path:AppRoute.career,builder:(context,state)=>const CareerPathsScreen()),
+      GoRoute(
+        path: AppRoute.creatorStudio,
+        builder: (context, state) => const CreatorStudioScreen(),
+      ),
     ],
   );
 });

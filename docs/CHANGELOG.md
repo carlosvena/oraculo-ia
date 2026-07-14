@@ -4,7 +4,15 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 23 pendiente de definición.
+- Próximo: Sprints 24 pendiente de definición.
+
+## 2.3.0-sprint23 — 2026-07-13
+
+- **ORÁCULO Creator Studio**: CMS offline interno para mantenimiento y validación visual de la base de conocimiento en `knowledge/`.
+- **Dashboard Central**: Muestra estadísticas en tiempo real y el estado de la integridad semántica.
+- **Editores Visuales Dedicados**: Permiten agregar, modificar, borrar y reordenar elementos para cursos, lecciones (bloques didácticos y cuestionarios), glosario, manual, biblioteca de pensamiento, laboratorios de prompts y proyectos finales.
+- **Validador Semántico Integrado**: Detección de conceptos huérfanos, enlaces rotos, preguntas sin respuesta, y capítulos vacíos.
+- **Persistencia en Disco**: Utilidad de exportación directa que guarda los archivos JSON estructurados de forma offline en la carpeta del proyecto.
 
 ## 2.2.0-sprint22 — 2026-07-13
 

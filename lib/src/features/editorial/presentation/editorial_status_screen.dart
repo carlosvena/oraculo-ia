@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/editorial/domain/editorial_status.dart';
@@ -42,6 +43,15 @@ class EditorialStatusScreen extends StatelessWidget {
               Text(
                 '$verifiedCount verificado · $reviewedCount revisado · $outdatedCount desactualizado',
                 style: const TextStyle(color: Colors.grey),
+              ),
+              const SizedBox(height: AppSpacing.md),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: ElevatedButton.icon(
+                  onPressed: () => context.push('/creator-studio'),
+                  icon: const Icon(Icons.edit_note),
+                  label: const Text('Abrir Creator Studio'),
+                ),
               ),
               const SizedBox(height: AppSpacing.lg),
               for (final item in items)

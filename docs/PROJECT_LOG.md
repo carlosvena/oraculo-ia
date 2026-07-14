@@ -371,3 +371,23 @@ Calidad: `flutter analyze` limpio; 36 pruebas unitarias aprobadas.
 - Ampliación de la suite de pruebas unitarias cubriendo todos los cargadores de datos curriculares y lógicos del motor.
 
 Calidad: `flutter analyze` limpio; 36 pruebas unitarias aprobadas secuencialmente.
+
+# Sprint 23 — Oráculo Creator Studio v1.0
+
+**Estado:** finalizado.
+
+- Diseño e implementación de **ORÁCULO Creator Studio**, un CMS interno offline para que el equipo editorial administre y verifique todo el contenido educativo en `knowledge/` de forma visual y robusta.
+- Creación de un **Dashboard centralizado (Módulo 1)** con estadísticas de métricas clave (totales de cursos, misiones, manuales, laboratorios, proyectos, etc.) e indicadores del estado de la integridad semántica y revisiones pendientes.
+- Implementación de editores visuales estructurados y específicos para cada entidad:
+  - **Editor de Cursos (Módulo 2)**: Carga y guarda rutas de carrera en `career_paths_v1.json`.
+  - **Editor de Misiones (Módulo 3)**: Edición de bloques instructivos interactivos, drag/drop conceptual con botones de movimiento (arriba/abajo), y edición detallada de quizzes. Guardado modular individual bajo `knowledge/missions/lesson-*.json`.
+  - **Editor de Glosario (Módulo 4)**: Edición y creación de términos en `dictionary_v1.json`.
+  - **Editor de Manual (Módulo 5)**: Creación de capítulos y artículos estructurados en `manual_v1.json`.
+  - **Biblioteca de Pensamiento (Módulo 6)**: Registro de ideas y autores en `thought_library_v1.json` con validación estricta de fuentes para citas textuales.
+  - **Editor de Laboratorios (Módulo 7)**: Creación de ejercicios prácticos de prompts en `prompt_exercises_v1.json`.
+  - **Editor de Proyectos (Módulo 8)**: Administración de entregables, objetivos y rúbricas en `projects_v1.json`.
+- Implementación de un **Validador en tiempo real (Módulo 9)** integrado en la UI que analiza conceptos huérfanos, enlaces rotos del glosario, preguntas sin respuestas válidas y capítulos de manual vacíos.
+- **Exportador Directo a Disco (Módulo 10)**: Persiste los cambios formateados con sangría y espaciado estándar offline directo al árbol local de archivos.
+- Creación de suite de pruebas unitarias y de integración `creator_studio_test.dart` y validación estática de compilación.
+
+Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialmente.
