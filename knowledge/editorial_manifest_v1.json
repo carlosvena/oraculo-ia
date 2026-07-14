@@ -174,6 +174,38 @@
       "nextReview": "2026-10-13",
       "currentClaims": false,
       "textualQuotes": []
+    },
+    {
+      "id": "academy-courses",
+      "title": "Catálogo de Cursos de la Academia",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-13",
+      "reviewed": "2026-07-13",
+      "status": "verificado",
+      "sources": [
+        "knowledge/academy_courses_v1.json"
+      ],
+      "notes": "Cursos de la academia por categoría.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "academy-missions",
+      "title": "Catálogo de 100 Misiones de la Academia",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-13",
+      "reviewed": "2026-07-13",
+      "status": "verificado",
+      "sources": [
+        "knowledge/academy_missions_v1.json"
+      ],
+      "notes": "Misiones planificadas con metadatos.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
     }
   ]
 }

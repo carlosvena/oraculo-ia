@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:oraculo_ia/src/features/academy/domain/academy_models.dart';
 import 'package:oraculo_ia/src/features/career/domain/career_path.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
@@ -35,6 +36,8 @@ final class KnowledgeEngine {
   final _tracks = <Track>[];
   final _competencies = <Competency>[];
   final _skills = <Skill>[];
+  final _academyCourses = <AcademyCourse>[];
+  final _academyMissions = <AcademyMission>[];
 
   // Getters expuestos
   bool get isInitialized => _initialized;
@@ -49,6 +52,8 @@ final class KnowledgeEngine {
   List<Competency> get competencies => List.unmodifiable(_competencies);
   List<Skill> get skills => List.unmodifiable(_skills);
   List<LessonMetadata> get lessonsMetadata => List.unmodifiable(_lessonsMetadata.values);
+  List<AcademyCourse> get academyCourses => List.unmodifiable(_academyCourses);
+  List<AcademyMission> get academyMissions => List.unmodifiable(_academyMissions);
 
   /// Inicializa el motor cargando el manifiesto y los metadatos de las lecciones
   Future<void> initialize() async {
@@ -71,6 +76,8 @@ final class KnowledgeEngine {
       await _loadThoughtLibrary();
       await _loadModelCatalog();
       await _loadModules();
+      await _loadAcademyCourses();
+      await _loadAcademyMissions();
 
       // 4. Validar integridad semántica (relaciones, ciclos de prerrequisitos)
       _validateIntegrity();
@@ -402,6 +409,58 @@ final class KnowledgeEngine {
             related: getStrList('related'),
             source: text('source'),
             verified: itemMap['verified'] as bool,
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadAcademyCourses() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'academy-courses');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de cursos de academia incompatible en $source');
+      }
+      final list = root['courses'] as List<dynamic>;
+      for (final c in list.cast<Map<String, dynamic>>()) {
+        _academyCourses.add(
+          AcademyCourse(
+            id: c['id'] as String,
+            category: c['category'] as String,
+            title: c['title'] as String,
+            description: c['description'] as String,
+            difficulty: c['difficulty'] as String,
+            durationMinutes: c['duration'] as int,
+            missionIds: (c['missions'] as List<dynamic>).cast<String>(),
+            concepts: (c['concepts'] as List<dynamic>).cast<String>(),
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadAcademyMissions() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'academy-missions');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de misiones de academia incompatible en $source');
+      }
+      final list = root['missions'] as List<dynamic>;
+      for (final m in list.cast<Map<String, dynamic>>()) {
+        _academyMissions.add(
+          AcademyMission(
+            id: m['id'] as String,
+            title: m['title'] as String,
+            objective: m['objective'] as String,
+            durationMinutes: m['duration'] as int,
+            prerequisiteIds: (m['prerequisiteIds'] as List<dynamic>).cast<String>(),
+            concepts: (m['concepts'] as List<dynamic>).cast<String>(),
+            difficulty: m['difficulty'] as String,
+            projectAssociated: m['projectAssociated'] as String?,
           ),
         );
       }

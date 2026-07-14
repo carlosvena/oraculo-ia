@@ -2,6 +2,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
 import 'package:oraculo_ia/src/core/error/app_error_boundary.dart';
+import 'package:oraculo_ia/src/features/academy/presentation/academy_catalog_screen.dart';
+import 'package:oraculo_ia/src/features/academy/presentation/course_details_screen.dart';
+import 'package:oraculo_ia/src/features/academy/presentation/global_search_screen.dart';
+import 'package:oraculo_ia/src/features/academy/presentation/knowledge_explorer_screen.dart';
+import 'package:oraculo_ia/src/features/academy/presentation/welcome_screen.dart';
 import 'package:oraculo_ia/src/features/assessment/presentation/assessment_screen.dart';
 import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
 import 'package:oraculo_ia/src/features/career/career_paths.dart';
@@ -50,6 +55,11 @@ abstract final class AppRoute {
   static const career='/career';
   static const creatorStudio = '/creator-studio';
   static const mentorPanel = '/mentor-panel';
+  static const academyWelcome = '/academy-welcome';
+  static const academyCatalog = '/academy-catalog';
+  static const courseDetails = '/course-details';
+  static const knowledgeExplorer = '/knowledge-explorer';
+  static const globalSearch = '/global-search';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -70,7 +80,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             (context, state) => SplashScreen(
               onResolved:
                   (completed) => context.go(
-                    completed ? AppRoute.mission : AppRoute.welcome,
+                    completed ? AppRoute.academyWelcome : AppRoute.welcome,
                   ),
             ),
       ),
@@ -78,7 +88,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: AppRoute.welcome,
         builder:
             (context, state) =>
-                WelcomeScreen(onCompleted: () => context.go(AppRoute.mission)),
+                WelcomeScreen(onCompleted: () => context.go(AppRoute.academyWelcome)),
       ),
       GoRoute(
         path: AppRoute.mission,
@@ -235,6 +245,28 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.mentorPanel,
         builder: (context, state) => const MentorPanelScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.academyWelcome,
+        builder: (context, state) => const AcademyWelcomeScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.academyCatalog,
+        builder: (context, state) => const AcademyCatalogScreen(),
+      ),
+      GoRoute(
+        path: '${AppRoute.courseDetails}/:id',
+        builder: (context, state) => CourseDetailsScreen(
+          courseId: state.pathParameters['id']!,
+        ),
+      ),
+      GoRoute(
+        path: AppRoute.knowledgeExplorer,
+        builder: (context, state) => const KnowledgeExplorerScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.globalSearch,
+        builder: (context, state) => const GlobalSearchScreen(),
       ),
     ],
   );

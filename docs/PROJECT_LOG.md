@@ -426,3 +426,19 @@ Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialment
 - Creación de suite de pruebas unitarias robustas en `learning_engine_test.dart` y validación estática de compilación limpia.
 
 Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialmente.
+
+# Sprint 26 — Academia IA v1.0
+
+**Estado:** finalizado.
+
+- **Catálogo de Cursos de la Academia (Módulo 1)**: Diseño e implementación del catálogo de 10 cursos (Fundamentos, Prompt Engineering, Modelos LLM, Agentes, Automatización, Productividad, Excel, Programación, Empresas, IA Bancaria) organizados por categorías.
+- **Planificación de 100 Misiones (Módulo 2)**: Creación de metadatos estructurados offline para 100 misiones almacenados en `knowledge/academy_missions_v1.json` y `knowledge/academy_courses_v1.json`, enlazando objetivos, prerrequisitos, duraciones y conceptos.
+- **Carga y Lógica de Negocio en KnowledgeEngine**: Implementación de analizadores JSON y getters públicos para cargar y consultar cursos y misiones desde los activos del manifiesto.
+- **Página de Bienvenida Premium (Módulo 7)**: Creación de `welcome_screen.dart` con un banner de presentación espectacular, estadísticas reales de tiempo de estudio, barra de meta semanal, concepto del día y atajos para continuar aprendiendo.
+- **Ficha y Progreso del Curso (Módulos 4 y 5)**: Pantalla de detalles con objetivos del curso, plan de estudios de misiones con estados de bloqueo, conceptos clave y panel con métricas de progreso detalladas (conceptos dominados/pendientes, laboratorios y nivel).
+- **Explorador Jerárquico del Conocimiento (Módulo 3)**: Pantalla de exploración interactiva que despliega Curso -> Misiones -> Conceptos -> Labs -> Proyectos con soporte para filtros de cursos y dificultad.
+- **Buscador General Multientidad (Módulo 6)**: Buscador offline unificado en `global_search_screen.dart` que indexa y busca simultáneamente en cursos, misiones, manual, diccionario, laboratorios, biblioteca y proyectos.
+- **Mejoras Visuales Material 3 (Módulo 8)**: Consistencia en espaciados, uso de tarjetas elevadas modernas, iconos semánticos y paletas de color con acentos acordes al diseño premium de la app.
+- Creación de suite de pruebas unitarias robustas en `academy_test.dart` y validación estática de compilación limpia.
+
+Calidad: `flutter analyze` limpio; todas las pruebas unitarias pasaron exitosamente.

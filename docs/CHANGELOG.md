@@ -4,7 +4,16 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 26 pendiente de definición.
+- Próximo: Sprints 27 pendiente de definición.
+
+## 2.6.0-sprint26 — 2026-07-13
+
+- **Catálogo de Cursos**: Nueva pantalla "Academia IA" con los 10 cursos principales por categorías.
+- **Estructura de 100 Misiones**: Planificación de metadatos de 100 lecciones integradas offline.
+- **Explorador Jerárquico**: Herramienta de navegación dinámica de Curso -> Misión -> Concepto -> Lab -> Proyecto.
+- **Buscador Unificado**: Motor de búsqueda offline multientidad que indexa cursos, misiones, manual, diccionario, laboratorios y proyectos simultáneamente.
+- **Portada de Bienvenida Espectacular**: Nueva página principal con metas de estudio, horas estudiadas reales, concepto del día y atajos para continuar el aprendizaje.
+- **Mejoras Visuales Material 3**: Tarjetas modernas, iconos consistentes y banners premium.
 
 ## 2.5.0-sprint25 — 2026-07-13
 
