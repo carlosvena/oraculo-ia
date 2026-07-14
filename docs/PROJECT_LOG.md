@@ -391,3 +391,21 @@ Calidad: `flutter analyze` limpio; 36 pruebas unitarias aprobadas secuencialment
 - Creación de suite de pruebas unitarias y de integración `creator_studio_test.dart` y validación estática de compilación.
 
 Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialmente.
+
+# Sprint 24 — Oráculo Mentor Engine v1.0
+
+**Estado:** finalizado.
+
+- Diseño y desarrollo de la arquitectura de **ORÁCULO Mentor Engine v1.0**, un motor pedagógico offline integrado para acompañar al estudiante adaptativamente.
+- **Perfil Pedagógico Completo (Módulo 1)**: Ampliación de `LearnerProfile` para albergar estadísticas de estudio, horas cursadas, conceptos dominados, conceptos débiles, objetivos, historial de puntuaciones y errores frecuentes.
+- **Motor de Recomendaciones Basado en Reglas (Módulo 2)**: Recomienda de forma inteligente la siguiente actividad (misión, repaso, proyecto, lectura de manual) adaptada al progreso del perfil, explicando en español la justificación pedagógica de la elección.
+- **Estilos Explicativos Alternativos (Módulo 3)**: Motor offline que genera explicaciones en 7 tonos distintos (Formal, Simple, Ejemplo Cotidiano, Ejemplo Técnico, Analogía, Paso a Paso, Resumen Ejecutivo) para conceptos clave de IA.
+- **Dificultad Adaptativa (Módulo 4)**: Rúbricas lógicas que ajustan automáticamente la dificultad del perfil de usuario (Inicial, Intermedio, Exigente) ante aciertos y errores frecuentes en evaluaciones.
+- **Memoria Pedagógica Local (Módulo 5)**: Registro persistente en memoria de explicaciones ya dadas, analogías utilizadas, laboratorios completados y sugerencias aceptadas.
+- **Planificador Inteligente de Sesiones (Módulo 6)**: Generador dinámico de planes de estudio detallados ajustados a disponibilidad de tiempo (e.g. 15 minutos o 1 hora) y a la meta del alumno.
+- **Contratos y Adaptadores de IA (Módulo 7)**: Interfaces desacopladas mediante el patrón Adapter para futuros conectores LLM remotos (OpenAI, Gemini, Claude, DeepSeek, Qwen, GLM, Llama, Mistral).
+- **Panel Visual del Mentor (Módulo 8)**: Panel premium de control en Flutter donde el usuario ve fortalezas, debilidades, conceptos dominados/pendientes, y la recomendación personalizada del día.
+- **Sistema de Eventos Didácticos (Módulo 9)**: Eventos internos (`MissionCompleted`, `ConceptLearned`, `ConceptFailed`, `ProjectStarted`, `ReviewCompleted`, `ManualRead`, `DictionaryViewed`) a los que el Mentor reacciona para actualizar el modelo del estudiante.
+- Creación de pruebas unitarias robustas en `mentor_engine_test.dart` y validación estática de compilación limpia.
+
+Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialmente.

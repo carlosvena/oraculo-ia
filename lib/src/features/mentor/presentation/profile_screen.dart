@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/mentor/domain/learner_profile.dart';
@@ -20,6 +21,15 @@ class LearnerProfileScreen extends StatelessWidget {
           const Text(
             'Este perfil vive solo en el dispositivo y adapta ejemplos editoriales. No se envía a servicios externos.',
             style: TextStyle(color: Colors.grey),
+          ),
+          const SizedBox(height: AppSpacing.md),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: ElevatedButton.icon(
+              onPressed: () => context.push('/mentor-panel'),
+              icon: const Icon(Icons.psychology),
+              label: const Text('Ver Panel del Mentor'),
+            ),
           ),
           const SizedBox(height: AppSpacing.lg),
           _Item(title: 'Nivel actual', value: profile.level),

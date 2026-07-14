@@ -11,6 +11,7 @@ import 'package:oraculo_ia/src/features/editorial/presentation/editorial_status_
 import 'package:oraculo_ia/src/features/knowledge_map/presentation/knowledge_map_screen.dart';
 import 'package:oraculo_ia/src/features/lessons/presentation/lesson_screen.dart';
 import 'package:oraculo_ia/src/features/manual_export/presentation/manual_export_screen.dart';
+import 'package:oraculo_ia/src/features/mentor/presentation/mentor_panel_screen.dart';
 import 'package:oraculo_ia/src/features/mentor/presentation/profile_screen.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_screen.dart';
@@ -48,6 +49,7 @@ abstract final class AppRoute {
   static const projects='/projects';
   static const career='/career';
   static const creatorStudio = '/creator-studio';
+  static const mentorPanel = '/mentor-panel';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -229,6 +231,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.creatorStudio,
         builder: (context, state) => const CreatorStudioScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.mentorPanel,
+        builder: (context, state) => const MentorPanelScreen(),
       ),
     ],
   );

@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:oraculo_ia/src/features/career/domain/career_path.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/creator_studio/data/creator_studio_exporter.dart';
 import 'package:oraculo_ia/src/features/projects/domain/learning_project.dart';

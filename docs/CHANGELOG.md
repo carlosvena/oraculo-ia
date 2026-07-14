@@ -4,7 +4,19 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 24 pendiente de definición.
+- Próximo: Sprints 25 pendiente de definición.
+
+## 2.4.0-sprint24 — 2026-07-13
+
+- **ORÁCULO Mentor Engine**: Arquitectura del tutor inteligente offline y adaptativo para guiar el aprendizaje.
+- **Perfil Pedagógico**: Almacenamiento local de horas estudiadas, velocidad, conceptos dominados y errores frecuentes.
+- **Recomendador Inteligente**: Propone siguientes pasos con justificación pedagógica en español.
+- **Estilos Explicativos Alternativos**: Explicaciones offline en 7 tonos distintos (Formal, Simple, Analogía, etc.).
+- **Dificultad Adaptativa**: Modificación dinámica del nivel de dificultad según rendimiento en quizzes.
+- **Memoria de Interacciones**: Registro de conceptos explicados y analogías utilizadas para no repetirlas.
+- **Planificador de Sesiones**: Diseña planes estructurados ajustados a disponibilidad de tiempo (e.g. 15 minutos o 1 hora) y objetivos.
+- **Adaptadores LLM Desacoplados**: Interfaces y adaptadores listos para integrar APIs comerciales (OpenAI, Gemini, Claude, DeepSeek, etc.).
+- **Panel del Mentor**: Dashboard interactivo que muestra métricas del tutor, fortalezas, debilidades y planes dinámicos.
 
 ## 2.3.0-sprint23 — 2026-07-13
 
