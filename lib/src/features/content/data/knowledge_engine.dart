@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:oraculo_ia/src/features/academy/domain/academy_models.dart';
+import 'package:oraculo_ia/src/features/ai_lab/domain/ai_lab_models.dart';
 import 'package:oraculo_ia/src/features/career/domain/career_path.dart';
 import 'package:oraculo_ia/src/features/content/domain/knowledge_content.dart';
 import 'package:oraculo_ia/src/features/lessons/domain/lesson.dart';
@@ -38,6 +39,7 @@ final class KnowledgeEngine {
   final _skills = <Skill>[];
   final _academyCourses = <AcademyCourse>[];
   final _academyMissions = <AcademyMission>[];
+  final _aiLaboratories = <AiLaboratory>[];
 
   // Getters expuestos
   bool get isInitialized => _initialized;
@@ -54,6 +56,7 @@ final class KnowledgeEngine {
   List<LessonMetadata> get lessonsMetadata => List.unmodifiable(_lessonsMetadata.values);
   List<AcademyCourse> get academyCourses => List.unmodifiable(_academyCourses);
   List<AcademyMission> get academyMissions => List.unmodifiable(_academyMissions);
+  List<AiLaboratory> get aiLaboratories => List.unmodifiable(_aiLaboratories);
 
   /// Inicializa el motor cargando el manifiesto y los metadatos de las lecciones
   Future<void> initialize() async {
@@ -78,6 +81,7 @@ final class KnowledgeEngine {
       await _loadModules();
       await _loadAcademyCourses();
       await _loadAcademyMissions();
+      await _loadAiLaboratories();
 
       // 4. Validar integridad semántica (relaciones, ciclos de prerrequisitos)
       _validateIntegrity();
@@ -409,6 +413,35 @@ final class KnowledgeEngine {
             related: getStrList('related'),
             source: text('source'),
             verified: itemMap['verified'] as bool,
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadAiLaboratories() async {
+    final item = _manifestItems.firstWhere((i) => i.id == 'ai-labs');
+    for (final source in item.sources) {
+      final jsonStr = await rootBundle.loadString(source);
+      final root = jsonDecode(jsonStr) as Map<String, dynamic>;
+      if (root['schemaVersion'] != 1) {
+        throw EditorialContentException('Esquema de laboratorios de IA incompatible en $source');
+      }
+      final list = root['laboratories'] as List<dynamic>;
+      for (final l in list.cast<Map<String, dynamic>>()) {
+        _aiLaboratories.add(
+          AiLaboratory(
+            id: l['id'] as String,
+            title: l['title'] as String,
+            category: l['category'] as String,
+            objective: l['objective'] as String,
+            difficulty: l['difficulty'] as String,
+            durationMinutes: l['duration'] as int,
+            prerequisites: (l['prerequisites'] as List<dynamic>).cast<String>(),
+            steps: (l['steps'] as List<dynamic>).cast<String>(),
+            expectedResult: l['expectedResult'] as String,
+            commonErrors: (l['commonErrors'] as List<dynamic>).cast<String>(),
+            concepts: (l['concepts'] as List<dynamic>).cast<String>(),
           ),
         );
       }

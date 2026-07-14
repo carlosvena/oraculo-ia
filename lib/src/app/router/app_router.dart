@@ -7,6 +7,8 @@ import 'package:oraculo_ia/src/features/academy/presentation/course_details_scre
 import 'package:oraculo_ia/src/features/academy/presentation/global_search_screen.dart';
 import 'package:oraculo_ia/src/features/academy/presentation/knowledge_explorer_screen.dart';
 import 'package:oraculo_ia/src/features/academy/presentation/welcome_screen.dart';
+import 'package:oraculo_ia/src/features/ai_lab/presentation/ai_lab_screen.dart';
+import 'package:oraculo_ia/src/features/ai_lab/presentation/lab_editor_screen.dart';
 import 'package:oraculo_ia/src/features/assessment/presentation/assessment_screen.dart';
 import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
 import 'package:oraculo_ia/src/features/career/career_paths.dart';
@@ -60,6 +62,8 @@ abstract final class AppRoute {
   static const courseDetails = '/course-details';
   static const knowledgeExplorer = '/knowledge-explorer';
   static const globalSearch = '/global-search';
+  static const aiLab = '/ai-lab';
+  static const labEditor = '/lab-editor';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -267,6 +271,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.globalSearch,
         builder: (context, state) => const GlobalSearchScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.aiLab,
+        builder: (context, state) => const AiLabScreen(),
+      ),
+      GoRoute(
+        path: '${AppRoute.labEditor}/:id',
+        builder: (context, state) => LabEditorScreen(
+          labId: state.pathParameters['id']!,
+          templateId: state.uri.queryParameters['template'],
+        ),
       ),
     ],
   );

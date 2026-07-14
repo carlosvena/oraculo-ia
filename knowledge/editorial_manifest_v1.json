@@ -206,6 +206,22 @@
       "nextReview": "2026-10-13",
       "currentClaims": false,
       "textualQuotes": []
+    },
+    {
+      "id": "ai-labs",
+      "title": "Catálogo de 50 Laboratorios de IA",
+      "author": "Equipo Editorial ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-13",
+      "reviewed": "2026-07-13",
+      "status": "verificado",
+      "sources": [
+        "knowledge/ai_labs_v1.json"
+      ],
+      "notes": "Laboratorios prácticos offline para experimentar.",
+      "nextReview": "2026-10-13",
+      "currentClaims": false,
+      "textualQuotes": []
     }
   ]
 }

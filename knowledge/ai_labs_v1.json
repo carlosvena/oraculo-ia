@@ -1,0 +1,1210 @@
+{
+  "schemaVersion": 1,
+  "laboratories": [
+    {
+      "id": "lab-001",
+      "title": "Lab 01: Formular una instrucción sin ejemplos previos para clasificación.",
+      "category": "Prompt Engineering",
+      "objective": "Formular una instrucción sin ejemplos previos para clasificación.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Sintaxis de prompts"
+      ],
+      "steps": [
+        "Escribir el rol del sistema.",
+        "Definir los textos a clasificar.",
+        "Establecer las etiquetas posibles."
+      ],
+      "expectedResult": "Clasificación exacta sin texto adicional redundante.",
+      "commonErrors": [
+        "Omitir el formato de salida deseado.",
+        "Usar etiquetas ambiguas."
+      ],
+      "concepts": [
+        "zero-shot",
+        "prompting"
+      ]
+    },
+    {
+      "id": "lab-002",
+      "title": "Lab 02: Escribir un prompt con 3 ejemplos estructurados de entrada/salida.",
+      "category": "Prompt Engineering",
+      "objective": "Escribir un prompt con 3 ejemplos estructurados de entrada/salida.",
+      "difficulty": "Inicial",
+      "duration": 20,
+      "prerequisites": [
+        "Zero-Shot Básico"
+      ],
+      "steps": [
+        "Redactar la instrucción general.",
+        "Agregar 3 pares de ejemplos delimitados por XML.",
+        "Escribir la entrada de prueba."
+      ],
+      "expectedResult": "Respuestas consistentes que replican el formato de los ejemplos.",
+      "commonErrors": [
+        "Ejemplos incongruentes entre sí.",
+        "Mezclar etiquetas de entrada."
+      ],
+      "concepts": [
+        "few-shot",
+        "delimitadores"
+      ]
+    },
+    {
+      "id": "lab-003",
+      "title": "Lab 03: Explicar el razonamiento paso a paso antes de dar la respuesta final.",
+      "category": "Prompt Engineering",
+      "objective": "Explicar el razonamiento paso a paso antes de dar la respuesta final.",
+      "difficulty": "Intermedio",
+      "duration": 25,
+      "prerequisites": [
+        "Few-Shot Estructurado"
+      ],
+      "steps": [
+        "Instruir al modelo a pensar en voz alta.",
+        "Colocar un separador entre el pensamiento y el resultado.",
+        "Probar con un problema lógico."
+      ],
+      "expectedResult": "Mayor precisión en problemas matemáticos o deductivos.",
+      "commonErrors": [
+        "Omitir el disparador del razonamiento.",
+        "Confundir el razonamiento con la conclusión."
+      ],
+      "concepts": [
+        "cot",
+        "razonamiento"
+      ]
+    },
+    {
+      "id": "lab-004",
+      "title": "Lab 04: Crear un generador automático de prompts optimizados.",
+      "category": "Prompt Engineering",
+      "objective": "Crear un generador automático de prompts optimizados.",
+      "difficulty": "Avanzado",
+      "duration": 30,
+      "prerequisites": [
+        "Chain of Thought (CoT)"
+      ],
+      "steps": [
+        "Definir la meta-instrucción.",
+        "Establecer variables dinámicas como [Rol] y [Formato].",
+        "Probar el output generado."
+      ],
+      "expectedResult": "Un prompt listo para copiar que contiene instrucciones claras y variables.",
+      "commonErrors": [
+        "Estructura muy rígida.",
+        "Falta de claridad en las variables dinámicas."
+      ],
+      "concepts": [
+        "metaprompt",
+        "automatización"
+      ]
+    },
+    {
+      "id": "lab-005",
+      "title": "Lab 05: Usar delimitadores para separar secciones de datos complejos.",
+      "category": "Prompt Engineering",
+      "objective": "Usar delimitadores para separar secciones de datos complejos.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Sintaxis de prompts"
+      ],
+      "steps": [
+        "Diseñar la estructura con tags XML.",
+        "Colocar el texto de entrada dentro del tag <texto>.",
+        "Instruir el procesamiento por sección."
+      ],
+      "expectedResult": "Prevención de inyección de instrucciones no deseadas.",
+      "commonErrors": [
+        "Usar delimitadores inconsistentes.",
+        "Omitir el cierre de etiquetas."
+      ],
+      "concepts": [
+        "delimitadores",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "lab-006",
+      "title": "Lab 06: Optimizar la respuesta usando Custom Instructions locales.",
+      "category": "ChatGPT",
+      "objective": "Optimizar la respuesta usando Custom Instructions locales.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Configurar el perfil de usuario simulado.",
+        "Redactar las preferencias de estilo.",
+        "Probar respuestas resultantes."
+      ],
+      "expectedResult": "Respuestas alineadas automáticamente con el perfil sin repetir el prompt.",
+      "commonErrors": [
+        "Saturar el sistema de restricciones contradictorias."
+      ],
+      "concepts": [
+        "gpt",
+        "personalización"
+      ]
+    },
+    {
+      "id": "lab-007",
+      "title": "Lab 07: Forzar la salida en tablas complejas y listas multinivel.",
+      "category": "ChatGPT",
+      "objective": "Forzar la salida en tablas complejas y listas multinivel.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Instrucciones del Sistema"
+      ],
+      "steps": [
+        "Indicar formato Markdown explícitamente.",
+        "Definir columnas e índices de la tabla.",
+        "Probar con datos numéricos."
+      ],
+      "expectedResult": "Tablas perfectamente renderizadas y fáciles de leer.",
+      "commonErrors": [
+        "No especificar el tratamiento de celdas vacías."
+      ],
+      "concepts": [
+        "markdown",
+        "formato"
+      ]
+    },
+    {
+      "id": "lab-008",
+      "title": "Lab 08: Instanciar un consultor de negocios en GPT.",
+      "category": "ChatGPT",
+      "objective": "Instanciar un consultor de negocios en GPT.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Definir el rol de consultor senior.",
+        "Establecer el tono analítico y sobrio.",
+        "Presentar un caso de negocio simulado."
+      ],
+      "expectedResult": "Respuestas críticas que no halagan al usuario y proveen soluciones reales.",
+      "commonErrors": [
+        "El modelo adopta un tono condescendiente."
+      ],
+      "concepts": [
+        "roles",
+        "consultoría"
+      ]
+    },
+    {
+      "id": "lab-009",
+      "title": "Lab 09: Estructurar la base de conocimientos para un asistente a medida.",
+      "category": "ChatGPT",
+      "objective": "Estructurar la base de conocimientos para un asistente a medida.",
+      "difficulty": "Avanzado",
+      "duration": 25,
+      "prerequisites": [
+        "Roles y Arquetipos"
+      ],
+      "steps": [
+        "Diseñar el archivo de instrucciones de comportamiento.",
+        "Preparar el glosario de términos clave.",
+        "Probar consistencia didáctica."
+      ],
+      "expectedResult": "Respuestas basadas estrictamente en la base de datos local provista.",
+      "commonErrors": [
+        "Cargar documentos con instrucciones contradictorias."
+      ],
+      "concepts": [
+        "asistentes",
+        "gpts"
+      ]
+    },
+    {
+      "id": "lab-010",
+      "title": "Lab 10: Diseñar un prompt para análisis conjunto de texto e imágenes.",
+      "category": "Gemini",
+      "objective": "Diseñar un prompt para análisis conjunto de texto e imágenes.",
+      "difficulty": "Inicial",
+      "duration": 20,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Establecer la estructura de descripción de imagen.",
+        "Definir la instrucción de contraste textual.",
+        "Generar el reporte consolidado."
+      ],
+      "expectedResult": "Análisis estructurado que cruza datos visuales y escritos.",
+      "commonErrors": [
+        "Omitir la relación entre imagen y texto."
+      ],
+      "concepts": [
+        "multimodal",
+        "gemini"
+      ]
+    },
+    {
+      "id": "lab-011",
+      "title": "Lab 11: Organizar un prompt para resumir un documento de 50 páginas.",
+      "category": "Gemini",
+      "objective": "Organizar un prompt para resumir un documento de 50 páginas.",
+      "difficulty": "Intermedio",
+      "duration": 25,
+      "prerequisites": [
+        "Multimodalidad Contextual"
+      ],
+      "steps": [
+        "Dividir las secciones del documento.",
+        "Usar un índice de navegación.",
+        "Especificar extracción de hitos clave."
+      ],
+      "expectedResult": "Resumen coherente que no pierde detalles importantes de la mitad del archivo.",
+      "commonErrors": [
+        "Alucinación por saturación de tokens."
+      ],
+      "concepts": [
+        "contexto",
+        "resúmenes"
+      ]
+    },
+    {
+      "id": "lab-012",
+      "title": "Lab 12: Configurar el comportamiento base del modelo Gemini.",
+      "category": "Gemini",
+      "objective": "Configurar el comportamiento base del modelo Gemini.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Definir las restricciones de seguridad.",
+        "Establecer el estilo conciso.",
+        "Evaluar output ante prompts capciosos."
+      ],
+      "expectedResult": "El modelo rechaza instrucciones maliciosas de forma educada.",
+      "commonErrors": [
+        "Restricciones excesivas que limitan respuestas válidas."
+      ],
+      "concepts": [
+        "system-instructions",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "lab-013",
+      "title": "Lab 13: Forzar salidas que coincidan exactamente con un esquema JSON dado.",
+      "category": "Gemini",
+      "objective": "Forzar salidas que coincidan exactamente con un esquema JSON dado.",
+      "difficulty": "Avanzado",
+      "duration": 30,
+      "prerequisites": [
+        "Ventana de Contexto Amplia"
+      ],
+      "steps": [
+        "Definir el esquema JSON objetivo.",
+        "Indicar al modelo que complete las llaves requeridas.",
+        "Validar sintaxis sintáctica."
+      ],
+      "expectedResult": "JSON válido y listo para ser consumido por un parser local.",
+      "commonErrors": [
+        "Agregar texto explicativo fuera del bloque JSON."
+      ],
+      "concepts": [
+        "json",
+        "esquemas"
+      ]
+    },
+    {
+      "id": "lab-014",
+      "title": "Lab 14: Organizar bloques de datos masivos usando etiquetas XML.",
+      "category": "Claude",
+      "objective": "Organizar bloques de datos masivos usando etiquetas XML.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Encerrar el contexto en etiquetas <documento>.",
+        "Formular la pregunta en <pregunta>.",
+        "Ejecutar la consulta."
+      ],
+      "expectedResult": "Respuestas precisas que extraen citas literales sin confundirse.",
+      "commonErrors": [
+        "Olvidar cerrar etiquetas XML."
+      ],
+      "concepts": [
+        "xml",
+        "claude"
+      ]
+    },
+    {
+      "id": "lab-015",
+      "title": "Lab 15: Definir explícitamente lo que el modelo NO debe hacer bajo ninguna circunstancia.",
+      "category": "Claude",
+      "objective": "Definir explícitamente lo que el modelo NO debe hacer bajo ninguna circunstancia.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Escribir la sección 'Restricciones'.",
+        "Usar la palabra 'NUNCA' o 'EVITAR'.",
+        "Verificar robustez del prompt."
+      ],
+      "expectedResult": "El modelo evita responder sobre temas bloqueados.",
+      "commonErrors": [
+        "Reglas negativas mal formuladas que confunden al modelo."
+      ],
+      "concepts": [
+        "guardrails",
+        "restricciones"
+      ]
+    },
+    {
+      "id": "lab-016",
+      "title": "Lab 16: Hacer que Claude formule preguntas aclaratorias antes de responder.",
+      "category": "Claude",
+      "objective": "Hacer que Claude formule preguntas aclaratorias antes de responder.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "XML Tags para Entrada"
+      ],
+      "steps": [
+        "Instruir al modelo a evaluar la ambigüedad de la consulta.",
+        "Pedirle que enumere 3 preguntas para precisar.",
+        "Simular interacción."
+      ],
+      "expectedResult": "Clarificación del problema antes de generar la respuesta final.",
+      "commonErrors": [
+        "El modelo responde directamente ignorando las preguntas."
+      ],
+      "concepts": [
+        "interactivo",
+        "drafting"
+      ]
+    },
+    {
+      "id": "lab-017",
+      "title": "Lab 17: Mitigar la invención de hechos al analizar bases de datos.",
+      "category": "Claude",
+      "objective": "Mitigar la invención de hechos al analizar bases de datos.",
+      "difficulty": "Avanzado",
+      "duration": 30,
+      "prerequisites": [
+        "Instrucciones Negativas"
+      ],
+      "steps": [
+        "Indicar 'Si no lo sabés, respondé que no tenés datos'.",
+        "Exigir número de página y cita textual para cada afirmación.",
+        "Validar referencias."
+      ],
+      "expectedResult": "Respuestas 100% verídicas basadas en el texto.",
+      "commonErrors": [
+        "Permitir inferencias sin base en el texto de origen."
+      ],
+      "concepts": [
+        "alucinaciones",
+        "auditoría"
+      ]
+    },
+    {
+      "id": "lab-018",
+      "title": "Lab 18: Resolver un acertijo lógico complejo usando tokens de razonamiento.",
+      "category": "DeepSeek",
+      "objective": "Resolver un acertijo lógico complejo usando tokens de razonamiento.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Chain of Thought (CoT)"
+      ],
+      "steps": [
+        "Plantear el problema matemático de forma secuencial.",
+        "Analizar las dependencias lógicas.",
+        "Generar el desglose de pasos."
+      ],
+      "expectedResult": "Explicación detallada que demuestra la corrección matemática paso a paso.",
+      "commonErrors": [
+        "No validar los pasos intermedios."
+      ],
+      "concepts": [
+        "matemáticas",
+        "lógica"
+      ]
+    },
+    {
+      "id": "lab-019",
+      "title": "Lab 19: Diseñar un prompt para generar scripts bash robustos.",
+      "category": "DeepSeek",
+      "objective": "Diseñar un prompt para generar scripts bash robustos.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Razonamiento Matemático Offline"
+      ],
+      "steps": [
+        "Definir la meta del script.",
+        "Especificar manejo de errores de comandos.",
+        "Exigir portabilidad POSIX."
+      ],
+      "expectedResult": "Script listo para ejecutarse sin fallos sintácticos.",
+      "commonErrors": [
+        "Omitir variables de entorno de seguridad."
+      ],
+      "concepts": [
+        "programación",
+        "bash"
+      ]
+    },
+    {
+      "id": "lab-020",
+      "title": "Lab 20: Reducir la longitud del prompt sin perder efectividad didáctica.",
+      "category": "DeepSeek",
+      "objective": "Reducir la longitud del prompt sin perder efectividad didáctica.",
+      "difficulty": "Avanzado",
+      "duration": 25,
+      "prerequisites": [
+        "DeepSeek Coder"
+      ],
+      "steps": [
+        "Eliminar adjetivos y palabras vacías.",
+        "Unificar instrucciones redundantes.",
+        "Medir tokenización aproximada."
+      ],
+      "expectedResult": "Prompt compacto y de alta fidelidad que ahorra costos computacionales.",
+      "commonErrors": [
+        "Recortar variables críticas de contexto."
+      ],
+      "concepts": [
+        "tokens",
+        "eficiencia"
+      ]
+    },
+    {
+      "id": "lab-021",
+      "title": "Lab 21: Evaluar el impacto de la temperatura en la creatividad del texto.",
+      "category": "LLM",
+      "objective": "Evaluar el impacto de la temperatura en la creatividad del texto.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Escribir una consigna de redacción.",
+        "Simular respuestas con temperatura 0.2.",
+        "Simular respuestas con temperatura 0.9."
+      ],
+      "expectedResult": "Comprensión práctica de la variación de probabilidad de tokens.",
+      "commonErrors": [
+        "Esperar respuestas idénticas con alta temperatura."
+      ],
+      "concepts": [
+        "temperatura",
+        "probabilidades"
+      ]
+    },
+    {
+      "id": "lab-022",
+      "title": "Lab 22: Identificar cómo se dividen las palabras en fragmentos de tokens.",
+      "category": "LLM",
+      "objective": "Identificar cómo se dividen las palabras en fragmentos de tokens.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Separar oraciones en sílabas y sub-palabras.",
+        "Asignar IDs teóricos.",
+        "Analizar impacto del idioma español."
+      ],
+      "expectedResult": "Comprensión de por qué ciertos términos consumen más presupuesto de tokens.",
+      "commonErrors": [
+        "Creer que 1 token equivale siempre a 1 palabra entera."
+      ],
+      "concepts": [
+        "tokens",
+        "tokenizer"
+      ]
+    },
+    {
+      "id": "lab-023",
+      "title": "Lab 23: Entender la similitud semántica mediante distancias vectoriales.",
+      "category": "LLM",
+      "objective": "Entender la similitud semántica mediante distancias vectoriales.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Tokenizer Internals"
+      ],
+      "steps": [
+        "Definir 5 palabras conceptualmente cercanas.",
+        "Definir 2 palabras distantes.",
+        "Simular matriz de distancias."
+      ],
+      "expectedResult": "Comprensión del espacio vectorial latente del modelo.",
+      "commonErrors": [
+        "Confundir similitud semántica con coincidencia de caracteres."
+      ],
+      "concepts": [
+        "vectores",
+        "embeddings"
+      ]
+    },
+    {
+      "id": "lab-024",
+      "title": "Lab 24: Diseñar el dataset de entrenamiento para ajustar el tono del modelo.",
+      "category": "LLM",
+      "objective": "Diseñar el dataset de entrenamiento para ajustar el tono del modelo.",
+      "difficulty": "Avanzado",
+      "duration": 30,
+      "prerequisites": [
+        "Embeddings Vectoriales"
+      ],
+      "steps": [
+        "Estructurar pares de entrada/salida deseada.",
+        "Definir formato JSONL.",
+        "Escribir 5 ejemplos del dataset."
+      ],
+      "expectedResult": "Dataset de alta calidad para entrenamiento consistente.",
+      "commonErrors": [
+        "Ejemplos contradictorios que confunden al optimizador."
+      ],
+      "concepts": [
+        "entrenamiento",
+        "datasets"
+      ]
+    },
+    {
+      "id": "lab-025",
+      "title": "Lab 25: Definir un contrato de herramienta de agente (Tool definition).",
+      "category": "Agentes",
+      "objective": "Definir un contrato de herramienta de agente (Tool definition).",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Structured JSON Outputs"
+      ],
+      "steps": [
+        "Escribir la firma del método en JSON Schema.",
+        "Definir parámetros obligatorios.",
+        "Describir el propósito de la herramienta."
+      ],
+      "expectedResult": "Esquema limpio que un agente puede invocar de forma autónoma.",
+      "commonErrors": [
+        "Descripciones vagas que confunden al agente sobre cuándo usarla."
+      ],
+      "concepts": [
+        "tools",
+        "interfaces"
+      ]
+    },
+    {
+      "id": "lab-026",
+      "title": "Lab 26: Modelar el ciclo de Pensamiento-Acción-Observación de un agente.",
+      "category": "Agentes",
+      "objective": "Modelar el ciclo de Pensamiento-Acción-Observación de un agente.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Tools e Interfaces de Agente"
+      ],
+      "steps": [
+        "Formular la meta del usuario.",
+        "Simular el primer paso de razonamiento.",
+        "Simular la llamada a la herramienta y lectura."
+      ],
+      "expectedResult": "Ciclo lógico de resolución autónoma de problemas complejos.",
+      "commonErrors": [
+        "Caer en bucles infinitos por falta de condición de parada."
+      ],
+      "concepts": [
+        "react",
+        "autonomía"
+      ]
+    },
+    {
+      "id": "lab-027",
+      "title": "Lab 27: Diseñar un sistema de almacenamiento de memoria episódica.",
+      "category": "Agentes",
+      "objective": "Diseñar un sistema de almacenamiento de memoria episódica.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Bucle de Razonamiento ReAct"
+      ],
+      "steps": [
+        "Estructurar el formato de los logs históricos.",
+        "Definir extracción de resúmenes semánticos.",
+        "Probar recuperación."
+      ],
+      "expectedResult": "El agente retiene datos clave entre diferentes turnos de conversación.",
+      "commonErrors": [
+        "Almacenar datos redundantes que saturan la memoria de trabajo."
+      ],
+      "concepts": [
+        "memoria",
+        "persistencia"
+      ]
+    },
+    {
+      "id": "lab-028",
+      "title": "Lab 28: Integrar un servidor local de recursos con el cliente del agente.",
+      "category": "Agentes",
+      "objective": "Integrar un servidor local de recursos con el cliente del agente.",
+      "difficulty": "Avanzado",
+      "duration": 30,
+      "prerequisites": [
+        "Memoria a Largo Plazo"
+      ],
+      "steps": [
+        "Definir recursos compartidos de archivos locales.",
+        "Estructurar llamadas JSON RPC.",
+        "Probar handshake local."
+      ],
+      "expectedResult": "El agente lee y edita archivos locales bajo reglas estrictas.",
+      "commonErrors": [
+        "Otorgar permisos de escritura irrestrictos al agente."
+      ],
+      "concepts": [
+        "mcp",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "lab-029",
+      "title": "Lab 29: Extraer bloques JSON incrustados en texto libre.",
+      "category": "Automatización",
+      "objective": "Extraer bloques JSON incrustados en texto libre.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Structured JSON Outputs"
+      ],
+      "steps": [
+        "Escribir la expresión regular de filtrado.",
+        "Diseñar el prompt con delimitadores claros.",
+        "Probar robustez."
+      ],
+      "expectedResult": "JSON limpio extraído exitosamente listo para codificar.",
+      "commonErrors": [
+        "No contemplar textos explicativos iniciales del modelo."
+      ],
+      "concepts": [
+        "regex",
+        "automatización"
+      ]
+    },
+    {
+      "id": "lab-030",
+      "title": "Lab 30: Diseñar la lógica para enrutar según la clasificación del modelo.",
+      "category": "Automatización",
+      "objective": "Diseñar la lógica para enrutar según la clasificación del modelo.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Parseo de Respuestas"
+      ],
+      "steps": [
+        "Establecer criterios de clasificación claros.",
+        "Configurar el switch lógico según la salida.",
+        "Simular los caminos A y B."
+      ],
+      "expectedResult": "Flujo de trabajo condicional robusto y predecible.",
+      "commonErrors": [
+        "Caminos indeterminados por respuestas fuera de catálogo."
+      ],
+      "concepts": [
+        "workflows",
+        "enrutado"
+      ]
+    },
+    {
+      "id": "lab-031",
+      "title": "Lab 31: Implementar reintentos exponenciales ante errores de cuota.",
+      "category": "Automatización",
+      "objective": "Implementar reintentos exponenciales ante errores de cuota.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Workflows con Bifurcación"
+      ],
+      "steps": [
+        "Simular error HTTP 429.",
+        "Diseñar la lógica de retroceso con factor multiplicador.",
+        "Validar límite de reintentos."
+      ],
+      "expectedResult": "Resiliencia de la automatización ante saturación de APIs.",
+      "commonErrors": [
+        "Bucles de reintento infinitos que bloquean el proceso principal."
+      ],
+      "concepts": [
+        "rate-limits",
+        "resiliencia"
+      ]
+    },
+    {
+      "id": "lab-032",
+      "title": "Lab 32: Diseñar un flujo de 3 modelos secuenciales donde la salida de uno es entrada del otro.",
+      "category": "Automatización",
+      "objective": "Diseñar un flujo de 3 modelos secuenciales donde la salida de uno es entrada del otro.",
+      "difficulty": "Avanzado",
+      "duration": 30,
+      "prerequisites": [
+        "Control de Tasas (Rate Limits)"
+      ],
+      "steps": [
+        "Configurar el Modelo A (Extracción).",
+        "Configurar el Modelo B (Traducción).",
+        "Configurar el Modelo C (Resumen)."
+      ],
+      "expectedResult": "Procesamiento encadenado que preserva la fidelidad de la información.",
+      "commonErrors": [
+        "Pérdida de contexto en las interfaces de comunicación."
+      ],
+      "concepts": [
+        "pipelines",
+        "orquestación"
+      ]
+    },
+    {
+      "id": "lab-033",
+      "title": "Lab 33: Obtener fórmulas SI y BUSCARV personalizadas.",
+      "category": "Excel",
+      "objective": "Obtener fórmulas SI y BUSCARV personalizadas.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Definir la estructura de la base de datos de origen.",
+        "Escribir las condiciones de negocio.",
+        "Generar la fórmula resultante."
+      ],
+      "expectedResult": "Fórmula de Excel exacta y optimizada lista para usar.",
+      "commonErrors": [
+        "Fórmulas con separadores incorrectos (coma vs punto y coma)."
+      ],
+      "concepts": [
+        "fórmulas",
+        "excel"
+      ]
+    },
+    {
+      "id": "lab-034",
+      "title": "Lab 34: Escribir código VBA seguro para automatizar reportes diarios.",
+      "category": "Excel",
+      "objective": "Escribir código VBA seguro para automatizar reportes diarios.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Fórmulas Lógicas Anidadas"
+      ],
+      "steps": [
+        "Definir la tarea repetitiva de formato.",
+        "Especificar el control de errores en VBA.",
+        "Generar el código de la macro."
+      ],
+      "expectedResult": "Código VBA libre de virus y listo para pegar en el editor de Excel.",
+      "commonErrors": [
+        "Generar macros que sobrescriben datos sin preguntar."
+      ],
+      "concepts": [
+        "macros",
+        "vba"
+      ]
+    },
+    {
+      "id": "lab-035",
+      "title": "Lab 35: Analizar desvíos de ventas agrupados por región y producto.",
+      "category": "Excel",
+      "objective": "Analizar desvíos de ventas agrupados por región y producto.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Generador de Macros VBA"
+      ],
+      "steps": [
+        "Presentar los datos sucios.",
+        "Instruir la creación del layout de la tabla.",
+        "Extraer conclusiones analíticas."
+      ],
+      "expectedResult": "Estructura clara de campos (filas, columnas, valores) recomendada.",
+      "commonErrors": [
+        "Confundir campos de filas con filtros de página."
+      ],
+      "concepts": [
+        "tablas",
+        "análisis"
+      ]
+    },
+    {
+      "id": "lab-036",
+      "title": "Lab 36: Diseñar un prompt para limpiar nulos y estandarizar fechas.",
+      "category": "Excel",
+      "objective": "Diseñar un prompt para limpiar nulos y estandarizar fechas.",
+      "difficulty": "Avanzado",
+      "duration": 25,
+      "prerequisites": [
+        "Tablas Dinámicas y Agrupaciones"
+      ],
+      "steps": [
+        "Definir reglas de nulos.",
+        "Especificar el formato de salida YYYY-MM-DD.",
+        "Probar con un set de datos inconsistentes."
+      ],
+      "expectedResult": "Lista de instrucciones de limpieza y script auxiliar listo.",
+      "commonErrors": [
+        "Alterar registros de forma destructiva sin backup."
+      ],
+      "concepts": [
+        "datos",
+        "limpieza"
+      ]
+    },
+    {
+      "id": "lab-037",
+      "title": "Lab 37: Escribir una función pura para validar emails con regex.",
+      "category": "Programación",
+      "objective": "Escribir una función pura para validar emails con regex.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Definir entradas y salidas esperadas.",
+        "Especificar el lenguaje de programación.",
+        "Generar el código de la función."
+      ],
+      "expectedResult": "Función funcional, legible y con comentarios explicativos cortos.",
+      "commonErrors": [
+        "Usar regex vulnerables a ataques de denegación de servicio (ReDoS)."
+      ],
+      "concepts": [
+        "funciones",
+        "validación"
+      ]
+    },
+    {
+      "id": "lab-038",
+      "title": "Lab 38: Generar casos de prueba para una función de cálculo.",
+      "category": "Programación",
+      "objective": "Generar casos de prueba para una función de cálculo.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Generación de Funciones"
+      ],
+      "steps": [
+        "Proveer el código de la función.",
+        "Solicitar pruebas de borde y de error.",
+        "Generar assertions en el framework adecuado."
+      ],
+      "expectedResult": "Suite de pruebas unitarias que cubre casos felices e infelices.",
+      "commonErrors": [
+        "Omitir casos de prueba nulos o de valores extremos."
+      ],
+      "concepts": [
+        "testing",
+        "calidad"
+      ]
+    },
+    {
+      "id": "lab-039",
+      "title": "Lab 39: Optimizar la complejidad algorítmica de una función de ordenamiento.",
+      "category": "Programación",
+      "objective": "Optimizar la complejidad algorítmica de una función de ordenamiento.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Unit Testing Automatizado"
+      ],
+      "steps": [
+        "Analizar el código O(N^2) provisto.",
+        "Identificar el cuello de botella de memoria.",
+        "Reescribir la función a O(N log N)."
+      ],
+      "expectedResult": "Código optimizado con justificación del ahorro temporal.",
+      "commonErrors": [
+        "Cambiar el comportamiento externo observable de la función."
+      ],
+      "concepts": [
+        "optimización",
+        "refactorización"
+      ]
+    },
+    {
+      "id": "lab-040",
+      "title": "Lab 40: Desglosar una base de código heredada en lenguaje antiguo.",
+      "category": "Programación",
+      "objective": "Desglosar una base de código heredada en lenguaje antiguo.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Refactoring de Rendimiento"
+      ],
+      "steps": [
+        "Cargar el snippet antiguo.",
+        "Dividir el análisis en flujo general y funciones específicas.",
+        "Generar el reporte explicativo."
+      ],
+      "expectedResult": "Explicación didáctica y clara que permite a un programador junior entender el código.",
+      "commonErrors": [
+        "Usar demasiados tecnicismos en la explicación."
+      ],
+      "concepts": [
+        "explicaciones",
+        "legacy"
+      ]
+    },
+    {
+      "id": "lab-041",
+      "title": "Lab 41: Crear una minuta ejecutiva a partir del transcript de una reunión.",
+      "category": "Documentos",
+      "objective": "Crear una minuta ejecutiva a partir del transcript de una reunión.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Establecer la estructura de la minuta (Hitos, Acuerdos, Pendientes).",
+        "Pegar el texto de transcripción.",
+        "Procesar y pulir."
+      ],
+      "expectedResult": "Minuta concisa de 1 página con responsables de tareas asignados.",
+      "commonErrors": [
+        "Omitir acuerdos importantes o incluir chistes del transcript."
+      ],
+      "concepts": [
+        "redacción",
+        "reuniones"
+      ]
+    },
+    {
+      "id": "lab-042",
+      "title": "Lab 42: Sintetizar un reporte de 20 páginas en una página ejecutiva.",
+      "category": "Documentos",
+      "objective": "Sintetizar un reporte de 20 páginas en una página ejecutiva.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Redacción de Minutas"
+      ],
+      "steps": [
+        "Definir la estructura de la pirámide Minto.",
+        "Extraer la idea clave en la cabecera.",
+        "Listar los tres argumentos de soporte."
+      ],
+      "expectedResult": "Resumen de alto impacto jerárquico listo para lectura de directores.",
+      "commonErrors": [
+        "Hacer un resumen cronológico largo en lugar de jerárquico."
+      ],
+      "concepts": [
+        "sintesis",
+        "informes"
+      ]
+    },
+    {
+      "id": "lab-043",
+      "title": "Lab 43: Traducir un manual de ingeniería preservando tecnicismos.",
+      "category": "Documentos",
+      "objective": "Traducir un manual de ingeniería preservando tecnicismos.",
+      "difficulty": "Avanzado",
+      "duration": 25,
+      "prerequisites": [
+        "Resúmenes Ejecutivos de Informes"
+      ],
+      "steps": [
+        "Cargar la tabla de glosario de términos inalterables.",
+        "Especificar la traducción del texto de origen.",
+        "Verificar consistencia."
+      ],
+      "expectedResult": "Traducción precisa que mantiene intactos los conceptos de ingeniería.",
+      "commonErrors": [
+        "Traducir de forma literal modismos o siglas técnicas críticas."
+      ],
+      "concepts": [
+        "traducción",
+        "glosario"
+      ]
+    },
+    {
+      "id": "lab-044",
+      "title": "Lab 44: Diseñar un plan de estudio desde cero sobre un tema nuevo.",
+      "category": "Investigación",
+      "objective": "Diseñar un plan de estudio desde cero sobre un tema nuevo.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Definir el tema de estudio (e.g. Computación Cuántica).",
+        "Solicitar un desglose de 5 semanas.",
+        "Definir objetivos de evaluación."
+      ],
+      "expectedResult": "Plan detallado con metas semanales, lecturas recomendadas y ejercicios.",
+      "commonErrors": [
+        "Saturar el plan de contenidos avanzados en la primera semana."
+      ],
+      "concepts": [
+        "estudio",
+        "planificación"
+      ]
+    },
+    {
+      "id": "lab-045",
+      "title": "Lab 45: Evaluar las hipótesis y validez metodológica de un paper académico.",
+      "category": "Investigación",
+      "objective": "Evaluar las hipótesis y validez metodológica de un paper académico.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Estructurar Temas de Estudio"
+      ],
+      "steps": [
+        "Buscar las hipótesis principales del paper.",
+        "Analizar el tamaño de la muestra y posibles sesgos.",
+        "Escribir las debilidades metodológicas."
+      ],
+      "expectedResult": "Análisis crítico objetivo que diferencia datos demostrados de opiniones.",
+      "commonErrors": [
+        "Aceptar todas las conclusiones del autor sin cuestionar la muestra."
+      ],
+      "concepts": [
+        "papers",
+        "método-científico"
+      ]
+    },
+    {
+      "id": "lab-046",
+      "title": "Lab 46: Crear 3 hipótesis de prueba para un experimento social.",
+      "category": "Investigación",
+      "objective": "Crear 3 hipótesis de prueba para un experimento social.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Análisis Crítico de Papers"
+      ],
+      "steps": [
+        "Definir la meta del experimento.",
+        "Escribir hipótesis que puedan ser refutadas con datos.",
+        "Diseñar la prueba mínima."
+      ],
+      "expectedResult": "Hipótesis claras del tipo: Si X entonces Y, medible empíricamente.",
+      "commonErrors": [
+        "Formular hipótesis tautológicas o imposibles de probar."
+      ],
+      "concepts": [
+        "hipótesis",
+        "experimentos"
+      ]
+    },
+    {
+      "id": "lab-047",
+      "title": "Lab 47: Analizar competidores en un nicho de software offline.",
+      "category": "Investigación",
+      "objective": "Analizar competidores en un nicho de software offline.",
+      "difficulty": "Avanzado",
+      "duration": 25,
+      "prerequisites": [
+        "Generación de Hipótesis Falsables"
+      ],
+      "steps": [
+        "Establecer las variables de contraste (Precios, Features, Reviews).",
+        "Compilar los perfiles de 3 competidores.",
+        "Escribir matriz comparativa."
+      ],
+      "expectedResult": "Matriz limpia de fortalezas y debilidades de la competencia.",
+      "commonErrors": [
+        "Incluir apreciaciones subjetivas sin datos concretos de soporte."
+      ],
+      "concepts": [
+        "mercado",
+        "estrategia"
+      ]
+    },
+    {
+      "id": "lab-048",
+      "title": "Lab 48: Redactar correos difíciles que consigan respuestas rápidas.",
+      "category": "Productividad",
+      "objective": "Redactar correos difíciles que consigan respuestas rápidas.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Conceptos de LLM"
+      ],
+      "steps": [
+        "Definir la situación difícil (e.g. Cobro demorado).",
+        "Aplicar el principio de correo corto y llamado a la acción único.",
+        "Generar correo."
+      ],
+      "expectedResult": "Correo educado, firme y de menos de 100 palabras.",
+      "commonErrors": [
+        "Redactar correos largos y pasivo-agresivos."
+      ],
+      "concepts": [
+        "emails",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "lab-049",
+      "title": "Lab 49: Crear un horario de deep work semanal para creadores.",
+      "category": "Productividad",
+      "objective": "Crear un horario de deep work semanal para creadores.",
+      "difficulty": "Inicial",
+      "duration": 15,
+      "prerequisites": [
+        "Optimización del Emailing"
+      ],
+      "steps": [
+        "Definir las 3 prioridades semanales.",
+        "Bloquear bloques de 90 minutos de foco ininterrumpido.",
+        "Generar el cronograma diario."
+      ],
+      "expectedResult": "Calendario balanceado con descansos declarados y alta eficiencia.",
+      "commonErrors": [
+        "Agendar reuniones en medio de bloques de trabajo profundo."
+      ],
+      "concepts": [
+        "tiempo",
+        "rutinas"
+      ]
+    },
+    {
+      "id": "lab-050",
+      "title": "Lab 50: Redactar instrucciones claras para delegar un proyecto de software.",
+      "category": "Productividad",
+      "objective": "Redactar instrucciones claras para delegar un proyecto de software.",
+      "difficulty": "Intermedio",
+      "duration": 20,
+      "prerequisites": [
+        "Diseño de Rutinas de Trabajo"
+      ],
+      "steps": [
+        "Definir el entregable esperado y el estándar de calidad.",
+        "Establecer la fecha límite e hitos de reporte.",
+        "Listar recursos útiles."
+      ],
+      "expectedResult": "Documento de delegación conciso que evita malentendidos de alcance.",
+      "commonErrors": [
+        "Omitir el criterio de aceptación y definición de terminado."
+      ],
+      "concepts": [
+        "delegación",
+        "procesos"
+      ]
+    }
+  ]
+}

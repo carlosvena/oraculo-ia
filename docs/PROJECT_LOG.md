@@ -442,3 +442,18 @@ Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialment
 - Creación de suite de pruebas unitarias robustas en `academy_test.dart` y validación estática de compilación limpia.
 
 Calidad: `flutter analyze` limpio; todas las pruebas unitarias pasaron exitosamente.
+
+# Sprint 27 — ORÁCULO AI LAB v1.0
+
+**Estado:** finalizado.
+
+- **Diseño del Laboratorio de IA (Módulo 1)**: Creación de la pantalla `AiLabScreen` estructurando laboratorios recomendados, historial reciente de puntuación, favoritos e inicio rápido de plantillas de prompts.
+- **Estructura de 50 Laboratorios (Módulos 2 y 3)**: Planificación completa y almacenamiento de metadatos de 50 laboratorios distribuidos en las 13 categorías (Prompt Engineering, ChatGPT, Gemini, Claude, DeepSeek, LLM, Agentes, Automatización, Excel, Programación, Documentos, Investigación, Productividad), definiendo objetivos, pasos, resultados esperados y errores comunes en `knowledge/ai_labs_v1.json`.
+- **Editor de Práctica Interactivo (Módulo 4)**: Interfaz de pestañas en `lab_editor_screen.dart` que permite al usuario escribir prompts originales y mejorados, respuestas simuladas, observaciones y aprendizajes, guardándolos localmente.
+- **Motor de Rúbricas y Evaluación Local (Módulo 5)**: Algoritmo de evaluación offline por reglas que analiza el prompt en base a 5 pilares (Claridad y Acción, Contexto y Rol, Restricciones y Límites, Formato de Salida, Meta y Objetivo), puntuándolo de 0 a 100 y desglosando oportunidades específicas de mejora en español.
+- **Plantillas de Prompts de Alta Calidad (Módulo 6)**: Inclusión en `AiLabRepository` de 10 plantillas reutilizables offline de negocio (resumir, investigar, traducir, programar, analizar PDFs, generar tablas, Excel, automatización, reuniones, brainstorming) listas para copiar al editor.
+- **Comparador y Guardado (Módulos 7 y 8)**: Panel comparativo side-by-side de prompts (Original vs Mejorado) con historial persistente en memoria que guarda fecha, laboratorio, duración, progreso y notas.
+- **Exportación a Markdown y PDF (Módulo 9)**: Soporte offline para exportar y copiar el reporte consolidado de práctica en Markdown estructurado y simular la generación de archivos PDF en descargas.
+- Creación de suite de pruebas unitarias robustas en `ai_lab_test.dart` y validación estática de compilación limpia.
+
+Calidad: `flutter analyze` limpio; todas las pruebas unitarias pasaron exitosamente.

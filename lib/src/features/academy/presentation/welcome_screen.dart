@@ -191,7 +191,7 @@ class AcademyWelcomeScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: AppSpacing.sm),
                         TextButton(
-                          onPressed: () => context.push('/review'),
+                          onPressed: () => context.push('/ai-lab'),
                           child: const Text('Comenzar Práctica'),
                         ),
                       ],

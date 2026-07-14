@@ -4,7 +4,16 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 27 pendiente de definición.
+- Próximo: Sprints 28 pendiente de definición.
+
+## 2.7.0-sprint27 — 2026-07-13
+
+- **ORÁCULO AI LAB**: Nuevo espacio de experimentación interactiva offline.
+- **50 Laboratorios**: Planificación detallada en 13 categorías distintas almacenada en `knowledge/ai_labs_v1.json`.
+- **Editor y Comparador**: Interfaz de escritura de prompts que compara el original con la versión mejorada e incorpora aprendizajes.
+- **Evaluador de Rúbricas Local**: Algoritmo offline que analiza la calidad del prompt (Claridad, Contexto, Restricciones, Formato y Objetivo) y provee oportunidades de mejora detalladas.
+- **10 Plantillas Reutilizables**: Plantillas rápidas de negocio listas para copiar y personalizar.
+- **Exportación Offline**: Soporte para copiar reportes de práctica estructurados en Markdown y simular descargas en formato PDF.
 
 ## 2.6.0-sprint26 — 2026-07-13
 
