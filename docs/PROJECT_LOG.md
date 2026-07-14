@@ -409,3 +409,20 @@ Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialment
 - Creación de pruebas unitarias robustas en `mentor_engine_test.dart` y validación estática de compilación limpia.
 
 Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialmente.
+
+# Sprint 25 — Oráculo Learning Engine v2
+
+**Estado:** finalizado.
+
+- Diseño y desarrollo del **Grafo No Lineal de Conocimiento (Módulo 1)**: Grafo multi-entidad donde cada nodo representa misiones, conceptos clave, laboratorios, proyectos evaluativos, términos del glosario o capítulos del manual, con sus prerrequisitos y dependencias.
+- **Sistema de Prerrequisitos Críticos (Módulo 2)**: Validación inteligente que bloquea el acceso a misiones si el nivel de dominio de conceptos requeridos no está satisfecho, reportando retroalimentación clara de qué falta completar.
+- **Progresión por Dominio Conceptual (Módulo 3)**: Niveles del 0 al 5 (No visto, Leído, Comprendido, Aplicado, Dominado, Enseñado) asociados de forma individual a cada concepto para independizar el progreso de la simple linealidad de las misiones.
+- **Ruta Dinámica Personalizada (Módulo 4)**: Algoritmo heurístico que calcula la ruta diaria sugerida combinando el tiempo disponible, objetivos, dificultad y la presencia de bloqueos pedagógicos.
+- **Transferencia Didáctica de Conocimientos (Módulo 5)**: Lógica cognitiva que modifica el tono didáctico si un concepto es revisitado, enlazándolo con el conocimiento previo en lugar de repetir explicaciones teóricas completas.
+- **Detención Inteligente por Fallas (Módulo 6)**: Mecanismo de seguridad que bloquea el avance general si el alumno registra tres o más fallas consecutivas, forzando repasos conceptuales o laboratorios prácticos.
+- **Evaluación Basada en Proyectos (Módulo 7)**: Validación de track curricular obligatorio que exige finalizar el proyecto integrador antes de poder desbloquear misiones avanzadas de automatización y agentes.
+- **Árbol del Conocimiento Visual (Módulo 8)**: Rediseño completo de la interfaz de `KnowledgeMapScreen` para mostrar de forma interactiva el árbol de relaciones, niveles de dominio conceptual, prerrequisitos faltantes y cálculo de rutas del día.
+- **Registro de Métricas Reales (Módulo 9)**: Dashboard analítico integrado en la UI que consolida métricas reales de estudio (horas invertidas, total de errores, repasos completados, cantidad de proyectos entregados y duración media de sesión).
+- Creación de suite de pruebas unitarias robustas en `learning_engine_test.dart` y validación estática de compilación limpia.
+
+Calidad: `flutter analyze` limpio; 40 pruebas unitarias aprobadas secuencialmente.

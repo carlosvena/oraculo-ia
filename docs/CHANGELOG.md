@@ -4,7 +4,17 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 25 pendiente de definición.
+- Próximo: Sprints 26 pendiente de definición.
+
+## 2.5.0-sprint25 — 2026-07-13
+
+- **ORÁCULO Learning Engine v2**: Motor de aprendizaje no lineal con grafo completo multi-entidad (misiones, conceptos, laboratorios, proyectos, glosario, manual).
+- **Dominio Conceptual (Niveles 0-5)**: Seguimiento granular del nivel cognitivo de los conceptos (Leído, Comprendido, Dominado, etc.).
+- **Detención Inteligente por Fallas**: Bloquea el avance y sugiere repasos o laboratorios cuando hay 3 o más errores consecutivos.
+- **Proyectos de Track Bloqueantes**: Requiere la culminación del proyecto integrador para avanzar a tracks curriculares de automatización y agentes.
+- **Ruta Dinámica Personalizada**: Algoritmo que calcula la mejor ruta del día según tiempo y metas.
+- **Transferencia Cognitiva**: Adapta el tono didáctico del concepto si el usuario ya lo comprende.
+- **Árbol de Conocimiento Interactivo**: Rediseño completo de la interfaz del mapa de conocimiento con visualización del árbol de dependencias, niveles y metas de estudio reales.
 
 ## 2.4.0-sprint24 — 2026-07-13
 

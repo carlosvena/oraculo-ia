@@ -48,6 +48,7 @@ final class KnowledgeEngine {
   List<Track> get tracks => List.unmodifiable(_tracks);
   List<Competency> get competencies => List.unmodifiable(_competencies);
   List<Skill> get skills => List.unmodifiable(_skills);
+  List<LessonMetadata> get lessonsMetadata => List.unmodifiable(_lessonsMetadata.values);
 
   /// Inicializa el motor cargando el manifiesto y los metadatos de las lecciones
   Future<void> initialize() async {
