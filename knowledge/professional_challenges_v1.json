@@ -1,0 +1,3575 @@
+{
+  "schemaVersion": 1,
+  "challenges": [
+    {
+      "id": "challenge-prof-001",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 01 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-002",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 02 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-003",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 03 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-004",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 04 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-005",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 05 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-006",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 06 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-007",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 07 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-008",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 08 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-009",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 09 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-010",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 10 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-011",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 11 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-012",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 12 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-013",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 13 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-014",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 14 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-015",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 15 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-016",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 16 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-017",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 17 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-018",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 18 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-019",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 19 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-020",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 20 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-021",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 21 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-022",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 22 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-023",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 23 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-024",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 24 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-025",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 25 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-026",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 26 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-027",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 27 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-028",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 28 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-029",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 29 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-030",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 30 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-031",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 31 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-032",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 32 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-033",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 33 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-034",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 34 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-035",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 35 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-036",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 36 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-037",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 37 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-038",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 38 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-039",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 39 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-040",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 40 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-041",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 41 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-042",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 42 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-043",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 43 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-044",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 44 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-045",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 45 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-046",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 46 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-047",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 47 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-048",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 48 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-049",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 49 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-050",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 50 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-051",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 51 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-052",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 52 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-053",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 53 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-054",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 54 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-055",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 55 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-056",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 56 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-057",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 57 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-058",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 58 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-059",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 59 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-060",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 60 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-061",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 61 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-062",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 62 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-063",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 63 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-064",
+      "difficulty": "Inicial",
+      "category": "Marketing",
+      "title": "Desafío 64 (Inicial): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-065",
+      "difficulty": "Inicial",
+      "category": "Administración",
+      "title": "Desafío 65 (Inicial): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-066",
+      "difficulty": "Inicial",
+      "category": "Educación",
+      "title": "Desafío 66 (Inicial): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-067",
+      "difficulty": "Inicial",
+      "category": "Tecnología",
+      "title": "Desafío 67 (Inicial): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-068",
+      "difficulty": "Inicial",
+      "category": "Operaciones",
+      "title": "Desafío 68 (Inicial): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-069",
+      "difficulty": "Inicial",
+      "category": "Soporte",
+      "title": "Desafío 69 (Inicial): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-070",
+      "difficulty": "Inicial",
+      "category": "Finanzas",
+      "title": "Desafío 70 (Inicial): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Inicial en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-071",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 01 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-072",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 02 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-073",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 03 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-074",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 04 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-075",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 05 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-076",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 06 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-077",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 07 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-078",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 08 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-079",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 09 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-080",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 10 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-081",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 11 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-082",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 12 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-083",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 13 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-084",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 14 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-085",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 15 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-086",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 16 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-087",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 17 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-088",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 18 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-089",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 19 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-090",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 20 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-091",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 21 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-092",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 22 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-093",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 23 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-094",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 24 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-095",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 25 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-096",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 26 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-097",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 27 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-098",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 28 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-099",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 29 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-100",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 30 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-101",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 31 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-102",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 32 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-103",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 33 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-104",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 34 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-105",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 35 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-106",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 36 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-107",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 37 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-108",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 38 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-109",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 39 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-110",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 40 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-111",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 41 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-112",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 42 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-113",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 43 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-114",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 44 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-115",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 45 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-116",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 46 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-117",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 47 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-118",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 48 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-119",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 49 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-120",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 50 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-121",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 51 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-122",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 52 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-123",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 53 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-124",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 54 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-125",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 55 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-126",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 56 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-127",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 57 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-128",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 58 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-129",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 59 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-130",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 60 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-131",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 61 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-132",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 62 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-133",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 63 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-134",
+      "difficulty": "Intermedio",
+      "category": "Marketing",
+      "title": "Desafío 64 (Intermedio): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-135",
+      "difficulty": "Intermedio",
+      "category": "Administración",
+      "title": "Desafío 65 (Intermedio): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-136",
+      "difficulty": "Intermedio",
+      "category": "Educación",
+      "title": "Desafío 66 (Intermedio): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-137",
+      "difficulty": "Intermedio",
+      "category": "Tecnología",
+      "title": "Desafío 67 (Intermedio): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-138",
+      "difficulty": "Intermedio",
+      "category": "Operaciones",
+      "title": "Desafío 68 (Intermedio): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-139",
+      "difficulty": "Intermedio",
+      "category": "Soporte",
+      "title": "Desafío 69 (Intermedio): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-140",
+      "difficulty": "Intermedio",
+      "category": "Finanzas",
+      "title": "Desafío 70 (Intermedio): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Intermedio en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-141",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 01 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-142",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 02 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-143",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 03 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-144",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 04 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-145",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 05 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-146",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 06 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-147",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 07 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-148",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 08 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-149",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 09 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-150",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 10 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-151",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 11 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-152",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 12 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-153",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 13 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-154",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 14 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-155",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 15 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-156",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 16 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-157",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 17 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-158",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 18 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-159",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 19 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-160",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 20 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-161",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 21 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-162",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 22 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-163",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 23 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-164",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 24 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-165",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 25 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-166",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 26 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-167",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 27 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-168",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 28 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-169",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 29 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-170",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 30 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-171",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 31 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-172",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 32 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-173",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 33 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-174",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 34 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-175",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 35 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-176",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 36 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-177",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 37 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-178",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 38 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-179",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 39 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-180",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 40 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-181",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 41 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-182",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 42 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-183",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 43 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-184",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 44 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-185",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 45 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-186",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 46 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-187",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 47 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-188",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 48 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-189",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 49 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-190",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 50 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-191",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 51 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-192",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 52 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-193",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 53 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-194",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 54 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-195",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 55 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-196",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 56 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-197",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 57 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-198",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 58 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-199",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 59 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-200",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 60 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-201",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 61 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-202",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 62 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-203",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 63 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-204",
+      "difficulty": "Avanzado",
+      "category": "Marketing",
+      "title": "Desafío 64 (Avanzado): Solución en Marketing",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Marketing. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-205",
+      "difficulty": "Avanzado",
+      "category": "Administración",
+      "title": "Desafío 65 (Avanzado): Solución en Administración",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Administración. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-206",
+      "difficulty": "Avanzado",
+      "category": "Educación",
+      "title": "Desafío 66 (Avanzado): Solución en Educación",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Educación. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-207",
+      "difficulty": "Avanzado",
+      "category": "Tecnología",
+      "title": "Desafío 67 (Avanzado): Solución en Tecnología",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Tecnología. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-208",
+      "difficulty": "Avanzado",
+      "category": "Operaciones",
+      "title": "Desafío 68 (Avanzado): Solución en Operaciones",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Operaciones. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-209",
+      "difficulty": "Avanzado",
+      "category": "Soporte",
+      "title": "Desafío 69 (Avanzado): Solución en Soporte",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Soporte. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    },
+    {
+      "id": "challenge-prof-210",
+      "difficulty": "Avanzado",
+      "category": "Finanzas",
+      "title": "Desafío 70 (Avanzado): Solución en Finanzas",
+      "description": "Desafío práctico offline para resolver un problema de nivel Avanzado en el área de Finanzas. Requiere estructurar una respuesta sin alucinaciones.",
+      "constraints": [
+        "No superar la ventana de contexto local.",
+        "Mantener el formato estructurado solicitado.",
+        "Incluir un paso de autoevaluación final."
+      ],
+      "verificationSteps": [
+        "Copiar el prompt optimizado al portapapeles.",
+        "Probar en el AI Lab de Oráculo IA.",
+        "Confirmar que cumple con la rúbrica del laboratorio."
+      ]
+    }
+  ]
+}

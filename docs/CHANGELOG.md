@@ -4,7 +4,15 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprint 30 pendiente de definición.
+- Próximo: Sprint 31 pendiente de definición.
+
+## 2.10.0-sprint30 — 2026-07-14
+
+- **PROFESSIONAL EDITION**: Lanzamiento del Modo Oficina (`OfficeModeScreen`) con herramientas avanzadas para la resolución de problemas en el trabajo.
+- **Herramientas Offline**: Biblioteca de 300 prompts corporativos organizados, 16 casos de negocio sectoriales, 7 plantillas markdown, 5 simuladores interactivos de toma de decisiones y 210 desafíos prácticos ordenados por nivel de dificultad.
+- **Buscador Expandido**: Soporte de búsqueda indexada para recuperar información de las nuevas entidades profesionales instantáneamente.
+- **Estadísticas de Desempeño**: Panel con métricas en vivo (prompts copiados, promedio de simulación, desafíos resueltos) persistidos en memoria local.
+- **Documentación Completa**: Creación de `docs/PROFESSIONAL_EDITION.md` y release final automatizado a la carpeta de OneDrive.
 
 ## 2.9.0-sprint29 — 2026-07-14
 

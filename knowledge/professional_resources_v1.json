@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "guides": [
+    {
+      "id": "guide-inference",
+      "title": "Principios de Inferencia Local y Privacidad",
+      "content": "Trabajar de forma offline con modelos locales garantiza que la propiedad intelectual y los datos transaccionales nunca salgan del dispositivo. Es fundamental optimizar la longitud del prompt para evitar latencia."
+    },
+    {
+      "id": "guide-metaprompts",
+      "title": "Diseño de Metaprompts y Estructuras",
+      "content": "Un metaprompt profesional declara el rol, la tarea principal, el contexto del problema, las restricciones lógicas y de formato, y la rúbrica de aceptación de forma explícita."
+    }
+  ],
+  "checklists": [
+    {
+      "id": "chk-preflight",
+      "title": "Lista de control pre-vuelo de Prompts",
+      "items": [
+        "¿Contiene un rol claro y delimitadores de texto (e.g. ``` o xml)?",
+        "¿Se fijaron restricciones de longitud y tono?",
+        "¿Se agregaron ejemplos Few-Shot si la tarea es compleja?",
+        "¿Se indicaron qué acciones tomar ante incertidumbre o datos faltantes?"
+      ]
+    },
+    {
+      "id": "chk-excel",
+      "title": "Lista de control de fórmulas de Excel",
+      "items": [
+        "¿Se especificaron los rangos exactos de celdas?",
+        "¿Se indicó el comportamiento ante errores tipo #N/A o #VALOR!?",
+        "¿Se separaron los argumentos con coma o punto y coma según el idioma?"
+      ]
+    }
+  ],
+  "procedures": [
+    {
+      "id": "proc-auditoria",
+      "title": "Procedimiento de Auditoría de Salida",
+      "steps": [
+        "Paso 1: Copiar la salida de la IA.",
+        "Paso 2: Confrontar cada cifra reportada contra la fuente de datos original.",
+        "Paso 3: Identificar adjetivos subjetivos y reemplazarlos con métricas duras.",
+        "Paso 4: Firmar digitalmente el reporte auditado."
+      ]
+    }
+  ]
+}

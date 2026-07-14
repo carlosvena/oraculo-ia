@@ -35,6 +35,13 @@ import 'package:oraculo_ia/src/features/review/presentation/review_screen.dart';
 import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
 import 'package:oraculo_ia/src/features/universe/presentation/knowledge_universe_screen.dart';
 import 'package:oraculo_ia/src/features/universe/presentation/universe_dashboard_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/office_mode_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/prompts_library_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/cases_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/templates_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/simulators_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/challenges_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/resources_center_screen.dart';
 
 abstract final class AppRoute {
   static const splash = '/';
@@ -70,6 +77,13 @@ abstract final class AppRoute {
   static const knowledgeUniverse = '/knowledge-universe';
   static const universeDashboard = '/universe-dashboard';
   static const versionNews = '/version-news';
+  static const officeMode = '/office-mode';
+  static const officePrompts = '/office-mode/prompts';
+  static const officeCases = '/office-mode/cases';
+  static const officeTemplates = '/office-mode/templates';
+  static const officeSimulators = '/office-mode/simulators';
+  static const officeChallenges = '/office-mode/challenges';
+  static const officeResources = '/office-mode/resources';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -300,6 +314,34 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.versionNews,
         builder: (context, state) => const VersionNewsScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeMode,
+        builder: (context, state) => const OfficeModeScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officePrompts,
+        builder: (context, state) => const PromptsLibraryScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeCases,
+        builder: (context, state) => const CasesScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeTemplates,
+        builder: (context, state) => const TemplatesScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeSimulators,
+        builder: (context, state) => const SimulatorsScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeChallenges,
+        builder: (context, state) => const ChallengesScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeResources,
+        builder: (context, state) => const ResourcesCenterScreen(),
       ),
     ],
   );

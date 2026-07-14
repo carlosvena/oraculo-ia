@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "case-001",
+      "category": "bancos",
+      "categoryName": "Bancos",
+      "title": "Caso Práctico 1: Optimización en Bancos",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Bancos. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Bancos.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Bancos. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-002",
+      "category": "bancos",
+      "categoryName": "Bancos",
+      "title": "Caso Práctico 2: Optimización en Bancos",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Bancos. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Bancos.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Bancos. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-003",
+      "category": "empresas",
+      "categoryName": "Empresas",
+      "title": "Caso Práctico 1: Optimización en Empresas",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Empresas. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Empresas.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Empresas. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-004",
+      "category": "empresas",
+      "categoryName": "Empresas",
+      "title": "Caso Práctico 2: Optimización en Empresas",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Empresas. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Empresas.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Empresas. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-005",
+      "category": "contadores",
+      "categoryName": "Contadores",
+      "title": "Caso Práctico 1: Optimización en Contadores",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Contadores. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Contadores.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Contadores. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-006",
+      "category": "contadores",
+      "categoryName": "Contadores",
+      "title": "Caso Práctico 2: Optimización en Contadores",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Contadores. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Contadores.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Contadores. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-007",
+      "category": "docentes",
+      "categoryName": "Docentes",
+      "title": "Caso Práctico 1: Optimización en Docentes",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Docentes. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Docentes.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Docentes. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-008",
+      "category": "docentes",
+      "categoryName": "Docentes",
+      "title": "Caso Práctico 2: Optimización en Docentes",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Docentes. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Docentes.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Docentes. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-009",
+      "category": "programadores",
+      "categoryName": "Programadores",
+      "title": "Caso Práctico 1: Optimización en Programadores",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Programadores. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Programadores.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Programadores. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-010",
+      "category": "programadores",
+      "categoryName": "Programadores",
+      "title": "Caso Práctico 2: Optimización en Programadores",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Programadores. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Programadores.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Programadores. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-011",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "title": "Caso Práctico 1: Optimización en Marketing",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Marketing. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Marketing.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Marketing. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-012",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "title": "Caso Práctico 2: Optimización en Marketing",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Marketing. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Marketing.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Marketing. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-013",
+      "category": "recursos_humanos",
+      "categoryName": "Recursos Humanos",
+      "title": "Caso Práctico 1: Optimización en Recursos Humanos",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Recursos Humanos. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Recursos Humanos.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Recursos Humanos. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-014",
+      "category": "recursos_humanos",
+      "categoryName": "Recursos Humanos",
+      "title": "Caso Práctico 2: Optimización en Recursos Humanos",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Recursos Humanos. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Recursos Humanos.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Recursos Humanos. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-015",
+      "category": "investigacion",
+      "categoryName": "Investigación",
+      "title": "Caso Práctico 1: Optimización en Investigación",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Investigación. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Investigación.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Investigación. Diseñá un plan de mitigación offline para el problema 1.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    },
+    {
+      "id": "case-016",
+      "category": "investigacion",
+      "categoryName": "Investigación",
+      "title": "Caso Práctico 2: Optimización en Investigación",
+      "description": "Caso real de consultoría y aplicación didáctica offline para Investigación. Detalla el flujo de trabajo paso a paso.",
+      "steps": [
+        "Paso 1: Identificar cuellos de botella en Investigación.",
+        "Paso 2: Diseñar una especificación de prompt local.",
+        "Paso 3: Probar la salida frente a la rúbrica local y validar consistencia."
+      ],
+      "tools": [
+        "Modelos LLM locales",
+        "AI Lab Rúbricas",
+        "Hojas de cálculo offline"
+      ],
+      "promptExample": "Sos un consultor experto en Investigación. Diseñá un plan de mitigación offline para el problema 2.",
+      "expectedResult": "Un reporte estructurado en 4 columnas sin alucinaciones de datos y con métricas simuladas verificables."
+    }
+  ]
+}

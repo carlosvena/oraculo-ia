@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
+import 'package:oraculo_ia/src/features/professional/data/professional_repository.dart';
 
 
 final class SearchResultItem {
@@ -121,6 +122,81 @@ class _GlobalSearchScreenState extends State<GlobalSearchScreen> {
           subtitle: proj.objective,
           routePath: '/projects',
         ));
+      }
+    }
+
+    // 8. Edición Profesional — Prompts
+    final profRepo = ProfessionalRepository.instance;
+    if (profRepo.isInitialized) {
+      for (final p in profRepo.prompts) {
+        if (p.title.toLowerCase().contains(_query) || p.objective.toLowerCase().contains(_query) || p.example.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Prompt (Prof)',
+            title: p.title,
+            subtitle: p.objective,
+            routePath: '/office-mode/prompts',
+          ));
+        }
+      }
+
+      // 9. Edición Profesional — Casos
+      for (final c in profRepo.cases) {
+        if (c.title.toLowerCase().contains(_query) || c.description.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Caso (Prof)',
+            title: c.title,
+            subtitle: c.description,
+            routePath: '/office-mode/cases',
+          ));
+        }
+      }
+
+      // 10. Edición Profesional — Plantillas
+      for (final t in profRepo.templates) {
+        if (t.title.toLowerCase().contains(_query) || t.description.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Plantilla (Prof)',
+            title: t.title,
+            subtitle: t.description,
+            routePath: '/office-mode/templates',
+          ));
+        }
+      }
+
+      // 11. Edición Profesional — Simuladores
+      for (final s in profRepo.simulators) {
+        if (s.title.toLowerCase().contains(_query) || s.scenario.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Simulador (Prof)',
+            title: s.title,
+            subtitle: s.scenario,
+            routePath: '/office-mode/simulators',
+          ));
+        }
+      }
+
+      // 12. Edición Profesional — Desafíos
+      for (final ch in profRepo.challenges) {
+        if (ch.title.toLowerCase().contains(_query) || ch.description.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Desafío (Prof)',
+            title: ch.title,
+            subtitle: ch.description,
+            routePath: '/office-mode/challenges',
+          ));
+        }
+      }
+
+      // 13. Edición Profesional — Recursos
+      for (final g in profRepo.guides) {
+        if (g.title.toLowerCase().contains(_query) || g.content.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Recurso (Prof)',
+            title: g.title,
+            subtitle: g.content,
+            routePath: '/office-mode/resources',
+          ));
+        }
       }
     }
 

@@ -237,6 +237,102 @@
       "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
+    },
+    {
+      "id": "professional-cases",
+      "title": "Casos Reales de la Edición Profesional",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/professional_cases_v1.json"
+      ],
+      "notes": "16 casos prácticos en 8 categorías.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "professional-prompts",
+      "title": "Biblioteca de Prompts Profesionales",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/professional_prompts_v1.json"
+      ],
+      "notes": "300 prompts profesionales.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "professional-templates",
+      "title": "Plantillas Reutilizables",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/professional_templates_v1.json"
+      ],
+      "notes": "Plantillas markdown listas para copiar.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "professional-simulators",
+      "title": "Simuladores de Decisión",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/professional_simulators_v1.json"
+      ],
+      "notes": "Ejercicios interactivos tipo simulador.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "professional-challenges",
+      "title": "Desafíos Profesionales por Dificultad",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/professional_challenges_v1.json"
+      ],
+      "notes": "210 desafíos organizados por dificultad.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "professional-resources",
+      "title": "Centro de Recursos y Guías",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/professional_resources_v1.json"
+      ],
+      "notes": "Guías, checklists y procedimientos.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
     }
   ]
 }

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "simulators": [
+    {
+      "id": "sim-001",
+      "title": "Solicitud Urgente de Gerencia Financiera",
+      "scenario": "El Gerente de Finanzas te solicita procesar un archivo CSV con transacciones sospechosas de fraude. Necesita un resumen ejecutivo en menos de 10 minutos y con cero falsos positivos.",
+      "correctModel": "Claude",
+      "modelOptions": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ],
+      "modelExplanations": {
+        "ChatGPT": "ChatGPT tiene buena velocidad pero puede alucinar detalles matemáticos menores si el prompt no está altamente acotado.",
+        "Gemini": "Gemini procesa ventanas grandes pero a veces omite restricciones de formato estrictas en tareas de auditoría.",
+        "Claude": "Claude es el modelo recomendado por su alta fidelidad al seguir instrucciones y restricciones lógicas estrictas."
+      },
+      "verificationItems": [
+        "¿Se aislaron las transacciones de más de $50,000?",
+        "¿Se omitieron nombres y datos sensibles de clientes?",
+        "¿Se incluyó la tabla markdown comparativa?",
+        "¿Se verificó que no haya fórmulas rotas?"
+      ]
+    },
+    {
+      "id": "sim-002",
+      "title": "Optimización de Metaprompt de Ventas",
+      "scenario": "El equipo de marketing tiene una plantilla de correos que genera muchas alucinaciones sobre precios de productos. Debes rediseñar el metaprompt maestro de generación.",
+      "correctModel": "Gemini",
+      "modelOptions": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ],
+      "modelExplanations": {
+        "ChatGPT": "Puede generar correos fluidos pero repite frases de marketing genéricas.",
+        "Gemini": "Gemini es ideal por su razonamiento multimodal y adaptabilidad al contexto del catálogo de productos.",
+        "Claude": "Claude es muy estructurado, pero a veces su tono resulta excesivamente formal para campañas masivas."
+      },
+      "verificationItems": [
+        "¿Se listaron precios fijos del catálogo oficial?",
+        "¿Se prohibió inventar promociones no vigentes?",
+        "¿Se limitó la longitud a 150 palabras?"
+      ]
+    },
+    {
+      "id": "sim-003",
+      "title": "Auditoría de Cumplimiento Normativo Bancario",
+      "scenario": "Un regulador externo audita los procesos de crédito. Necesitas automatizar la lectura de minutas de crédito y validar que cumplan con la sección de lavado de activos.",
+      "correctModel": "Claude",
+      "modelOptions": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ],
+      "modelExplanations": {
+        "ChatGPT": "Rendimiento medio, pero propenso a omitir detalles pequeños en textos muy largos.",
+        "Gemini": "Permite procesar archivos extensos de una sola vez por su ventana amplia, pero requiere validación de rúbrica estricta.",
+        "Claude": "Claude destaca por su capacidad de razonamiento lógico y apego riguroso a regulaciones complejas."
+      },
+      "verificationItems": [
+        "¿Se identificó el origen de fondos del cliente?",
+        "¿Se verificó la firma de la mesa de control?",
+        "¿Se detectaron desvíos en la declaración jurada?"
+      ]
+    },
+    {
+      "id": "sim-004",
+      "title": "Refactorización de Consultas SQL Complejas",
+      "scenario": "Un analista de base de datos te entrega una consulta con 5 joins que tarda horas en ejecutarse. Debes usar IA local para proponer mejoras en la indexación.",
+      "correctModel": "ChatGPT",
+      "modelOptions": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ],
+      "modelExplanations": {
+        "ChatGPT": "ChatGPT tiene un entrenamiento extensivo en optimización de sintaxis de código y patrones comunes de base de datos.",
+        "Gemini": "Gemini ofrece buenas ideas pero puede sugerir índices redundantes.",
+        "Claude": "Proporciona código muy limpio, pero a veces su explicación técnica es redundante."
+      },
+      "verificationItems": [
+        "¿Se propusieron índices de cobertura?",
+        "¿Se reemplazaron subconsultas por CTEs?",
+        "¿Se verificó la sintaxis correcta del dialecto SQL?"
+      ]
+    },
+    {
+      "id": "sim-005",
+      "title": "Limpieza Automática de Hojas de Control",
+      "scenario": "Una planilla contiene celdas vacías, formatos inconsistentes de fechas e IDs de transacciones incompletos. Necesitas generar reglas de limpieza para Excel.",
+      "correctModel": "Gemini",
+      "modelOptions": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ],
+      "modelExplanations": {
+        "ChatGPT": "Excelente en explicaciones de fórmulas, pero a veces propone macros VBA complejas innecesarias.",
+        "Gemini": "Gemini provee una solución mixta ideal de fórmulas modernas (BYROW/MAP) y reglas visuales estructuradas.",
+        "Claude": "Claude propone estructuras muy limpias pero a menudo ignora las limitaciones de versiones antiguas de Excel."
+      },
+      "verificationItems": [
+        "¿Se diseñó regla para fechas en formato ISO?",
+        "¿Se manejaron celdas vacías con valor nulo explícito?",
+        "¿Se incluyó la fórmula BUSCARV/BUSCARX de validación?"
+      ]
+    }
+  ]
+}

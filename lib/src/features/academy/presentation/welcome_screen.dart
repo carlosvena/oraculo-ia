@@ -71,6 +71,15 @@ class AcademyWelcomeScreen extends StatelessWidget {
                       onPressed: () => context.push('/knowledge-universe'),
                       child: const Text('Universo del Conocimiento'),
                     ),
+                    ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF1E3C72),
+                        foregroundColor: Colors.white,
+                      ),
+                      onPressed: () => context.push('/office-mode'),
+                      icon: const Icon(Icons.work_outline_rounded, size: 16),
+                      label: const Text('Modo Oficina'),
+                    ),
                   ],
                 ),
               ],

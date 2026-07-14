@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "templates": [
+    {
+      "id": "tpl-informe",
+      "title": "Informe ejecutivo",
+      "description": "Plantilla estructurada para resumir avances e hitos clave para la dirección.",
+      "template": "# Informe Ejecutivo: [Título del Proyecto]\n\n## 1. Resumen Ejecutivo\n[Escribir aquí la propuesta de valor y resultados principales]\n\n## 2. Estado Actual\n- Hitos completados: [Hito 1, Hito 2]\n- Desvíos identificados: [Desvíos]\n\n## 3. Próximos Pasos\n- Acciones inmediatas: [Acciones]\n- Responsables: [Nombres]"
+    },
+    {
+      "id": "tpl-resumen",
+      "title": "Resumen",
+      "description": "Formato para extraer los puntos esenciales de un documento extenso.",
+      "template": "# Resumen Ejecutivo\n\n- **Propósito**: [Propósito del documento original]\n- **Puntos Clave**:\n  1. [Punto clave 1]\n  2. [Punto clave 2]\n- **Conclusiones**: [Conclusión]"
+    },
+    {
+      "id": "tpl-checklist",
+      "title": "Checklist",
+      "description": "Lista de control para validar procesos antes de pasar a producción.",
+      "template": "# Checklist de Validación\n\n- [ ] Pruebas unitarias ejecutadas y aprobadas.\n- [ ] Integridad de dependencias confirmada.\n- [ ] Formato y ortografía revisados.\n- [ ] Plan de contingencia/rollback definido."
+    },
+    {
+      "id": "tpl-procedimiento",
+      "title": "Procedimiento",
+      "description": "Guía paso a paso para la realización de una tarea repetitiva.",
+      "template": "# Procedimiento de Operación: [Nombre del Proceso]\n\n## Prerrequisitos\n- Herramientas: [Herramientas]\n\n## Paso a Paso\n1. **Paso 1**: [Descripción]\n2. **Paso 2**: [Descripción]\n\n## Criterios de Aceptación\n- [Criterio 1]"
+    },
+    {
+      "id": "tpl-acta",
+      "title": "Acta",
+      "description": "Estructura para documentar acuerdos y minutas de reuniones.",
+      "template": "# Acta de Reunión: [Tema]\n\n- **Fecha**: [Fecha]\n- **Participantes**: [Participantes]\n\n## Decisiones Tomadas\n- [Decisión 1]\n- [Decisión 2]\n\n## Compromisos\n- [Acción] - [Responsable] - [Fecha Límite]"
+    },
+    {
+      "id": "tpl-correo",
+      "title": "Correo profesional",
+      "description": "Plantilla de comunicación corporativa formal.",
+      "template": "Asunto: [Asunto Claro y Conciso]\n\nEstimado/a [Nombre],\n\nEspero que se encuentre muy bien. Le escribo en relación a [Tema].\n\n[Mensaje Principal: detallar el pedido o la actualización de forma breve].\n\nQuedo a su disposición para cualquier duda.\n\nAtentamente,\n[Tu Nombre]\n[Tu Cargo]"
+    },
+    {
+      "id": "tpl-tecnico",
+      "title": "Documento técnico",
+      "description": "Estructura para documentar arquitecturas y desarrollos de software.",
+      "template": "# Especificación Técnica: [Componente]\n\n## 1. Contexto y Objetivos\n[Explicar por qué es necesario este componente]\n\n## 2. Arquitectura de Datos\n[Estructuras de datos, APIs y flujo de información]\n\n## 3. Pruebas y Validación\n[Estrategia de testing]"
+    }
+  ]
+}
