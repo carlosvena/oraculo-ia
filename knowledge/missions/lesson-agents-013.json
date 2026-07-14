@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-agents-013",
-    "number": "013",
-    "title": "Agentes de IA",
-    "duration": 70,
+    "title": "Misión 013: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 013.",
+    "duration": 46,
+    "version": 1,
     "concepts": [
-      "Agente de IA",
-      "Planificación",
-      "Herramienta"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Diseñar un agente limitado, observable y recuperable.",
+    "prerequisiteIds": [
+      "lesson-mcp-012"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Pasar de un chatbot que responde a un sistema que persigue un objetivo bajo control."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 013 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "Un agente combina modelo, estado, herramientas y bucle de decisión; multiplica capacidad y también riesgo."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "El agente observa, decide una acción, usa una herramienta, evalúa el resultado y repite hasta terminar o detenerse."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Es delegar a un asistente con agenda y llaves: necesita objetivo, límites, presupuesto y puntos de aprobación."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Un agente prepara un informe: recopila datos autorizados, detecta faltantes, redacta y entrega borrador; no lo envía sin aprobación."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Usá estados explícitos, límite de pasos, herramientas idempotentes, registro y escalamiento humano."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Dibujá estados y transiciones para un agente que clasifica reclamos y prepara una respuesta."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Definí cinco condiciones de detención y tres acciones que siempre requieren aprobación."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Objetivo ambiguo, bucles infinitos, permisos amplios, memoria sin depurar y ausencia de evaluación por tarea."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "La autonomía profesional es limitada, observable y reversible. Más agencia exige más control."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "Un agente combina...",
+        "Pregunta 1 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Modelo, estado y herramientas",
-          "Solo un prompt",
-          "Solo una voz"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El límite de pasos evita...",
+        "Pregunta 2 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Bucles y costos descontrolados",
-          "Embeddings",
-          "Versionado"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Idempotencia permite...",
+        "Pregunta 3 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Reintentar sin duplicar efectos",
-          "Entrenar más rápido",
-          "Hablar"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Acciones irreversibles requieren...",
+        "Pregunta 4 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Aprobación",
-          "Temperatura alta",
-          "Memoria larga"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un objetivo ambiguo...",
+        "Pregunta 5 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Dificulta evaluar y detener",
-          "Siempre inspira",
-          "Reduce riesgo"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La observabilidad registra...",
+        "Pregunta 6 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Decisiones y acciones",
-          "Solo resultado final",
-          "Solo usuario"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La memoria debe...",
+        "Pregunta 7 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Tener alcance y depuración",
-          "Guardar todo siempre",
-          "Ser pública"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Más autonomía implica...",
+        "Pregunta 8 de la Misión 013: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Más controles",
-          "Menos pruebas",
-          "Sin permisos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-rag-011",
-    "number": "011",
-    "title": "RAG: respuestas con evidencia",
-    "duration": 70,
+    "title": "Misión 011: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 011.",
+    "duration": 77,
+    "version": 1,
     "concepts": [
-      "RAG",
-      "Recuperación",
-      "Chunk"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Diseñar conceptualmente un sistema RAG evaluable y trazable.",
+    "prerequisiteIds": [
+      "lesson-open-closed-010"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Construir una cadena de respuesta que pueda mostrar de dónde obtuvo la información."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 011 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "RAG conecta un modelo con conocimiento externo actualizado sin cambiar sus pesos."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "El sistema prepara documentos, recupera fragmentos relevantes y los incluye como contexto para generar una respuesta citada."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Un analista recibe una pregunta, busca expedientes autorizados, selecciona páginas y redacta citándolas."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Una consulta de procedimiento recupera la versión vigente, sección exacta y fecha antes de responder."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Separá calidad de recuperación, fidelidad de respuesta, permisos, vigencia y experiencia de usuario."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Dividí un procedimiento en fragmentos con título, fecha y alcance; formulá cinco consultas de prueba."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Diseñá qué debe hacer el sistema cuando las fuentes se contradicen o no alcanzan."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Cargar documentos sin metadatos, recuperar demasiados fragmentos, omitir permisos y medir solo respuestas agradables."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "RAG no elimina errores: hace posible fundamentar, actualizar y auditar una respuesta si toda la cadena está bien diseñada."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "RAG cambia los pesos del modelo.",
+        "Pregunta 1 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Siempre"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La recuperación selecciona...",
+        "Pregunta 2 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Fragmentos relevantes",
-          "Parámetros",
-          "Usuarios"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un chunk necesita...",
+        "Pregunta 3 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Contexto y metadatos",
-          "Solo longitud",
-          "Una imagen"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Los permisos deben aplicarse...",
+        "Pregunta 4 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Antes de recuperar y mostrar",
-          "Después de publicar",
-          "Nunca"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Más fragmentos siempre mejora.",
+        "Pregunta 5 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "En PDFs"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Sin evidencia suficiente conviene...",
+        "Pregunta 6 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Declararlo y no inventar",
-          "Completar huecos",
-          "Ocultar fuentes"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una métrica de recuperación es...",
+        "Pregunta 7 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Relevancia de candidatos",
-          "Color del texto",
-          "Velocidad de tipeo"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La vigencia se controla con...",
+        "Pregunta 8 de la Misión 011: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Metadatos y reglas",
-          "Temperatura",
-          "Nombre del modelo"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

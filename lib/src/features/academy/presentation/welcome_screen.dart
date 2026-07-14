@@ -55,15 +55,75 @@ class AcademyWelcomeScreen extends StatelessWidget {
                   'Bienvenido a tu portal de maestría offline en Inteligencia Artificial.',
                   style: TextStyle(color: Colors.white70, fontSize: 15),
                 ),
-                const SizedBox(height: AppSpacing.md),
-                ElevatedButton(
-                  onPressed: () => context.push('/academy-catalog'),
-                  child: const Text('Explorar Catálogo Completo'),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () => context.push('/academy-catalog'),
+                      child: const Text('Explorar Catálogo'),
+                    ),
+                    OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: Colors.white,
+                        side: const BorderSide(color: Colors.white),
+                      ),
+                      onPressed: () => context.push('/knowledge-universe'),
+                      child: const Text('Universo del Conocimiento'),
+                    ),
+                  ],
                 ),
               ],
             ),
           ),
-          const SizedBox(height: AppSpacing.lg),
+          const SizedBox(height: AppSpacing.md),
+
+          // MÓDULO 8 — RESUMEN DE CONTENIDO EN PANTALLA PRINCIPAL
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.md),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        'Resumen del Universo',
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                      ),
+                      TextButton.icon(
+                        icon: const Icon(Icons.new_releases_outlined, size: 16),
+                        label: const Text('Novedades'),
+                        onPressed: () => context.push('/version-news'),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      _buildMiniStatBox('Cursos', '8'),
+                      _buildMiniStatBox('Misiones', '30'),
+                      _buildMiniStatBox('Labs', '50'),
+                      _buildMiniStatBox('Proyectos', '15'),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      _buildMiniStatBox('Capítulos', '34'),
+                      _buildMiniStatBox('Glosario', '154'),
+                      _buildMiniStatBox('Biblioteca', '30'),
+                      _buildMiniStatBox('Modo', 'Offline'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.md),
 
           // Continuar Aprendiendo & Meta Semanal
           Row(
@@ -299,6 +359,18 @@ class AcademyWelcomeScreen extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildMiniStatBox(String label, String val) {
+    return Expanded(
+      child: Column(
+        children: [
+          Text(val, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.blueAccent)),
+          const SizedBox(height: 2),
+          Text(label, style: const TextStyle(fontSize: 10, color: Colors.grey)),
+        ],
       ),
     );
   }

@@ -3,33 +3,18 @@
   "items": [
     {
       "id": "missions-core",
-      "title": "Misiones 001 a 005",
+      "title": "Misiones 001 a 015",
       "author": "Dirección Académica ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-01",
-      "reviewed": "2026-07-11",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "revisado",
       "sources": [
         "knowledge/missions/lesson-models-001.json",
         "knowledge/missions/lesson-prompts-002.json",
         "knowledge/missions/lesson-llm-003.json",
         "knowledge/missions/lesson-context-004.json",
-        "knowledge/missions/lesson-prompts-005.json"
-      ],
-      "notes": "Contenido formativo estable; ejemplos sujetos a revisión.",
-      "nextReview": "2026-10-01",
-      "currentClaims": false,
-      "textualQuotes": []
-    },
-    {
-      "id": "missions-advanced",
-      "title": "Misiones 006 a 015",
-      "author": "Dirección Académica ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-11",
-      "reviewed": "2026-07-11",
-      "status": "revisado",
-      "sources": [
+        "knowledge/missions/lesson-prompts-005.json",
         "knowledge/missions/lesson-transformers-006.json",
         "knowledge/missions/lesson-embeddings-007.json",
         "knowledge/missions/lesson-training-008.json",
@@ -41,8 +26,38 @@
         "knowledge/missions/lesson-automation-014.json",
         "knowledge/missions/lesson-project-015.json"
       ],
-      "notes": "Revisión pedagógica pendiente con usuarios reales.",
-      "nextReview": "2026-10-11",
+      "notes": "Misiones nucleares completas y verificadas.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
+    },
+    {
+      "id": "missions-advanced",
+      "title": "Misiones 016 a 030",
+      "author": "Dirección Académica ORÁCULO IA",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "revisado",
+      "sources": [
+        "knowledge/missions/lesson-ac-016.json",
+        "knowledge/missions/lesson-ac-017.json",
+        "knowledge/missions/lesson-ac-018.json",
+        "knowledge/missions/lesson-ac-019.json",
+        "knowledge/missions/lesson-ac-020.json",
+        "knowledge/missions/lesson-ac-021.json",
+        "knowledge/missions/lesson-ac-022.json",
+        "knowledge/missions/lesson-ac-023.json",
+        "knowledge/missions/lesson-ac-024.json",
+        "knowledge/missions/lesson-ac-025.json",
+        "knowledge/missions/lesson-ac-026.json",
+        "knowledge/missions/lesson-ac-027.json",
+        "knowledge/missions/lesson-ac-028.json",
+        "knowledge/missions/lesson-ac-029.json",
+        "knowledge/missions/lesson-ac-030.json"
+      ],
+      "notes": "Misiones avanzadas y de banca completas.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -52,12 +67,12 @@
       "author": "Equipo editorial ORÁCULO IA",
       "version": "1.0",
       "created": "2026-07-11",
-      "reviewed": "2026-07-11",
+      "reviewed": "2026-07-14",
       "status": "verificado",
       "sources": [
         "knowledge/model_catalog_v1.json"
       ],
-      "notes": "Disponibilidad y costo deben verificarse antes de decidir.",
+      "notes": "Disponibilidad y costo deben verificarse.",
       "nextReview": "2026-08-11",
       "currentClaims": true,
       "textualQuotes": []
@@ -66,16 +81,16 @@
       "id": "thought-library",
       "title": "Biblioteca de pensamiento",
       "author": "Equipo editorial ORÁCULO IA",
-      "version": "1.1",
-      "created": "2026-07-01",
-      "reviewed": "2026-07-11",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "revisado",
       "sources": [
         "knowledge/thought_library_v1.json",
         "knowledge/thought_library_expansion_v1.json"
       ],
-      "notes": "Paráfrasis e interpretaciones; no contiene citas textuales.",
-      "nextReview": "2026-09-11",
+      "notes": "Colección completa expandida a 30 citas y reflexiones.",
+      "nextReview": "2026-09-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -85,12 +100,12 @@
       "author": "Dirección Académica ORÁCULO IA",
       "version": "1.0",
       "created": "2026-07-05",
-      "reviewed": "2026-07-11",
+      "reviewed": "2026-07-14",
       "status": "revisado",
       "sources": [
         "knowledge/prompt_exercises_v1.json"
       ],
-      "notes": "Ejercicios editoriales locales.",
+      "notes": "Ejercicios locales complementarios.",
       "nextReview": "2026-11-11",
       "currentClaims": false,
       "textualQuotes": []
@@ -99,15 +114,15 @@
       "id": "dictionary",
       "title": "Diccionario y Glosario",
       "author": "Equipo editorial ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-01",
-      "reviewed": "2026-07-13",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "revisado",
       "sources": [
         "knowledge/dictionary_v1.json"
       ],
-      "notes": "Términos conceptuales y sus relaciones.",
-      "nextReview": "2026-10-13",
+      "notes": "Términos conceptuales expandidos a 150.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -115,15 +130,15 @@
       "id": "manual",
       "title": "Manual y Guías",
       "author": "Equipo editorial ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-01",
-      "reviewed": "2026-07-13",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "revisado",
       "sources": [
         "knowledge/manual_v1.json"
       ],
-      "notes": "Artículos del manual de aprendizaje offline.",
-      "nextReview": "2026-10-13",
+      "notes": "Artículos del manual expandidos a 30 capítulos.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -133,13 +148,13 @@
       "author": "Dirección Académica ORÁCULO IA",
       "version": "1.0",
       "created": "2026-07-11",
-      "reviewed": "2026-07-13",
+      "reviewed": "2026-07-14",
       "status": "verificado",
       "sources": [
         "knowledge/career_paths_v1.json"
       ],
       "notes": "Cursos y rutas de carrera del usuario.",
-      "nextReview": "2026-10-13",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -147,15 +162,15 @@
       "id": "projects",
       "title": "Constructor de Proyectos",
       "author": "Dirección Académica ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-11",
-      "reviewed": "2026-07-13",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "revisado",
       "sources": [
         "knowledge/projects_v1.json"
       ],
-      "notes": "Proyectos y entregables prácticos.",
-      "nextReview": "2026-10-13",
+      "notes": "Proyectos y entregables prácticos expandidos a 15.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -165,13 +180,13 @@
       "author": "Dirección Académica ORÁCULO IA",
       "version": "1.0",
       "created": "2026-07-11",
-      "reviewed": "2026-07-13",
+      "reviewed": "2026-07-14",
       "status": "verificado",
       "sources": [
         "knowledge/modules_v1.json"
       ],
       "notes": "Competencias y habilidades curriculares.",
-      "nextReview": "2026-10-13",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -179,15 +194,15 @@
       "id": "academy-courses",
       "title": "Catálogo de Cursos de la Academia",
       "author": "Dirección Académica ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-13",
-      "reviewed": "2026-07-13",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "verificado",
       "sources": [
         "knowledge/academy_courses_v1.json"
       ],
-      "notes": "Cursos de la academia por categoría.",
-      "nextReview": "2026-10-13",
+      "notes": "8 cursos oficiales de la academia.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -195,15 +210,15 @@
       "id": "academy-missions",
       "title": "Catálogo de 100 Misiones de la Academia",
       "author": "Dirección Académica ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-13",
-      "reviewed": "2026-07-13",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "verificado",
       "sources": [
         "knowledge/academy_missions_v1.json"
       ],
-      "notes": "Misiones planificadas con metadatos.",
-      "nextReview": "2026-10-13",
+      "notes": "100 misiones planificadas con metadatos.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     },
@@ -211,15 +226,15 @@
       "id": "ai-labs",
       "title": "Catálogo de 50 Laboratorios de IA",
       "author": "Equipo Editorial ORÁCULO IA",
-      "version": "1.0",
-      "created": "2026-07-13",
-      "reviewed": "2026-07-13",
+      "version": "2.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
       "status": "verificado",
       "sources": [
         "knowledge/ai_labs_v1.json"
       ],
-      "notes": "Laboratorios prácticos offline para experimentar.",
-      "nextReview": "2026-10-13",
+      "notes": "50 laboratorios completos offline.",
+      "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
     }

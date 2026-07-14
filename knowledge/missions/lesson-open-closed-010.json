@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-open-closed-010",
-    "number": "010",
-    "title": "Modelos abiertos y cerrados",
-    "duration": 55,
+    "title": "Misión 010: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 010.",
+    "duration": 70,
+    "version": 1,
     "concepts": [
-      "Modelo abierto",
-      "Modelo cerrado",
-      "Gobernanza"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Elegir un enfoque considerando capacidad, control, costo y riesgo.",
+    "prerequisiteIds": [
+      "lesson-hallucinations-009"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Evaluar modelos sin reducir la decisión a un ranking."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 010 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "La licencia, los pesos, el despliegue y las condiciones de uso cambian control, responsabilidad y dependencia."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "Abierto y cerrado no son etiquetas binarias perfectas. Hay grados de acceso a pesos, código, datos, licencia y servicio."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Comprar comida preparada, recibir la receta o administrar la cocina ofrecen distintos niveles de comodidad y control."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Datos sensibles pueden favorecer despliegue controlado; una tarea general puede justificar un servicio administrado con mejores capacidades."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Evaluá residencia de datos, contrato, auditoría, latencia, capacidades, soporte y costo total."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Construí una matriz ponderada para tres escenarios: borrador público, documentos internos y decisión regulada."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Defendé dos elecciones distintas para el mismo modelo según cambie la sensibilidad del dato."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Asumir que abierto es gratis, que cerrado es siempre mejor o comparar solo benchmarks."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "Elegir modelo es elegir un sistema operativo, contractual y de gobernanza, no solo calidad de salida."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "Abierto significa siempre sin costo.",
+        "Pregunta 1 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Solo empresarial"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una dimensión clave es...",
+        "Pregunta 2 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Licencia",
-          "Color del logo",
-          "País del usuario"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El costo total incluye...",
+        "Pregunta 3 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Infraestructura y operación",
-          "Solo tokens",
-          "Solo descarga"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Para datos sensibles importa...",
+        "Pregunta 4 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Gobernanza y residencia",
-          "Popularidad",
-          "Cantidad de seguidores"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un benchmark decide por sí solo.",
+        "Pregunta 5 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Si es reciente"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Pesos disponibles implican datos de entrenamiento abiertos.",
+        "Pregunta 6 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No necesariamente",
-          "Siempre",
-          "Nunca hay pesos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El soporte es parte de...",
+        "Pregunta 7 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "La decisión operativa",
-          "La atención",
-          "El embedding"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La elección correcta depende de...",
+        "Pregunta 8 de la Misión 010: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Tarea, riesgo y restricciones",
-          "Una marca universal",
-          "El prompt más largo"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

@@ -6,6 +6,7 @@ import 'package:oraculo_ia/src/features/academy/presentation/academy_catalog_scr
 import 'package:oraculo_ia/src/features/academy/presentation/course_details_screen.dart';
 import 'package:oraculo_ia/src/features/academy/presentation/global_search_screen.dart';
 import 'package:oraculo_ia/src/features/academy/presentation/knowledge_explorer_screen.dart';
+import 'package:oraculo_ia/src/features/academy/presentation/version_news_screen.dart';
 import 'package:oraculo_ia/src/features/academy/presentation/welcome_screen.dart';
 import 'package:oraculo_ia/src/features/ai_lab/presentation/ai_lab_screen.dart';
 import 'package:oraculo_ia/src/features/ai_lab/presentation/lab_editor_screen.dart';
@@ -32,6 +33,8 @@ import 'package:oraculo_ia/src/features/projects/project_builder.dart';
 import 'package:oraculo_ia/src/features/prompt_lab/presentation/prompt_lab_screen.dart';
 import 'package:oraculo_ia/src/features/review/presentation/review_screen.dart';
 import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
+import 'package:oraculo_ia/src/features/universe/presentation/knowledge_universe_screen.dart';
+import 'package:oraculo_ia/src/features/universe/presentation/universe_dashboard_screen.dart';
 
 abstract final class AppRoute {
   static const splash = '/';
@@ -64,6 +67,9 @@ abstract final class AppRoute {
   static const globalSearch = '/global-search';
   static const aiLab = '/ai-lab';
   static const labEditor = '/lab-editor';
+  static const knowledgeUniverse = '/knowledge-universe';
+  static const universeDashboard = '/universe-dashboard';
+  static const versionNews = '/version-news';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -282,6 +288,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           labId: state.pathParameters['id']!,
           templateId: state.uri.queryParameters['template'],
         ),
+      ),
+      GoRoute(
+        path: AppRoute.knowledgeUniverse,
+        builder: (context, state) => const KnowledgeUniverseScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.universeDashboard,
+        builder: (context, state) => const UniverseDashboardScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.versionNews,
+        builder: (context, state) => const VersionNewsScreen(),
       ),
     ],
   );

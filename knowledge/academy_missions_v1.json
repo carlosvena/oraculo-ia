@@ -3,1498 +3,1398 @@
   "missions": [
     {
       "id": "ac-001",
-      "title": "Misión: Conceptos básicos",
-      "objective": "Dominar los conceptos clave de conceptos básicos aplicados en el track de fundamentos de ia.",
-      "duration": 20,
+      "title": "Misión: Conceptos básicos de la IA (001)",
+      "objective": "Objetivo pedagógico de la misión 001 en el track curricular.",
+      "duration": 48,
       "prerequisiteIds": [],
       "concepts": [
-        "Conceptos",
-        "fundamentos"
+        "Prompt"
       ],
       "difficulty": "Inicial",
       "projectAssociated": null
     },
     {
       "id": "ac-002",
-      "title": "Misión: Redes Neuronales",
-      "objective": "Dominar los conceptos clave de redes neuronales aplicados en el track de fundamentos de ia.",
-      "duration": 23,
+      "title": "Misión 002: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 002 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-001"
       ],
       "concepts": [
-        "Redes",
-        "fundamentos"
+        "LLM"
       ],
       "difficulty": "Inicial",
       "projectAssociated": null
     },
     {
       "id": "ac-003",
-      "title": "Misión: Machine Learning",
-      "objective": "Dominar los conceptos clave de machine learning aplicados en el track de fundamentos de ia.",
-      "duration": 26,
+      "title": "Misión 003: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 003 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-002"
       ],
       "concepts": [
-        "Machine",
-        "fundamentos"
+        "Gobernanza"
       ],
       "difficulty": "Inicial",
       "projectAssociated": null
     },
     {
       "id": "ac-004",
-      "title": "Misión: Modelos Cognitivos",
-      "objective": "Dominar los conceptos clave de modelos cognitivos aplicados en el track de fundamentos de ia.",
-      "duration": 29,
+      "title": "Misión 004: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 004 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-003"
       ],
       "concepts": [
-        "Modelos",
-        "fundamentos"
+        "Agentes"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Inicial",
       "projectAssociated": null
     },
     {
       "id": "ac-005",
-      "title": "Misión: Historia de la IA",
-      "objective": "Dominar los conceptos clave de historia de la ia aplicados en el track de fundamentos de ia.",
-      "duration": 32,
+      "title": "Misión 005: Optimización de Prompt Engineering",
+      "objective": "Aprender técnicas de Prompt y estructuración para la misión 005.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-004"
       ],
       "concepts": [
-        "Historia",
-        "fundamentos"
+        "APIs"
       ],
-      "difficulty": "Intermedio",
-      "projectAssociated": null
+      "difficulty": "Inicial",
+      "projectAssociated": "project-001"
     },
     {
       "id": "ac-006",
-      "title": "Misión: Supervisado",
-      "objective": "Dominar los conceptos clave de supervisado aplicados en el track de fundamentos de ia.",
-      "duration": 35,
+      "title": "Misión 006: Optimización de Prompt Engineering",
+      "objective": "Aprender técnicas de Prompt y estructuración para la misión 006.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-005"
       ],
       "concepts": [
-        "Supervisado",
-        "fundamentos"
+        "Excel"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Inicial",
       "projectAssociated": null
     },
     {
       "id": "ac-007",
-      "title": "Misión: No supervisado",
-      "objective": "Dominar los conceptos clave de no supervisado aplicados en el track de fundamentos de ia.",
-      "duration": 38,
+      "title": "Misión 007: Optimización de Prompt Engineering",
+      "objective": "Aprender técnicas de Prompt y estructuración para la misión 007.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-006"
       ],
       "concepts": [
-        "No",
-        "fundamentos"
+        "Finanzas"
+      ],
+      "difficulty": "Inicial",
+      "projectAssociated": null
+    },
+    {
+      "id": "ac-008",
+      "title": "Misión 008: Optimización de Prompt Engineering",
+      "objective": "Aprender técnicas de Prompt y estructuración para la misión 008.",
+      "duration": 69,
+      "prerequisiteIds": [
+        "ac-007"
+      ],
+      "concepts": [
+        "IA"
+      ],
+      "difficulty": "Inicial",
+      "projectAssociated": null
+    },
+    {
+      "id": "ac-009",
+      "title": "Misión 009: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 009 en el track curricular.",
+      "duration": 72,
+      "prerequisiteIds": [
+        "ac-008"
+      ],
+      "concepts": [
+        "Prompt"
+      ],
+      "difficulty": "Inicial",
+      "projectAssociated": null
+    },
+    {
+      "id": "ac-010",
+      "title": "Misión 010: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 010 en el track curricular.",
+      "duration": 75,
+      "prerequisiteIds": [
+        "ac-009"
+      ],
+      "concepts": [
+        "LLM"
+      ],
+      "difficulty": "Inicial",
+      "projectAssociated": "project-002"
+    },
+    {
+      "id": "ac-011",
+      "title": "Misión 011: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 011 en el track curricular.",
+      "duration": 78,
+      "prerequisiteIds": [
+        "ac-010"
+      ],
+      "concepts": [
+        "Gobernanza"
       ],
       "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
-      "id": "ac-008",
-      "title": "Misión: Algoritmos",
-      "objective": "Dominar los conceptos clave de algoritmos aplicados en el track de fundamentos de ia.",
-      "duration": 41,
-      "prerequisiteIds": [
-        "ac-007"
-      ],
-      "concepts": [
-        "Algoritmos",
-        "fundamentos"
-      ],
-      "difficulty": "Avanzado",
-      "projectAssociated": null
-    },
-    {
-      "id": "ac-009",
-      "title": "Misión: Sesgo y Datos",
-      "objective": "Dominar los conceptos clave de sesgo y datos aplicados en el track de fundamentos de ia.",
-      "duration": 44,
-      "prerequisiteIds": [
-        "ac-008"
-      ],
-      "concepts": [
-        "Sesgo",
-        "fundamentos"
-      ],
-      "difficulty": "Avanzado",
-      "projectAssociated": null
-    },
-    {
-      "id": "ac-010",
-      "title": "Misión: Ética",
-      "objective": "Dominar los conceptos clave de ética aplicados en el track de fundamentos de ia.",
-      "duration": 47,
-      "prerequisiteIds": [
-        "ac-009"
-      ],
-      "concepts": [
-        "Ética",
-        "fundamentos"
-      ],
-      "difficulty": "Avanzado",
-      "projectAssociated": null
-    },
-    {
-      "id": "ac-011",
-      "title": "Misión: Introducción a Prompts",
-      "objective": "Dominar los conceptos clave de introducción a prompts aplicados en el track de prompt engineering.",
-      "duration": 20,
-      "prerequisiteIds": [
-        "ac-010"
-      ],
-      "concepts": [
-        "Introducción",
-        "prompt-engineering"
-      ],
-      "difficulty": "Inicial",
-      "projectAssociated": null
-    },
-    {
       "id": "ac-012",
-      "title": "Misión: Anatomía del Prompt",
-      "objective": "Dominar los conceptos clave de anatomía del prompt aplicados en el track de prompt engineering.",
-      "duration": 23,
+      "title": "Misión 012: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 012 en el track curricular.",
+      "duration": 81,
       "prerequisiteIds": [
         "ac-011"
       ],
       "concepts": [
-        "Anatomía",
-        "prompt-engineering"
+        "Agentes"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-013",
-      "title": "Misión: Zero-Shot Learning",
-      "objective": "Dominar los conceptos clave de zero-shot learning aplicados en el track de prompt engineering.",
-      "duration": 26,
+      "title": "Misión 013: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 013 en el track curricular.",
+      "duration": 84,
       "prerequisiteIds": [
         "ac-012"
       ],
       "concepts": [
-        "Zero-Shot",
-        "prompt-engineering"
+        "APIs"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-014",
-      "title": "Misión: Few-Shot Learning",
-      "objective": "Dominar los conceptos clave de few-shot learning aplicados en el track de prompt engineering.",
-      "duration": 29,
+      "title": "Misión 014: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 014 en el track curricular.",
+      "duration": 87,
       "prerequisiteIds": [
         "ac-013"
       ],
       "concepts": [
-        "Few-Shot",
-        "prompt-engineering"
+        "Excel"
       ],
       "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-015",
-      "title": "Misión: Chain of Thought",
-      "objective": "Dominar los conceptos clave de chain of thought aplicados en el track de prompt engineering.",
-      "duration": 32,
+      "title": "Misión 015: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 015 en el track curricular.",
+      "duration": 45,
       "prerequisiteIds": [
         "ac-014"
       ],
       "concepts": [
-        "Chain",
-        "prompt-engineering"
+        "Finanzas"
       ],
       "difficulty": "Intermedio",
-      "projectAssociated": null
+      "projectAssociated": "project-003"
     },
     {
       "id": "ac-016",
-      "title": "Misión: Metaprompts",
-      "objective": "Dominar los conceptos clave de metaprompts aplicados en el track de prompt engineering.",
-      "duration": 35,
+      "title": "Misión 016: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 016 en el track curricular.",
+      "duration": 48,
       "prerequisiteIds": [
         "ac-015"
       ],
       "concepts": [
-        "Metaprompts",
-        "prompt-engineering"
+        "IA"
       ],
       "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-017",
-      "title": "Misión: Temperatura y Top-P",
-      "objective": "Dominar los conceptos clave de temperatura y top-p aplicados en el track de prompt engineering.",
-      "duration": 38,
+      "title": "Misión 017: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 017 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-016"
       ],
       "concepts": [
-        "Temperatura",
-        "prompt-engineering"
+        "Prompt"
       ],
       "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-018",
-      "title": "Misión: Ventana de contexto",
-      "objective": "Dominar los conceptos clave de ventana de contexto aplicados en el track de prompt engineering.",
-      "duration": 41,
+      "title": "Misión 018: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 018 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-017"
       ],
       "concepts": [
-        "Ventana",
-        "prompt-engineering"
+        "LLM"
       ],
-      "difficulty": "Avanzado",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-019",
-      "title": "Misión: Formatos JSON/Markdown",
-      "objective": "Dominar los conceptos clave de formatos json/markdown aplicados en el track de prompt engineering.",
-      "duration": 44,
+      "title": "Misión 019: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 019 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-018"
       ],
       "concepts": [
-        "Formatos",
-        "prompt-engineering"
+        "Gobernanza"
       ],
-      "difficulty": "Avanzado",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-020",
-      "title": "Misión: Validación",
-      "objective": "Dominar los conceptos clave de validación aplicados en el track de prompt engineering.",
-      "duration": 47,
+      "title": "Misión 020: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 020 en el track curricular.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-019"
       ],
       "concepts": [
-        "Validación",
-        "prompt-engineering"
+        "Agentes"
       ],
-      "difficulty": "Avanzado",
-      "projectAssociated": "prompt-library"
+      "difficulty": "Intermedio",
+      "projectAssociated": "project-004"
     },
     {
       "id": "ac-021",
-      "title": "Misión: Arquitectura Transformer",
-      "objective": "Dominar los conceptos clave de arquitectura transformer aplicados en el track de modelos llm.",
-      "duration": 20,
+      "title": "Misión 021: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 021 en el track curricular.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-020"
       ],
       "concepts": [
-        "Arquitectura",
-        "modelos-llm"
+        "APIs"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-022",
-      "title": "Misión: Atención",
-      "objective": "Dominar los conceptos clave de atención aplicados en el track de modelos llm.",
-      "duration": 23,
+      "title": "Misión 022: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 022 en el track curricular.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-021"
       ],
       "concepts": [
-        "Atención",
-        "modelos-llm"
+        "Excel"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-023",
-      "title": "Misión: Tokenizers",
-      "objective": "Dominar los conceptos clave de tokenizers aplicados en el track de modelos llm.",
-      "duration": 26,
+      "title": "Misión 023: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 023 en el track curricular.",
+      "duration": 69,
       "prerequisiteIds": [
         "ac-022"
       ],
       "concepts": [
-        "Tokenizers",
-        "modelos-llm"
+        "Finanzas"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-024",
-      "title": "Misión: Embeddings Vectoriales",
-      "objective": "Dominar los conceptos clave de embeddings vectoriales aplicados en el track de modelos llm.",
-      "duration": 29,
+      "title": "Misión 024: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 024 en el track curricular.",
+      "duration": 72,
       "prerequisiteIds": [
         "ac-023"
       ],
       "concepts": [
-        "Embeddings",
-        "modelos-llm"
+        "IA"
       ],
       "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-025",
-      "title": "Misión: Parámetros del modelo",
-      "objective": "Dominar los conceptos clave de parámetros del modelo aplicados en el track de modelos llm.",
-      "duration": 32,
+      "title": "Misión 025: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 025 en el track curricular.",
+      "duration": 75,
       "prerequisiteIds": [
         "ac-024"
       ],
       "concepts": [
-        "Parámetros",
-        "modelos-llm"
+        "Prompt"
       ],
       "difficulty": "Intermedio",
       "projectAssociated": null
     },
     {
       "id": "ac-026",
-      "title": "Misión: Fine-Tuning",
-      "objective": "Dominar los conceptos clave de fine-tuning aplicados en el track de modelos llm.",
-      "duration": 35,
+      "title": "Misión 026: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 026 en el track curricular.",
+      "duration": 78,
       "prerequisiteIds": [
         "ac-025"
       ],
       "concepts": [
-        "Fine-Tuning",
-        "modelos-llm"
+        "LLM"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-027",
-      "title": "Misión: Modelos Open Source",
-      "objective": "Dominar los conceptos clave de modelos open source aplicados en el track de modelos llm.",
-      "duration": 38,
+      "title": "Misión 027: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 027 en el track curricular.",
+      "duration": 81,
       "prerequisiteIds": [
         "ac-026"
       ],
       "concepts": [
-        "Modelos",
-        "modelos-llm"
+        "Gobernanza"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-028",
-      "title": "Misión: Modelos Propietarios",
-      "objective": "Dominar los conceptos clave de modelos propietarios aplicados en el track de modelos llm.",
-      "duration": 41,
+      "title": "Misión 028: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 028 en el track curricular.",
+      "duration": 84,
       "prerequisiteIds": [
         "ac-027"
       ],
       "concepts": [
-        "Modelos",
-        "modelos-llm"
+        "Agentes"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-029",
-      "title": "Misión: Quantization",
-      "objective": "Dominar los conceptos clave de quantization aplicados en el track de modelos llm.",
-      "duration": 44,
+      "title": "Misión 029: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 029 en el track curricular.",
+      "duration": 87,
       "prerequisiteIds": [
         "ac-028"
       ],
       "concepts": [
-        "Quantization",
-        "modelos-llm"
+        "APIs"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-030",
-      "title": "Misión: Evaluación",
-      "objective": "Dominar los conceptos clave de evaluación aplicados en el track de modelos llm.",
-      "duration": 47,
+      "title": "Misión 030: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 030 en el track curricular.",
+      "duration": 45,
       "prerequisiteIds": [
         "ac-029"
       ],
       "concepts": [
-        "Evaluación",
-        "modelos-llm"
+        "Excel"
+      ],
+      "difficulty": "Avanzado",
+      "projectAssociated": "project-015"
+    },
+    {
+      "id": "ac-031",
+      "title": "Misión 031: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 031 en el track curricular.",
+      "duration": 48,
+      "prerequisiteIds": [
+        "ac-030"
+      ],
+      "concepts": [
+        "Finanzas"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
-      "id": "ac-031",
-      "title": "Misión: Agentes Reactivos",
-      "objective": "Dominar los conceptos clave de agentes reactivos aplicados en el track de agentes.",
-      "duration": 20,
-      "prerequisiteIds": [
-        "ac-030"
-      ],
-      "concepts": [
-        "Agentes",
-        "agentes-ia"
-      ],
-      "difficulty": "Inicial",
-      "projectAssociated": null
-    },
-    {
       "id": "ac-032",
-      "title": "Misión: Uso de Herramientas",
-      "objective": "Dominar los conceptos clave de uso de herramientas aplicados en el track de agentes.",
-      "duration": 23,
+      "title": "Misión 032: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 032 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-031"
       ],
       "concepts": [
-        "Uso",
-        "agentes-ia"
+        "IA"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-033",
-      "title": "Misión: Bucle de Razonamiento",
-      "objective": "Dominar los conceptos clave de bucle de razonamiento aplicados en el track de agentes.",
-      "duration": 26,
+      "title": "Misión 033: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 033 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-032"
       ],
       "concepts": [
-        "Bucle",
-        "agentes-ia"
+        "Prompt"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-034",
-      "title": "Misión: Memoria de Agente",
-      "objective": "Dominar los conceptos clave de memoria de agente aplicados en el track de agentes.",
-      "duration": 29,
+      "title": "Misión 034: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 034 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-033"
       ],
       "concepts": [
-        "Memoria",
-        "agentes-ia"
+        "LLM"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-035",
-      "title": "Misión: Protocolo MCP",
-      "objective": "Dominar los conceptos clave de protocolo mcp aplicados en el track de agentes.",
-      "duration": 32,
+      "title": "Misión 035: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 035 en el track curricular.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-034"
       ],
       "concepts": [
-        "Protocolo",
-        "agentes-ia"
+        "Gobernanza"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-036",
-      "title": "Misión: Gobernanza",
-      "objective": "Dominar los conceptos clave de gobernanza aplicados en el track de agentes.",
-      "duration": 35,
+      "title": "Misión 036: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 036 en el track curricular.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-035"
       ],
       "concepts": [
-        "Gobernanza",
-        "agentes-ia"
+        "Agentes"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-037",
-      "title": "Misión: Guardrails",
-      "objective": "Dominar los conceptos clave de guardrails aplicados en el track de agentes.",
-      "duration": 38,
+      "title": "Misión 037: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 037 en el track curricular.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-036"
       ],
       "concepts": [
-        "Guardrails",
-        "agentes-ia"
+        "APIs"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-038",
-      "title": "Misión: RAG en Agentes",
-      "objective": "Dominar los conceptos clave de rag en agentes aplicados en el track de agentes.",
-      "duration": 41,
+      "title": "Misión 038: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 038 en el track curricular.",
+      "duration": 69,
       "prerequisiteIds": [
         "ac-037"
       ],
       "concepts": [
-        "RAG",
-        "agentes-ia"
+        "Excel"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-039",
-      "title": "Misión: Planificación Autónoma",
-      "objective": "Dominar los conceptos clave de planificación autónoma aplicados en el track de agentes.",
-      "duration": 44,
+      "title": "Misión 039: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 039 en el track curricular.",
+      "duration": 72,
       "prerequisiteIds": [
         "ac-038"
       ],
       "concepts": [
-        "Planificación",
-        "agentes-ia"
+        "Finanzas"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-040",
-      "title": "Misión: Orquestación",
-      "objective": "Dominar los conceptos clave de orquestación aplicados en el track de agentes.",
-      "duration": 47,
+      "title": "Misión 040: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 040 en el track curricular.",
+      "duration": 75,
       "prerequisiteIds": [
         "ac-039"
       ],
       "concepts": [
-        "Orquestación",
-        "agentes-ia"
+        "IA"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-041",
-      "title": "Misión: Workflows con IA",
-      "objective": "Dominar los conceptos clave de workflows con ia aplicados en el track de automatización.",
-      "duration": 20,
+      "title": "Misión 041: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 041 en el track curricular.",
+      "duration": 78,
       "prerequisiteIds": [
         "ac-040"
       ],
       "concepts": [
-        "Workflows",
-        "automatizacion"
+        "Prompt"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-042",
-      "title": "Misión: Llamadas a APIs",
-      "objective": "Dominar los conceptos clave de llamadas a apis aplicados en el track de automatización.",
-      "duration": 23,
+      "title": "Misión 042: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 042 en el track curricular.",
+      "duration": 81,
       "prerequisiteIds": [
         "ac-041"
       ],
       "concepts": [
-        "Llamadas",
-        "automatizacion"
+        "LLM"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-043",
-      "title": "Misión: Integración",
-      "objective": "Dominar los conceptos clave de integración aplicados en el track de automatización.",
-      "duration": 26,
+      "title": "Misión 043: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 043 en el track curricular.",
+      "duration": 84,
       "prerequisiteIds": [
         "ac-042"
       ],
       "concepts": [
-        "Integración",
-        "automatizacion"
+        "Gobernanza"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-044",
-      "title": "Misión: Formateo JSON",
-      "objective": "Dominar los conceptos clave de formateo json aplicados en el track de automatización.",
-      "duration": 29,
+      "title": "Misión 044: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 044 en el track curricular.",
+      "duration": 87,
       "prerequisiteIds": [
         "ac-043"
       ],
       "concepts": [
-        "Formateo",
-        "automatizacion"
+        "Agentes"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-045",
-      "title": "Misión: Manejo de Errores",
-      "objective": "Dominar los conceptos clave de manejo de errores aplicados en el track de automatización.",
-      "duration": 32,
+      "title": "Misión 045: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 045 en el track curricular.",
+      "duration": 45,
       "prerequisiteIds": [
         "ac-044"
       ],
       "concepts": [
-        "Manejo",
-        "automatizacion"
+        "APIs"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-046",
-      "title": "Misión: Límites de Rate Limit",
-      "objective": "Dominar los conceptos clave de límites de rate limit aplicados en el track de automatización.",
-      "duration": 35,
+      "title": "Misión 046: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 046 en el track curricular.",
+      "duration": 48,
       "prerequisiteIds": [
         "ac-045"
       ],
       "concepts": [
-        "Límites",
-        "automatizacion"
+        "Excel"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-047",
-      "title": "Misión: Seguridad",
-      "objective": "Dominar los conceptos clave de seguridad aplicados en el track de automatización.",
-      "duration": 38,
+      "title": "Misión 047: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 047 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-046"
       ],
       "concepts": [
-        "Seguridad",
-        "automatizacion"
+        "Finanzas"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-048",
-      "title": "Misión: Orquestadores locales",
-      "objective": "Dominar los conceptos clave de orquestadores locales aplicados en el track de automatización.",
-      "duration": 41,
+      "title": "Misión 048: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 048 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-047"
       ],
       "concepts": [
-        "Orquestadores",
-        "automatizacion"
+        "IA"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-049",
-      "title": "Misión: Webhooks",
-      "objective": "Dominar los conceptos clave de webhooks aplicados en el track de automatización.",
-      "duration": 44,
+      "title": "Misión 049: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 049 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-048"
       ],
       "concepts": [
-        "Webhooks",
-        "automatizacion"
+        "Prompt"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-050",
-      "title": "Misión: Callbacks",
-      "objective": "Dominar los conceptos clave de callbacks aplicados en el track de automatización.",
-      "duration": 47,
+      "title": "Misión 050: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 050 en el track curricular.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-049"
       ],
       "concepts": [
-        "Callbacks",
-        "automatizacion"
+        "LLM"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-051",
-      "title": "Misión: Redacción de Informes",
-      "objective": "Dominar los conceptos clave de redacción de informes aplicados en el track de ia para productividad.",
-      "duration": 20,
+      "title": "Misión 051: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 051 en el track curricular.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-050"
       ],
       "concepts": [
-        "Redacción",
-        "productividad"
+        "Gobernanza"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-052",
-      "title": "Misión: Resúmenes Dinámicos",
-      "objective": "Dominar los conceptos clave de resúmenes dinámicos aplicados en el track de ia para productividad.",
-      "duration": 23,
+      "title": "Misión 052: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 052 en el track curricular.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-051"
       ],
       "concepts": [
-        "Resúmenes",
-        "productividad"
+        "Agentes"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-053",
-      "title": "Misión: Agenda Automatizada",
-      "objective": "Dominar los conceptos clave de agenda automatizada aplicados en el track de ia para productividad.",
-      "duration": 26,
+      "title": "Misión 053: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 053 en el track curricular.",
+      "duration": 69,
       "prerequisiteIds": [
         "ac-052"
       ],
       "concepts": [
-        "Agenda",
-        "productividad"
+        "APIs"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-054",
-      "title": "Misión: Emailing inteligente",
-      "objective": "Dominar los conceptos clave de emailing inteligente aplicados en el track de ia para productividad.",
-      "duration": 29,
+      "title": "Misión 054: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 054 en el track curricular.",
+      "duration": 72,
       "prerequisiteIds": [
         "ac-053"
       ],
       "concepts": [
-        "Emailing",
-        "productividad"
+        "Excel"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-055",
-      "title": "Misión: Traducción Contextual",
-      "objective": "Dominar los conceptos clave de traducción contextual aplicados en el track de ia para productividad.",
-      "duration": 32,
+      "title": "Misión 055: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 055 en el track curricular.",
+      "duration": 75,
       "prerequisiteIds": [
         "ac-054"
       ],
       "concepts": [
-        "Traducción",
-        "productividad"
+        "Finanzas"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-056",
-      "title": "Misión: Búsqueda avanzada",
-      "objective": "Dominar los conceptos clave de búsqueda avanzada aplicados en el track de ia para productividad.",
-      "duration": 35,
+      "title": "Misión 056: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 056 en el track curricular.",
+      "duration": 78,
       "prerequisiteIds": [
         "ac-055"
       ],
       "concepts": [
-        "Búsqueda",
-        "productividad"
+        "IA"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-057",
-      "title": "Misión: Toma de notas",
-      "objective": "Dominar los conceptos clave de toma de notas aplicados en el track de ia para productividad.",
-      "duration": 38,
+      "title": "Misión 057: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 057 en el track curricular.",
+      "duration": 81,
       "prerequisiteIds": [
         "ac-056"
       ],
       "concepts": [
-        "Toma",
-        "productividad"
+        "Prompt"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-058",
-      "title": "Misión: Microsoft Copilot",
-      "objective": "Dominar los conceptos clave de microsoft copilot aplicados en el track de ia para productividad.",
-      "duration": 41,
+      "title": "Misión 058: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 058 en el track curricular.",
+      "duration": 84,
       "prerequisiteIds": [
         "ac-057"
       ],
       "concepts": [
-        "Microsoft",
-        "productividad"
+        "LLM"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-059",
-      "title": "Misión: Delegación",
-      "objective": "Dominar los conceptos clave de delegación aplicados en el track de ia para productividad.",
-      "duration": 44,
+      "title": "Misión 059: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 059 en el track curricular.",
+      "duration": 87,
       "prerequisiteIds": [
         "ac-058"
       ],
       "concepts": [
-        "Delegación",
-        "productividad"
+        "Gobernanza"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-060",
-      "title": "Misión: Flujo diario",
-      "objective": "Dominar los conceptos clave de flujo diario aplicados en el track de ia para productividad.",
-      "duration": 47,
+      "title": "Misión 060: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 060 en el track curricular.",
+      "duration": 45,
       "prerequisiteIds": [
         "ac-059"
       ],
       "concepts": [
-        "Flujo",
-        "productividad"
+        "Agentes"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-061",
-      "title": "Misión: Fórmulas dinámicas",
-      "objective": "Dominar los conceptos clave de fórmulas dinámicas aplicados en el track de ia para excel.",
-      "duration": 20,
+      "title": "Misión 061: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 061 en el track curricular.",
+      "duration": 48,
       "prerequisiteIds": [
         "ac-060"
       ],
       "concepts": [
-        "Fórmulas",
-        "excel-ia"
+        "APIs"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-062",
-      "title": "Misión: Análisis de Datos",
-      "objective": "Dominar los conceptos clave de análisis de datos aplicados en el track de ia para excel.",
-      "duration": 23,
+      "title": "Misión 062: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 062 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-061"
       ],
       "concepts": [
-        "Análisis",
-        "excel-ia"
+        "Excel"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-063",
-      "title": "Misión: Macros inteligentes",
-      "objective": "Dominar los conceptos clave de macros inteligentes aplicados en el track de ia para excel.",
-      "duration": 26,
+      "title": "Misión 063: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 063 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-062"
       ],
       "concepts": [
-        "Macros",
-        "excel-ia"
+        "Finanzas"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-064",
-      "title": "Misión: Asistente VBA",
-      "objective": "Dominar los conceptos clave de asistente vba aplicados en el track de ia para excel.",
-      "duration": 29,
+      "title": "Misión 064: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 064 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-063"
       ],
       "concepts": [
-        "Asistente",
-        "excel-ia"
+        "IA"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-065",
-      "title": "Misión: Gráficos sugeridos",
-      "objective": "Dominar los conceptos clave de gráficos sugeridos aplicados en el track de ia para excel.",
-      "duration": 32,
+      "title": "Misión 065: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 065 en el track curricular.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-064"
       ],
       "concepts": [
-        "Gráficos",
-        "excel-ia"
+        "Prompt"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-066",
-      "title": "Misión: Tablas Dinámicas",
-      "objective": "Dominar los conceptos clave de tablas dinámicas aplicados en el track de ia para excel.",
-      "duration": 35,
+      "title": "Misión 066: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 066 en el track curricular.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-065"
       ],
       "concepts": [
-        "Tablas",
-        "excel-ia"
+        "LLM"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-067",
-      "title": "Misión: Limpieza de nulos",
-      "objective": "Dominar los conceptos clave de limpieza de nulos aplicados en el track de ia para excel.",
-      "duration": 38,
+      "title": "Misión 067: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 067 en el track curricular.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-066"
       ],
       "concepts": [
-        "Limpieza",
-        "excel-ia"
+        "Gobernanza"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-068",
-      "title": "Misión: Predicción de tendencias",
-      "objective": "Dominar los conceptos clave de predicción de tendencias aplicados en el track de ia para excel.",
-      "duration": 41,
+      "title": "Misión 068: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 068 en el track curricular.",
+      "duration": 69,
       "prerequisiteIds": [
         "ac-067"
       ],
       "concepts": [
-        "Predicción",
-        "excel-ia"
+        "Agentes"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-069",
-      "title": "Misión: Segmentación",
-      "objective": "Dominar los conceptos clave de segmentación aplicados en el track de ia para excel.",
-      "duration": 44,
+      "title": "Misión 069: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 069 en el track curricular.",
+      "duration": 72,
       "prerequisiteIds": [
         "ac-068"
       ],
       "concepts": [
-        "Segmentación",
-        "excel-ia"
+        "APIs"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-070",
-      "title": "Misión: Reportes",
-      "objective": "Dominar los conceptos clave de reportes aplicados en el track de ia para excel.",
-      "duration": 47,
+      "title": "Misión 070: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 070 en el track curricular.",
+      "duration": 75,
       "prerequisiteIds": [
         "ac-069"
       ],
       "concepts": [
-        "Reportes",
-        "excel-ia"
+        "Excel"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-071",
-      "title": "Misión: GitHub Copilot",
-      "objective": "Dominar los conceptos clave de github copilot aplicados en el track de ia para programación.",
-      "duration": 20,
+      "title": "Misión 071: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 071 en el track curricular.",
+      "duration": 78,
       "prerequisiteIds": [
         "ac-070"
       ],
       "concepts": [
-        "GitHub",
-        "programacion"
+        "Finanzas"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-072",
-      "title": "Misión: Generación de código",
-      "objective": "Dominar los conceptos clave de generación de código aplicados en el track de ia para programación.",
-      "duration": 23,
+      "title": "Misión 072: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 072 en el track curricular.",
+      "duration": 81,
       "prerequisiteIds": [
         "ac-071"
       ],
       "concepts": [
-        "Generación",
-        "programacion"
+        "IA"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-073",
-      "title": "Misión: Debugging",
-      "objective": "Dominar los conceptos clave de debugging aplicados en el track de ia para programación.",
-      "duration": 26,
+      "title": "Misión 073: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 073 en el track curricular.",
+      "duration": 84,
       "prerequisiteIds": [
         "ac-072"
       ],
       "concepts": [
-        "Debugging",
-        "programacion"
+        "Prompt"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-074",
-      "title": "Misión: Refactorización",
-      "objective": "Dominar los conceptos clave de refactorización aplicados en el track de ia para programación.",
-      "duration": 29,
+      "title": "Misión 074: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 074 en el track curricular.",
+      "duration": 87,
       "prerequisiteIds": [
         "ac-073"
       ],
       "concepts": [
-        "Refactorización",
-        "programacion"
+        "LLM"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-075",
-      "title": "Misión: Unit Testing",
-      "objective": "Dominar los conceptos clave de unit testing aplicados en el track de ia para programación.",
-      "duration": 32,
+      "title": "Misión 075: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 075 en el track curricular.",
+      "duration": 45,
       "prerequisiteIds": [
         "ac-074"
       ],
       "concepts": [
-        "Unit",
-        "programacion"
+        "Gobernanza"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-076",
-      "title": "Misión: Documentación automática",
-      "objective": "Dominar los conceptos clave de documentación automática aplicados en el track de ia para programación.",
-      "duration": 35,
+      "title": "Misión 076: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 076 en el track curricular.",
+      "duration": 48,
       "prerequisiteIds": [
         "ac-075"
       ],
       "concepts": [
-        "Documentación",
-        "programacion"
+        "Agentes"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-077",
-      "title": "Misión: APIs de Código",
-      "objective": "Dominar los conceptos clave de apis de código aplicados en el track de ia para programación.",
-      "duration": 38,
+      "title": "Misión 077: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 077 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-076"
       ],
       "concepts": [
-        "APIs",
-        "programacion"
+        "APIs"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-078",
-      "title": "Misión: Configuración de IDEs",
-      "objective": "Dominar los conceptos clave de configuración de ides aplicados en el track de ia para programación.",
-      "duration": 41,
+      "title": "Misión 078: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 078 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-077"
       ],
       "concepts": [
-        "Configuración",
-        "programacion"
+        "Excel"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-079",
-      "title": "Misión: Autocompletar",
-      "objective": "Dominar los conceptos clave de autocompletar aplicados en el track de ia para programación.",
-      "duration": 44,
+      "title": "Misión 079: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 079 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-078"
       ],
       "concepts": [
-        "Autocompletar",
-        "programacion"
+        "Finanzas"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-080",
-      "title": "Misión: Explicación de código",
-      "objective": "Dominar los conceptos clave de explicación de código aplicados en el track de ia para programación.",
-      "duration": 47,
+      "title": "Misión 080: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 080 en el track curricular.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-079"
       ],
       "concepts": [
-        "Explicación",
-        "programacion"
+        "IA"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-081",
-      "title": "Misión: Gobernanza de Datos",
-      "objective": "Dominar los conceptos clave de gobernanza de datos aplicados en el track de ia para empresas.",
-      "duration": 20,
+      "title": "Misión 081: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 081 en el track curricular.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-080"
       ],
       "concepts": [
-        "Gobernanza",
-        "empresas"
+        "Prompt"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-082",
-      "title": "Misión: Estrategias de Adopción",
-      "objective": "Dominar los conceptos clave de estrategias de adopción aplicados en el track de ia para empresas.",
-      "duration": 23,
+      "title": "Misión 082: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 082 en el track curricular.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-081"
       ],
       "concepts": [
-        "Estrategias",
-        "empresas"
+        "LLM"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-083",
-      "title": "Misión: Cálculo del ROI",
-      "objective": "Dominar los conceptos clave de cálculo del roi aplicados en el track de ia para empresas.",
-      "duration": 26,
+      "title": "Misión 083: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 083 en el track curricular.",
+      "duration": 69,
       "prerequisiteIds": [
         "ac-082"
       ],
       "concepts": [
-        "Cálculo",
-        "empresas"
+        "Gobernanza"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-084",
-      "title": "Misión: Seguridad corporativa",
-      "objective": "Dominar los conceptos clave de seguridad corporativa aplicados en el track de ia para empresas.",
-      "duration": 29,
+      "title": "Misión 084: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 084 en el track curricular.",
+      "duration": 72,
       "prerequisiteIds": [
         "ac-083"
       ],
       "concepts": [
-        "Seguridad",
-        "empresas"
+        "Agentes"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-085",
-      "title": "Misión: Políticas internas",
-      "objective": "Dominar los conceptos clave de políticas internas aplicados en el track de ia para empresas.",
-      "duration": 32,
+      "title": "Misión 085: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 085 en el track curricular.",
+      "duration": 75,
       "prerequisiteIds": [
         "ac-084"
       ],
       "concepts": [
-        "Políticas",
-        "empresas"
+        "APIs"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-086",
-      "title": "Misión: Capacitación de equipos",
-      "objective": "Dominar los conceptos clave de capacitación de equipos aplicados en el track de ia para empresas.",
-      "duration": 35,
+      "title": "Misión 086: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 086 en el track curricular.",
+      "duration": 78,
       "prerequisiteIds": [
         "ac-085"
       ],
       "concepts": [
-        "Capacitación",
-        "empresas"
+        "Excel"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-087",
-      "title": "Misión: Infraestructura Cloud",
-      "objective": "Dominar los conceptos clave de infraestructura cloud aplicados en el track de ia para empresas.",
-      "duration": 38,
+      "title": "Misión 087: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 087 en el track curricular.",
+      "duration": 81,
       "prerequisiteIds": [
         "ac-086"
       ],
       "concepts": [
-        "Infraestructura",
-        "empresas"
+        "Finanzas"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-088",
-      "title": "Misión: Modelos propios",
-      "objective": "Dominar los conceptos clave de modelos propios aplicados en el track de ia para empresas.",
-      "duration": 41,
+      "title": "Misión 088: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 088 en el track curricular.",
+      "duration": 84,
       "prerequisiteIds": [
         "ac-087"
       ],
       "concepts": [
-        "Modelos",
-        "empresas"
+        "IA"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-089",
-      "title": "Misión: Compliance",
-      "objective": "Dominar los conceptos clave de compliance aplicados en el track de ia para empresas.",
-      "duration": 44,
+      "title": "Misión 089: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 089 en el track curricular.",
+      "duration": 87,
       "prerequisiteIds": [
         "ac-088"
       ],
       "concepts": [
-        "Compliance",
-        "empresas"
+        "Prompt"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-090",
-      "title": "Misión: Evaluación",
-      "objective": "Dominar los conceptos clave de evaluación aplicados en el track de ia para empresas.",
-      "duration": 47,
+      "title": "Misión 090: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 090 en el track curricular.",
+      "duration": 45,
       "prerequisiteIds": [
         "ac-089"
       ],
       "concepts": [
-        "Evaluación",
-        "empresas"
+        "LLM"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-091",
-      "title": "Misión: Análisis Financiero",
-      "objective": "Dominar los conceptos clave de análisis financiero aplicados en el track de ia bancaria.",
-      "duration": 20,
+      "title": "Misión 091: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 091 en el track curricular.",
+      "duration": 48,
       "prerequisiteIds": [
         "ac-090"
       ],
       "concepts": [
-        "Análisis",
-        "bancaria"
+        "Gobernanza"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-092",
-      "title": "Misión: Detección de Fraude",
-      "objective": "Dominar los conceptos clave de detección de fraude aplicados en el track de ia bancaria.",
-      "duration": 23,
+      "title": "Misión 092: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 092 en el track curricular.",
+      "duration": 51,
       "prerequisiteIds": [
         "ac-091"
       ],
       "concepts": [
-        "Detección",
-        "bancaria"
+        "Agentes"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-093",
-      "title": "Misión: Evaluación de Riesgo",
-      "objective": "Dominar los conceptos clave de evaluación de riesgo aplicados en el track de ia bancaria.",
-      "duration": 26,
+      "title": "Misión 093: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 093 en el track curricular.",
+      "duration": 54,
       "prerequisiteIds": [
         "ac-092"
       ],
       "concepts": [
-        "Evaluación",
-        "bancaria"
+        "APIs"
       ],
-      "difficulty": "Inicial",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-094",
-      "title": "Misión: Supervisión de Cuentas",
-      "objective": "Dominar los conceptos clave de supervisión de cuentas aplicados en el track de ia bancaria.",
-      "duration": 29,
+      "title": "Misión 094: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 094 en el track curricular.",
+      "duration": 57,
       "prerequisiteIds": [
         "ac-093"
       ],
       "concepts": [
-        "Supervisión",
-        "bancaria"
+        "Excel"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-095",
-      "title": "Misión: Cumplimiento Normativo",
-      "objective": "Dominar los conceptos clave de cumplimiento normativo aplicados en el track de ia bancaria.",
-      "duration": 32,
+      "title": "Misión 095: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 095 en el track curricular.",
+      "duration": 60,
       "prerequisiteIds": [
         "ac-094"
       ],
       "concepts": [
-        "Cumplimiento",
-        "bancaria"
+        "Finanzas"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-096",
-      "title": "Misión: Auditoría de Procesos",
-      "objective": "Dominar los conceptos clave de auditoría de procesos aplicados en el track de ia bancaria.",
-      "duration": 35,
+      "title": "Misión 096: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 096 en el track curricular.",
+      "duration": 63,
       "prerequisiteIds": [
         "ac-095"
       ],
       "concepts": [
-        "Auditoría",
-        "bancaria"
+        "IA"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-097",
-      "title": "Misión: Análisis Crediticio",
-      "objective": "Dominar los conceptos clave de análisis crediticio aplicados en el track de ia bancaria.",
-      "duration": 38,
+      "title": "Misión 097: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 097 en el track curricular.",
+      "duration": 66,
       "prerequisiteIds": [
         "ac-096"
       ],
       "concepts": [
-        "Análisis",
-        "bancaria"
+        "Prompt"
       ],
-      "difficulty": "Intermedio",
+      "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-098",
-      "title": "Misión: Reportes regulatorios",
-      "objective": "Dominar los conceptos clave de reportes regulatorios aplicados en el track de ia bancaria.",
-      "duration": 41,
+      "title": "Misión 098: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 098 en el track curricular.",
+      "duration": 69,
       "prerequisiteIds": [
         "ac-097"
       ],
       "concepts": [
-        "Reportes",
-        "bancaria"
+        "LLM"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-099",
-      "title": "Misión: Privacidad financiera",
-      "objective": "Dominar los conceptos clave de privacidad financiera aplicados en el track de ia bancaria.",
-      "duration": 44,
+      "title": "Misión 099: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 099 en el track curricular.",
+      "duration": 72,
       "prerequisiteIds": [
         "ac-098"
       ],
       "concepts": [
-        "Privacidad",
-        "bancaria"
+        "Gobernanza"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null
     },
     {
       "id": "ac-100",
-      "title": "Misión: Regulación",
-      "objective": "Dominar los conceptos clave de regulación aplicados en el track de ia bancaria.",
-      "duration": 47,
+      "title": "Misión 100: Desarrollo Avanzado",
+      "objective": "Objetivo pedagógico de la misión 100 en el track curricular.",
+      "duration": 75,
       "prerequisiteIds": [
         "ac-099"
       ],
       "concepts": [
-        "Regulación",
-        "bancaria"
+        "Agentes"
       ],
       "difficulty": "Avanzado",
       "projectAssociated": null

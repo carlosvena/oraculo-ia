@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-embeddings-007",
-    "number": "007",
-    "title": "Embeddings: significado como distancia",
-    "duration": 55,
+    "title": "Misión 007: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 007.",
+    "duration": 49,
+    "version": 1,
     "concepts": [
-      "Embedding",
-      "Vector",
-      "Similitud"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Interpretar embeddings y diseñar una búsqueda semántica conceptual.",
+    "prerequisiteIds": [
+      "lesson-transformers-006"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Convertir significado en una herramienta medible, sin confundir proximidad con verdad."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 007 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "Búsqueda semántica, recomendaciones, clustering y RAG dependen de representaciones vectoriales."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "Un embedding es una lista de números aprendida que ubica contenido en un espacio. Elementos usados de forma parecida tienden a quedar cerca."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Es un mapa con muchas dimensiones: no marca latitud y longitud, sino rasgos latentes como tema, tono o función."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "'Cancelar tarjeta robada' puede encontrar 'bloqueo urgente de plástico' aunque no compartan palabras exactas."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Un buscador interno puede recuperar procedimientos por intención. Debe filtrar permisos y mostrar la fuente original."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Creá seis consultas distintas para tres procedimientos y agrupá manualmente cuáles deberían quedar cerca."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Diseñá criterios de aceptación para un buscador semántico bancario: relevancia, seguridad y trazabilidad."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Creer que cercanía implica exactitud, mezclar datos incompatibles o evaluar solo con ejemplos favorables."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "Los embeddings representan similitud útil. Recuperan candidatos; no certifican hechos ni autorizaciones."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "Un embedding es...",
+        "Pregunta 1 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Una representación vectorial",
-          "Una base SQL",
-          "Una respuesta verificada"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Dos textos cercanos son necesariamente verdaderos.",
+        "Pregunta 2 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Sí",
-          "No",
-          "Si son largos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        1
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La búsqueda semántica compara...",
+        "Pregunta 3 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Significado aproximado",
-          "Solo caracteres",
-          "Contraseñas"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un uso adecuado es...",
+        "Pregunta 4 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Recuperar documentos candidatos",
-          "Autorizar créditos sin control",
-          "Firmar contratos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La similitud suele medirse con...",
+        "Pregunta 5 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Distancia o coseno",
-          "Fecha del archivo",
-          "Tamaño de pantalla"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Antes de mostrar resultados internos hay que...",
+        "Pregunta 6 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Aplicar permisos",
-          "Traducir todo",
-          "Borrar fuentes"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una evaluación seria incluye...",
+        "Pregunta 7 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Casos difíciles y falsos positivos",
-          "Solo demos exitosas",
-          "Una consulta"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Embedding y generación son...",
+        "Pregunta 8 de la Misión 007: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Capacidades distintas",
-          "Sinónimos",
-          "Siempre online"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

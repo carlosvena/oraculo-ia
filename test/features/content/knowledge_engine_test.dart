@@ -50,7 +50,7 @@ void main() {
 
     test('Verifies career paths, projects and prompt exercises load correctly', () {
       expect(engine.careerPaths, hasLength(8));
-      expect(engine.projects, hasLength(5));
+      expect(engine.projects, hasLength(15));
       expect(engine.promptExercises, hasLength(20));
 
       final firstPath = engine.careerPaths.first;

@@ -137,6 +137,20 @@ class CourseDetailsScreen extends StatelessWidget {
                       'Duración: ${mission.durationMinutes} min · Dificultad: ${mission.difficulty}',
                       style: const TextStyle(color: Colors.grey, fontSize: 11),
                     ),
+                    if (mission.prerequisiteIds.isNotEmpty) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        'Requisitos: ${mission.prerequisiteIds.join(", ")}',
+                        style: const TextStyle(color: Colors.blueGrey, fontSize: 10),
+                      ),
+                    ],
+                    if (mission.projectAssociated != null) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        'Proyecto Final: ${mission.projectAssociated}',
+                        style: const TextStyle(color: Colors.deepPurple, fontSize: 10, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ],
                 ),
                 isThreeLine: true,

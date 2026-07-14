@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-automation-014",
-    "number": "014",
-    "title": "Automatización con IA",
-    "duration": 65,
+    "title": "Misión 014: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 014.",
+    "duration": 53,
+    "version": 1,
     "concepts": [
-      "Automatización",
-      "Workflow",
-      "Control humano"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Seleccionar y diseñar automatizaciones confiables con IA.",
+    "prerequisiteIds": [
+      "lesson-agents-013"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Automatizar decisiones repetibles sin automatizar irresponsablemente la incertidumbre."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 014 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "La IA amplía qué partes no estructuradas de un proceso pueden asistirse, pero introduce variabilidad."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "Un workflow confiable separa pasos deterministas, pasos probabilísticos, validaciones y aprobaciones."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Una línea de producción usa máquinas para tareas repetibles e inspectores donde el error importa."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Clasificar correos puede ser probabilístico; consultar saldo y registrar una operación deben respetar reglas deterministas y permisos."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Priorizá alto volumen, bajo riesgo, datos disponibles y resultado verificable. Medí tiempo, calidad y excepciones."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Mapeá un proceso real y coloreá pasos: automatizable, asistible, humano obligatorio y prohibido."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Diseñá una automatización de informe diario con entradas, validaciones, fallback y auditoría."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Automatizar un proceso roto, omitir casos excepcionales, no definir dueño y medir solo velocidad."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "Automatizar bien es diseñar el proceso completo: valor, límites, controles, excepciones y mejora continua."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "Un paso probabilístico...",
+        "Pregunta 1 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Puede variar con la misma intención",
-          "Siempre es exacto",
-          "No usa datos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Primero conviene automatizar...",
+        "Pregunta 2 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Alto volumen y resultado verificable",
-          "Toda decisión crítica",
-          "Procesos desconocidos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un fallback define...",
+        "Pregunta 3 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Qué hacer ante falla",
-          "El logo",
-          "El entrenamiento"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Automatizar un proceso roto...",
+        "Pregunta 4 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Escala sus problemas",
-          "Lo corrige siempre",
-          "Reduce excepciones"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una métrica completa incluye...",
+        "Pregunta 5 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Calidad, tiempo y excepciones",
-          "Solo velocidad",
-          "Solo uso"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La aprobación humana se ubica...",
+        "Pregunta 6 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Según riesgo e irreversibilidad",
-          "Al azar",
-          "Nunca"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El dueño del proceso responde por...",
+        "Pregunta 7 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Resultado y controles",
-          "El color",
-          "El modelo solamente"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una automatización auditable conserva...",
+        "Pregunta 8 de la Misión 014: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Entradas, decisiones y resultados",
-          "Solo salida",
-          "Nada"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

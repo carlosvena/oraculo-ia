@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-hallucinations-009",
-    "number": "009",
-    "title": "Alucinaciones y verificación",
-    "duration": 70,
+    "title": "Misión 009: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 009.",
+    "duration": 63,
+    "version": 1,
     "concepts": [
-      "Alucinación",
-      "Verificación",
-      "Fuente"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Diseñar un protocolo de verificación proporcional al riesgo.",
+    "prerequisiteIds": [
+      "lesson-training-008"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Pasar de confiar en textos convincentes a operar con evidencia."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 009 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "Un modelo optimiza una continuación plausible; puede producir datos, citas o conclusiones falsas con tono seguro."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "Alucinación es contenido no sustentado por la realidad o las fuentes disponibles. No siempre es absurda: suele ser verosímil."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Es un expositor brillante que completa huecos para no quedarse callado. Fluidez no equivale a evidencia."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Una respuesta cita una circular inexistente. El control correcto abre la fuente oficial, verifica vigencia y contrasta el alcance."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Clasificá el riesgo: bajo para ideas, medio para resúmenes, alto para decisiones financieras, legales o personales."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Auditá una respuesta: separá afirmaciones, marcá verificables, buscá fuente primaria y registrá discrepancias."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Creá una lista de control previa al envío de un informe bancario asistido por IA."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Pedir 'no alucines', aceptar enlaces por su formato, verificar con otra respuesta del mismo modelo o ignorar fechas."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "La confianza se diseña con fuentes, trazabilidad, controles humanos y acciones proporcionales al riesgo."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "Una respuesta fluida es evidencia.",
+        "Pregunta 1 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Si es extensa"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La verificación fuerte usa...",
+        "Pregunta 2 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Fuente primaria vigente",
-          "Otra redacción",
-          "Más adjetivos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El riesgo define...",
+        "Pregunta 3 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "La intensidad del control",
-          "El color de pantalla",
-          "La cantidad de emojis"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "'No inventes' elimina alucinaciones.",
+        "Pregunta 4 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "En modo intensivo"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una cita debe comprobar...",
+        "Pregunta 5 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Existencia, contexto y vigencia",
-          "Solo URL",
-          "Solo autor"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Verificar con el mismo modelo es suficiente.",
+        "Pregunta 6 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Si repite"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "En alto riesgo corresponde...",
+        "Pregunta 7 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Revisión humana y evidencia",
-          "Publicar rápido",
-          "Ocultar incertidumbre"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Trazabilidad significa...",
+        "Pregunta 8 de la Misión 009: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Poder reconstruir fuentes y decisiones",
-          "Guardar colores",
-          "Usar más tokens"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

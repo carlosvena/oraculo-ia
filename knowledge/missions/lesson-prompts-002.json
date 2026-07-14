@@ -2,182 +2,158 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-prompts-002",
-    "missionId": "mission-prompts-002",
+    "title": "Misión 002: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 002.",
+    "duration": 59,
     "version": 1,
-    "title": "Anatomía de un prompt profesional",
-    "objective": "Diseñar instrucciones que produzcan resultados útiles, verificables y adaptados al contexto.",
-    "duration": 40,
-    "difficulty": "Intensiva",
     "concepts": [
-      "Prompt",
-      "LLM",
-      "Token",
-      "Ventana de contexto",
-      "Agente de IA"
+      "IA",
+      "Prompt"
     ],
-    "blocks": [
-      {
-        "type": "title",
-        "title": "Misión 002",
-        "content": "Anatomía de un prompt profesional",
-        "prompt": "Una misión intensiva para transformar pedidos vagos en instrucciones de trabajo."
-      },
-      {
-        "type": "text",
-        "title": "Contexto",
-        "content": "Los equipos adoptan IA más rápido de lo que aprenden a dirigirla. La diferencia entre probar y producir valor suele estar en la calidad de la instrucción."
-      },
-      {
-        "type": "text",
-        "title": "Objetivo de aprendizaje",
-        "content": "Vas a construir prompts con propósito, contexto, tarea, restricciones, formato y criterios de calidad."
-      },
-      {
-        "type": "text",
-        "title": "Por qué importa",
-        "content": "Un prompt profesional reduce ambigüedad, facilita evaluar el resultado y permite repetir un proceso con otras personas."
-      },
-      {
-        "type": "text",
-        "title": "Explicación rigurosa",
-        "content": "Un prompt es una especificación operativa. Define el resultado buscado, aporta contexto relevante, delimita la tarea, fija restricciones, solicita un formato y declara cómo juzgar calidad. No controla totalmente al modelo: modifica las probabilidades de respuesta dentro de su ventana de contexto."
-      },
-      {
-        "type": "example",
-        "title": "Tres ejemplos progresivos",
-        "content": "1. Resumí este informe. 2. Resumí el informe para un supervisor en cinco puntos. 3. Identificá riesgos, evidencia y decisiones; separá hechos de inferencias y marcá datos faltantes.",
-        "items": [
-          "Pedido básico: intención.",
-          "Pedido útil: audiencia y formato.",
-          "Pedido profesional: criterios y control de incertidumbre."
-        ]
-      },
-      {
-        "type": "analogy",
-        "title": "Pobre vs. profesional",
-        "content": "Pobre: «Analizá estos reclamos». Profesional: «Actuá como analista de calidad. Clasificá los reclamos por causa, citá evidencia, no inventes datos y entregá una tabla con prioridad y acción sugerida»."
-      },
-      {
-        "type": "challenge",
-        "title": "Laboratorio",
-        "content": "Corregí el prompt deficiente: «Haceme un informe de los clientes». Elegí la mejora profesional.",
-        "questions": [
-          {
-            "question": "¿Cuál versión es más sólida?",
-            "options": [
-              "Hacelo mejor y rápido.",
-              "Analizá reclamos del mes para el supervisor; agrupá causas, citá evidencia, señalá datos faltantes y entregá tabla con prioridad.",
-              "Escribí muchas páginas."
-            ],
-            "correct": 1,
-            "explanation": "Define datos, audiencia, tarea, formato y criterio de calidad."
-          }
-        ]
-      },
-      {
-        "type": "quiz",
-        "title": "Evaluación intensiva",
-        "content": "Ocho preguntas de dificultad creciente.",
-        "questions": [
-          {
-            "question": "¿Qué reduce primero la ambigüedad?",
-            "options": [
-              "Propósito claro.",
-              "Más adjetivos.",
-              "Mayúsculas."
-            ],
-            "correct": 0,
-            "explanation": "El propósito orienta todas las decisiones posteriores."
-          },
-          {
-            "question": "¿Qué contexto conviene incluir?",
-            "options": [
-              "Todo lo disponible.",
-              "El relevante para la tarea.",
-              "Ninguno."
-            ],
-            "correct": 1,
-            "explanation": "Contexto relevante mejora señal y evita ruido."
-          },
-          {
-            "question": "¿Para qué sirve pedir formato?",
-            "options": [
-              "Decorar.",
-              "Gastar tokens.",
-              "Hacer el resultado utilizable y comparable."
-            ],
-            "correct": 2,
-            "explanation": "Un formato explícito facilita uso y evaluación."
-          },
-          {
-            "question": "¿Cómo tratar datos faltantes?",
-            "options": [
-              "Pedir que los marque.",
-              "Permitir que invente.",
-              "Ignorarlos siempre."
-            ],
-            "correct": 0,
-            "explanation": "Declarar incertidumbre evita falsa precisión."
-          },
-          {
-            "question": "¿Qué ocupa la ventana de contexto?",
-            "options": [
-              "Solo la respuesta.",
-              "Instrucciones, datos e historial relevante.",
-              "La batería."
-            ],
-            "correct": 1,
-            "explanation": "El modelo procesa tokens de entrada y salida dentro de un límite."
-          },
-          {
-            "question": "¿Prompt largo significa mejor?",
-            "options": [
-              "Siempre.",
-              "Nunca puede funcionar.",
-              "No; debe ser suficiente y relevante."
-            ],
-            "correct": 2,
-            "explanation": "Longitud sin propósito agrega ruido y costo."
-          },
-          {
-            "question": "¿Qué vuelve repetible un prompt?",
-            "options": [
-              "Criterios verificables.",
-              "Tono misterioso.",
-              "Una sola palabra."
-            ],
-            "correct": 0,
-            "explanation": "Los criterios permiten comparar ejecuciones."
-          },
-          {
-            "question": "¿Qué agrega un agente?",
-            "options": [
-              "Solo texto más largo.",
-              "Capacidad de planificar, usar herramientas y actuar con controles.",
-              "Verdad garantizada."
-            ],
-            "correct": 1,
-            "explanation": "Un agente combina modelo, objetivos, estado, herramientas y límites."
-          }
-        ]
-      },
-      {
-        "type": "challenge",
-        "title": "Desafío: supervisor bancario",
-        "content": "Diseñá una instrucción para revisar reclamos por débitos desconocidos. Debe proteger datos, separar hechos de hipótesis, priorizar riesgo y proponer próximos pasos auditables.",
-        "prompt": "Antes de continuar, contrastá tu diseño con: propósito, contexto, tarea, restricciones, formato y criterios."
-      },
-      {
-        "type": "summary",
-        "title": "Resumen ejecutivo",
-        "content": "Un prompt profesional es una especificación evaluable, no una frase mágica. Reduce ambigüedad y explicita calidad, límites e incertidumbre."
-      },
-      {
-        "type": "text",
-        "title": "LLM, contexto, tokens y agentes",
-        "content": "El LLM procesa el prompt como tokens dentro de una ventana de contexto. Un agente agrega planificación, memoria operativa y herramientas, pero sigue necesitando instrucciones, permisos y controles claros.",
-        "prompt": "Leer más: Prompt · LLM · Token · Ventana de contexto · Agente de IA"
-      }
+    "prerequisiteIds": [
+      "lesson-models-001"
+    ],
+    "sections": [
+      [
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 002 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
+      ],
+      [
+        "text",
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
+      ],
+      [
+        "text",
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
+      ],
+      [
+        "analogy",
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
+      ],
+      [
+        "example",
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
+      ],
+      [
+        "text",
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
+      ],
+      [
+        "text",
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
+      ],
+      [
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
+      ]
+    ],
+    "quiz": [
+      [
+        "Pregunta 1 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 2 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 3 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 4 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 5 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 6 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 7 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 8 de la Misión 002: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ]
     ]
   }
 }

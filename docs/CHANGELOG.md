@@ -4,7 +4,26 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 ## Unreleased
 
-- Próximo: Sprints 28 pendiente de definición.
+- Próximo: Sprint 30 pendiente de definición.
+
+## 2.9.0-sprint29 — 2026-07-14
+
+- **CONTIENEDO ACADÉMICO MASIVO**: Expansión masiva offline de 8 cursos, 30 misiones completas con cuestionarios de 8 preguntas, 154 términos relacionados, 34 capítulos de manual y 15 proyectos prácticos de negocio.
+- **Resumen del Universo**: Tarjeta de estadísticas consolidadas en la pantalla de bienvenida.
+- **Novedades de la Versión**: Vista interactiva para navegar directamente al nuevo contenido.
+- **Release Automatizado a OneDrive**: Copia automática de compilaciones y reportes a la carpeta Releases.
+- **Control de Calidad Editorial**: Suite de pruebas epic9_content_test.dart y reporte audit docs/CONTENT_AUDIT_EPIC_9.md.
+
+## 2.8.0-sprint28 — 2026-07-14
+
+- **KNOWLEDGE UNIVERSE**: Nueva pantalla interactiva de navegación de la red de relaciones conceptuales y contenidos offline.
+- **Relaciones Cruzadas**: Panel dinámico que detalla prerrequisitos, desbloqueos, laboratorios y proyectos relacionados de cualquier concepto.
+- **Explorador Secuencial**: Navegador horizontal paso a paso para guiar la exploración jerárquica de temas (e.g. LLM -> Transformer -> Attention).
+- **Concepto del Día**: Tarjeta premium con explicaciones analíticas, analogías e ilustraciones de conceptos destacados.
+- **Desafío del Día**: Retos interactivos offline autogenerados de forma determinista para afinar habilidades sin IA externa.
+- **Línea Temporal de Aprendizaje**: Registro cronológico interactivo de hitos de estudio reales.
+- **Insignias de Maestría**: 5 condecoraciones que validan logros cognitivos y constancia sin centrarse en la gamificación por XP.
+- **Panel Consolidado**: Métricas unificadas de horas de estudio, proyectos, laboratorios, repasos y metas semanales.
 
 ## 2.7.0-sprint27 — 2026-07-13
 

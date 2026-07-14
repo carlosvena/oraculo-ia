@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-mcp-012",
-    "number": "012",
-    "title": "MCP: conectar herramientas con contexto",
-    "duration": 60,
+    "title": "Misión 012: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 012.",
+    "duration": 84,
+    "version": 1,
     "concepts": [
-      "MCP",
-      "Herramienta",
-      "Permiso"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Entender el rol de MCP y diseñar una integración con permisos mínimos.",
+    "prerequisiteIds": [
+      "lesson-rag-011"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Diseñar conexiones útiles sin convertir al modelo en un usuario todopoderoso."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 012 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "Los modelos necesitan acceder de forma estandarizada a recursos y herramientas para actuar sobre sistemas reales."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "MCP define una forma de exponer recursos, prompts y herramientas a clientes compatibles. El protocolo no reemplaza autenticación ni gobierno."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Es un enchufe estándar; que un dispositivo encaje no significa que deba recibir acceso a toda la instalación."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Un servidor puede exponer lectura de procedimientos y otra herramienta separada para crear un borrador, sin permiso para aprobarlo."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Definí operaciones estrechas, validá entradas, registrá llamadas y pedí confirmación para acciones sensibles."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Diseñá tres herramientas: consultar caso, crear borrador y escalar. Especificá entrada, salida y permiso."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Creá un modelo de amenazas para una herramienta que accede a documentos internos."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Confundir estándar con seguridad, ofrecer herramientas demasiado amplias y no tratar el contenido externo como no confiable."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "MCP estandariza conexión; la seguridad surge de identidad, autorización, validación, confirmación y auditoría."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "MCP es principalmente...",
+        "Pregunta 1 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Un protocolo de conexión",
-          "Un modelo",
-          "Una base vectorial"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "MCP reemplaza permisos.",
+        "Pregunta 2 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Solo offline"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una herramienta segura debe ser...",
+        "Pregunta 3 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Estrecha y validada",
-          "Todopoderosa",
-          "Anónima"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una acción sensible requiere...",
+        "Pregunta 4 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Confirmación y auditoría",
-          "Más creatividad",
-          "Menos contexto"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El contenido externo puede contener...",
+        "Pregunta 5 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Instrucciones maliciosas",
-          "Pesos del modelo",
-          "Batería"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un recurso suele ofrecer...",
+        "Pregunta 6 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Datos para leer",
-          "Acciones irreversibles",
-          "Entrenamiento"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El menor privilegio significa...",
+        "Pregunta 7 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Solo acceso necesario",
-          "Acceso administrador",
-          "Sin registros"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una integración madura registra...",
+        "Pregunta 8 de la Misión 012: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Quién hizo qué y cuándo",
-          "Solo errores visuales",
-          "Solo prompts"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

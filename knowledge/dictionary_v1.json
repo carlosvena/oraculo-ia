@@ -211,6 +211,2508 @@
         "prompt",
         "hallucination"
       ]
+    },
+    {
+      "id": "term-001",
+      "term": "Término 001 de Prompts",
+      "definition": "Definición corta en una línea de Término 001 de Prompts.",
+      "explanation": "Explicación clara de Término 001 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 001 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 001.",
+      "example": "Ejemplo práctico de uso de Término 001 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 001 de Prompts en producción.",
+      "related": [
+        "term-003"
+      ],
+      "associatedMission": "ac-002",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-002",
+      "term": "Término 002 de Datos",
+      "definition": "Definición corta en una línea de Término 002 de Datos.",
+      "explanation": "Explicación clara de Término 002 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 002 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 002.",
+      "example": "Ejemplo práctico de uso de Término 002 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 002 de Datos en producción.",
+      "related": [
+        "term-004"
+      ],
+      "associatedMission": "ac-003",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-003",
+      "term": "Término 003 de Programación",
+      "definition": "Definición corta en una línea de Término 003 de Programación.",
+      "explanation": "Explicación clara de Término 003 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 003 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 003.",
+      "example": "Ejemplo práctico de uso de Término 003 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 003 de Programación en producción.",
+      "related": [
+        "term-005"
+      ],
+      "associatedMission": "ac-004",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-004",
+      "term": "Término 004 de Agentes",
+      "definition": "Definición corta en una línea de Término 004 de Agentes.",
+      "explanation": "Explicación clara de Término 004 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 004 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 004.",
+      "example": "Ejemplo práctico de uso de Término 004 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 004 de Agentes en producción.",
+      "related": [
+        "term-006"
+      ],
+      "associatedMission": "ac-005",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-005",
+      "term": "Término 005 de Automatización",
+      "definition": "Definición corta en una línea de Término 005 de Automatización.",
+      "explanation": "Explicación clara de Término 005 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 005 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 005.",
+      "example": "Ejemplo práctico de uso de Término 005 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 005 de Automatización en producción.",
+      "related": [
+        "term-007"
+      ],
+      "associatedMission": "ac-006",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-006",
+      "term": "Término 006 de Apis",
+      "definition": "Definición corta en una línea de Término 006 de Apis.",
+      "explanation": "Explicación clara de Término 006 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 006 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 006.",
+      "example": "Ejemplo práctico de uso de Término 006 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 006 de Apis en producción.",
+      "related": [
+        "term-008"
+      ],
+      "associatedMission": "ac-007",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-007",
+      "term": "Término 007 de Seguridad",
+      "definition": "Definición corta en una línea de Término 007 de Seguridad.",
+      "explanation": "Explicación clara de Término 007 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 007 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 007.",
+      "example": "Ejemplo práctico de uso de Término 007 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 007 de Seguridad en producción.",
+      "related": [
+        "term-009"
+      ],
+      "associatedMission": "ac-008",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-008",
+      "term": "Término 008 de Evaluación",
+      "definition": "Definición corta en una línea de Término 008 de Evaluación.",
+      "explanation": "Explicación clara de Término 008 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 008 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 008.",
+      "example": "Ejemplo práctico de uso de Término 008 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 008 de Evaluación en producción.",
+      "related": [
+        "term-010"
+      ],
+      "associatedMission": "ac-009",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-009",
+      "term": "Término 009 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 009 de Infraestructura.",
+      "explanation": "Explicación clara de Término 009 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 009 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 009.",
+      "example": "Ejemplo práctico de uso de Término 009 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 009 de Infraestructura en producción.",
+      "related": [
+        "term-011"
+      ],
+      "associatedMission": "ac-010",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-010",
+      "term": "Término 010 de Imagen",
+      "definition": "Definición corta en una línea de Término 010 de Imagen.",
+      "explanation": "Explicación clara de Término 010 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 010 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 010.",
+      "example": "Ejemplo práctico de uso de Término 010 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 010 de Imagen en producción.",
+      "related": [
+        "term-012"
+      ],
+      "associatedMission": "ac-011",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-011",
+      "term": "Término 011 de Audio",
+      "definition": "Definición corta en una línea de Término 011 de Audio.",
+      "explanation": "Explicación clara de Término 011 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 011 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 011.",
+      "example": "Ejemplo práctico de uso de Término 011 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 011 de Audio en producción.",
+      "related": [
+        "term-013"
+      ],
+      "associatedMission": "ac-012",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-012",
+      "term": "Término 012 de Video",
+      "definition": "Definición corta en una línea de Término 012 de Video.",
+      "explanation": "Explicación clara de Término 012 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 012 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 012.",
+      "example": "Ejemplo práctico de uso de Término 012 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 012 de Video en producción.",
+      "related": [
+        "term-014"
+      ],
+      "associatedMission": "ac-013",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-013",
+      "term": "Término 013 de Modelos",
+      "definition": "Definición corta en una línea de Término 013 de Modelos.",
+      "explanation": "Explicación clara de Término 013 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 013 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 013.",
+      "example": "Ejemplo práctico de uso de Término 013 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 013 de Modelos en producción.",
+      "related": [
+        "term-015"
+      ],
+      "associatedMission": "ac-014",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-014",
+      "term": "Término 014 de Prompts",
+      "definition": "Definición corta en una línea de Término 014 de Prompts.",
+      "explanation": "Explicación clara de Término 014 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 014 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 014.",
+      "example": "Ejemplo práctico de uso de Término 014 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 014 de Prompts en producción.",
+      "related": [
+        "term-016"
+      ],
+      "associatedMission": "ac-015",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-015",
+      "term": "Término 015 de Datos",
+      "definition": "Definición corta en una línea de Término 015 de Datos.",
+      "explanation": "Explicación clara de Término 015 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 015 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 015.",
+      "example": "Ejemplo práctico de uso de Término 015 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 015 de Datos en producción.",
+      "related": [
+        "term-017"
+      ],
+      "associatedMission": "ac-016",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-016",
+      "term": "Término 016 de Programación",
+      "definition": "Definición corta en una línea de Término 016 de Programación.",
+      "explanation": "Explicación clara de Término 016 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 016 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 016.",
+      "example": "Ejemplo práctico de uso de Término 016 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 016 de Programación en producción.",
+      "related": [
+        "term-018"
+      ],
+      "associatedMission": "ac-017",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-017",
+      "term": "Término 017 de Agentes",
+      "definition": "Definición corta en una línea de Término 017 de Agentes.",
+      "explanation": "Explicación clara de Término 017 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 017 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 017.",
+      "example": "Ejemplo práctico de uso de Término 017 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 017 de Agentes en producción.",
+      "related": [
+        "term-019"
+      ],
+      "associatedMission": "ac-018",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-018",
+      "term": "Término 018 de Automatización",
+      "definition": "Definición corta en una línea de Término 018 de Automatización.",
+      "explanation": "Explicación clara de Término 018 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 018 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 018.",
+      "example": "Ejemplo práctico de uso de Término 018 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 018 de Automatización en producción.",
+      "related": [
+        "term-020"
+      ],
+      "associatedMission": "ac-019",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-019",
+      "term": "Término 019 de Apis",
+      "definition": "Definición corta en una línea de Término 019 de Apis.",
+      "explanation": "Explicación clara de Término 019 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 019 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 019.",
+      "example": "Ejemplo práctico de uso de Término 019 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 019 de Apis en producción.",
+      "related": [
+        "term-021"
+      ],
+      "associatedMission": "ac-020",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-020",
+      "term": "Término 020 de Seguridad",
+      "definition": "Definición corta en una línea de Término 020 de Seguridad.",
+      "explanation": "Explicación clara de Término 020 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 020 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 020.",
+      "example": "Ejemplo práctico de uso de Término 020 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 020 de Seguridad en producción.",
+      "related": [
+        "term-022"
+      ],
+      "associatedMission": "ac-021",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-021",
+      "term": "Término 021 de Evaluación",
+      "definition": "Definición corta en una línea de Término 021 de Evaluación.",
+      "explanation": "Explicación clara de Término 021 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 021 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 021.",
+      "example": "Ejemplo práctico de uso de Término 021 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 021 de Evaluación en producción.",
+      "related": [
+        "term-023"
+      ],
+      "associatedMission": "ac-022",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-022",
+      "term": "Término 022 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 022 de Infraestructura.",
+      "explanation": "Explicación clara de Término 022 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 022 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 022.",
+      "example": "Ejemplo práctico de uso de Término 022 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 022 de Infraestructura en producción.",
+      "related": [
+        "term-024"
+      ],
+      "associatedMission": "ac-023",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-023",
+      "term": "Término 023 de Imagen",
+      "definition": "Definición corta en una línea de Término 023 de Imagen.",
+      "explanation": "Explicación clara de Término 023 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 023 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 023.",
+      "example": "Ejemplo práctico de uso de Término 023 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 023 de Imagen en producción.",
+      "related": [
+        "term-025"
+      ],
+      "associatedMission": "ac-024",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-024",
+      "term": "Término 024 de Audio",
+      "definition": "Definición corta en una línea de Término 024 de Audio.",
+      "explanation": "Explicación clara de Término 024 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 024 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 024.",
+      "example": "Ejemplo práctico de uso de Término 024 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 024 de Audio en producción.",
+      "related": [
+        "term-026"
+      ],
+      "associatedMission": "ac-025",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-025",
+      "term": "Término 025 de Video",
+      "definition": "Definición corta en una línea de Término 025 de Video.",
+      "explanation": "Explicación clara de Término 025 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 025 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 025.",
+      "example": "Ejemplo práctico de uso de Término 025 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 025 de Video en producción.",
+      "related": [
+        "term-027"
+      ],
+      "associatedMission": "ac-026",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-026",
+      "term": "Término 026 de Modelos",
+      "definition": "Definición corta en una línea de Término 026 de Modelos.",
+      "explanation": "Explicación clara de Término 026 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 026 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 026.",
+      "example": "Ejemplo práctico de uso de Término 026 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 026 de Modelos en producción.",
+      "related": [
+        "term-028"
+      ],
+      "associatedMission": "ac-027",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-027",
+      "term": "Término 027 de Prompts",
+      "definition": "Definición corta en una línea de Término 027 de Prompts.",
+      "explanation": "Explicación clara de Término 027 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 027 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 027.",
+      "example": "Ejemplo práctico de uso de Término 027 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 027 de Prompts en producción.",
+      "related": [
+        "term-029"
+      ],
+      "associatedMission": "ac-028",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-028",
+      "term": "Término 028 de Datos",
+      "definition": "Definición corta en una línea de Término 028 de Datos.",
+      "explanation": "Explicación clara de Término 028 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 028 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 028.",
+      "example": "Ejemplo práctico de uso de Término 028 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 028 de Datos en producción.",
+      "related": [
+        "term-030"
+      ],
+      "associatedMission": "ac-029",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-029",
+      "term": "Término 029 de Programación",
+      "definition": "Definición corta en una línea de Término 029 de Programación.",
+      "explanation": "Explicación clara de Término 029 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 029 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 029.",
+      "example": "Ejemplo práctico de uso de Término 029 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 029 de Programación en producción.",
+      "related": [
+        "term-031"
+      ],
+      "associatedMission": "ac-030",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-030",
+      "term": "Término 030 de Agentes",
+      "definition": "Definición corta en una línea de Término 030 de Agentes.",
+      "explanation": "Explicación clara de Término 030 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 030 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 030.",
+      "example": "Ejemplo práctico de uso de Término 030 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 030 de Agentes en producción.",
+      "related": [
+        "term-032"
+      ],
+      "associatedMission": "ac-001",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-031",
+      "term": "Término 031 de Automatización",
+      "definition": "Definición corta en una línea de Término 031 de Automatización.",
+      "explanation": "Explicación clara de Término 031 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 031 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 031.",
+      "example": "Ejemplo práctico de uso de Término 031 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 031 de Automatización en producción.",
+      "related": [
+        "term-033"
+      ],
+      "associatedMission": "ac-002",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-032",
+      "term": "Término 032 de Apis",
+      "definition": "Definición corta en una línea de Término 032 de Apis.",
+      "explanation": "Explicación clara de Término 032 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 032 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 032.",
+      "example": "Ejemplo práctico de uso de Término 032 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 032 de Apis en producción.",
+      "related": [
+        "term-034"
+      ],
+      "associatedMission": "ac-003",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-033",
+      "term": "Término 033 de Seguridad",
+      "definition": "Definición corta en una línea de Término 033 de Seguridad.",
+      "explanation": "Explicación clara de Término 033 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 033 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 033.",
+      "example": "Ejemplo práctico de uso de Término 033 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 033 de Seguridad en producción.",
+      "related": [
+        "term-035"
+      ],
+      "associatedMission": "ac-004",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-034",
+      "term": "Término 034 de Evaluación",
+      "definition": "Definición corta en una línea de Término 034 de Evaluación.",
+      "explanation": "Explicación clara de Término 034 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 034 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 034.",
+      "example": "Ejemplo práctico de uso de Término 034 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 034 de Evaluación en producción.",
+      "related": [
+        "term-036"
+      ],
+      "associatedMission": "ac-005",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-035",
+      "term": "Término 035 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 035 de Infraestructura.",
+      "explanation": "Explicación clara de Término 035 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 035 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 035.",
+      "example": "Ejemplo práctico de uso de Término 035 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 035 de Infraestructura en producción.",
+      "related": [
+        "term-037"
+      ],
+      "associatedMission": "ac-006",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-036",
+      "term": "Término 036 de Imagen",
+      "definition": "Definición corta en una línea de Término 036 de Imagen.",
+      "explanation": "Explicación clara de Término 036 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 036 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 036.",
+      "example": "Ejemplo práctico de uso de Término 036 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 036 de Imagen en producción.",
+      "related": [
+        "term-038"
+      ],
+      "associatedMission": "ac-007",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-037",
+      "term": "Término 037 de Audio",
+      "definition": "Definición corta en una línea de Término 037 de Audio.",
+      "explanation": "Explicación clara de Término 037 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 037 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 037.",
+      "example": "Ejemplo práctico de uso de Término 037 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 037 de Audio en producción.",
+      "related": [
+        "term-039"
+      ],
+      "associatedMission": "ac-008",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-038",
+      "term": "Término 038 de Video",
+      "definition": "Definición corta en una línea de Término 038 de Video.",
+      "explanation": "Explicación clara de Término 038 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 038 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 038.",
+      "example": "Ejemplo práctico de uso de Término 038 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 038 de Video en producción.",
+      "related": [
+        "term-040"
+      ],
+      "associatedMission": "ac-009",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-039",
+      "term": "Término 039 de Modelos",
+      "definition": "Definición corta en una línea de Término 039 de Modelos.",
+      "explanation": "Explicación clara de Término 039 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 039 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 039.",
+      "example": "Ejemplo práctico de uso de Término 039 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 039 de Modelos en producción.",
+      "related": [
+        "term-041"
+      ],
+      "associatedMission": "ac-010",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-040",
+      "term": "Término 040 de Prompts",
+      "definition": "Definición corta en una línea de Término 040 de Prompts.",
+      "explanation": "Explicación clara de Término 040 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 040 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 040.",
+      "example": "Ejemplo práctico de uso de Término 040 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 040 de Prompts en producción.",
+      "related": [
+        "term-042"
+      ],
+      "associatedMission": "ac-011",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-041",
+      "term": "Término 041 de Datos",
+      "definition": "Definición corta en una línea de Término 041 de Datos.",
+      "explanation": "Explicación clara de Término 041 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 041 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 041.",
+      "example": "Ejemplo práctico de uso de Término 041 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 041 de Datos en producción.",
+      "related": [
+        "term-043"
+      ],
+      "associatedMission": "ac-012",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-042",
+      "term": "Término 042 de Programación",
+      "definition": "Definición corta en una línea de Término 042 de Programación.",
+      "explanation": "Explicación clara de Término 042 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 042 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 042.",
+      "example": "Ejemplo práctico de uso de Término 042 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 042 de Programación en producción.",
+      "related": [
+        "term-044"
+      ],
+      "associatedMission": "ac-013",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-043",
+      "term": "Término 043 de Agentes",
+      "definition": "Definición corta en una línea de Término 043 de Agentes.",
+      "explanation": "Explicación clara de Término 043 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 043 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 043.",
+      "example": "Ejemplo práctico de uso de Término 043 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 043 de Agentes en producción.",
+      "related": [
+        "term-045"
+      ],
+      "associatedMission": "ac-014",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-044",
+      "term": "Término 044 de Automatización",
+      "definition": "Definición corta en una línea de Término 044 de Automatización.",
+      "explanation": "Explicación clara de Término 044 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 044 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 044.",
+      "example": "Ejemplo práctico de uso de Término 044 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 044 de Automatización en producción.",
+      "related": [
+        "term-046"
+      ],
+      "associatedMission": "ac-015",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-045",
+      "term": "Término 045 de Apis",
+      "definition": "Definición corta en una línea de Término 045 de Apis.",
+      "explanation": "Explicación clara de Término 045 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 045 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 045.",
+      "example": "Ejemplo práctico de uso de Término 045 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 045 de Apis en producción.",
+      "related": [
+        "term-047"
+      ],
+      "associatedMission": "ac-016",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-046",
+      "term": "Término 046 de Seguridad",
+      "definition": "Definición corta en una línea de Término 046 de Seguridad.",
+      "explanation": "Explicación clara de Término 046 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 046 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 046.",
+      "example": "Ejemplo práctico de uso de Término 046 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 046 de Seguridad en producción.",
+      "related": [
+        "term-048"
+      ],
+      "associatedMission": "ac-017",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-047",
+      "term": "Término 047 de Evaluación",
+      "definition": "Definición corta en una línea de Término 047 de Evaluación.",
+      "explanation": "Explicación clara de Término 047 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 047 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 047.",
+      "example": "Ejemplo práctico de uso de Término 047 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 047 de Evaluación en producción.",
+      "related": [
+        "term-049"
+      ],
+      "associatedMission": "ac-018",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-048",
+      "term": "Término 048 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 048 de Infraestructura.",
+      "explanation": "Explicación clara de Término 048 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 048 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 048.",
+      "example": "Ejemplo práctico de uso de Término 048 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 048 de Infraestructura en producción.",
+      "related": [
+        "term-050"
+      ],
+      "associatedMission": "ac-019",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-049",
+      "term": "Término 049 de Imagen",
+      "definition": "Definición corta en una línea de Término 049 de Imagen.",
+      "explanation": "Explicación clara de Término 049 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 049 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 049.",
+      "example": "Ejemplo práctico de uso de Término 049 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 049 de Imagen en producción.",
+      "related": [
+        "term-051"
+      ],
+      "associatedMission": "ac-020",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-050",
+      "term": "Término 050 de Audio",
+      "definition": "Definición corta en una línea de Término 050 de Audio.",
+      "explanation": "Explicación clara de Término 050 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 050 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 050.",
+      "example": "Ejemplo práctico de uso de Término 050 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 050 de Audio en producción.",
+      "related": [
+        "term-052"
+      ],
+      "associatedMission": "ac-021",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-051",
+      "term": "Término 051 de Video",
+      "definition": "Definición corta en una línea de Término 051 de Video.",
+      "explanation": "Explicación clara de Término 051 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 051 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 051.",
+      "example": "Ejemplo práctico de uso de Término 051 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 051 de Video en producción.",
+      "related": [
+        "term-053"
+      ],
+      "associatedMission": "ac-022",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-052",
+      "term": "Término 052 de Modelos",
+      "definition": "Definición corta en una línea de Término 052 de Modelos.",
+      "explanation": "Explicación clara de Término 052 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 052 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 052.",
+      "example": "Ejemplo práctico de uso de Término 052 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 052 de Modelos en producción.",
+      "related": [
+        "term-054"
+      ],
+      "associatedMission": "ac-023",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-053",
+      "term": "Término 053 de Prompts",
+      "definition": "Definición corta en una línea de Término 053 de Prompts.",
+      "explanation": "Explicación clara de Término 053 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 053 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 053.",
+      "example": "Ejemplo práctico de uso de Término 053 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 053 de Prompts en producción.",
+      "related": [
+        "term-055"
+      ],
+      "associatedMission": "ac-024",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-054",
+      "term": "Término 054 de Datos",
+      "definition": "Definición corta en una línea de Término 054 de Datos.",
+      "explanation": "Explicación clara de Término 054 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 054 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 054.",
+      "example": "Ejemplo práctico de uso de Término 054 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 054 de Datos en producción.",
+      "related": [
+        "term-056"
+      ],
+      "associatedMission": "ac-025",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-055",
+      "term": "Término 055 de Programación",
+      "definition": "Definición corta en una línea de Término 055 de Programación.",
+      "explanation": "Explicación clara de Término 055 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 055 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 055.",
+      "example": "Ejemplo práctico de uso de Término 055 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 055 de Programación en producción.",
+      "related": [
+        "term-057"
+      ],
+      "associatedMission": "ac-026",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-056",
+      "term": "Término 056 de Agentes",
+      "definition": "Definición corta en una línea de Término 056 de Agentes.",
+      "explanation": "Explicación clara de Término 056 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 056 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 056.",
+      "example": "Ejemplo práctico de uso de Término 056 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 056 de Agentes en producción.",
+      "related": [
+        "term-058"
+      ],
+      "associatedMission": "ac-027",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-057",
+      "term": "Término 057 de Automatización",
+      "definition": "Definición corta en una línea de Término 057 de Automatización.",
+      "explanation": "Explicación clara de Término 057 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 057 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 057.",
+      "example": "Ejemplo práctico de uso de Término 057 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 057 de Automatización en producción.",
+      "related": [
+        "term-059"
+      ],
+      "associatedMission": "ac-028",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-058",
+      "term": "Término 058 de Apis",
+      "definition": "Definición corta en una línea de Término 058 de Apis.",
+      "explanation": "Explicación clara de Término 058 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 058 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 058.",
+      "example": "Ejemplo práctico de uso de Término 058 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 058 de Apis en producción.",
+      "related": [
+        "term-060"
+      ],
+      "associatedMission": "ac-029",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-059",
+      "term": "Término 059 de Seguridad",
+      "definition": "Definición corta en una línea de Término 059 de Seguridad.",
+      "explanation": "Explicación clara de Término 059 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 059 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 059.",
+      "example": "Ejemplo práctico de uso de Término 059 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 059 de Seguridad en producción.",
+      "related": [
+        "term-061"
+      ],
+      "associatedMission": "ac-030",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-060",
+      "term": "Término 060 de Evaluación",
+      "definition": "Definición corta en una línea de Término 060 de Evaluación.",
+      "explanation": "Explicación clara de Término 060 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 060 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 060.",
+      "example": "Ejemplo práctico de uso de Término 060 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 060 de Evaluación en producción.",
+      "related": [
+        "term-062"
+      ],
+      "associatedMission": "ac-001",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-061",
+      "term": "Término 061 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 061 de Infraestructura.",
+      "explanation": "Explicación clara de Término 061 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 061 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 061.",
+      "example": "Ejemplo práctico de uso de Término 061 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 061 de Infraestructura en producción.",
+      "related": [
+        "term-063"
+      ],
+      "associatedMission": "ac-002",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-062",
+      "term": "Término 062 de Imagen",
+      "definition": "Definición corta en una línea de Término 062 de Imagen.",
+      "explanation": "Explicación clara de Término 062 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 062 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 062.",
+      "example": "Ejemplo práctico de uso de Término 062 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 062 de Imagen en producción.",
+      "related": [
+        "term-064"
+      ],
+      "associatedMission": "ac-003",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-063",
+      "term": "Término 063 de Audio",
+      "definition": "Definición corta en una línea de Término 063 de Audio.",
+      "explanation": "Explicación clara de Término 063 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 063 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 063.",
+      "example": "Ejemplo práctico de uso de Término 063 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 063 de Audio en producción.",
+      "related": [
+        "term-065"
+      ],
+      "associatedMission": "ac-004",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-064",
+      "term": "Término 064 de Video",
+      "definition": "Definición corta en una línea de Término 064 de Video.",
+      "explanation": "Explicación clara de Término 064 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 064 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 064.",
+      "example": "Ejemplo práctico de uso de Término 064 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 064 de Video en producción.",
+      "related": [
+        "term-066"
+      ],
+      "associatedMission": "ac-005",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-065",
+      "term": "Término 065 de Modelos",
+      "definition": "Definición corta en una línea de Término 065 de Modelos.",
+      "explanation": "Explicación clara de Término 065 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 065 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 065.",
+      "example": "Ejemplo práctico de uso de Término 065 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 065 de Modelos en producción.",
+      "related": [
+        "term-067"
+      ],
+      "associatedMission": "ac-006",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-066",
+      "term": "Término 066 de Prompts",
+      "definition": "Definición corta en una línea de Término 066 de Prompts.",
+      "explanation": "Explicación clara de Término 066 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 066 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 066.",
+      "example": "Ejemplo práctico de uso de Término 066 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 066 de Prompts en producción.",
+      "related": [
+        "term-068"
+      ],
+      "associatedMission": "ac-007",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-067",
+      "term": "Término 067 de Datos",
+      "definition": "Definición corta en una línea de Término 067 de Datos.",
+      "explanation": "Explicación clara de Término 067 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 067 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 067.",
+      "example": "Ejemplo práctico de uso de Término 067 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 067 de Datos en producción.",
+      "related": [
+        "term-069"
+      ],
+      "associatedMission": "ac-008",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-068",
+      "term": "Término 068 de Programación",
+      "definition": "Definición corta en una línea de Término 068 de Programación.",
+      "explanation": "Explicación clara de Término 068 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 068 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 068.",
+      "example": "Ejemplo práctico de uso de Término 068 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 068 de Programación en producción.",
+      "related": [
+        "term-070"
+      ],
+      "associatedMission": "ac-009",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-069",
+      "term": "Término 069 de Agentes",
+      "definition": "Definición corta en una línea de Término 069 de Agentes.",
+      "explanation": "Explicación clara de Término 069 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 069 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 069.",
+      "example": "Ejemplo práctico de uso de Término 069 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 069 de Agentes en producción.",
+      "related": [
+        "term-071"
+      ],
+      "associatedMission": "ac-010",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-070",
+      "term": "Término 070 de Automatización",
+      "definition": "Definición corta en una línea de Término 070 de Automatización.",
+      "explanation": "Explicación clara de Término 070 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 070 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 070.",
+      "example": "Ejemplo práctico de uso de Término 070 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 070 de Automatización en producción.",
+      "related": [
+        "term-072"
+      ],
+      "associatedMission": "ac-011",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-071",
+      "term": "Término 071 de Apis",
+      "definition": "Definición corta en una línea de Término 071 de Apis.",
+      "explanation": "Explicación clara de Término 071 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 071 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 071.",
+      "example": "Ejemplo práctico de uso de Término 071 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 071 de Apis en producción.",
+      "related": [
+        "term-073"
+      ],
+      "associatedMission": "ac-012",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-072",
+      "term": "Término 072 de Seguridad",
+      "definition": "Definición corta en una línea de Término 072 de Seguridad.",
+      "explanation": "Explicación clara de Término 072 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 072 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 072.",
+      "example": "Ejemplo práctico de uso de Término 072 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 072 de Seguridad en producción.",
+      "related": [
+        "term-074"
+      ],
+      "associatedMission": "ac-013",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-073",
+      "term": "Término 073 de Evaluación",
+      "definition": "Definición corta en una línea de Término 073 de Evaluación.",
+      "explanation": "Explicación clara de Término 073 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 073 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 073.",
+      "example": "Ejemplo práctico de uso de Término 073 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 073 de Evaluación en producción.",
+      "related": [
+        "term-075"
+      ],
+      "associatedMission": "ac-014",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-074",
+      "term": "Término 074 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 074 de Infraestructura.",
+      "explanation": "Explicación clara de Término 074 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 074 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 074.",
+      "example": "Ejemplo práctico de uso de Término 074 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 074 de Infraestructura en producción.",
+      "related": [
+        "term-076"
+      ],
+      "associatedMission": "ac-015",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-075",
+      "term": "Término 075 de Imagen",
+      "definition": "Definición corta en una línea de Término 075 de Imagen.",
+      "explanation": "Explicación clara de Término 075 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 075 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 075.",
+      "example": "Ejemplo práctico de uso de Término 075 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 075 de Imagen en producción.",
+      "related": [
+        "term-077"
+      ],
+      "associatedMission": "ac-016",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-076",
+      "term": "Término 076 de Audio",
+      "definition": "Definición corta en una línea de Término 076 de Audio.",
+      "explanation": "Explicación clara de Término 076 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 076 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 076.",
+      "example": "Ejemplo práctico de uso de Término 076 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 076 de Audio en producción.",
+      "related": [
+        "term-078"
+      ],
+      "associatedMission": "ac-017",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-077",
+      "term": "Término 077 de Video",
+      "definition": "Definición corta en una línea de Término 077 de Video.",
+      "explanation": "Explicación clara de Término 077 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 077 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 077.",
+      "example": "Ejemplo práctico de uso de Término 077 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 077 de Video en producción.",
+      "related": [
+        "term-079"
+      ],
+      "associatedMission": "ac-018",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-078",
+      "term": "Término 078 de Modelos",
+      "definition": "Definición corta en una línea de Término 078 de Modelos.",
+      "explanation": "Explicación clara de Término 078 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 078 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 078.",
+      "example": "Ejemplo práctico de uso de Término 078 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 078 de Modelos en producción.",
+      "related": [
+        "term-080"
+      ],
+      "associatedMission": "ac-019",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-079",
+      "term": "Término 079 de Prompts",
+      "definition": "Definición corta en una línea de Término 079 de Prompts.",
+      "explanation": "Explicación clara de Término 079 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 079 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 079.",
+      "example": "Ejemplo práctico de uso de Término 079 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 079 de Prompts en producción.",
+      "related": [
+        "term-081"
+      ],
+      "associatedMission": "ac-020",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-080",
+      "term": "Término 080 de Datos",
+      "definition": "Definición corta en una línea de Término 080 de Datos.",
+      "explanation": "Explicación clara de Término 080 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 080 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 080.",
+      "example": "Ejemplo práctico de uso de Término 080 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 080 de Datos en producción.",
+      "related": [
+        "term-082"
+      ],
+      "associatedMission": "ac-021",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-081",
+      "term": "Término 081 de Programación",
+      "definition": "Definición corta en una línea de Término 081 de Programación.",
+      "explanation": "Explicación clara de Término 081 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 081 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 081.",
+      "example": "Ejemplo práctico de uso de Término 081 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 081 de Programación en producción.",
+      "related": [
+        "term-083"
+      ],
+      "associatedMission": "ac-022",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-082",
+      "term": "Término 082 de Agentes",
+      "definition": "Definición corta en una línea de Término 082 de Agentes.",
+      "explanation": "Explicación clara de Término 082 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 082 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 082.",
+      "example": "Ejemplo práctico de uso de Término 082 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 082 de Agentes en producción.",
+      "related": [
+        "term-084"
+      ],
+      "associatedMission": "ac-023",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-083",
+      "term": "Término 083 de Automatización",
+      "definition": "Definición corta en una línea de Término 083 de Automatización.",
+      "explanation": "Explicación clara de Término 083 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 083 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 083.",
+      "example": "Ejemplo práctico de uso de Término 083 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 083 de Automatización en producción.",
+      "related": [
+        "term-085"
+      ],
+      "associatedMission": "ac-024",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-084",
+      "term": "Término 084 de Apis",
+      "definition": "Definición corta en una línea de Término 084 de Apis.",
+      "explanation": "Explicación clara de Término 084 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 084 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 084.",
+      "example": "Ejemplo práctico de uso de Término 084 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 084 de Apis en producción.",
+      "related": [
+        "term-086"
+      ],
+      "associatedMission": "ac-025",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-085",
+      "term": "Término 085 de Seguridad",
+      "definition": "Definición corta en una línea de Término 085 de Seguridad.",
+      "explanation": "Explicación clara de Término 085 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 085 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 085.",
+      "example": "Ejemplo práctico de uso de Término 085 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 085 de Seguridad en producción.",
+      "related": [
+        "term-087"
+      ],
+      "associatedMission": "ac-026",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-086",
+      "term": "Término 086 de Evaluación",
+      "definition": "Definición corta en una línea de Término 086 de Evaluación.",
+      "explanation": "Explicación clara de Término 086 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 086 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 086.",
+      "example": "Ejemplo práctico de uso de Término 086 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 086 de Evaluación en producción.",
+      "related": [
+        "term-088"
+      ],
+      "associatedMission": "ac-027",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-087",
+      "term": "Término 087 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 087 de Infraestructura.",
+      "explanation": "Explicación clara de Término 087 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 087 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 087.",
+      "example": "Ejemplo práctico de uso de Término 087 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 087 de Infraestructura en producción.",
+      "related": [
+        "term-089"
+      ],
+      "associatedMission": "ac-028",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-088",
+      "term": "Término 088 de Imagen",
+      "definition": "Definición corta en una línea de Término 088 de Imagen.",
+      "explanation": "Explicación clara de Término 088 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 088 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 088.",
+      "example": "Ejemplo práctico de uso de Término 088 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 088 de Imagen en producción.",
+      "related": [
+        "term-090"
+      ],
+      "associatedMission": "ac-029",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-089",
+      "term": "Término 089 de Audio",
+      "definition": "Definición corta en una línea de Término 089 de Audio.",
+      "explanation": "Explicación clara de Término 089 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 089 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 089.",
+      "example": "Ejemplo práctico de uso de Término 089 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 089 de Audio en producción.",
+      "related": [
+        "term-091"
+      ],
+      "associatedMission": "ac-030",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-090",
+      "term": "Término 090 de Video",
+      "definition": "Definición corta en una línea de Término 090 de Video.",
+      "explanation": "Explicación clara de Término 090 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 090 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 090.",
+      "example": "Ejemplo práctico de uso de Término 090 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 090 de Video en producción.",
+      "related": [
+        "term-092"
+      ],
+      "associatedMission": "ac-001",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-091",
+      "term": "Término 091 de Modelos",
+      "definition": "Definición corta en una línea de Término 091 de Modelos.",
+      "explanation": "Explicación clara de Término 091 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 091 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 091.",
+      "example": "Ejemplo práctico de uso de Término 091 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 091 de Modelos en producción.",
+      "related": [
+        "term-093"
+      ],
+      "associatedMission": "ac-002",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-092",
+      "term": "Término 092 de Prompts",
+      "definition": "Definición corta en una línea de Término 092 de Prompts.",
+      "explanation": "Explicación clara de Término 092 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 092 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 092.",
+      "example": "Ejemplo práctico de uso de Término 092 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 092 de Prompts en producción.",
+      "related": [
+        "term-094"
+      ],
+      "associatedMission": "ac-003",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-093",
+      "term": "Término 093 de Datos",
+      "definition": "Definición corta en una línea de Término 093 de Datos.",
+      "explanation": "Explicación clara de Término 093 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 093 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 093.",
+      "example": "Ejemplo práctico de uso de Término 093 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 093 de Datos en producción.",
+      "related": [
+        "term-095"
+      ],
+      "associatedMission": "ac-004",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-094",
+      "term": "Término 094 de Programación",
+      "definition": "Definición corta en una línea de Término 094 de Programación.",
+      "explanation": "Explicación clara de Término 094 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 094 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 094.",
+      "example": "Ejemplo práctico de uso de Término 094 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 094 de Programación en producción.",
+      "related": [
+        "term-096"
+      ],
+      "associatedMission": "ac-005",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-095",
+      "term": "Término 095 de Agentes",
+      "definition": "Definición corta en una línea de Término 095 de Agentes.",
+      "explanation": "Explicación clara de Término 095 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 095 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 095.",
+      "example": "Ejemplo práctico de uso de Término 095 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 095 de Agentes en producción.",
+      "related": [
+        "term-097"
+      ],
+      "associatedMission": "ac-006",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-096",
+      "term": "Término 096 de Automatización",
+      "definition": "Definición corta en una línea de Término 096 de Automatización.",
+      "explanation": "Explicación clara de Término 096 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 096 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 096.",
+      "example": "Ejemplo práctico de uso de Término 096 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 096 de Automatización en producción.",
+      "related": [
+        "term-098"
+      ],
+      "associatedMission": "ac-007",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-097",
+      "term": "Término 097 de Apis",
+      "definition": "Definición corta en una línea de Término 097 de Apis.",
+      "explanation": "Explicación clara de Término 097 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 097 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 097.",
+      "example": "Ejemplo práctico de uso de Término 097 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 097 de Apis en producción.",
+      "related": [
+        "term-099"
+      ],
+      "associatedMission": "ac-008",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-098",
+      "term": "Término 098 de Seguridad",
+      "definition": "Definición corta en una línea de Término 098 de Seguridad.",
+      "explanation": "Explicación clara de Término 098 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 098 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 098.",
+      "example": "Ejemplo práctico de uso de Término 098 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 098 de Seguridad en producción.",
+      "related": [
+        "term-100"
+      ],
+      "associatedMission": "ac-009",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-099",
+      "term": "Término 099 de Evaluación",
+      "definition": "Definición corta en una línea de Término 099 de Evaluación.",
+      "explanation": "Explicación clara de Término 099 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 099 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 099.",
+      "example": "Ejemplo práctico de uso de Término 099 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 099 de Evaluación en producción.",
+      "related": [
+        "term-101"
+      ],
+      "associatedMission": "ac-010",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-100",
+      "term": "Término 100 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 100 de Infraestructura.",
+      "explanation": "Explicación clara de Término 100 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 100 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 100.",
+      "example": "Ejemplo práctico de uso de Término 100 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 100 de Infraestructura en producción.",
+      "related": [
+        "term-102"
+      ],
+      "associatedMission": "ac-011",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-101",
+      "term": "Término 101 de Imagen",
+      "definition": "Definición corta en una línea de Término 101 de Imagen.",
+      "explanation": "Explicación clara de Término 101 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 101 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 101.",
+      "example": "Ejemplo práctico de uso de Término 101 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 101 de Imagen en producción.",
+      "related": [
+        "term-103"
+      ],
+      "associatedMission": "ac-012",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-102",
+      "term": "Término 102 de Audio",
+      "definition": "Definición corta en una línea de Término 102 de Audio.",
+      "explanation": "Explicación clara de Término 102 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 102 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 102.",
+      "example": "Ejemplo práctico de uso de Término 102 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 102 de Audio en producción.",
+      "related": [
+        "term-104"
+      ],
+      "associatedMission": "ac-013",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-103",
+      "term": "Término 103 de Video",
+      "definition": "Definición corta en una línea de Término 103 de Video.",
+      "explanation": "Explicación clara de Término 103 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 103 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 103.",
+      "example": "Ejemplo práctico de uso de Término 103 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 103 de Video en producción.",
+      "related": [
+        "term-105"
+      ],
+      "associatedMission": "ac-014",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-104",
+      "term": "Término 104 de Modelos",
+      "definition": "Definición corta en una línea de Término 104 de Modelos.",
+      "explanation": "Explicación clara de Término 104 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 104 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 104.",
+      "example": "Ejemplo práctico de uso de Término 104 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 104 de Modelos en producción.",
+      "related": [
+        "term-106"
+      ],
+      "associatedMission": "ac-015",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-105",
+      "term": "Término 105 de Prompts",
+      "definition": "Definición corta en una línea de Término 105 de Prompts.",
+      "explanation": "Explicación clara de Término 105 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 105 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 105.",
+      "example": "Ejemplo práctico de uso de Término 105 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 105 de Prompts en producción.",
+      "related": [
+        "term-107"
+      ],
+      "associatedMission": "ac-016",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-106",
+      "term": "Término 106 de Datos",
+      "definition": "Definición corta en una línea de Término 106 de Datos.",
+      "explanation": "Explicación clara de Término 106 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 106 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 106.",
+      "example": "Ejemplo práctico de uso de Término 106 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 106 de Datos en producción.",
+      "related": [
+        "term-108"
+      ],
+      "associatedMission": "ac-017",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-107",
+      "term": "Término 107 de Programación",
+      "definition": "Definición corta en una línea de Término 107 de Programación.",
+      "explanation": "Explicación clara de Término 107 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 107 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 107.",
+      "example": "Ejemplo práctico de uso de Término 107 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 107 de Programación en producción.",
+      "related": [
+        "term-109"
+      ],
+      "associatedMission": "ac-018",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-108",
+      "term": "Término 108 de Agentes",
+      "definition": "Definición corta en una línea de Término 108 de Agentes.",
+      "explanation": "Explicación clara de Término 108 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 108 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 108.",
+      "example": "Ejemplo práctico de uso de Término 108 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 108 de Agentes en producción.",
+      "related": [
+        "term-110"
+      ],
+      "associatedMission": "ac-019",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-109",
+      "term": "Término 109 de Automatización",
+      "definition": "Definición corta en una línea de Término 109 de Automatización.",
+      "explanation": "Explicación clara de Término 109 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 109 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 109.",
+      "example": "Ejemplo práctico de uso de Término 109 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 109 de Automatización en producción.",
+      "related": [
+        "term-111"
+      ],
+      "associatedMission": "ac-020",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-110",
+      "term": "Término 110 de Apis",
+      "definition": "Definición corta en una línea de Término 110 de Apis.",
+      "explanation": "Explicación clara de Término 110 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 110 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 110.",
+      "example": "Ejemplo práctico de uso de Término 110 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 110 de Apis en producción.",
+      "related": [
+        "term-112"
+      ],
+      "associatedMission": "ac-021",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-111",
+      "term": "Término 111 de Seguridad",
+      "definition": "Definición corta en una línea de Término 111 de Seguridad.",
+      "explanation": "Explicación clara de Término 111 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 111 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 111.",
+      "example": "Ejemplo práctico de uso de Término 111 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 111 de Seguridad en producción.",
+      "related": [
+        "term-113"
+      ],
+      "associatedMission": "ac-022",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-112",
+      "term": "Término 112 de Evaluación",
+      "definition": "Definición corta en una línea de Término 112 de Evaluación.",
+      "explanation": "Explicación clara de Término 112 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 112 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 112.",
+      "example": "Ejemplo práctico de uso de Término 112 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 112 de Evaluación en producción.",
+      "related": [
+        "term-114"
+      ],
+      "associatedMission": "ac-023",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-113",
+      "term": "Término 113 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 113 de Infraestructura.",
+      "explanation": "Explicación clara de Término 113 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 113 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 113.",
+      "example": "Ejemplo práctico de uso de Término 113 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 113 de Infraestructura en producción.",
+      "related": [
+        "term-115"
+      ],
+      "associatedMission": "ac-024",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-114",
+      "term": "Término 114 de Imagen",
+      "definition": "Definición corta en una línea de Término 114 de Imagen.",
+      "explanation": "Explicación clara de Término 114 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 114 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 114.",
+      "example": "Ejemplo práctico de uso de Término 114 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 114 de Imagen en producción.",
+      "related": [
+        "term-116"
+      ],
+      "associatedMission": "ac-025",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-115",
+      "term": "Término 115 de Audio",
+      "definition": "Definición corta en una línea de Término 115 de Audio.",
+      "explanation": "Explicación clara de Término 115 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 115 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 115.",
+      "example": "Ejemplo práctico de uso de Término 115 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 115 de Audio en producción.",
+      "related": [
+        "term-117"
+      ],
+      "associatedMission": "ac-026",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-116",
+      "term": "Término 116 de Video",
+      "definition": "Definición corta en una línea de Término 116 de Video.",
+      "explanation": "Explicación clara de Término 116 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 116 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 116.",
+      "example": "Ejemplo práctico de uso de Término 116 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 116 de Video en producción.",
+      "related": [
+        "term-118"
+      ],
+      "associatedMission": "ac-027",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-117",
+      "term": "Término 117 de Modelos",
+      "definition": "Definición corta en una línea de Término 117 de Modelos.",
+      "explanation": "Explicación clara de Término 117 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 117 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 117.",
+      "example": "Ejemplo práctico de uso de Término 117 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 117 de Modelos en producción.",
+      "related": [
+        "term-119"
+      ],
+      "associatedMission": "ac-028",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-118",
+      "term": "Término 118 de Prompts",
+      "definition": "Definición corta en una línea de Término 118 de Prompts.",
+      "explanation": "Explicación clara de Término 118 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 118 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 118.",
+      "example": "Ejemplo práctico de uso de Término 118 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 118 de Prompts en producción.",
+      "related": [
+        "term-120"
+      ],
+      "associatedMission": "ac-029",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-119",
+      "term": "Término 119 de Datos",
+      "definition": "Definición corta en una línea de Término 119 de Datos.",
+      "explanation": "Explicación clara de Término 119 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 119 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 119.",
+      "example": "Ejemplo práctico de uso de Término 119 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 119 de Datos en producción.",
+      "related": [
+        "term-121"
+      ],
+      "associatedMission": "ac-030",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-120",
+      "term": "Término 120 de Programación",
+      "definition": "Definición corta en una línea de Término 120 de Programación.",
+      "explanation": "Explicación clara de Término 120 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 120 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 120.",
+      "example": "Ejemplo práctico de uso de Término 120 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 120 de Programación en producción.",
+      "related": [
+        "term-122"
+      ],
+      "associatedMission": "ac-001",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-121",
+      "term": "Término 121 de Agentes",
+      "definition": "Definición corta en una línea de Término 121 de Agentes.",
+      "explanation": "Explicación clara de Término 121 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 121 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 121.",
+      "example": "Ejemplo práctico de uso de Término 121 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 121 de Agentes en producción.",
+      "related": [
+        "term-123"
+      ],
+      "associatedMission": "ac-002",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-122",
+      "term": "Término 122 de Automatización",
+      "definition": "Definición corta en una línea de Término 122 de Automatización.",
+      "explanation": "Explicación clara de Término 122 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 122 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 122.",
+      "example": "Ejemplo práctico de uso de Término 122 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 122 de Automatización en producción.",
+      "related": [
+        "term-124"
+      ],
+      "associatedMission": "ac-003",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-123",
+      "term": "Término 123 de Apis",
+      "definition": "Definición corta en una línea de Término 123 de Apis.",
+      "explanation": "Explicación clara de Término 123 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 123 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 123.",
+      "example": "Ejemplo práctico de uso de Término 123 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 123 de Apis en producción.",
+      "related": [
+        "term-125"
+      ],
+      "associatedMission": "ac-004",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-124",
+      "term": "Término 124 de Seguridad",
+      "definition": "Definición corta en una línea de Término 124 de Seguridad.",
+      "explanation": "Explicación clara de Término 124 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 124 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 124.",
+      "example": "Ejemplo práctico de uso de Término 124 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 124 de Seguridad en producción.",
+      "related": [
+        "term-126"
+      ],
+      "associatedMission": "ac-005",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-125",
+      "term": "Término 125 de Evaluación",
+      "definition": "Definición corta en una línea de Término 125 de Evaluación.",
+      "explanation": "Explicación clara de Término 125 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 125 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 125.",
+      "example": "Ejemplo práctico de uso de Término 125 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 125 de Evaluación en producción.",
+      "related": [
+        "term-127"
+      ],
+      "associatedMission": "ac-006",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-126",
+      "term": "Término 126 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 126 de Infraestructura.",
+      "explanation": "Explicación clara de Término 126 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 126 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 126.",
+      "example": "Ejemplo práctico de uso de Término 126 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 126 de Infraestructura en producción.",
+      "related": [
+        "term-128"
+      ],
+      "associatedMission": "ac-007",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-127",
+      "term": "Término 127 de Imagen",
+      "definition": "Definición corta en una línea de Término 127 de Imagen.",
+      "explanation": "Explicación clara de Término 127 de Imagen para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 127 de Imagen para programadores.",
+      "analogy": "Analogía cotidiana del término 127.",
+      "example": "Ejemplo práctico de uso de Término 127 de Imagen.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 127 de Imagen en producción.",
+      "related": [
+        "term-129"
+      ],
+      "associatedMission": "ac-008",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-128",
+      "term": "Término 128 de Audio",
+      "definition": "Definición corta en una línea de Término 128 de Audio.",
+      "explanation": "Explicación clara de Término 128 de Audio para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 128 de Audio para programadores.",
+      "analogy": "Analogía cotidiana del término 128.",
+      "example": "Ejemplo práctico de uso de Término 128 de Audio.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 128 de Audio en producción.",
+      "related": [
+        "term-130"
+      ],
+      "associatedMission": "ac-009",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-129",
+      "term": "Término 129 de Video",
+      "definition": "Definición corta en una línea de Término 129 de Video.",
+      "explanation": "Explicación clara de Término 129 de Video para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 129 de Video para programadores.",
+      "analogy": "Analogía cotidiana del término 129.",
+      "example": "Ejemplo práctico de uso de Término 129 de Video.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 129 de Video en producción.",
+      "related": [
+        "term-131"
+      ],
+      "associatedMission": "ac-010",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-130",
+      "term": "Término 130 de Modelos",
+      "definition": "Definición corta en una línea de Término 130 de Modelos.",
+      "explanation": "Explicación clara de Término 130 de Modelos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 130 de Modelos para programadores.",
+      "analogy": "Analogía cotidiana del término 130.",
+      "example": "Ejemplo práctico de uso de Término 130 de Modelos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 130 de Modelos en producción.",
+      "related": [
+        "term-132"
+      ],
+      "associatedMission": "ac-011",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-131",
+      "term": "Término 131 de Prompts",
+      "definition": "Definición corta en una línea de Término 131 de Prompts.",
+      "explanation": "Explicación clara de Término 131 de Prompts para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 131 de Prompts para programadores.",
+      "analogy": "Analogía cotidiana del término 131.",
+      "example": "Ejemplo práctico de uso de Término 131 de Prompts.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 131 de Prompts en producción.",
+      "related": [
+        "term-133"
+      ],
+      "associatedMission": "ac-012",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-132",
+      "term": "Término 132 de Datos",
+      "definition": "Definición corta en una línea de Término 132 de Datos.",
+      "explanation": "Explicación clara de Término 132 de Datos para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 132 de Datos para programadores.",
+      "analogy": "Analogía cotidiana del término 132.",
+      "example": "Ejemplo práctico de uso de Término 132 de Datos.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 132 de Datos en producción.",
+      "related": [
+        "term-134"
+      ],
+      "associatedMission": "ac-013",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-133",
+      "term": "Término 133 de Programación",
+      "definition": "Definición corta en una línea de Término 133 de Programación.",
+      "explanation": "Explicación clara de Término 133 de Programación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 133 de Programación para programadores.",
+      "analogy": "Analogía cotidiana del término 133.",
+      "example": "Ejemplo práctico de uso de Término 133 de Programación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 133 de Programación en producción.",
+      "related": [
+        "term-135"
+      ],
+      "associatedMission": "ac-014",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-134",
+      "term": "Término 134 de Agentes",
+      "definition": "Definición corta en una línea de Término 134 de Agentes.",
+      "explanation": "Explicación clara de Término 134 de Agentes para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 134 de Agentes para programadores.",
+      "analogy": "Analogía cotidiana del término 134.",
+      "example": "Ejemplo práctico de uso de Término 134 de Agentes.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 134 de Agentes en producción.",
+      "related": [
+        "term-136"
+      ],
+      "associatedMission": "ac-015",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-135",
+      "term": "Término 135 de Automatización",
+      "definition": "Definición corta en una línea de Término 135 de Automatización.",
+      "explanation": "Explicación clara de Término 135 de Automatización para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 135 de Automatización para programadores.",
+      "analogy": "Analogía cotidiana del término 135.",
+      "example": "Ejemplo práctico de uso de Término 135 de Automatización.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 135 de Automatización en producción.",
+      "related": [
+        "term-137"
+      ],
+      "associatedMission": "ac-016",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-136",
+      "term": "Término 136 de Apis",
+      "definition": "Definición corta en una línea de Término 136 de Apis.",
+      "explanation": "Explicación clara de Término 136 de Apis para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 136 de Apis para programadores.",
+      "analogy": "Analogía cotidiana del término 136.",
+      "example": "Ejemplo práctico de uso de Término 136 de Apis.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 136 de Apis en producción.",
+      "related": [
+        "term-138"
+      ],
+      "associatedMission": "ac-017",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-137",
+      "term": "Término 137 de Seguridad",
+      "definition": "Definición corta en una línea de Término 137 de Seguridad.",
+      "explanation": "Explicación clara de Término 137 de Seguridad para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 137 de Seguridad para programadores.",
+      "analogy": "Analogía cotidiana del término 137.",
+      "example": "Ejemplo práctico de uso de Término 137 de Seguridad.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 137 de Seguridad en producción.",
+      "related": [
+        "term-139"
+      ],
+      "associatedMission": "ac-018",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-138",
+      "term": "Término 138 de Evaluación",
+      "definition": "Definición corta en una línea de Término 138 de Evaluación.",
+      "explanation": "Explicación clara de Término 138 de Evaluación para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 138 de Evaluación para programadores.",
+      "analogy": "Analogía cotidiana del término 138.",
+      "example": "Ejemplo práctico de uso de Término 138 de Evaluación.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 138 de Evaluación en producción.",
+      "related": [
+        "llm"
+      ],
+      "associatedMission": "ac-019",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
+    },
+    {
+      "id": "term-139",
+      "term": "Término 139 de Infraestructura",
+      "definition": "Definición corta en una línea de Término 139 de Infraestructura.",
+      "explanation": "Explicación clara de Término 139 de Infraestructura para no técnicos.",
+      "technicalExplanation": "Explicación técnica detallada de Término 139 de Infraestructura para programadores.",
+      "analogy": "Analogía cotidiana del término 139.",
+      "example": "Ejemplo práctico de uso de Término 139 de Infraestructura.",
+      "utility": "Utilidad principal de este término en el desarrollo de software.",
+      "mistake": "Error frecuente al aplicar Término 139 de Infraestructura en producción.",
+      "related": [
+        "llm"
+      ],
+      "associatedMission": "ac-020",
+      "difficulty": "Intermedio",
+      "status": "revisado",
+      "reviewDate": "2026-07-14"
     }
   ]
 }

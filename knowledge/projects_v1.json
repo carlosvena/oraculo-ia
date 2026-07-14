@@ -1,7 +1,500 @@
-{"schemaVersion":1,"projects":[
-{"id":"bank-reports","title":"Analizador de informes bancarios","objective":"Construir un flujo seguro que sintetice informes y conserve evidencia.","knowledge":["prompts","RAG","verificación","privacidad"],"missions":["009","011","015"],"steps":["Definir alcance y datos permitidos","Diseñar prompt profesional","Crear matriz de verificación","Probar casos adversos","Documentar aprobación humana"],"deliverables":["Prompt versionado","Informe de prueba","Checklist de control","Documento de decisiones"],"success":["Toda cifra tiene fuente","No expone datos personales","Declara faltantes","Requiere aprobación"],"risks":["Alucinación","fuga de datos","norma vencida"],"evaluation":"Defendé qué automatizaste, qué verificaste y qué debe seguir bajo juicio humano."},
-{"id":"excel","title":"Asistente para Excel","objective":"Diseñar un asistente que transforme pedidos en fórmulas y controles reproducibles.","knowledge":["prompts","datos estructurados","verificación"],"missions":["005","009","014"],"steps":["Elegir tarea repetitiva","Definir entradas y salidas","Crear ejemplos","Probar bordes","Documentar uso"],"deliverables":["Plantilla","Prompts","casos de prueba","manual breve"],"success":["Fórmulas verificadas","errores visibles","datos anonimizados"],"risks":["referencias incorrectas","datos sensibles"],"evaluation":"Compará tiempo, exactitud y facilidad de auditoría."},
-{"id":"prompt-library","title":"Biblioteca profesional de prompts","objective":"Crear una colección mantenible de prompts probados.","knowledge":["contexto","tokens","evaluación"],"missions":["002","004","005"],"steps":["Definir taxonomía","Crear plantilla","Versionar ejemplos","Evaluar resultados","Publicar guía"],"deliverables":["20 prompts","fichas de uso","historial de cambios"],"success":["Objetivo explícito","casos probados","límites documentados"],"risks":["prompts obsoletos","uso fuera de contexto"],"evaluation":"Explicá por qué cada plantilla funciona y cuándo no usarla."},
-{"id":"model-comparison","title":"Comparador práctico de modelos","objective":"Elegir modelos por evidencia y tarea, no por marca.","knowledge":["modelos","privacidad","benchmarks"],"missions":["009","010","015"],"steps":["Definir tareas","Crear rúbrica","Ejecutar casos iguales","Registrar resultados","Justificar elección"],"deliverables":["Matriz","dataset de prueba","recomendación fechada"],"success":["Criterios ponderados","fuentes vigentes","costo total incluido"],"risks":["datos desactualizados","sesgo de selección"],"evaluation":"Defendé una elección distinta para dos niveles de riesgo."},
-{"id":"first-agent","title":"Primer agente conceptual","objective":"Diseñar un agente limitado, observable y recuperable.","knowledge":["agentes","MCP","herramientas","automatización"],"missions":["012","013","014"],"steps":["Definir objetivo","Modelar estados","Limitar herramientas","Crear detenciones","Diseñar auditoría"],"deliverables":["Diagrama","contratos de herramientas","modelo de amenazas","plan de pruebas"],"success":["Límite de pasos","mínimo privilegio","aprobación sensible","fallback"],"risks":["bucle","acción duplicada","prompt injection"],"evaluation":"Simulá una falla y documentá recuperación y aprendizaje."}
-]}
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "bank-reports",
+      "title": "Analizador de informes",
+      "objective": "Objetivo de Analizador de informes: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "001",
+        "002"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "excel",
+      "title": "Asistente para Excel",
+      "objective": "Objetivo de Asistente para Excel: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "003",
+        "004"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "prompt-library",
+      "title": "Biblioteca profesional de prompts",
+      "objective": "Objetivo de Biblioteca profesional de prompts: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "005",
+        "006"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "model-comparison",
+      "title": "Comparador de modelos",
+      "objective": "Objetivo de Comparador de modelos: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "007",
+        "008"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "doc-organizer",
+      "title": "Organizador de documentos",
+      "objective": "Objetivo de Organizador de documentos: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "009",
+        "010"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "summary-system",
+      "title": "Sistema de resúmenes ejecutivos",
+      "objective": "Objetivo de Sistema de resúmenes ejecutivos: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "011",
+        "012"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "meeting-assistant",
+      "title": "Asistente para reuniones",
+      "objective": "Objetivo de Asistente para reuniones: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "013",
+        "014"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "task-automation-proj",
+      "title": "Automatización de tareas repetitivas",
+      "objective": "Objetivo de Automatización de tareas repetitivas: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "015",
+        "016"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "first-agent",
+      "title": "Primer agente conceptual",
+      "objective": "Objetivo de Primer agente conceptual: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "017",
+        "018"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "bank-supervisor",
+      "title": "Asistente de supervisión bancaria",
+      "objective": "Objetivo de Asistente de supervisión bancaria: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "019",
+        "020"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "query-classifier",
+      "title": "Clasificador de consultas",
+      "objective": "Objetivo de Clasificador de consultas: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "021",
+        "022"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "procedures-generator",
+      "title": "Generador de procedimientos",
+      "objective": "Objetivo de Generador de procedimientos: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "023",
+        "024"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "learning-board",
+      "title": "Tablero de aprendizaje",
+      "objective": "Objetivo de Tablero de aprendizaje: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "025",
+        "026"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "personal-knowledge",
+      "title": "Base personal de conocimiento",
+      "objective": "Objetivo de Base personal de conocimiento: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "seguridad"
+      ],
+      "missions": [
+        "027",
+        "028"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    },
+    {
+      "id": "integrator-project",
+      "title": "Proyecto integrador de IA aplicada",
+      "objective": "Objetivo de Proyecto integrador de IA aplicada: Diseñar e implementar soluciones offline.",
+      "knowledge": [
+        "prompts",
+        "verificación",
+        "privacidad"
+      ],
+      "missions": [
+        "029",
+        "030"
+      ],
+      "steps": [
+        "Paso 1: Definir los requerimientos de la plantilla.",
+        "Paso 2: Iterar prompts en el AI Lab.",
+        "Paso 3: Probar mitigación de alucinaciones."
+      ],
+      "deliverables": [
+        "Metaprompt estructurado",
+        "Reporte de rúbrica local",
+        "Ejemplos de validación"
+      ],
+      "success": [
+        "El prompt obtiene score >= 80 en la rúbrica.",
+        "Cero palabras prohibidas en la salida."
+      ],
+      "risks": [
+        "Alucinaciones por falta de delimitadores.",
+        "Exceso de tokens consumidos."
+      ],
+      "evaluation": "Evaluación por rúbrica estructural local de ORÁCULO AI LAB."
+    }
+  ]
+}

@@ -2,140 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-project-015",
-    "number": "015",
-    "title": "Proyecto integrador 1",
-    "duration": 75,
+    "title": "Misión 015: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 015.",
+    "duration": 60,
+    "version": 1,
     "concepts": [
-      "Prompt profesional",
-      "Selección de modelo",
-      "Verificación",
-      "Automatización"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Diseñar una solución completa, justificable y segura para un problema laboral.",
+    "prerequisiteIds": [
+      "lesson-automation-014"
+    ],
     "sections": [
       [
-        "title",
-        "Tu proyecto",
-        "Diseñar un asistente para preparar el informe semanal de un supervisor bancario."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 015 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Contexto",
-        "El informe resume incidentes, tendencias y acciones. Usa datos internos, requiere exactitud y termina en una decisión humana."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Criterios de éxito",
-        "Reducir tiempo sin perder trazabilidad; citar fuentes; proteger datos; separar hechos, inferencias y recomendaciones."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
+      ],
+      [
+        "analogy",
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Prompt profesional",
-        "Definí rol, objetivo, entradas autorizadas, estructura, criterios de evidencia, manejo de faltantes y prohibiciones."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Selección de modelo",
-        "Compará capacidad con documentos, privacidad, contexto, costo, latencia y condiciones contractuales. Justificá la elección."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Verificación",
-        "Cada cifra debe reconciliarse con la fuente. Toda recomendación debe distinguirse de los hechos y pasar revisión humana."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
+      ],
+      [
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
       ],
       [
         "challenge",
-        "Laboratorio",
-        "Escribí el prompt completo y una tabla de cinco pruebas: normal, dato faltante, contradicción, instrucción maliciosa y volumen extremo."
-      ],
-      [
-        "challenge",
-        "Automatización conceptual",
-        "Dibujá entrada, validación, recuperación, generación, verificación, aprobación, entrega y auditoría."
-      ],
-      [
-        "text",
-        "Errores a prevenir",
-        "Enviar automáticamente, mezclar períodos, exponer datos, citar fuentes inexistentes y ocultar incertidumbre."
-      ],
-      [
-        "summary",
-        "Reflexión final",
-        "Explicá qué delegaste, qué conservaste bajo juicio humano y qué evidencia demostraría que el sistema aporta valor."
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "El prompt debe definir...",
+        "Pregunta 1 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Tarea, evidencia y límites",
-          "Solo tono",
-          "Solo extensión"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La elección de modelo depende de...",
+        "Pregunta 2 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Tarea, datos y restricciones",
-          "Popularidad",
-          "Una marca fija"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una cifra se acepta cuando...",
+        "Pregunta 3 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Se reconcilia con la fuente",
-          "Suena razonable",
-          "Aparece dos veces"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un dato faltante debe...",
+        "Pregunta 4 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Declararse y escalarse",
-          "Inventarse",
-          "Ocultarse"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La salida final requiere...",
+        "Pregunta 5 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Aprobación humana",
-          "Envío automático",
-          "Temperatura alta"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una prueba adversarial incluye...",
+        "Pregunta 6 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Instrucción maliciosa en datos",
-          "Solo caso ideal",
-          "Cambio de color"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La auditoría permite...",
+        "Pregunta 7 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Reconstruir el proceso",
-          "Crear embeddings",
-          "Cambiar pesos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "El éxito se mide con...",
+        "Pregunta 8 de la Misión 015: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Calidad, tiempo, riesgo y adopción",
-          "Solo velocidad",
-          "Cantidad de texto"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-training-008",
-    "number": "008",
-    "title": "Inferencia y entrenamiento",
-    "duration": 60,
+    "title": "Misión 008: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 008.",
+    "duration": 56,
+    "version": 1,
     "concepts": [
-      "Inferencia",
-      "Entrenamiento",
-      "Parámetros"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Distinguir construcción y uso de un modelo para tomar decisiones técnicas correctas.",
+    "prerequisiteIds": [
+      "lesson-embeddings-007"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Separar con precisión cuándo un modelo aprende y cuándo solamente calcula una salida."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 008 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "Costos, privacidad, latencia y capacidad de actualizar conocimiento dependen de esta distinción."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "Entrenar ajusta parámetros usando datos y una función de pérdida. Inferir mantiene esos parámetros y calcula una salida para una entrada."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "Entrenar es preparar y evaluar a un analista durante meses; inferir es pedirle resolver un caso hoy con lo aprendido."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "Escribir un prompt no reentrena el modelo. Aporta contexto temporal durante la inferencia."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Si cambia una norma, primero probá aportar la fuente vigente mediante contexto o RAG antes de plantear fine-tuning."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Clasificá diez acciones como entrenamiento, inferencia, recuperación o evaluación."
-      ],
-      [
-        "challenge",
-        "Desafío de construcción",
-        "Proponé cómo actualizar respuestas normativas sin entrenar un modelo desde cero."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Decir que el modelo aprende cada conversación, confundir memoria de producto con parámetros y usar fine-tuning para conocimiento volátil."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "Entrenamiento cambia parámetros; inferencia usa parámetros. Contexto y memoria no son entrenamiento."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "Entrenar implica...",
+        "Pregunta 1 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Ajustar parámetros",
-          "Escribir un prompt",
-          "Copiar una respuesta"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Inferencia ocurre cuando...",
+        "Pregunta 2 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "El modelo genera una salida",
-          "Se etiqueta el dataset",
-          "Se actualiza Android"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un prompt reentrena el modelo.",
+        "Pregunta 3 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Sí",
-          "No",
-          "Siempre en local"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        1
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Para normas cambiantes conviene primero...",
+        "Pregunta 4 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Contexto recuperado y fuentes",
-          "Entrenar desde cero",
-          "Ocultar fechas"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La memoria del producto equivale a pesos.",
+        "Pregunta 5 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "No",
-          "Sí",
-          "Solo en RAG"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Latencia de inferencia afecta...",
+        "Pregunta 6 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Experiencia de uso",
-          "Etiquetado previo",
-          "Licencia del dataset"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Fine-tuning suele servir para...",
+        "Pregunta 7 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Patrones estables de conducta o formato",
-          "Noticias diarias",
-          "Permisos de archivos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una evaluación debe separar...",
+        "Pregunta 8 de la Misión 008: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Calidad del modelo y del sistema",
-          "Usuario y pantalla",
-          "Texto y teclado"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

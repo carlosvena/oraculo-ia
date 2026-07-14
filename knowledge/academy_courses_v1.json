@@ -2,104 +2,162 @@
   "schemaVersion": 1,
   "courses": [
     {
-      "id": "fundamentos",
-      "category": "Fundacionales",
+      "id": "course-fundamentos",
+      "category": "Fundamentos",
       "title": "Fundamentos de IA",
-      "description": "Conceptos esenciales de Inteligencia Artificial para no-técnicos.",
-      "difficulty": "Inicial",
-      "duration": 200,
-      "missions": ["ac-001", "ac-002", "ac-003", "ac-004", "ac-005", "ac-006", "ac-007", "ac-008", "ac-009", "ac-010"],
-      "concepts": ["IA", "Redes Neuronales", "Machine Learning", "Deep Learning", "Supervisado", "No Supervisado", "Algoritmos", "Datos", "Sesgo", "Ética"]
-    },
-    {
-      "id": "prompt-engineering",
-      "category": "Prompt Engineering",
-      "title": "Prompt Engineering Avanzado",
-      "description": "Aprende a formular prompts complejos utilizando técnicas avanzadas de instrucción.",
-      "difficulty": "Intermedio",
-      "duration": 250,
-      "missions": ["ac-011", "ac-012", "ac-013", "ac-014", "ac-015", "ac-016", "ac-017", "ac-018", "ac-019", "ac-020"],
-      "concepts": ["Prompt", "FSL", "CoT", "Zero-Shot", "Few-Shot", "Metaprompt", "Temperatura", "Tokens", "Formatos", "Validación"]
-    },
-    {
-      "id": "modelos-llm",
-      "category": "Fundacionales",
-      "title": "Modelos LLM y Arquitecturas",
-      "description": "Descubre las diferencias entre modelos comerciales, open-source y sus parámetros.",
-      "difficulty": "Intermedio",
-      "duration": 220,
-      "missions": ["ac-021", "ac-022", "ac-023", "ac-024", "ac-025", "ac-026", "ac-027", "ac-028", "ac-029", "ac-030"],
-      "concepts": ["LLM", "Transformers", "Atención", "Tokenizer", "Embeddings", "Parámetros", "Fine-Tuning", "Quantization", "Modelos", "Evaluación"]
-    },
-    {
-      "id": "agentes-ia",
-      "category": "Automatización e Integración",
-      "title": "Sistemas de Agentes de IA",
-      "description": "Diseña agentes autónomos capaces de razonar y ejecutar acciones locales.",
-      "difficulty": "Avanzado",
-      "duration": 300,
-      "missions": ["ac-031", "ac-032", "ac-033", "ac-034", "ac-035", "ac-036", "ac-037", "ac-038", "ac-039", "ac-040"],
-      "concepts": ["Agentes", "Tools", "Ciclo de Razonamiento", "Memoria", "MCP", "Autonomía", "Guardrails", "RAG", "Planificación", "Orquestación"]
-    },
-    {
-      "id": "automatizacion",
-      "category": "Automatización e Integración",
-      "title": "Automatización con Workflows",
-      "description": "Diseña workflows estables uniendo APIs y modelos de IA en flujos productivos.",
-      "difficulty": "Avanzado",
-      "duration": 280,
-      "missions": ["ac-041", "ac-042", "ac-043", "ac-044", "ac-045", "ac-046", "ac-047", "ac-048", "ac-049", "ac-050"],
-      "concepts": ["Workflows", "APIs", "Integración", "JSON", "Manejo de Errores", "Límites", "Seguridad", "Orquestadores", "Webhooks", "Callback"]
-    },
-    {
-      "id": "productividad",
-      "category": "Productividad y Negocios",
-      "title": "IA para Productividad Personal",
-      "description": "Herramientas de IA para optimizar la redacción, el análisis y la agenda diaria.",
-      "difficulty": "Inicial",
-      "duration": 150,
-      "missions": ["ac-051", "ac-052", "ac-053", "ac-054", "ac-055", "ac-056", "ac-057", "ac-058", "ac-059", "ac-060"],
-      "concepts": ["Productividad", "Redacción", "Resúmenes", "Agenda", "Emailing", "Transmisión", "Búsqueda", "Notas", "Copilots", "Delegación"]
-    },
-    {
-      "id": "excel-ia",
-      "category": "Productividad y Negocios",
-      "title": "IA para Excel y Datos",
-      "description": "Domina fórmulas complejas y análisis de datos utilizando asistentes de IA.",
+      "description": "Conceptos esenciales de Inteligencia Artificial y redes neuronales.",
       "difficulty": "Inicial",
       "duration": 180,
-      "missions": ["ac-061", "ac-062", "ac-063", "ac-064", "ac-065", "ac-066", "ac-067", "ac-068", "ac-069", "ac-070"],
-      "concepts": ["Excel", "Datos", "Fórmulas", "Macros", "VBA", "Visualización", "Tablas Dinámicas", "Limpieza", "Predicción", "Asistente"]
+      "missions": [
+        "ac-001",
+        "ac-002",
+        "ac-003",
+        "ac-004"
+      ],
+      "concepts": [
+        "IA",
+        "Machine Learning",
+        "Deep Learning",
+        "Redes Neuronales"
+      ]
     },
     {
-      "id": "programacion",
-      "category": "Desarrollo",
-      "title": "IA para Programación",
-      "description": "Utiliza copilotos y modelos de código para acelerar el desarrollo de software.",
+      "id": "course-prompt",
+      "category": "Prompt Engineering",
+      "title": "Prompt Engineering",
+      "description": "Técnicas avanzadas de optimización y estructuración de instrucciones.",
       "difficulty": "Intermedio",
+      "duration": 200,
+      "missions": [
+        "ac-005",
+        "ac-006",
+        "ac-007",
+        "ac-008"
+      ],
+      "concepts": [
+        "Prompt",
+        "Zero-Shot",
+        "Few-Shot",
+        "CoT"
+      ]
+    },
+    {
+      "id": "course-modelos",
+      "category": "Modelos LLM",
+      "title": "Modelos de lenguaje",
+      "description": "Diferencias clave entre arquitecturas propietarias y open-source.",
+      "difficulty": "Intermedio",
+      "duration": 220,
+      "missions": [
+        "ac-009",
+        "ac-010",
+        "ac-011",
+        "ac-012"
+      ],
+      "concepts": [
+        "LLM",
+        "Transformers",
+        "Atención",
+        "Embeddings"
+      ]
+    },
+    {
+      "id": "course-verificacion",
+      "category": "Verificación",
+      "title": "Verificación y pensamiento crítico",
+      "description": "Mitigación de alucinaciones y técnicas de auditoría de respuestas.",
+      "difficulty": "Intermedio",
+      "duration": 190,
+      "missions": [
+        "ac-013",
+        "ac-014",
+        "ac-015",
+        "ac-016"
+      ],
+      "concepts": [
+        "Alucinaciones",
+        "Gobernanza",
+        "Auditoría",
+        "Verificación"
+      ]
+    },
+    {
+      "id": "course-agentes",
+      "category": "Agentes",
+      "title": "Agentes y herramientas",
+      "description": "Arquitectura de agentes autónomos y protocolos de comunicación.",
+      "difficulty": "Avanzado",
       "duration": 240,
-      "missions": ["ac-071", "ac-072", "ac-073", "ac-074", "ac-075", "ac-076", "ac-077", "ac-078", "ac-079", "ac-080"],
-      "concepts": ["Programación", "Copilot", "Código", "Debugging", "Refactoring", "Testing", "Generación", "APIs", "IDE", "Autocompletar"]
+      "missions": [
+        "ac-017",
+        "ac-018",
+        "ac-019",
+        "ac-020"
+      ],
+      "concepts": [
+        "Agentes",
+        "Tools",
+        "MCP",
+        "Planificación"
+      ]
     },
     {
-      "id": "empresas",
-      "category": "Productividad y Negocios",
-      "title": "IA para Empresas",
-      "description": "Implementa estrategias organizacionales de inteligencia artificial y gobernanza.",
-      "difficulty": "Intermedio",
-      "duration": 210,
-      "missions": ["ac-081", "ac-082", "ac-083", "ac-084", "ac-085", "ac-086", "ac-087", "ac-088", "ac-089", "ac-090"],
-      "concepts": ["Gobernanza", "Estrategia", "Adopción", "ROI", "Seguridad de Datos", "Compliance", "Políticas", "Capacitación", "Infraestructura", "Proveedor"]
-    },
-    {
-      "id": "bancaria",
-      "category": "Productividad y Negocios",
-      "title": "IA en el Sector Bancario",
-      "description": "Casos prácticos de IA en supervisión bancaria, detección de fraude y riesgos.",
+      "id": "course-automatizacion",
+      "category": "Automatización",
+      "title": "Automatización",
+      "description": "Integración de llamadas a API, rate limits y esquemas JSON.",
       "difficulty": "Avanzado",
       "duration": 260,
-      "missions": ["ac-091", "ac-092", "ac-093", "ac-094", "ac-095", "ac-096", "ac-097", "ac-098", "ac-099", "ac-100"],
-      "concepts": ["Finanzas", "Fraude", "Riesgos", "Supervisión", "Cumplimiento", "Auditoría", "Análisis Crediticio", "Reportes", "Privacidad", "Regulación"]
+      "missions": [
+        "ac-021",
+        "ac-022",
+        "ac-023",
+        "ac-024"
+      ],
+      "concepts": [
+        "Workflows",
+        "APIs",
+        "JSON Schema",
+        "Callbacks"
+      ]
+    },
+    {
+      "id": "course-excel",
+      "category": "Excel",
+      "title": "IA para Excel",
+      "description": "Fórmulas complejas, automatizaciones VBA y análisis de datos.",
+      "difficulty": "Inicial",
+      "duration": 150,
+      "missions": [
+        "ac-025",
+        "ac-026",
+        "ac-027"
+      ],
+      "concepts": [
+        "Excel",
+        "Fórmulas",
+        "Macros",
+        "Limpieza"
+      ]
+    },
+    {
+      "id": "course-banca",
+      "category": "Banca",
+      "title": "IA aplicada al trabajo bancario",
+      "description": "Supervisión financiera, auditoría de cumplimiento y gestión de riesgos.",
+      "difficulty": "Avanzado",
+      "duration": 210,
+      "missions": [
+        "ac-028",
+        "ac-029",
+        "ac-030"
+      ],
+      "concepts": [
+        "Finanzas",
+        "Fraude",
+        "Riesgos",
+        "Cumplimiento"
+      ]
     }
   ]
 }

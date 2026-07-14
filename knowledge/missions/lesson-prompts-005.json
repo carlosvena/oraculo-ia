@@ -2,190 +2,158 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-prompts-005",
-    "missionId": "mission-prompts-005",
+    "title": "Misión 005: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 005.",
+    "duration": 80,
     "version": 1,
-    "title": "Cómo construir prompts profesionales",
-    "objective": "Construir especificaciones repetibles, evaluables y seguras para tareas reales.",
-    "duration": 60,
-    "difficulty": "Profesional",
     "concepts": [
-      "Prompt",
-      "Agente de IA",
-      "MCP",
-      "Benchmark",
-      "Modelo multimodal"
+      "IA",
+      "Prompt"
     ],
-    "blocks": [
-      {
-        "type": "title",
-        "title": "Misión 005",
-        "content": "Cómo construir prompts profesionales"
-      },
-      {
-        "type": "text",
-        "title": "Contexto",
-        "content": "Un prompt profesional convierte intención en una especificación que otra persona puede revisar y reutilizar."
-      },
-      {
-        "type": "text",
-        "title": "Objetivo",
-        "content": "Diseñar instrucciones con propósito, contexto, tarea, límites, formato y criterios de aceptación."
-      },
-      {
-        "type": "text",
-        "title": "Por qué importa",
-        "content": "La repetibilidad permite comparar modelos, detectar fallos y escalar procesos."
-      },
-      {
-        "type": "text",
-        "title": "Explicación profunda",
-        "content": "El prompt define contrato operativo. Los criterios de aceptación funcionan como benchmark local. En agentes, permisos y herramientas —incluidas integraciones MCP— deben quedar delimitados."
-      },
-      {
-        "type": "example",
-        "title": "Tres ejemplos",
-        "content": "De pedido a sistema.",
-        "items": [
-          "Borrador con audiencia y formato.",
-          "Análisis con evidencia e incertidumbre.",
-          "Agente con herramientas, permisos y aprobación humana."
-        ]
-      },
-      {
-        "type": "analogy",
-        "title": "Analogía",
-        "content": "Es una orden de trabajo: describe resultado, materiales, controles y condición de entrega."
-      },
-      {
-        "type": "text",
-        "title": "Error común",
-        "content": "Agregar rol y adjetivos, pero omitir datos, límites y criterios verificables."
-      },
-      {
-        "type": "challenge",
-        "title": "Laboratorio",
-        "content": "Elegí la especificación completa.",
-        "questions": [
-          {
-            "question": "¿Cuál prompt es profesional?",
-            "options": [
-              "Analizá bien.",
-              "Clasificá reclamos, citá evidencia, marcá incertidumbre y entregá tabla priorizada.",
-              "Sé experto."
-            ],
-            "correct": 1,
-            "explanation": "Define tarea, evidencia, incertidumbre y formato."
-          }
-        ]
-      },
-      {
-        "type": "challenge",
-        "title": "Desafío aplicado",
-        "content": "Creá un prompt para un supervisor bancario que revise alertas, use solo fuentes autorizadas y solicite aprobación antes de cualquier acción."
-      },
-      {
-        "type": "quiz",
-        "title": "Evaluación",
-        "content": "Ocho preguntas crecientes.",
-        "questions": [
-          {
-            "question": "¿Base del prompt?",
-            "options": [
-              "Propósito.",
-              "Adjetivos.",
-              "Longitud."
-            ],
-            "correct": 0,
-            "explanation": "El propósito orienta la especificación."
-          },
-          {
-            "question": "¿Qué hace un criterio?",
-            "options": [
-              "Decora.",
-              "Permite evaluar.",
-              "Oculta errores."
-            ],
-            "correct": 1,
-            "explanation": "Vuelve observable la calidad."
-          },
-          {
-            "question": "¿Cómo tratar incertidumbre?",
-            "options": [
-              "Ignorar.",
-              "Inventar.",
-              "Pedir que se declare."
-            ],
-            "correct": 2,
-            "explanation": "Declararla evita falsa precisión."
-          },
-          {
-            "question": "¿Qué limita un agente?",
-            "options": [
-              "Permisos explícitos.",
-              "Más texto.",
-              "Un avatar."
-            ],
-            "correct": 0,
-            "explanation": "Permisos reducen acciones indebidas."
-          },
-          {
-            "question": "¿Qué facilita MCP?",
-            "options": [
-              "Verdad.",
-              "Conexión estandarizada con herramientas.",
-              "Entrenamiento."
-            ],
-            "correct": 1,
-            "explanation": "MCP estructura acceso a recursos y herramientas."
-          },
-          {
-            "question": "¿Modelo multimodal?",
-            "options": [
-              "Solo texto.",
-              "Sin contexto.",
-              "Procesa varias modalidades."
-            ],
-            "correct": 2,
-            "explanation": "Puede combinar texto, imagen, audio u otros datos."
-          },
-          {
-            "question": "¿Benchmark local?",
-            "options": [
-              "Conjunto de casos y criterios.",
-              "Opinión aislada.",
-              "Logo."
-            ],
-            "correct": 0,
-            "explanation": "Casos repetibles permiten comparar."
-          },
-          {
-            "question": "¿Acción crítica de agente?",
-            "options": [
-              "Automática siempre.",
-              "Con aprobación humana.",
-              "Sin registro."
-            ],
-            "correct": 1,
-            "explanation": "La aprobación controla impacto alto."
-          }
-        ]
-      },
-      {
-        "type": "summary",
-        "title": "Resumen ejecutivo",
-        "content": "Un prompt profesional es un contrato verificable; en agentes también define herramientas, permisos y puntos de aprobación."
-      },
-      {
-        "type": "text",
-        "title": "Conceptos relacionados",
-        "content": "MCP · Agente de IA · Benchmark · Modelo multimodal",
-        "prompt": "Leer más: Prompt · Agente de IA"
-      },
-      {
-        "type": "summary",
-        "title": "Cómo lo aplico mañana",
-        "content": "Reescribí una tarea frecuente con seis campos y probala contra tres casos reales."
-      }
+    "prerequisiteIds": [
+      "lesson-context-004"
+    ],
+    "sections": [
+      [
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 005 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
+      ],
+      [
+        "text",
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
+      ],
+      [
+        "text",
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
+      ],
+      [
+        "analogy",
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
+      ],
+      [
+        "example",
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
+      ],
+      [
+        "text",
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
+      ],
+      [
+        "text",
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
+      ],
+      [
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
+      ]
+    ],
+    "quiz": [
+      [
+        "Pregunta 1 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 2 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 3 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 4 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 5 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 6 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 7 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 8 de la Misión 005: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ]
     ]
   }
 }

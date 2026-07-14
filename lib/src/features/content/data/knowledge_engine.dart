@@ -656,7 +656,9 @@ final class KnowledgeEngine {
               question: values[0] as String,
               options: options,
               correctAnswer: correct,
-              explanation: 'La opción correcta es "${options[correct]}" porque aplica la definición y los controles desarrollados en esta misión.',
+              explanation: values.length > 3
+                  ? values[3] as String
+                  : 'La opción correcta es "${options[correct]}" porque aplica la definición y los controles desarrollados en esta misión.',
             );
           }).toList(),
         ),

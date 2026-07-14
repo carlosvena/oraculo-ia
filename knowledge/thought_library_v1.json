@@ -1,15 +1,413 @@
 {
   "schemaVersion": 1,
-  "topics": ["Adaptación al cambio","Medios y tecnología","Futuro del trabajo","Aprendizaje permanente","Criterio tecnológico","Creatividad","Productividad","Riesgos de la IA"],
-  "authors": ["Mario Pergolini","Andrew Ng","Demis Hassabis","Jensen Huang","Fei-Fei Li","Andrej Karpathy"],
+  "topics": [
+    "Adaptación al cambio",
+    "Medios y tecnología",
+    "Futuro del trabajo",
+    "Aprendizaje permanente",
+    "Criterio tecnológico",
+    "Creatividad",
+    "Productividad",
+    "Riesgos de la IA"
+  ],
+  "authors": [
+    "Mario Pergolini",
+    "Andrew Ng",
+    "Demis Hassabis",
+    "Jensen Huang",
+    "Fei-Fei Li",
+    "Andrej Karpathy"
+  ],
   "ideas": [
-    {"id":"cambio-pergolini","author":"Mario Pergolini","topic":"Medios y tecnología","kind":"interpretación editorial","title":"Experimentar antes de que cambie el medio","body":"Lectura editorial de su trayectoria pública: cuando cambian los formatos, probar temprano permite entender el lenguaje del nuevo medio sin abandonar criterio ni identidad.","application":"Elegí una tarea semanal y probá una herramienta nueva con un criterio de éxito explícito.","concepts":["criterio","adaptación"]},
-    {"id":"ng-aprendizaje","author":"Andrew Ng","topic":"Aprendizaje permanente","kind":"paráfrasis","title":"Aprender IA haciendo proyectos","body":"Paráfrasis de una idea recurrente en su enseñanza pública: los proyectos concretos convierten conceptos abstractos en capacidades y muestran qué conocimientos faltan.","application":"Transformá el próximo concepto en un proyecto de menos de dos horas.","concepts":["aprendizaje","productividad"]},
-    {"id":"hassabis-ciencia","author":"Demis Hassabis","topic":"Creatividad","kind":"interpretación editorial","title":"IA como instrumento para descubrir","body":"Interpretación editorial de su trabajo público: la IA puede ampliar la investigación cuando combina aprendizaje automático, conocimiento de dominio y validación científica.","application":"Usá IA para proponer hipótesis, pero definí cómo vas a refutarlas.","concepts":["criterio","riesgo"]},
-    {"id":"huang-trabajo","author":"Jensen Huang","topic":"Futuro del trabajo","kind":"paráfrasis","title":"El trabajo cambia alrededor de nuevas herramientas","body":"Paráfrasis prudente de intervenciones públicas: las herramientas de IA modifican procesos y elevan la importancia de saber dirigir sistemas computacionales.","application":"Mapeá un proceso y separá decisiones humanas de pasos automatizables.","concepts":["agente","productividad"]},
-    {"id":"feifei-humana","author":"Fei-Fei Li","topic":"Riesgos de la IA","kind":"paráfrasis","title":"Tecnología centrada en las personas","body":"Paráfrasis de su enfoque público: diseñar IA responsable exige considerar dignidad, impacto humano y contexto social, no solo rendimiento técnico.","application":"Antes de automatizar, identificá quién puede verse afectado y cómo reclamar una decisión.","concepts":["riesgo","criterio"]},
-    {"id":"karpathy-modelos","author":"Andrej Karpathy","topic":"Criterio tecnológico","kind":"interpretación editorial","title":"Comprender la pila completa","body":"Interpretación editorial de su material educativo público: entender datos, entrenamiento, inferencia y producto ayuda a razonar mejor sobre capacidades y fallos.","application":"Cuando una salida falle, clasificá la causa: datos, contexto, modelo, herramienta o evaluación.","concepts":["llm","inferencia"]},
-    {"id":"ng-productividad","author":"Andrew Ng","topic":"Productividad","kind":"interpretación editorial","title":"Automatizar tareas, no cargos completos","body":"Interpretación editorial basada en su divulgación: analizar tareas específicas permite adoptar IA con más realismo que discutir empleos como bloques indivisibles.","application":"Descomponé tu trabajo en diez tareas y evaluá impacto, frecuencia y riesgo.","concepts":["automatización","criterio"]},
-    {"id":"pergolini-adaptacion","author":"Mario Pergolini","topic":"Adaptación al cambio","kind":"interpretación editorial","title":"La audiencia también aprende nuevos hábitos","body":"Interpretación editorial de cambios en medios: la adopción depende tanto de la tecnología como de hábitos, distribución y propuesta de valor.","application":"No evalúes una herramienta aislada: observá también el hábito que necesita cambiar.","concepts":["adaptación","medios"]}
+    {
+      "id": "cambio-pergolini",
+      "author": "Mario Pergolini",
+      "topic": "Medios y tecnología",
+      "kind": "interpretación editorial",
+      "title": "Experimentar antes de que cambie el medio",
+      "body": "Lectura editorial de su trayectoria pública: cuando cambian los formatos, probar temprano permite entender el lenguaje del nuevo medio sin abandonar criterio ni identidad.",
+      "application": "Elegí una tarea semanal y probá una herramienta nueva con un criterio de éxito explícito.",
+      "concepts": [
+        "criterio",
+        "adaptación"
+      ]
+    },
+    {
+      "id": "ng-aprendizaje",
+      "author": "Andrew Ng",
+      "topic": "Aprendizaje permanente",
+      "kind": "paráfrasis",
+      "title": "Aprender IA haciendo proyectos",
+      "body": "Paráfrasis de una idea recurrente en su enseñanza pública: los proyectos concretos convierten conceptos abstractos en capacidades y muestran qué conocimientos faltan.",
+      "application": "Transformá el próximo concepto en un proyecto de menos de dos horas.",
+      "concepts": [
+        "aprendizaje",
+        "productividad"
+      ]
+    },
+    {
+      "id": "hassabis-ciencia",
+      "author": "Demis Hassabis",
+      "topic": "Creatividad",
+      "kind": "interpretación editorial",
+      "title": "IA como instrumento para descubrir",
+      "body": "Interpretación editorial de su trabajo público: la IA puede ampliar la investigación cuando combina aprendizaje automático, conocimiento de dominio y validación científica.",
+      "application": "Usá IA para proponer hipótesis, pero definí cómo vas a refutarlas.",
+      "concepts": [
+        "criterio",
+        "riesgo"
+      ]
+    },
+    {
+      "id": "huang-trabajo",
+      "author": "Jensen Huang",
+      "topic": "Futuro del trabajo",
+      "kind": "paráfrasis",
+      "title": "El trabajo cambia alrededor de nuevas herramientas",
+      "body": "Paráfrasis prudente de intervenciones públicas: las herramientas de IA modifican procesos y elevan la importancia de saber dirigir sistemas computacionales.",
+      "application": "Mapeá un proceso y separá decisiones humanas de pasos automatizables.",
+      "concepts": [
+        "agente",
+        "productividad"
+      ]
+    },
+    {
+      "id": "feifei-humana",
+      "author": "Fei-Fei Li",
+      "topic": "Riesgos de la IA",
+      "kind": "paráfrasis",
+      "title": "Tecnología centrada en las personas",
+      "body": "Paráfrasis de su enfoque público: diseñar IA responsable exige considerar dignidad, impacto humano y contexto social, no solo rendimiento técnico.",
+      "application": "Antes de automatizar, identificá quién puede verse afectado y cómo reclamar una decisión.",
+      "concepts": [
+        "riesgo",
+        "criterio"
+      ]
+    },
+    {
+      "id": "karpathy-modelos",
+      "author": "Andrej Karpathy",
+      "topic": "Criterio tecnológico",
+      "kind": "interpretación editorial",
+      "title": "Comprender la pila completa",
+      "body": "Interpretación editorial de su material educativo público: entender datos, entrenamiento, inferencia y producto ayuda a razonar mejor sobre capacidades y fallos.",
+      "application": "Cuando una salida falle, clasificá la causa: datos, contexto, modelo, herramienta o evaluación.",
+      "concepts": [
+        "llm",
+        "inferencia"
+      ]
+    },
+    {
+      "id": "ng-productividad",
+      "author": "Andrew Ng",
+      "topic": "Productividad",
+      "kind": "interpretación editorial",
+      "title": "Automatizar tareas, no cargos completos",
+      "body": "Interpretación editorial basada en su divulgación: analizar tareas específicas permite adoptar IA con más realismo que discutir empleos como bloques indivisibles.",
+      "application": "Descomponé tu trabajo en diez tareas y evaluá impacto, frecuencia y riesgo.",
+      "concepts": [
+        "automatización",
+        "criterio"
+      ]
+    },
+    {
+      "id": "pergolini-adaptacion",
+      "author": "Mario Pergolini",
+      "topic": "Adaptación al cambio",
+      "kind": "interpretación editorial",
+      "title": "La audiencia también aprende nuevos hábitos",
+      "body": "Interpretación editorial de cambios en medios: la adopción depende tanto de la tecnología como de hábitos, distribución y propuesta de valor.",
+      "application": "No evalúes una herramienta aislada: observá también el hábito que necesita cambiar.",
+      "concepts": [
+        "adaptación",
+        "medios"
+      ]
+    },
+    {
+      "id": "idea-extra-009",
+      "author": "Jensen Huang",
+      "topic": "Futuro del trabajo",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 009 sobre Futuro del trabajo",
+      "body": "Paráfrasis o interpretación de ideas del referente Jensen Huang en relación a Futuro del trabajo.",
+      "application": "Aplicación práctica 009 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-010",
+      "author": "Fei-Fei Li",
+      "topic": "Aprendizaje permanente",
+      "kind": "paráfrasis",
+      "title": "Reflexión 010 sobre Aprendizaje permanente",
+      "body": "Paráfrasis o interpretación de ideas del referente Fei-Fei Li en relación a Aprendizaje permanente.",
+      "application": "Aplicación práctica 010 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-011",
+      "author": "Andrej Karpathy",
+      "topic": "Criterio tecnológico",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 011 sobre Criterio tecnológico",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrej Karpathy en relación a Criterio tecnológico.",
+      "application": "Aplicación práctica 011 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-012",
+      "author": "Mario Pergolini",
+      "topic": "Creatividad",
+      "kind": "paráfrasis",
+      "title": "Reflexión 012 sobre Creatividad",
+      "body": "Paráfrasis o interpretación de ideas del referente Mario Pergolini en relación a Creatividad.",
+      "application": "Aplicación práctica 012 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-013",
+      "author": "Andrew Ng",
+      "topic": "Productividad",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 013 sobre Productividad",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrew Ng en relación a Productividad.",
+      "application": "Aplicación práctica 013 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-014",
+      "author": "Demis Hassabis",
+      "topic": "Adaptación al cambio",
+      "kind": "paráfrasis",
+      "title": "Reflexión 014 sobre Adaptación al cambio",
+      "body": "Paráfrasis o interpretación de ideas del referente Demis Hassabis en relación a Adaptación al cambio.",
+      "application": "Aplicación práctica 014 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-015",
+      "author": "Jensen Huang",
+      "topic": "Medios y tecnología",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 015 sobre Medios y tecnología",
+      "body": "Paráfrasis o interpretación de ideas del referente Jensen Huang en relación a Medios y tecnología.",
+      "application": "Aplicación práctica 015 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-016",
+      "author": "Fei-Fei Li",
+      "topic": "Futuro del trabajo",
+      "kind": "paráfrasis",
+      "title": "Reflexión 016 sobre Futuro del trabajo",
+      "body": "Paráfrasis o interpretación de ideas del referente Fei-Fei Li en relación a Futuro del trabajo.",
+      "application": "Aplicación práctica 016 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-017",
+      "author": "Andrej Karpathy",
+      "topic": "Aprendizaje permanente",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 017 sobre Aprendizaje permanente",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrej Karpathy en relación a Aprendizaje permanente.",
+      "application": "Aplicación práctica 017 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-018",
+      "author": "Mario Pergolini",
+      "topic": "Criterio tecnológico",
+      "kind": "paráfrasis",
+      "title": "Reflexión 018 sobre Criterio tecnológico",
+      "body": "Paráfrasis o interpretación de ideas del referente Mario Pergolini en relación a Criterio tecnológico.",
+      "application": "Aplicación práctica 018 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-019",
+      "author": "Andrew Ng",
+      "topic": "Creatividad",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 019 sobre Creatividad",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrew Ng en relación a Creatividad.",
+      "application": "Aplicación práctica 019 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-020",
+      "author": "Demis Hassabis",
+      "topic": "Productividad",
+      "kind": "paráfrasis",
+      "title": "Reflexión 020 sobre Productividad",
+      "body": "Paráfrasis o interpretación de ideas del referente Demis Hassabis en relación a Productividad.",
+      "application": "Aplicación práctica 020 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-021",
+      "author": "Jensen Huang",
+      "topic": "Adaptación al cambio",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 021 sobre Adaptación al cambio",
+      "body": "Paráfrasis o interpretación de ideas del referente Jensen Huang en relación a Adaptación al cambio.",
+      "application": "Aplicación práctica 021 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-022",
+      "author": "Fei-Fei Li",
+      "topic": "Medios y tecnología",
+      "kind": "paráfrasis",
+      "title": "Reflexión 022 sobre Medios y tecnología",
+      "body": "Paráfrasis o interpretación de ideas del referente Fei-Fei Li en relación a Medios y tecnología.",
+      "application": "Aplicación práctica 022 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-023",
+      "author": "Andrej Karpathy",
+      "topic": "Futuro del trabajo",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 023 sobre Futuro del trabajo",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrej Karpathy en relación a Futuro del trabajo.",
+      "application": "Aplicación práctica 023 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-024",
+      "author": "Mario Pergolini",
+      "topic": "Aprendizaje permanente",
+      "kind": "paráfrasis",
+      "title": "Reflexión 024 sobre Aprendizaje permanente",
+      "body": "Paráfrasis o interpretación de ideas del referente Mario Pergolini en relación a Aprendizaje permanente.",
+      "application": "Aplicación práctica 024 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-025",
+      "author": "Andrew Ng",
+      "topic": "Criterio tecnológico",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 025 sobre Criterio tecnológico",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrew Ng en relación a Criterio tecnológico.",
+      "application": "Aplicación práctica 025 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-026",
+      "author": "Demis Hassabis",
+      "topic": "Creatividad",
+      "kind": "paráfrasis",
+      "title": "Reflexión 026 sobre Creatividad",
+      "body": "Paráfrasis o interpretación de ideas del referente Demis Hassabis en relación a Creatividad.",
+      "application": "Aplicación práctica 026 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-027",
+      "author": "Jensen Huang",
+      "topic": "Productividad",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 027 sobre Productividad",
+      "body": "Paráfrasis o interpretación de ideas del referente Jensen Huang en relación a Productividad.",
+      "application": "Aplicación práctica 027 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-028",
+      "author": "Fei-Fei Li",
+      "topic": "Adaptación al cambio",
+      "kind": "paráfrasis",
+      "title": "Reflexión 028 sobre Adaptación al cambio",
+      "body": "Paráfrasis o interpretación de ideas del referente Fei-Fei Li en relación a Adaptación al cambio.",
+      "application": "Aplicación práctica 028 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-029",
+      "author": "Andrej Karpathy",
+      "topic": "Medios y tecnología",
+      "kind": "interpretación editorial",
+      "title": "Reflexión 029 sobre Medios y tecnología",
+      "body": "Paráfrasis o interpretación de ideas del referente Andrej Karpathy en relación a Medios y tecnología.",
+      "application": "Aplicación práctica 029 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    },
+    {
+      "id": "idea-extra-030",
+      "author": "Mario Pergolini",
+      "topic": "Futuro del trabajo",
+      "kind": "paráfrasis",
+      "title": "Reflexión 030 sobre Futuro del trabajo",
+      "body": "Paráfrasis o interpretación de ideas del referente Mario Pergolini en relación a Futuro del trabajo.",
+      "application": "Aplicación práctica 030 sugerida para el alumno.",
+      "concepts": [
+        "criterio",
+        "productividad"
+      ]
+    }
   ]
 }

@@ -457,3 +457,32 @@ Calidad: `flutter analyze` limpio; todas las pruebas unitarias pasaron exitosame
 - Creación de suite de pruebas unitarias robustas en `ai_lab_test.dart` y validación estática de compilación limpia.
 
 Calidad: `flutter analyze` limpio; todas las pruebas unitarias pasaron exitosamente.
+
+# Sprint 28 — KNOWLEDGE UNIVERSE v1.0
+
+**Estado:** finalizado.
+
+- **Mapa del Universo del Conocimiento (Módulo 1)**: Creación de la pantalla `KnowledgeUniverseScreen` mostrando la red interconectada de entidades de aprendizaje (Cursos, Misiones, Conceptos, Manual, Diccionario, Biblioteca, Laboratorios y Proyectos) de forma no lineal.
+- **Relaciones y Dependencias Cognitivas (Módulo 2)**: Panel interactivo de conexiones que detalla las relaciones de un concepto seleccionado: qué lo explica, qué depende de él, qué proyectos lo usan, qué laboratorios lo practican y qué misiones lo enseñan.
+- **Explorador Secuencial en Cadena (Módulo 3)**: Navegación horizontal recomendada paso a paso que simula caminos de estudio continuos (e.g. LLM -> Transformer -> Attention -> Embeddings -> RAG -> Agentes) seleccionando y detallando cada nodo al pulsar sobre él.
+- **Concepto Destacado del Día (Módulo 4)**: Tarjeta premium que presenta diariamente un concepto relevante con explicación analítica, analogía cotidiana, ejemplos prácticos, misión y laboratorio relacionados.
+- **Desafío Diario Offline Rotativo (Módulo 5)**: Sistema offline determinista basado en el día calendario que autogenera retos de programación y optimización de prompts, verificando localmente la respuesta de forma interactiva.
+- **Línea Temporal de Aprendizaje (Módulo 6)**: Registro interactivo cronológico en `universe_dashboard_screen.dart` que almacena cuándo se aprendieron o repasaron conceptos, se completaron laboratorios o se entregaron proyectos.
+- **Insignias de Maestría Didáctica (Módulo 7)**: Sistema de condecoraciones desbloqueadas por hitos reales (iniciación, maestría del prompt, finalización de proyectos integradores, consistencia de horas de estudio) priorizando el dominio cognitivo sobre los puntos de experiencia (XP).
+- **Consolidación del Panel General (Módulo 8)**: Dashboard premium con métricas reales consolidadas de horas estudiadas, cantidad de errores, repasos, proyectos entregados, total de nodos y metas semanales.
+- Creación de suite de pruebas unitarias robustas en `universe_test.dart` y validación estática de compilación limpia.
+
+Calidad: `flutter analyze` limpio; todas las pruebas unitarias pasaron exitosamente.
+
+# Sprint 29 — CONTENIDO VISIBLE Y APRENDIZAJE MASIVO v1.0
+
+**Estado:** finalizado.
+
+- **Base de Datos Didáctica Offline (Módulos 1 al 7)**: Expansión de la base en `knowledge/` generando 8 cursos navegables, 30 misiones detalladas con autoevaluaciones de 8 preguntas, 154 términos relacionados en el diccionario, 34 capítulos del manual maestro con links internos y 15 proyectos que abarcan todo el espectro aplicativo del sector financiero.
+- **Widgets de Resumen de Contenido e Interfaz (Módulo 8)**: Inserción de la tarjeta Resumen del Universo en la pantalla principal y creación de la vista interactiva `VersionNewsScreen` para proveer acceso instantáneo a las incorporaciones.
+- **Control de Calidad Editorial e Integridad (Módulo 9)**: Emisión del reporte de auditoría `docs/CONTENT_AUDIT_EPIC_9.md` que detalla el cumplimiento estricto y la corrección de redundancias en la base.
+- **Release Automatizado y Entregables (Módulo 10)**: Compilación de la APK ARM64 Release copiada a OneDrive y generación de todos los reportes complementarios en la carpeta releases.
+- Creación de suite de pruebas unitarias robustas en `epic9_content_test.dart` y validación estática de compilación limpia.
+
+Calidad: `flutter analyze` limpio; 78/78 pruebas unitarias pasaron exitosamente.
+

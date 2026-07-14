@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "mission": {
+    "id": "lesson-ac-019",
+    "title": "Misión 019: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 019.",
+    "duration": 88,
+    "version": 1,
+    "concepts": [
+      "IA",
+      "Prompt"
+    ],
+    "prerequisiteIds": [
+      "lesson-ac-018"
+    ],
+    "sections": [
+      [
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 019 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
+      ],
+      [
+        "text",
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
+      ],
+      [
+        "text",
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
+      ],
+      [
+        "analogy",
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
+      ],
+      [
+        "example",
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
+      ],
+      [
+        "text",
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
+      ],
+      [
+        "text",
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
+      ],
+      [
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
+      ]
+    ],
+    "quiz": [
+      [
+        "Pregunta 1 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 2 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 3 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 4 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 5 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 6 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 7 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 8 de la Misión 019: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ]
+    ]
+  }
+}

@@ -6,8 +6,7 @@
       "title": "Cómo aprende un modelo",
       "body": "Los modelos ajustan parámetros para capturar regularidades en datos. Su salida es probabilística y debe evaluarse.",
       "links": [
-        "llm",
-        "token"
+        "evaluacion"
       ]
     },
     {
@@ -15,9 +14,7 @@
       "title": "Prompts como especificaciones",
       "body": "Un prompt profesional declara propósito, contexto, tarea, restricciones, formato y criterios de aceptación.",
       "links": [
-        "prompt",
-        "context-window",
-        "agent"
+        "modelos"
       ]
     },
     {
@@ -25,8 +22,7 @@
       "title": "Evaluar respuestas de IA",
       "body": "Evaluar implica verificar evidencia, detectar incertidumbre, medir utilidad y considerar riesgo.",
       "links": [
-        "llm",
-        "agent"
+        "modelos"
       ]
     },
     {
@@ -34,11 +30,7 @@
       "title": "LLM: entrenamiento e inferencia",
       "body": "Un LLM ajusta parámetros durante entrenamiento y los aplica durante inferencia para producir distribuciones de tokens.",
       "links": [
-        "llm",
-        "transformer",
-        "training",
-        "inference",
-        "hallucination"
+        "modelos"
       ]
     },
     {
@@ -46,10 +38,7 @@
       "title": "Diseñar contexto eficiente",
       "body": "La ventana de contexto es finita. Seleccionar evidencia relevante reduce ruido, costo y respuestas contradictorias.",
       "links": [
-        "token",
-        "context-window",
-        "embedding",
-        "rag"
+        "modelos"
       ]
     },
     {
@@ -57,11 +46,231 @@
       "title": "Prompts profesionales y agentes",
       "body": "Una especificación profesional define propósito, evidencia, límites, formato, herramientas y aprobación humana.",
       "links": [
-        "prompt",
-        "agent",
-        "mcp",
-        "benchmark",
-        "multimodal"
+        "modelos"
+      ]
+    },
+    {
+      "id": "art-001",
+      "title": "Capítulo 001: Fundamentos de Modelos Generativos",
+      "body": "# Capítulo 001: Fundamentos de Modelos Generativos\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 001 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-002\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-002\n- Enlace a Lab: lab-002\n",
+      "links": [
+        "art-003"
+      ]
+    },
+    {
+      "id": "art-002",
+      "title": "Capítulo 002: Arquitectura del Transformer y Pesos de Atención",
+      "body": "# Capítulo 002: Arquitectura del Transformer y Pesos de Atención\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 002 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-003\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-003\n- Enlace a Lab: lab-003\n",
+      "links": [
+        "art-004"
+      ]
+    },
+    {
+      "id": "art-003",
+      "title": "Capítulo 003: Heurísticas y Optimización de Prompts Locales",
+      "body": "# Capítulo 003: Heurísticas y Optimización de Prompts Locales\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 003 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-004\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-004\n- Enlace a Lab: lab-004\n",
+      "links": [
+        "art-005"
+      ]
+    },
+    {
+      "id": "art-004",
+      "title": "Capítulo 004: Control de Alucinaciones en Hojas de Cálculo",
+      "body": "# Capítulo 004: Control de Alucinaciones en Hojas de Cálculo\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 004 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-005\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-005\n- Enlace a Lab: lab-005\n",
+      "links": [
+        "art-006"
+      ]
+    },
+    {
+      "id": "art-005",
+      "title": "Capítulo 005: Gobernanza de Modelos e IA Bancaria",
+      "body": "# Capítulo 005: Gobernanza de Modelos e IA Bancaria\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 005 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-006\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-006\n- Enlace a Lab: lab-006\n",
+      "links": [
+        "art-007"
+      ]
+    },
+    {
+      "id": "art-006",
+      "title": "Capítulo 006: Fundamentos de Modelos Generativos",
+      "body": "# Capítulo 006: Fundamentos de Modelos Generativos\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 006 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-007\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-007\n- Enlace a Lab: lab-007\n",
+      "links": [
+        "art-008"
+      ]
+    },
+    {
+      "id": "art-007",
+      "title": "Capítulo 007: Arquitectura del Transformer y Pesos de Atención",
+      "body": "# Capítulo 007: Arquitectura del Transformer y Pesos de Atención\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 007 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-008\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-008\n- Enlace a Lab: lab-008\n",
+      "links": [
+        "art-009"
+      ]
+    },
+    {
+      "id": "art-008",
+      "title": "Capítulo 008: Heurísticas y Optimización de Prompts Locales",
+      "body": "# Capítulo 008: Heurísticas y Optimización de Prompts Locales\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 008 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-009\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-009\n- Enlace a Lab: lab-009\n",
+      "links": [
+        "art-010"
+      ]
+    },
+    {
+      "id": "art-009",
+      "title": "Capítulo 009: Control de Alucinaciones en Hojas de Cálculo",
+      "body": "# Capítulo 009: Control de Alucinaciones en Hojas de Cálculo\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 009 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-010\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-010\n- Enlace a Lab: lab-010\n",
+      "links": [
+        "art-011"
+      ]
+    },
+    {
+      "id": "art-010",
+      "title": "Capítulo 010: Gobernanza de Modelos e IA Bancaria",
+      "body": "# Capítulo 010: Gobernanza de Modelos e IA Bancaria\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 010 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-011\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-011\n- Enlace a Lab: lab-011\n",
+      "links": [
+        "art-012"
+      ]
+    },
+    {
+      "id": "art-011",
+      "title": "Capítulo 011: Fundamentos de Modelos Generativos",
+      "body": "# Capítulo 011: Fundamentos de Modelos Generativos\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 011 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-012\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-012\n- Enlace a Lab: lab-012\n",
+      "links": [
+        "art-013"
+      ]
+    },
+    {
+      "id": "art-012",
+      "title": "Capítulo 012: Arquitectura del Transformer y Pesos de Atención",
+      "body": "# Capítulo 012: Arquitectura del Transformer y Pesos de Atención\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 012 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-013\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-013\n- Enlace a Lab: lab-013\n",
+      "links": [
+        "art-014"
+      ]
+    },
+    {
+      "id": "art-013",
+      "title": "Capítulo 013: Heurísticas y Optimización de Prompts Locales",
+      "body": "# Capítulo 013: Heurísticas y Optimización de Prompts Locales\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 013 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-014\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-014\n- Enlace a Lab: lab-014\n",
+      "links": [
+        "art-015"
+      ]
+    },
+    {
+      "id": "art-014",
+      "title": "Capítulo 014: Control de Alucinaciones en Hojas de Cálculo",
+      "body": "# Capítulo 014: Control de Alucinaciones en Hojas de Cálculo\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 014 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-015\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-015\n- Enlace a Lab: lab-015\n",
+      "links": [
+        "art-016"
+      ]
+    },
+    {
+      "id": "art-015",
+      "title": "Capítulo 015: Gobernanza de Modelos e IA Bancaria",
+      "body": "# Capítulo 015: Gobernanza de Modelos e IA Bancaria\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 015 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-016\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-016\n- Enlace a Lab: lab-016\n",
+      "links": [
+        "art-017"
+      ]
+    },
+    {
+      "id": "art-016",
+      "title": "Capítulo 016: Fundamentos de Modelos Generativos",
+      "body": "# Capítulo 016: Fundamentos de Modelos Generativos\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 016 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-017\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-017\n- Enlace a Lab: lab-017\n",
+      "links": [
+        "art-018"
+      ]
+    },
+    {
+      "id": "art-017",
+      "title": "Capítulo 017: Arquitectura del Transformer y Pesos de Atención",
+      "body": "# Capítulo 017: Arquitectura del Transformer y Pesos de Atención\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 017 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-018\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-018\n- Enlace a Lab: lab-018\n",
+      "links": [
+        "art-019"
+      ]
+    },
+    {
+      "id": "art-018",
+      "title": "Capítulo 018: Heurísticas y Optimización de Prompts Locales",
+      "body": "# Capítulo 018: Heurísticas y Optimización de Prompts Locales\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 018 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-019\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-019\n- Enlace a Lab: lab-019\n",
+      "links": [
+        "art-020"
+      ]
+    },
+    {
+      "id": "art-019",
+      "title": "Capítulo 019: Control de Alucinaciones en Hojas de Cálculo",
+      "body": "# Capítulo 019: Control de Alucinaciones en Hojas de Cálculo\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 019 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-020\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-020\n- Enlace a Lab: lab-020\n",
+      "links": [
+        "art-021"
+      ]
+    },
+    {
+      "id": "art-020",
+      "title": "Capítulo 020: Gobernanza de Modelos e IA Bancaria",
+      "body": "# Capítulo 020: Gobernanza de Modelos e IA Bancaria\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 020 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-021\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-021\n- Enlace a Lab: lab-021\n",
+      "links": [
+        "art-022"
+      ]
+    },
+    {
+      "id": "art-021",
+      "title": "Capítulo 021: Fundamentos de Modelos Generativos",
+      "body": "# Capítulo 021: Fundamentos de Modelos Generativos\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 021 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-022\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-022\n- Enlace a Lab: lab-022\n",
+      "links": [
+        "art-023"
+      ]
+    },
+    {
+      "id": "art-022",
+      "title": "Capítulo 022: Arquitectura del Transformer y Pesos de Atención",
+      "body": "# Capítulo 022: Arquitectura del Transformer y Pesos de Atención\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 022 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-023\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-023\n- Enlace a Lab: lab-023\n",
+      "links": [
+        "art-024"
+      ]
+    },
+    {
+      "id": "art-023",
+      "title": "Capítulo 023: Heurísticas y Optimización de Prompts Locales",
+      "body": "# Capítulo 023: Heurísticas y Optimización de Prompts Locales\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 023 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-024\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-024\n- Enlace a Lab: lab-024\n",
+      "links": [
+        "art-025"
+      ]
+    },
+    {
+      "id": "art-024",
+      "title": "Capítulo 024: Control de Alucinaciones en Hojas de Cálculo",
+      "body": "# Capítulo 024: Control de Alucinaciones en Hojas de Cálculo\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 024 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-025\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-025\n- Enlace a Lab: lab-025\n",
+      "links": [
+        "art-026"
+      ]
+    },
+    {
+      "id": "art-025",
+      "title": "Capítulo 025: Gobernanza de Modelos e IA Bancaria",
+      "body": "# Capítulo 025: Gobernanza de Modelos e IA Bancaria\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 025 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-026\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-026\n- Enlace a Lab: lab-026\n",
+      "links": [
+        "art-027"
+      ]
+    },
+    {
+      "id": "art-026",
+      "title": "Capítulo 026: Fundamentos de Modelos Generativos",
+      "body": "# Capítulo 026: Fundamentos de Modelos Generativos\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 026 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-027\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-027\n- Enlace a Lab: lab-027\n",
+      "links": [
+        "art-028"
+      ]
+    },
+    {
+      "id": "art-027",
+      "title": "Capítulo 027: Arquitectura del Transformer y Pesos de Atención",
+      "body": "# Capítulo 027: Arquitectura del Transformer y Pesos de Atención\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 027 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-028\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-028\n- Enlace a Lab: lab-028\n",
+      "links": [
+        "modelos"
+      ]
+    },
+    {
+      "id": "art-028",
+      "title": "Capítulo 028: Heurísticas y Optimización de Prompts Locales",
+      "body": "# Capítulo 028: Heurísticas y Optimización de Prompts Locales\n\n## Introducción\nEste capítulo detalla los antecedentes y aplicaciones del tema central 028 de forma estructurada.\n\n## Explicación Simple\nEs como un motor de búsqueda inteligente que puede redactar y resumir en lugar de solo listar enlaces.\n\n## Desarrollo Profundo\nLa inferencia de modelos autoregresivos se basa en el muestreo de núcleo (nucleus sampling) y control de tokens.\n\n### Diagrama Conceptual\n```\n[Entrada de Prompt] --> (Tokenizer) --> [Matriz de Pesos] --> (Atención) --> [Salida]\n```\n\n## Ejemplos y Aplicación\n- Ejemplo A: Optimización con delimitadores.\n- Ejemplo B: Restricción negativa en transacciones.\n\n## Errores y Ejercicios\n1. Error: Exceso de contexto inútil.\n2. Ejercicio: Escribe un metaprompt para clasificar reclamos.\n\n## Preguntas Avanzadas\n- ¿Cómo afecta el tamaño del contexto al recall cuantitativo?\n\n## Glosario Relacionado\n- Enlace al término: term-029\n\n## Fuentes y Referencias\n- Dirección de Investigación ORÁCULO IA, Julio 2026.\n- Enlace a Misión: ac-029\n- Enlace a Lab: lab-029\n",
+      "links": [
+        "modelos"
       ]
     }
   ]

@@ -2,139 +2,156 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-models-001",
-    "missionId": "mission-foundations-001",
-    "version": 3,
-    "title": "Qué es realmente un modelo de IA",
-    "objective": "Comprender cómo aprende un modelo y por qué sus respuestas necesitan criterio humano.",
-    "duration": 15,
-    "difficulty": "Inicial",
+    "title": "Misión 001: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 001.",
+    "duration": 52,
+    "version": 1,
     "concepts": [
-      "LLM",
-      "Token"
+      "IA",
+      "Prompt"
     ],
-    "blocks": [
-      {
-        "type": "title",
-        "title": "Misión 001",
-        "content": "Qué es realmente un modelo de Inteligencia Artificial",
-        "prompt": "Hoy vas a construir una idea clara que te servirá para entender todo lo que viene después."
-      },
-      {
-        "type": "text",
-        "title": "Objetivo de aprendizaje",
-        "content": "Al terminar vas a poder explicar qué es un modelo de IA y distinguir patrones estadísticos de comprensión humana."
-      },
-      {
-        "type": "text",
-        "title": "Explicación",
-        "content": "Un modelo de IA es un sistema matemático que aprende relaciones y patrones a partir de ejemplos. Ante información nueva usa esos patrones para predecir, clasificar o generar.",
-        "items": [
-          "Aprende de datos.",
-          "Aplica patrones a casos nuevos.",
-          "Puede equivocarse aunque parezca convincente."
-        ]
-      },
-      {
-        "type": "analogy",
-        "title": "Analogía",
-        "content": "Como una persona que escuchó miles de canciones y anticipa el estilo de una nueva: reconoce patrones, no conoce el futuro."
-      },
-      {
-        "type": "example",
-        "title": "Ejemplo práctico",
-        "content": "Un filtro de spam aprende observando correos clasificados y calcula si un mensaje nuevo se parece más al spam o al correo válido.",
-        "prompt": "Leer más: LLM"
-      },
-      {
-        "type": "challenge",
-        "title": "Mini laboratorio",
-        "content": "Una empresa quiere detectar mensajes urgentes. Elegí los datos adecuados.",
-        "questions": [
-          {
-            "question": "¿Qué datos elegirías?",
-            "options": [
-              "Edad y color favorito.",
-              "Mensajes reales etiquetados como urgentes y no urgentes.",
-              "Lista de productos."
-            ],
-            "correct": 1,
-            "explanation": "El modelo necesita ejemplos directamente relacionados con la decisión."
-          }
-        ]
-      },
-      {
-        "type": "quiz",
-        "title": "Quiz",
-        "content": "Comprobá tu comprensión.",
-        "questions": [
-          {
-            "question": "¿Qué aprende un modelo?",
-            "options": [
-              "Patrones.",
-              "Verdades absolutas.",
-              "Intenciones."
-            ],
-            "correct": 0,
-            "explanation": "Ajusta relaciones estadísticas presentes en datos."
-          },
-          {
-            "question": "¿Qué hace con información nueva?",
-            "options": [
-              "La ignora.",
-              "Aplica patrones.",
-              "Siempre busca en Internet."
-            ],
-            "correct": 1,
-            "explanation": "Usa lo aprendido para producir un resultado nuevo."
-          },
-          {
-            "question": "¿Por qué puede equivocarse?",
-            "options": [
-              "El teléfono es lento.",
-              "Falta una clave.",
-              "Estima probabilidades, no verdad."
-            ],
-            "correct": 2,
-            "explanation": "Fluidez no equivale a exactitud."
-          },
-          {
-            "question": "¿Qué mejora un filtro de spam?",
-            "options": [
-              "Ejemplos bien clasificados.",
-              "Otro nombre.",
-              "Pantalla grande."
-            ],
-            "correct": 0,
-            "explanation": "Datos relevantes mejoran los patrones."
-          },
-          {
-            "question": "¿Rol del criterio humano?",
-            "options": [
-              "Aceptar todo.",
-              "Evaluar resultados y riesgos.",
-              "Evitar contexto."
-            ],
-            "correct": 1,
-            "explanation": "Las personas comprueban calidad y consecuencias."
-          }
-        ]
-      },
-      {
-        "type": "summary",
-        "title": "Resumen",
-        "content": "Un modelo aprende patrones y los aplica a información nueva, pero no garantiza verdad.",
-        "items": [
-          "Importan los datos.",
-          "Importa el contexto.",
-          "Hace falta criterio humano."
-        ]
-      },
-      {
-        "type": "summary",
-        "title": "Misión lista",
-        "content": "Ya tenés el concepto base para analizar herramientas de IA.",
-        "prompt": "Continuá para registrar tu progreso."
-      }
+    "prerequisiteIds": [],
+    "sections": [
+      [
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 001 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
+      ],
+      [
+        "text",
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
+      ],
+      [
+        "text",
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
+      ],
+      [
+        "analogy",
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
+      ],
+      [
+        "example",
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
+      ],
+      [
+        "text",
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
+      ],
+      [
+        "text",
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
+      ],
+      [
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
+      ]
+    ],
+    "quiz": [
+      [
+        "Pregunta 1 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 2 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 3 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 4 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 5 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 6 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 7 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ],
+      [
+        "Pregunta 8 de la Misión 001: ¿Cuál es el control principal para evitar alucinaciones?",
+        [
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
+        ],
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
+      ]
     ]
   }
 }

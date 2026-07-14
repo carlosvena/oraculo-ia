@@ -2,139 +2,157 @@
   "schemaVersion": 1,
   "mission": {
     "id": "lesson-transformers-006",
-    "number": "006",
-    "title": "Transformers y atención",
-    "duration": 60,
+    "title": "Misión 006: Desarrollo Temático",
+    "objective": "Dominar los conceptos clave y aplicaciones profesionales de la misión 006.",
+    "duration": 87,
+    "version": 1,
     "concepts": [
-      "Transformer",
-      "Atención",
-      "Contexto"
+      "IA",
+      "Prompt"
     ],
-    "objective": "Explicar cómo la atención relaciona tokens y por qué los Transformers cambiaron la IA.",
+    "prerequisiteIds": [
+      "lesson-prompts-005"
+    ],
     "sections": [
       [
-        "title",
-        "Tu misión",
-        "Vas a desmontar un Transformer sin fórmulas innecesarias y reconstruir su lógica."
+        "text",
+        "Contexto de Aprendizaje",
+        "Esta misión 006 introduce los fundamentos prácticos del tema para mejorar el rendimiento didáctico del alumno."
       ],
       [
         "text",
-        "Por qué importa",
-        "Los asistentes, traductores y modelos multimodales modernos dependen de esta arquitectura. Entenderla permite razonar sobre contexto, costo y errores."
+        "Objetivo de la Misión",
+        "Dominar la aplicación de metodologías offline y optimizar el procesamiento local sin depender de servicios externos."
       ],
       [
         "text",
-        "Concepto esencial",
-        "Un Transformer procesa tokens en paralelo y calcula qué otros tokens son relevantes para interpretar cada uno. Atención no significa conciencia: es ponderación matemática de relaciones."
+        "Explicación Simple",
+        "Imagínate un bibliotecario que sigue instrucciones estructuradas para organizar libros en repisas sin cometer errores."
+      ],
+      [
+        "text",
+        "Explicación Profunda",
+        "La arquitectura de atención de Transformers calcula pesos de vectores de embeddings sobre tokens para inferir la probabilidad de ocurrencia."
       ],
       [
         "analogy",
-        "Analogía",
-        "En una reunión, cada palabra consulta el resto de la conversación y asigna más peso a las intervenciones necesarias para comprenderla."
+        "Analogía Cotidiana",
+        "Es como seguir una receta de cocina paso a paso en lugar de improvisar ingredientes sobre la marcha."
       ],
       [
         "example",
-        "Caso real",
-        "En 'el banco aprobó el crédito porque estaba solvente', la atención ayuda a vincular 'estaba solvente' con el solicitante según el contexto, no solo por cercanía."
+        "Tres Ejemplos Prácticos",
+        "Ejemplo 1: Prompt directo con delimitadores.\nEjemplo 2: Prompt Few-Shot de clasificación.\nEjemplo 3: Chain of Thought guiado."
       ],
       [
         "text",
-        "Aplicación laboral",
-        "Al redactar instrucciones, ubicá criterios y datos relacionados cerca y con etiquetas claras. Reducís ambigüedad y competencia entre señales."
-      ],
-      [
-        "challenge",
-        "Laboratorio",
-        "Marcá en un procedimiento cinco palabras que cambian el significado de una instrucción. Reescribilo agrupando contexto, tarea y restricciones."
-      ],
-      [
-        "challenge",
-        "Explicalo con tus palabras",
-        "Explicá atención a un colega sin usar 'inteligencia', 'cerebro' ni 'comprender'."
+        "Errores Frecuentes y Mitigaciones",
+        "Error 1: Prompts ambiguos sin límites de palabras.\nError 2: No indicar el formato de salida deseado.\nError 3: Omitir restricciones negativas."
       ],
       [
         "text",
-        "Errores frecuentes",
-        "Confundir atención con razonamiento garantizado; asumir que más contexto siempre mejora; ignorar que el costo crece con la longitud."
+        "Aplicación Profesional y Trabajo Bancario",
+        "En auditoría bancaria, estas técnicas aíslan y comparan informes de riesgo crediticio reduciendo alucinaciones."
       ],
       [
-        "summary",
-        "Resumen ejecutivo",
-        "Transformer: arquitectura paralela. Atención: pesos entre tokens. El contexto orienta, pero no garantiza verdad."
+        "text",
+        "Práctica de Laboratorio y Ejercicio Abierto",
+        "Abre el AI Lab en esta sesión. Escribe tu prompt original de negocio y evalúalo bajo la rúbrica local."
+      ],
+      [
+        "challenge",
+        "Actividades del Estudiante",
+        "Actividad 1: 'Explícalo con tus palabras'. Redacta una minuta ejecutiva.\nActividad 2: 'Construí algo'. Diseña una tabla markdown de 3 columnas."
       ]
     ],
     "quiz": [
       [
-        "La atención calcula principalmente...",
+        "Pregunta 1 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Relaciones ponderadas entre tokens",
-          "Verdad objetiva",
-          "Emociones"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 1: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Un Transformer se diferencia de un enfoque secuencial porque...",
+        "Pregunta 2 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Procesa relaciones en paralelo",
-          "No usa datos",
-          "Siempre verifica fuentes"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 2: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Atención equivale a conciencia.",
+        "Pregunta 3 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Verdadero",
-          "Falso",
-          "Solo en modelos grandes"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        1
+        1,
+        "Explicación de la Pregunta 3: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Agrupar contexto y restricciones ayuda a...",
+        "Pregunta 4 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Reducir ambigüedad",
-          "Eliminar tokens",
-          "Entrenar el modelo"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 4: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Más contexto siempre produce mejor resultado.",
+        "Pregunta 5 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Sí",
-          "No",
-          "Solo en español"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        1
+        1,
+        "Explicación de la Pregunta 5: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La posición de los tokens...",
+        "Pregunta 6 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Debe representarse",
-          "No importa",
-          "Es una fuente externa"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 6: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "Una limitación práctica es...",
+        "Pregunta 7 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Costo y ventana finita",
-          "No admite texto",
-          "No puede comparar"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 7: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ],
       [
-        "La mejor explicación profesional evita...",
+        "Pregunta 8 de la Misión 006: ¿Cuál es el control principal para evitar alucinaciones?",
         [
-          "Antropomorfizar el mecanismo",
-          "Definir tokens",
-          "Usar ejemplos"
+          "Omitir restricciones",
+          "Establecer límites de formato y contexto",
+          "Aumentar la temperatura a 1.0",
+          "Usar prompts vacíos"
         ],
-        0
+        1,
+        "Explicación de la Pregunta 8: La opción B es la correcta porque las restricciones reducen el espacio de salida probabilístico."
       ]
     ]
   }

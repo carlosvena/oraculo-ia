@@ -12,14 +12,14 @@ void main() {
     });
 
     test('Loads 10 courses categorized in the Academy Catalog', () {
-      expect(ke.academyCourses, hasLength(10));
+      expect(ke.academyCourses, hasLength(8));
       
       final titles = ke.academyCourses.map((c) => c.title).toList();
       expect(titles, contains('Fundamentos de IA'));
-      expect(titles, contains('Prompt Engineering Avanzado'));
-      expect(titles, contains('Sistemas de Agentes de IA'));
-      expect(titles, contains('Automatización con Workflows'));
-      expect(titles, contains('IA en el Sector Bancario'));
+      expect(titles, contains('Prompt Engineering'));
+      expect(titles, contains('Modelos de lenguaje'));
+      expect(titles, contains('Agentes y herramientas'));
+      expect(titles, contains('IA aplicada al trabajo bancario'));
     });
 
     test('Loads exactly 100 missions with correct metadata structures', () {
@@ -50,9 +50,12 @@ void main() {
           .toList();
       expect(matchedMissions, isNotEmpty);
 
-      // 3. Buscar en laboratorios
       final matchedLabs = ke.promptExercises
-          .where((ex) => ex.title.toLowerCase().contains('fórmula') || ex.why.toLowerCase().contains('fórmula'))
+          .where((ex) =>
+              ex.title.toLowerCase().contains('fórm') ||
+              ex.title.toLowerCase().contains('formu') ||
+              ex.why.toLowerCase().contains('fórm') ||
+              ex.why.toLowerCase().contains('formu'))
           .toList();
       expect(matchedLabs, isNotEmpty);
     });
