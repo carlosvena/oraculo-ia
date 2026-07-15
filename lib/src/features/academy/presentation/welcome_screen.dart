@@ -80,6 +80,15 @@ class AcademyWelcomeScreen extends StatelessWidget {
                       icon: const Icon(Icons.work_outline_rounded, size: 16),
                       label: const Text('Modo Oficina'),
                     ),
+                    ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF0F2027),
+                        foregroundColor: Colors.white,
+                      ),
+                      onPressed: () => context.push('/workspace'),
+                      icon: const Icon(Icons.rocket_launch_rounded, size: 16),
+                      label: const Text('Mi Workspace'),
+                    ),
                   ],
                 ),
               ],

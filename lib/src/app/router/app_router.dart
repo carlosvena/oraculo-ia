@@ -43,6 +43,12 @@ import 'package:oraculo_ia/src/features/professional/presentation/simulators_scr
 import 'package:oraculo_ia/src/features/professional/presentation/challenges_screen.dart';
 import 'package:oraculo_ia/src/features/professional/presentation/resources_center_screen.dart';
 import 'package:oraculo_ia/src/features/professional/presentation/metrics_panel_screen.dart';
+import 'package:oraculo_ia/src/features/workspace/presentation/workspace_screen.dart';
+import 'package:oraculo_ia/src/features/workspace/presentation/notebook_screen.dart';
+import 'package:oraculo_ia/src/features/workspace/presentation/prompt_vault_screen.dart';
+import 'package:oraculo_ia/src/features/workspace/presentation/experiments_screen.dart';
+import 'package:oraculo_ia/src/features/workspace/presentation/documents_screen.dart';
+import 'package:oraculo_ia/src/features/workspace/presentation/backup_export_screen.dart';
 
 abstract final class AppRoute {
   static const splash = '/';
@@ -86,6 +92,12 @@ abstract final class AppRoute {
   static const officeChallenges = '/office-mode/challenges';
   static const officeResources = '/office-mode/resources';
   static const officeMetrics = '/office-mode/metrics';
+  static const workspace = '/workspace';
+  static const workspaceNotebook = '/workspace/notebook';
+  static const workspaceVault = '/workspace/vault';
+  static const workspaceExperiments = '/workspace/experiments';
+  static const workspaceDocuments = '/workspace/documents';
+  static const workspaceBackup = '/workspace/backup';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -348,6 +360,30 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.officeMetrics,
         builder: (context, state) => const MetricsPanelScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.workspace,
+        builder: (context, state) => const WorkspaceScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.workspaceNotebook,
+        builder: (context, state) => const NotebookScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.workspaceVault,
+        builder: (context, state) => const PromptVaultScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.workspaceExperiments,
+        builder: (context, state) => const ExperimentsScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.workspaceDocuments,
+        builder: (context, state) => const DocumentsScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.workspaceBackup,
+        builder: (context, state) => const BackupExportScreen(),
       ),
     ],
   );

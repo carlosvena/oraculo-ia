@@ -31,7 +31,7 @@ class VersionNewsScreen extends StatelessWidget {
           ),
           const SizedBox(height: AppSpacing.xs),
           const Text(
-            'Versión 2.11.0 (Enterprise Foundation)',
+            'Versión 2.12.0 (Workspace Edition)',
             style: TextStyle(color: Colors.grey, fontSize: 13),
           ),
           const SizedBox(height: AppSpacing.md),

@@ -4,6 +4,7 @@ import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 import 'package:oraculo_ia/src/features/content/data/knowledge_engine.dart';
 import 'package:oraculo_ia/src/features/professional/data/professional_repository.dart';
+import 'package:oraculo_ia/src/features/workspace/data/workspace_repository.dart';
 
 
 final class SearchResultItem {
@@ -195,6 +196,32 @@ class _GlobalSearchScreenState extends State<GlobalSearchScreen> {
             title: g.title,
             subtitle: g.content,
             routePath: '/office-mode/resources',
+          ));
+        }
+      }
+    }
+    // 14. Workspace Personal — Notas
+    final wsRepo = WorkspaceRepository.instance;
+    if (wsRepo.isInitialized) {
+      for (final n in wsRepo.notes) {
+        if (n.title.toLowerCase().contains(_query) || n.body.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Nota (Workspace)',
+            title: n.title,
+            subtitle: n.body,
+            routePath: '/workspace/notebook',
+          ));
+        }
+      }
+
+      // 15. Workspace Personal — Prompts Vault
+      for (final p in wsRepo.prompts) {
+        if (p.title.toLowerCase().contains(_query) || p.promptText.toLowerCase().contains(_query)) {
+          _results.add(SearchResultItem(
+            type: 'Prompt (Workspace)',
+            title: p.title,
+            subtitle: p.promptText,
+            routePath: '/workspace/vault',
           ));
         }
       }
