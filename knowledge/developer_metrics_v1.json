@@ -1,0 +1,9 @@
+{
+  "lib_loc": 16287,
+  "test_loc": 1321,
+  "lib_files": 119,
+  "test_files": 30,
+  "modules": 22,
+  "tests_count": 598,
+  "coverage_percent": 92.5
+}

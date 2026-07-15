@@ -31,7 +31,7 @@ class VersionNewsScreen extends StatelessWidget {
           ),
           const SizedBox(height: AppSpacing.xs),
           const Text(
-            'Epic 9: Contenido Visible y Aprendizaje Masivo v1.0',
+            'Versión 2.11.0 (Enterprise Foundation)',
             style: TextStyle(color: Colors.grey, fontSize: 13),
           ),
           const SizedBox(height: AppSpacing.md),

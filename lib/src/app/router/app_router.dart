@@ -42,6 +42,7 @@ import 'package:oraculo_ia/src/features/professional/presentation/templates_scre
 import 'package:oraculo_ia/src/features/professional/presentation/simulators_screen.dart';
 import 'package:oraculo_ia/src/features/professional/presentation/challenges_screen.dart';
 import 'package:oraculo_ia/src/features/professional/presentation/resources_center_screen.dart';
+import 'package:oraculo_ia/src/features/professional/presentation/metrics_panel_screen.dart';
 
 abstract final class AppRoute {
   static const splash = '/';
@@ -84,6 +85,7 @@ abstract final class AppRoute {
   static const officeSimulators = '/office-mode/simulators';
   static const officeChallenges = '/office-mode/challenges';
   static const officeResources = '/office-mode/resources';
+  static const officeMetrics = '/office-mode/metrics';
 
   static String lessonFor(Mission mission) {
     return '$lesson/${mission.id}/${mission.lessonId}';
@@ -342,6 +344,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoute.officeResources,
         builder: (context, state) => const ResourcesCenterScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.officeMetrics,
+        builder: (context, state) => const MetricsPanelScreen(),
       ),
     ],
   );

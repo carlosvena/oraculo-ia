@@ -3,9 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
-import 'package:oraculo_ia/src/features/professional/data/professional_repository.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/data/learning_engine.dart';
 import 'package:oraculo_ia/src/features/knowledge_map/domain/learning_graph.dart';
+import 'package:oraculo_ia/src/features/professional/data/professional_repository.dart';
 
 class OfficeModeScreen extends ConsumerWidget {
   const OfficeModeScreen({super.key});
@@ -128,6 +128,7 @@ class OfficeModeScreen extends ConsumerWidget {
               _buildAccessCard(context, 'Desafíos Prácticos', '210 problemas clasificados', Icons.emoji_events_rounded, () => context.push('/office-mode/challenges')),
               _buildAccessCard(context, 'Plantillas Corporativas', 'Actas, minutas e informes', Icons.description_rounded, () => context.push('/office-mode/templates')),
               _buildAccessCard(context, 'Centro de Recursos', 'Guías y buenas prácticas', Icons.menu_book_rounded, () => context.push('/office-mode/resources')),
+              _buildAccessCard(context, 'Métricas Internas', 'Estadísticas y LOC del sistema', Icons.insights_rounded, () => context.push('/office-mode/metrics')),
             ],
           ),
           const SizedBox(height: AppSpacing.lg),

@@ -333,6 +333,22 @@
       "nextReview": "2026-10-14",
       "currentClaims": false,
       "textualQuotes": []
+    },
+    {
+      "id": "developer-metrics",
+      "title": "Métricas de Desarrollo y Cobertura",
+      "author": "Equipo de Desarrollo ORÁCULO IA",
+      "version": "1.0",
+      "created": "2026-07-14",
+      "reviewed": "2026-07-14",
+      "status": "verificado",
+      "sources": [
+        "knowledge/developer_metrics_v1.json"
+      ],
+      "notes": "Métricas estáticas de desarrollo compiladas.",
+      "nextReview": "2026-10-14",
+      "currentClaims": false,
+      "textualQuotes": []
     }
   ]
 }

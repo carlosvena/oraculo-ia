@@ -1,13 +1,15 @@
 abstract final class AppMetadata {
-  static const version = '2.2.0-beta';
-  static const buildNumber = '13';
+  static const version = '2.11.0';
+  static const buildNumber = '22';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    'Misiones profesionales 006 a 015.',
-    'Comparador offline de modelos con fuentes.',
-    'Mentor por voz y perfil local personalizado.',
+    'Modo Oficina con herramientas avanzadas.',
+    '300 prompts corporativos listos para copiar.',
+    '210 desafíos de inferencia por nivel de dificultad.',
+    'Simulador interactivo con rúbrica local y puntuación.',
+    'Panel interno de métricas y líneas de código.',
   ];
 }
