@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/app/router/app_route.dart';
 import 'package:oraculo_ia/src/core/error/app_error_boundary.dart';
 import 'package:oraculo_ia/src/features/assessment/presentation/assessment_screen.dart';
 import 'package:oraculo_ia/src/features/beta/presentation/beta_screens.dart';
@@ -23,7 +24,6 @@ import 'package:oraculo_ia/src/features/prompt_lab/presentation/prompt_lab_scree
 import 'package:oraculo_ia/src/features/review/presentation/review_screen.dart';
 import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
 
-import 'package:oraculo_ia/src/app/router/app_route.dart';
 export 'package:oraculo_ia/src/app/router/app_route.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
