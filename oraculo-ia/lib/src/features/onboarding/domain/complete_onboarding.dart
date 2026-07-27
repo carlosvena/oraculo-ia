@@ -1,0 +1,9 @@
+import 'package:oraculo_ia/src/features/onboarding/domain/onboarding_repository.dart';
+
+final class CompleteOnboarding {
+  const CompleteOnboarding(this._repository);
+
+  final OnboardingRepository _repository;
+
+  Future<void> call() => _repository.completeOnboarding();
+}
