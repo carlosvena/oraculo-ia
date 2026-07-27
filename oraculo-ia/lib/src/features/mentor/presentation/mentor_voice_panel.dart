@@ -24,5 +24,5 @@ class _MentorVoicePanelState extends ConsumerState<MentorVoicePanel> {
     Row(children:[IconButton(tooltip:speaking?'Pausar lectura':'Leer en voz alta',onPressed:speaking?_pause:_speak,icon:Icon(speaking?Icons.pause_circle:Icons.volume_up_outlined)),Expanded(child:Slider(value:speed,min:.3,max:.7,divisions:4,label:'${speed.toStringAsFixed(2)}x',onChanged:(value)=>setState(()=>speed=value))),Text('${speed.toStringAsFixed(2)}x')]),
     SwitchListTile(contentPadding:EdgeInsets.zero,title:const Text('Modo manos libres'),subtitle:const Text('Lee cada bloque al avanzar'),value:handsFree,onChanged:(value){setState(()=>handsFree=value);if(value)_speak();}),
     Wrap(spacing:6,children:[ActionChip(label:const Text('Explicámelo de otra manera'),onPressed:()=>_show('Otra perspectiva',mentorAlternative(widget.title))),ActionChip(label:const Text('Dame un ejemplo más difícil'),onPressed:()=>_show('Ejemplo exigente',mentorHardExample(widget.title))),ActionChip(label:const Text('Aplicalo a mi trabajo'),onPressed:()=>_show('Aplicación a tu trabajo',mentorWorkExample(widget.title,profile)))])
-  ]));}
+  ])));}
 }
