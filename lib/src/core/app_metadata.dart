@@ -1,6 +1,6 @@
 abstract final class AppMetadata {
-  static const version = '3.0.4';
-  static const buildNumber = '24';
+  static const version = '3.0.5';
+  static const buildNumber = '25';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
