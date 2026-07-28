@@ -1525,6 +1525,150 @@
                     0
                 ]
             ]
+        },
+        {
+            "id": "lesson-misinfo-017",
+            "number": "017",
+            "title": "Criterio ante contenido generado por IA",
+            "duration": 55,
+            "concepts": [
+                "Desinformación",
+                "Deepfakes",
+                "Verificación de fuentes",
+                "Criterio mediático"
+            ],
+            "objective": "Reconocer señales de contenido generado o manipulado por IA y aplicar un método simple de verificación antes de creer o compartir algo.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Hoy la IA no solo responde preguntas: también genera imágenes, audios y videos que pueden pasar por reales. Vas a aprender a dudar bien, no a desconfiar de todo."
+                ],
+                [
+                    "text",
+                    "Por qué importa",
+                    "Pergolini insiste en una idea central para los medios: experimentar con las herramientas nuevas sin perder el criterio propio. Con la IA generativa, ese criterio es lo único que te protege de creer cualquier cosa."
+                ],
+                [
+                    "text",
+                    "Concepto esencial",
+                    "Un contenido generado por IA no es 'falso' por definición (hay usos legítimos: ilustrar, prototipar, doblar). El problema aparece cuando se presenta como real sin aclararlo, para engañar."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es como una foto retocada con Photoshop hace veinte años: la herramienta no es el problema, el problema es cuando alguien la usa para hacerte creer algo que no pasó."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un audio viral de una figura pública diciendo algo escandaloso, sin fuente verificable, que se viraliza antes de que nadie pueda confirmarlo: el objetivo no es informar, es que lo compartas rápido."
+                ],
+                [
+                    "text",
+                    "Método de verificación en 3 pasos",
+                    "1) Buscá si medios serios ya lo confirmaron o desmintieron. 2) Fijate si hay fuente original citable (no solo 'me llegó por WhatsApp'). 3) Preguntate qué gana quien lo comparte si vos le creés sin chequear."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Elegí algo que viste compartido esta semana (texto, imagen o audio) que te generó dudas. Aplicá los 3 pasos de verificación y escribí qué encontraste."
+                ],
+                [
+                    "text",
+                    "Señales de alerta comunes",
+                    "Urgencia ('compartilo antes de que lo bajen'), ausencia de fuente citable, imágenes con manos o texto de fondo raros, audio con cortes o entonación pareja, cuentas nuevas sin historial que lo publican primero."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien de tu entorno cómo diferenciarías un audio real de uno generado, sin usar la palabra 'inteligencia artificial' en la explicación."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Creer que 'se ve muy real, no puede ser IA' (cada vez es más fácil generarlo bien); creer que 'si lo compartieron muchos, debe ser cierto'; no verificar nunca por pereza."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "No se trata de desconfiar de todo lo que ves. Se trata de tener un método simple y rápido para pausar antes de compartir, sobre todo cuando el contenido busca generar una reacción emocional inmediata."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Es siempre malo que un contenido esté generado por IA?",
+                    [
+                        "Sí, siempre es engañoso",
+                        "No, el problema es cuando se presenta como real para engañar",
+                        "No importa, nadie lo nota"
+                    ],
+                    1
+                ],
+                [
+                    "¿Cuál es el primer paso del método de verificación en 3 pasos?",
+                    [
+                        "Compartirlo por las dudas",
+                        "Buscar si medios serios ya lo confirmaron o desmintieron",
+                        "Ignorarlo directamente"
+                    ],
+                    1
+                ],
+                [
+                    "¿Qué pregunta ayuda a detectar un intento de manipulación?",
+                    [
+                        "Qué gana quien lo comparte si le creés sin chequear",
+                        "Qué tan lindo es el video",
+                        "Cuántos likes tiene"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es una señal de alerta común en contenido engañoso?",
+                    [
+                        "Cita la fuente original con claridad",
+                        "Pide urgencia para compartirlo antes de que 'lo bajen'",
+                        "Tiene fecha de publicación visible"
+                    ],
+                    1
+                ],
+                [
+                    "¿Por qué 'se ve muy real' ya NO alcanza como criterio?",
+                    [
+                        "Porque generar contenido convincente con IA es cada vez más fácil y accesible",
+                        "Porque nunca fue un buen criterio ni antes de la IA",
+                        "Porque no importa cómo se vea"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué pasa si algo lo compartieron muchas personas?",
+                    [
+                        "Eso garantiza que es cierto",
+                        "No garantiza nada por sí solo; hay que verificar igual",
+                        "Significa que un medio serio ya lo confirmó"
+                    ],
+                    1
+                ],
+                [
+                    "Según la misión, ¿qué es lo único que protege frente a la desinformación generada por IA?",
+                    [
+                        "Desconfiar de todo sin excepción",
+                        "El criterio propio, aplicado con método",
+                        "Dejar de usar redes sociales"
+                    ],
+                    1
+                ],
+                [
+                    "¿Cuál es el objetivo real de esta misión?",
+                    [
+                        "Enseñar a generar contenido con IA",
+                        "Dar un método simple para pausar antes de creer o compartir",
+                        "Prohibir el uso de IA generativa"
+                    ],
+                    1
+                ]
+            ]
         }
     ]
 }

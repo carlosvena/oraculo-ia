@@ -78,6 +78,7 @@ class _ArticleCard extends StatelessWidget {
         child: ExpansionTile(
           title: Text(article.title),
           trailing: IconButton(
+            tooltip: favorite ? 'Quitar de favoritos' : 'Agregar a favoritos',
             icon: Icon(favorite ? Icons.favorite : Icons.favorite_border),
             onPressed:
                 () => ref
@@ -168,6 +169,15 @@ class _DictionaryScreenState extends ConsumerState<DictionaryScreen> {
                     Align(
                       alignment: Alignment.centerRight,
                       child: IconButton(
+                        tooltip:
+                            (ref
+                                        .watch(learningStateProvider)
+                                        .value
+                                        ?.favorites
+                                        .contains('term:${term.id}') ??
+                                    false)
+                                ? 'Quitar de favoritos'
+                                : 'Agregar a favoritos',
                         icon: Icon(
                           (ref
                                       .watch(learningStateProvider)

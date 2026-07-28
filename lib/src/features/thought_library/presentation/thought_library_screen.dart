@@ -116,6 +116,7 @@ class _IdeaCard extends ConsumerWidget {
                   ),
                 ),
                 IconButton(
+                  tooltip: favorite ? 'Quitar de favoritos' : 'Agregar a favoritos',
                   icon: Icon(favorite ? Icons.favorite : Icons.favorite_border),
                   onPressed:
                       () => ref

@@ -63,9 +63,11 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     return base
         .map(
           (block) => block.copyWith(
-            title: block.title.replaceAll('{{trabajo}}', phrase),
-            content: block.content.replaceAll('{{trabajo}}', phrase),
-            prompt: block.prompt?.replaceAll('{{trabajo}}', phrase),
+            title: domain.applyWorkPlaceholder(block.title, phrase),
+            content: domain.applyWorkPlaceholder(block.content, phrase),
+            prompt: block.prompt == null
+                ? null
+                : domain.applyWorkPlaceholder(block.prompt!, phrase),
           ),
         )
         .toList();
@@ -481,7 +483,17 @@ class _AnswerOption extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-      child: Material(
+      child: Semantics(
+        button: true,
+        label: 'Opción $letter: $text',
+        selected: isSelected,
+        hint:
+            hasAnswered
+                ? (isCorrectOption
+                    ? 'Correcta'
+                    : (isSelected ? 'Incorrecta, elegiste esta' : null))
+                : null,
+        child: Material(
         color: background,
         borderRadius: BorderRadius.circular(16),
         child: InkWell(
@@ -529,6 +541,7 @@ class _AnswerOption extends StatelessWidget {
             ),
           ),
         ),
+      ),
       ),
     );
   }

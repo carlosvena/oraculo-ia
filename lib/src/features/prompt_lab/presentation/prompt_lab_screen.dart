@@ -141,6 +141,15 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
                     Align(
                       alignment: Alignment.centerRight,
                       child: IconButton(
+                        tooltip:
+                            (ref
+                                        .watch(learningStateProvider)
+                                        .value
+                                        ?.favorites
+                                        .contains('prompt:${selected.id}') ??
+                                    false)
+                                ? 'Quitar de favoritos'
+                                : 'Agregar a favoritos',
                         icon: Icon(
                           (ref
                                       .watch(learningStateProvider)

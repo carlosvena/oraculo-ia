@@ -71,6 +71,42 @@ void main() {
     expect(restored.promptHistory.single, 'Prompt profesional');
     expect(restored.reviewConcepts, contains('RAG'));
   });
+
+  test('reset clears all progress back to a fresh state', () async {
+    final store = _MemoryStore();
+    // Simula progreso guardado.
+    await store.save(
+      const LearningState(
+        completed: <String>{'lesson-models-001'},
+        studyMinutes: 90,
+        learnerName: 'Ana',
+        learnerWork: 'bibliotecaria',
+      ),
+    );
+    final beforeReset = await store.load();
+    expect(beforeReset.completed, isNotEmpty);
+    // El reset (LearningStateNotifier.reset) guarda un LearningState()
+    // por defecto; acá probamos ese mismo contrato a nivel de datos.
+    await store.save(const LearningState());
+    final afterReset = await store.load();
+    expect(afterReset.completed, isEmpty);
+    expect(afterReset.studyMinutes, 0);
+    expect(afterReset.learnerName, isEmpty);
+    expect(afterReset.learnerWork, isEmpty);
+  });
+
+  test('learner name and work persist through JSON roundtrip', () {
+    const state = LearningState(learnerName: 'Ana', learnerWork: 'bibliotecaria');
+    final restored = LearningState.fromJson(state.toJson());
+    expect(restored.learnerName, 'Ana');
+    expect(restored.learnerWork, 'bibliotecaria');
+  });
+
+  test('learner name and work default to empty, not a fixed profession', () {
+    const state = LearningState();
+    expect(state.learnerName, isEmpty);
+    expect(state.learnerWork, isEmpty);
+  });
 }
 
 final class _MemoryStore implements LearningStateStore {

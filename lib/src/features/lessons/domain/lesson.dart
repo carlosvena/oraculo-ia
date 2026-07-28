@@ -47,6 +47,14 @@ final class LessonBlock {
       );
 }
 
+/// Reemplaza el placeholder `{{trabajo}}` por el trabajo real de la
+/// persona, o por un genérico si todavía no cargó nada en su perfil.
+/// Separado como función pura para poder testearlo sin levantar widgets.
+String applyWorkPlaceholder(String text, String work) {
+  final phrase = work.trim().isEmpty ? 'tu trabajo' : work.trim();
+  return text.replaceAll('{{trabajo}}', phrase);
+}
+
 final class Lesson {
   Lesson({
     required this.id,
