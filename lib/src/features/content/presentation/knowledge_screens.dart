@@ -240,6 +240,7 @@ class CatalogScreen extends ConsumerWidget {
   final ValueChanged<Lesson> onOpenLesson;
   @override
   Widget build(BuildContext context, WidgetRef ref) => OraculoScaffold(
+    bottomNavIndex: 3,
     body: AsyncContent<KnowledgeContent>(
       value: ref.watch(knowledgeProvider),
       errorMessage: 'No pudimos abrir el catálogo.',

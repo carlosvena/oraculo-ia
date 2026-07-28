@@ -60,6 +60,7 @@ class CurrentMissionScreen extends ConsumerWidget {
     final learning =
         ref.watch(learningStateProvider).value ?? const LearningState();
     return OraculoScaffold(
+      bottomNavIndex: 0,
       body: AsyncContent<Mission>(
         value: mission,
         errorMessage: l10n.missionLoadError,

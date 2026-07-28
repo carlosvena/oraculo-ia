@@ -1,15 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:oraculo_ia/src/design_system/components/main_bottom_nav.dart';
 import 'package:oraculo_ia/src/design_system/foundations/app_spacing.dart';
 
 class OraculoScaffold extends StatelessWidget {
-  const OraculoScaffold({required this.body, this.bottomAction, super.key});
+  const OraculoScaffold({
+    required this.body,
+    this.bottomAction,
+    this.bottomNavIndex,
+    super.key,
+  });
 
   final Widget body;
   final Widget? bottomAction;
 
+  /// Si se pasa (0 a 4), muestra la barra de accesos rápidos
+  /// (Hoy / Mi curso / Practicar / Explorar / Mi progreso) resaltando
+  /// ese índice. Si es null, no se muestra (comportamiento anterior).
+  final int? bottomNavIndex;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar:
+          bottomNavIndex == null
+              ? null
+              : MainBottomNav(currentIndex: bottomNavIndex!),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(

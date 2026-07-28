@@ -31,6 +31,20 @@ final class LessonBlock {
   final List<String> items;
   final String? prompt;
   final List<LessonQuestion> questions;
+
+  /// Usado para personalizar contenido genérico (ej. reemplazar
+  /// `{{trabajo}}` por el trabajo real guardado por la persona) sin
+  /// tener que duplicar contenido editorial por profesión.
+  LessonBlock copyWith({String? title, String? content, String? prompt}) =>
+      LessonBlock(
+        type: type,
+        title: title ?? this.title,
+        content: content ?? this.content,
+        sequence: sequence,
+        items: items,
+        prompt: prompt ?? this.prompt,
+        questions: questions,
+      );
 }
 
 final class Lesson {

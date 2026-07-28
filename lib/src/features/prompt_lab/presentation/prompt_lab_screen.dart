@@ -41,6 +41,7 @@ class _PromptLabScreenState extends ConsumerState<PromptLabScreen> {
         ref.watch(learningStateProvider).value?.promptHistory ??
         const <String>[];
     return OraculoScaffold(
+      bottomNavIndex: 2,
       body: ListView(
         children: <Widget>[
           Text(

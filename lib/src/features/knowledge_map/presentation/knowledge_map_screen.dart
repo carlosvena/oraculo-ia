@@ -12,6 +12,7 @@ class KnowledgeMapScreen extends ConsumerWidget {
   final ValueChanged<String> onOpenMission;
   @override
   Widget build(BuildContext context, WidgetRef ref) => OraculoScaffold(
+    bottomNavIndex: 1,
     body: AsyncContent<KnowledgeContent>(
       value: ref.watch(knowledgeProvider),
       errorMessage: 'No pudimos construir el mapa.',

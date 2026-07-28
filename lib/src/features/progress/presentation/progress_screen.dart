@@ -19,6 +19,7 @@ class ProgressScreen extends ConsumerWidget {
     final review =
         learning.reviews[learning.currentLessonId] ?? ReviewLevel.understood;
     return OraculoScaffold(
+      bottomNavIndex: 4,
       bottomAction: PrimaryMissionAction(
         label: 'CONTINUAR MI MISIÓN',
         onPressed: onContinue,

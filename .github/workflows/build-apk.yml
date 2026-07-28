@@ -22,10 +22,19 @@ jobs:
 
       - run: flutter test
 
-      # Sin android/key.properties (no está en el repo, es privado) esto
-      # compila firmado con la clave debug. Es instalable para probar,
-      # pero no para publicar en Google Play — para eso hace falta subir
-      # la keystore como GitHub Secret (ver docs/RELEASE_SIGNING.md).
+      - name: Preparar firma release
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        if: env.KEYSTORE_BASE64 != ''
+        run: |
+          echo "$KEYSTORE_BASE64" | base64 -d > android/app/release.keystore
+          cat > android/key.properties << EOF
+          storePassword=${{ secrets.KEYSTORE_PASSWORD }}
+          keyPassword=${{ secrets.KEYSTORE_PASSWORD }}
+          keyAlias=oraculoia
+          storeFile=app/release.keystore
+          EOF
+
       - run: flutter build apk --release
 
       - uses: actions/upload-artifact@v4

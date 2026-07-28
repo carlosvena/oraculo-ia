@@ -6,6 +6,18 @@ Todos los cambios relevantes de ORÁCULO IA se registran aquí.
 
 - Próximo: Sprint 10 pendiente de definición.
 
+## 3.0.0 — 2026-07-27
+
+- Numeración de versión sincronizada (antes `pubspec.yaml` y "Acerca de" no coincidían).
+- Perfil de usuario real y editable, ya no hardcodeado en el código (`LearnerProfile`).
+- Misión 016 nueva: "Aplicá todo a {{trabajo}}", capstone que se adapta al trabajo real de cada persona, no solo bancario.
+- Sistema de reemplazo de `{{trabajo}}` en contenido de lecciones, reutilizable para futuras misiones.
+- Botón "Volver al principio" (reinicio de progreso) con confirmación.
+- Quiz de lecciones con feedback visual mucho más claro y explicación de por qué "Continuar" está bloqueado.
+- Botón atrás de Android corregido (ya no cierra la app de golpe en Lección/Progreso).
+- `applicationId` real (`com.carlosvena.oraculoia`) y configuración de firma release lista.
+- Compilación automática de APK vía GitHub Actions en cada push.
+
 ## 1.8.0-beta — 2026-07-11
 
 - Home diaria con plan, meta semanal, repaso y recomendación local.

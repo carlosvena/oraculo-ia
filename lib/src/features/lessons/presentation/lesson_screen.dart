@@ -47,13 +47,26 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   List<domain.LessonBlock> _visibleBlocks(
     domain.Lesson lesson,
     LearningMode mode,
+    String work,
   ) {
-    if (mode == LearningMode.intensive) return lesson.blocks;
-    return lesson.blocks
-        .where(
-          (block) =>
-              block.type != domain.LessonBlockType.challenge &&
-              block.type != domain.LessonBlockType.analogy,
+    final base =
+        mode == LearningMode.intensive
+            ? lesson.blocks
+            : lesson.blocks
+                .where(
+                  (block) =>
+                      block.type != domain.LessonBlockType.challenge &&
+                      block.type != domain.LessonBlockType.analogy,
+                )
+                .toList();
+    final phrase = work.trim().isEmpty ? 'tu trabajo' : work.trim();
+    return base
+        .map(
+          (block) => block.copyWith(
+            title: block.title.replaceAll('{{trabajo}}', phrase),
+            content: block.content.replaceAll('{{trabajo}}', phrase),
+            prompt: block.prompt?.replaceAll('{{trabajo}}', phrase),
+          ),
         )
         .toList();
   }
@@ -89,10 +102,11 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final lessonValue = ref.watch(lessonProvider(widget.lessonId));
     final lesson = lessonValue.value;
     final persisted = ref.watch(learningStateProvider).value;
+    final work = persisted?.learnerWork ?? '';
     final visible =
         lesson == null
             ? const <domain.LessonBlock>[]
-            : _visibleBlocks(lesson, persisted?.mode ?? LearningMode.intensive);
+            : _visibleBlocks(lesson, persisted?.mode ?? LearningMode.intensive, work);
     if (_currentBlock >= visible.length && visible.isNotEmpty) {
       _currentBlock = visible.length - 1;
     }
@@ -138,6 +152,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           final blocks = _visibleBlocks(
             value,
             persisted?.mode ?? LearningMode.intensive,
+            work,
           );
           final current = blocks[_currentBlock];
           final progress = (_currentBlock + 1) / blocks.length;
@@ -357,20 +372,17 @@ class _QuestionCard extends StatelessWidget {
         children: <Widget>[
           Text(
             number == null ? question : '$number. $question',
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w700),
           ),
-          const SizedBox(height: AppSpacing.sm),
+          const SizedBox(height: AppSpacing.md),
           for (var index = 0; index < options.length; index++)
-            Padding(
-              padding: const EdgeInsets.only(bottom: AppSpacing.xs),
-              child: ChoiceChip(
-                label: SizedBox(
-                  width: double.infinity,
-                  child: Text(options[index]),
-                ),
-                selected: selectedAnswer == index,
-                onSelected: (_) => onSelected(index),
-              ),
+            _AnswerOption(
+              letter: String.fromCharCode(65 + index),
+              text: options[index],
+              isSelected: selectedAnswer == index,
+              isCorrectOption: index == correctAnswer,
+              hasAnswered: selectedAnswer != null,
+              onTap: () => onSelected(index),
             ),
           if (selectedAnswer != null)
             Container(
@@ -416,6 +428,107 @@ class _QuestionCard extends StatelessWidget {
               ),
             ),
         ],
+      ),
+    );
+  }
+}
+
+class _AnswerOption extends StatelessWidget {
+  const _AnswerOption({
+    required this.letter,
+    required this.text,
+    required this.isSelected,
+    required this.isCorrectOption,
+    required this.hasAnswered,
+    required this.onTap,
+  });
+
+  final String letter;
+  final String text;
+  final bool isSelected;
+  final bool isCorrectOption;
+  final bool hasAnswered;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+
+    // Después de responder: la opción correcta se ve verde siempre,
+    // la elegida (si estaba mal) se ve roja, y el resto queda neutra.
+    Color background = colors.surfaceContainerHigh;
+    Color border = colors.outlineVariant;
+    Color foreground = colors.onSurface;
+    IconData? trailingIcon;
+
+    if (hasAnswered) {
+      if (isCorrectOption) {
+        background = colors.primary.withValues(alpha: 0.18);
+        border = colors.primary;
+        foreground = colors.primary;
+        trailingIcon = Icons.check_circle;
+      } else if (isSelected) {
+        background = colors.error.withValues(alpha: 0.16);
+        border = colors.error;
+        foreground = colors.error;
+        trailingIcon = Icons.cancel;
+      }
+    } else if (isSelected) {
+      background = colors.primaryContainer;
+      border = colors.primary;
+      foreground = colors.primary;
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+      child: Material(
+        color: background,
+        borderRadius: BorderRadius.circular(16),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: onTap,
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.md,
+              vertical: AppSpacing.md,
+            ),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: border, width: 2),
+            ),
+            child: Row(
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 16,
+                  backgroundColor: border,
+                  child: Text(
+                    letter,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: AppSpacing.md),
+                Expanded(
+                  child: Text(
+                    text,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      color: foreground,
+                      fontWeight: (hasAnswered && isCorrectOption) || isSelected
+                          ? FontWeight.w700
+                          : FontWeight.w400,
+                    ),
+                  ),
+                ),
+                if (trailingIcon != null) ...<Widget>[
+                  const SizedBox(width: AppSpacing.sm),
+                  Icon(trailingIcon, color: foreground, size: 26),
+                ],
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
