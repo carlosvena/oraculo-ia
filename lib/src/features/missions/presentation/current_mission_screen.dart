@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/core/widget/home_widget_service.dart';
 import 'package:oraculo_ia/src/design_system/components/async_content.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/components/primary_mission_action.dart';
 import 'package:oraculo_ia/src/features/missions/domain/mission.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_view_model.dart';
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
+import 'package:oraculo_ia/src/features/progress/presentation/simulated_progress.dart';
+import 'package:oraculo_ia/src/features/thought_library/presentation/thought_library_screen.dart';
 
 class CurrentMissionScreen extends ConsumerWidget {
   const CurrentMissionScreen({
@@ -59,6 +62,26 @@ class CurrentMissionScreen extends ConsumerWidget {
     final mission = ref.watch(currentMissionViewModelProvider);
     final learning =
         ref.watch(learningStateProvider).value ?? const LearningState();
+    final streakDays = ref.watch(simulatedProgressProvider).streakDays;
+    final thoughts = ref.watch(thoughtLibraryProvider).value;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final dayOfYear = DateTime.now()
+          .difference(DateTime(DateTime.now().year))
+          .inDays;
+      final quote =
+          (thoughts != null && thoughts.ideas.isNotEmpty)
+              ? '"${thoughts.ideas[dayOfYear % thoughts.ideas.length].title}" — '
+                  '${thoughts.ideas[dayOfYear % thoughts.ideas.length].author}'
+              : 'Abrí la app para ver la frase de hoy.';
+      updateHomeWidget(
+        streakDays: streakDays,
+        quote: quote,
+        missionTitle:
+            mission.value == null
+                ? 'CONTINUAR MI MISIÓN'
+                : 'Misión: ${mission.value!.title}',
+      );
+    });
     return OraculoScaffold(
       bottomNavIndex: 0,
       body: AsyncContent<Mission>(
