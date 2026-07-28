@@ -124,6 +124,10 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
             lesson != null && block != null && _canContinue(block)
                 ? () => _continue(lesson, visible.length)
                 : null,
+        disabledHint:
+            block?.type == domain.LessonBlockType.quiz
+                ? 'Elegí la respuesta correcta en cada pregunta para poder continuar.'
+                : null,
       ),
       body: AsyncContent<domain.Lesson>(
         value: lessonValue,
@@ -371,18 +375,44 @@ class _QuestionCard extends StatelessWidget {
           if (selectedAnswer != null)
             Container(
               margin: const EdgeInsets.only(top: AppSpacing.xs),
-              padding: const EdgeInsets.all(AppSpacing.sm),
+              padding: const EdgeInsets.all(AppSpacing.md),
               decoration: BoxDecoration(
                 color: (isCorrect ? colors.primary : colors.error).withValues(
-                  alpha: 0.10,
+                  alpha: 0.16,
                 ),
                 borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                '${isCorrect ? 'Correcto.' : 'Todavía no.'} $explanation',
-                style: TextStyle(
-                  color: isCorrect ? colors.primary : colors.error,
+                border: Border.all(
+                  color: (isCorrect ? colors.primary : colors.error).withValues(alpha: 0.5),
                 ),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Icon(
+                    isCorrect ? Icons.check_circle : Icons.cancel_outlined,
+                    color: isCorrect ? colors.primary : colors.error,
+                  ),
+                  const SizedBox(width: AppSpacing.sm),
+                  Expanded(
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          color: isCorrect ? colors.primary : colors.error,
+                          fontSize: 14,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: isCorrect
+                                ? 'Correcto. '
+                                : 'Todavía no, probá otra opción. ',
+                            style: const TextStyle(fontWeight: FontWeight.w800),
+                          ),
+                          TextSpan(text: explanation),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
         ],

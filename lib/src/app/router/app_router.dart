@@ -79,7 +79,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   onContinue: (mission) {
                     if (learning != null &&
                         learning.currentLessonId != 'lesson-models-001') {
-                      context.go(
+                      context.push(
                         '${AppRoute.lesson}/${learning.currentLessonId}/${learning.currentLessonId}',
                       );
                       return;
@@ -87,7 +87,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     ref
                         .read(simulatedProgressProvider.notifier)
                         .startMission001();
-                    context.go(AppRoute.lessonFor(mission));
+                    context.push(AppRoute.lessonFor(mission));
                   },
                   onManual: () => context.push(AppRoute.manual),
                   onDictionary: () => context.push(AppRoute.dictionary),
@@ -119,7 +119,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 ref
                     .read(simulatedProgressProvider.notifier)
                     .completeMission001();
-                if (context.mounted) context.go(AppRoute.progress);
+                if (context.mounted) context.push(AppRoute.progress);
               },
             ),
       ),
