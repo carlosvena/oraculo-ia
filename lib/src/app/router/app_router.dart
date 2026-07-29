@@ -13,6 +13,7 @@ import 'package:oraculo_ia/src/features/lessons/presentation/lesson_screen.dart'
 import 'package:oraculo_ia/src/features/manual_export/presentation/manual_export_screen.dart';
 import 'package:oraculo_ia/src/features/mentor/presentation/profile_screen.dart';
 import 'package:oraculo_ia/src/features/missions/presentation/current_mission_screen.dart';
+import 'package:oraculo_ia/src/features/missions/presentation/current_mission_view_model.dart';
 import 'package:oraculo_ia/src/features/model_comparator/presentation/model_comparator_screen.dart';
 import 'package:oraculo_ia/src/features/onboarding/presentation/splash_screen.dart';
 import 'package:oraculo_ia/src/features/onboarding/presentation/welcome_screen.dart';

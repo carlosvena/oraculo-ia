@@ -1669,6 +1669,284 @@
                     1
                 ]
             ]
+        },
+        {
+            "id": "lesson-agents-avanzado-018",
+            "number": "018",
+            "title": "Agentes de IA en la práctica",
+            "duration": 55,
+            "concepts": [
+                "Agentes",
+                "Autonomía supervisada",
+                "Herramientas",
+                "Límites de control"
+            ],
+            "objective": "Entender qué puede y qué no puede hacer un agente de IA hoy, y cómo definir límites claros antes de darle autonomía.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Un agente no es solo un chat que responde: es un sistema que puede tomar varias acciones encadenadas para cumplir un objetivo. Hoy vas a aprender dónde poner el límite."
+                ],
+                [
+                    "text",
+                    "Qué es realmente un agente",
+                    "Un agente de IA combina un modelo de lenguaje con la capacidad de usar herramientas (buscar, calcular, escribir un archivo, llamar una API) y decidir qué hacer paso a paso, sin que un humano apruebe cada paso individual."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es la diferencia entre pedirle indicaciones a alguien (LLM tradicional) y darle las llaves del auto para que te lleve él (agente): más cómodo, pero necesitás confiar en las reglas que sigue."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un agente que revisa mails, identifica reclamos de clientes, redacta una respuesta y la envía sin revisión humana: rápido, pero si interpreta mal un reclamo, ya salió una respuesta con tu nombre."
+                ],
+                [
+                    "text",
+                    "La pregunta clave antes de automatizar",
+                    "No es '¿puede hacerlo el agente?' sino '¿qué pasa si se equivoca, y quién se entera a tiempo?' Cuanto más grave el error posible, más control humano necesita esa acción."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá una tarea de tu día a día que te gustaría delegarle a un agente. Escribí específicamente en qué paso pondrías una revisión humana obligatoria antes de que actúe."
+                ],
+                [
+                    "text",
+                    "Niveles de autonomía",
+                    "Nivel 1: sugiere, vos decidís todo. Nivel 2: actúa, pero te avisa antes de cada paso irreversible. Nivel 3: actúa solo y te informa después. La mayoría de los errores caros pasan cuando se salta directo al nivel 3."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien qué diferencia a un agente de un simple chatbot, usando el ejemplo de las 'llaves del auto'."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Darle a un agente acceso a más herramientas de las que necesita 'por las dudas'; no definir qué hacer si el agente se traba o repite una acción en loop; confundir 'funciona en la demo' con 'es seguro en producción'."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "Un agente es tan confiable como los límites que le pusiste, no como de impresionante sea la demo. Definir el nivel de autonomía correcto es una decisión tuya, no del modelo."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Qué diferencia a un agente de un chatbot tradicional?",
+                    [
+                        "El agente puede usar herramientas y encadenar acciones para cumplir un objetivo",
+                        "El agente responde más rápido",
+                        "No hay ninguna diferencia real"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es la pregunta clave antes de automatizar una tarea con un agente?",
+                    [
+                        "¿Puede hacerlo técnicamente?",
+                        "¿Qué pasa si se equivoca y quién se entera a tiempo?",
+                        "¿Es la tecnología más nueva disponible?"
+                    ],
+                    1
+                ],
+                [
+                    "Según la misión, ¿cuándo pasan la mayoría de los errores caros con agentes?",
+                    [
+                        "Cuando se saltan directo a la autonomía total sin revisión",
+                        "Cuando se revisa cada paso",
+                        "Nunca, los agentes no se equivocan"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué es el 'Nivel 2' de autonomía descrito en la misión?",
+                    [
+                        "El agente actúa solo y avisa después",
+                        "El agente actúa pero avisa antes de cada paso irreversible",
+                        "El agente no hace nada sin aprobación total"
+                    ],
+                    1
+                ],
+                [
+                    "¿Cuál es un error frecuente al dar herramientas a un agente?",
+                    [
+                        "Darle acceso a más herramientas de las que necesita 'por las dudas'",
+                        "Limitar sus herramientas al mínimo necesario",
+                        "Documentar qué herramientas usa"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué significa que un agente 'funcione en la demo'?",
+                    [
+                        "Que es seguro usarlo en producción sin más pruebas",
+                        "Que funcionó en un escenario controlado, no que sea confiable en general",
+                        "Que ya no necesita supervisión"
+                    ],
+                    1
+                ],
+                [
+                    "¿De qué depende la confiabilidad real de un agente, según la misión?",
+                    [
+                        "De lo impresionante que sea la demo",
+                        "De los límites que le pusiste vos",
+                        "De qué tan rápido responde"
+                    ],
+                    1
+                ],
+                [
+                    "¿Qué debería definirse antes de darle autonomía a un agente sobre una tarea?",
+                    [
+                        "En qué paso hay que poner revisión humana obligatoria",
+                        "Nada, se ajusta sobre la marcha",
+                        "Solo el nombre del agente"
+                    ],
+                    0
+                ]
+            ]
+        },
+        {
+            "id": "lesson-etica-poder-019",
+            "number": "019",
+            "title": "Poder, sesgo y quién decide",
+            "duration": 50,
+            "concepts": [
+                "Sesgo algorítmico",
+                "Poder y datos",
+                "Criterio ético",
+                "Transparencia"
+            ],
+            "objective": "Entender que los sistemas de IA heredan las prioridades de quienes deciden qué datos usar y qué problema resolver, y aplicar ese criterio en decisiones cotidianas.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Ningún sistema de IA es neutral por default. Hoy vas a aprender a preguntarte quién construyó la herramienta que estás usando, y con qué datos."
+                ],
+                [
+                    "text",
+                    "De dónde viene el sesgo",
+                    "Un modelo aprende patrones de los datos con los que fue entrenado. Si esos datos reflejan desigualdades históricas (de género, raza, clase), el modelo tiende a reproducirlas, aunque nadie lo haya programado a propósito."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es como aprender a cocinar mirando solo un tipo de cocina: vas a ser bueno en eso, pero vas a asumir que 'así se cocina' en general, sin darte cuenta de lo que te falta ver."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un sistema de selección de personal entrenado con currículums de una empresa donde el 90% de los contratados históricos eran hombres, terminó penalizando currículums que mencionaban actividades 'de mujeres' (como 'capitana del equipo de ajedrez femenino')."
+                ],
+                [
+                    "text",
+                    "No es solo técnico, es de decisión",
+                    "Quién decide qué datos usar, qué problema resolver primero, y qué error es 'aceptable', es una decisión humana y de negocio, no una consecuencia inevitable de la tecnología."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá en una herramienta de IA que uses en tu trabajo o vida diaria. Escribí una hipótesis: ¿qué datos crees que la entrenaron, y a quién podría no representar bien?"
+                ],
+                [
+                    "text",
+                    "Transparencia como herramienta de criterio",
+                    "Preguntar '¿en qué datos se basó esto?' o '¿quién revisó este resultado?' no es desconfianza excesiva: es el mismo tipo de pregunta que harías sobre cualquier fuente de información importante."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien por qué 'la IA lo dijo' no es un argumento suficiente en una decisión importante (crédito, empleo, salud)."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Asumir que un resultado es objetivo porque lo generó una máquina; no preguntar quién puede apelar o corregir una decisión automatizada; usar la IA para decisiones sensibles sin supervisión humana capacitada."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "Tener criterio tecnológico también es preguntarte quién se beneficia y quién puede quedar afuera de una herramienta, no solo qué tan bien funciona técnicamente."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿De dónde viene principalmente el sesgo en un modelo de IA?",
+                    [
+                        "De los datos con los que fue entrenado",
+                        "De un error de programación intencional",
+                        "Los modelos de IA no tienen sesgo"
+                    ],
+                    0
+                ],
+                [
+                    "En el caso del sistema de selección de personal, ¿qué pasó?",
+                    [
+                        "Penalizó currículums que mencionaban actividades asociadas a mujeres",
+                        "Contrató solo mujeres",
+                        "Funcionó perfectamente sin sesgo"
+                    ],
+                    0
+                ],
+                [
+                    "¿Quién decide qué datos usar y qué problema resolver primero?",
+                    [
+                        "Es inevitable, la tecnología lo decide sola",
+                        "Personas, a través de decisiones humanas y de negocio",
+                        "Nadie, sucede al azar"
+                    ],
+                    1
+                ],
+                [
+                    "¿Por qué preguntar 'en qué datos se basó esto' no es desconfianza excesiva?",
+                    [
+                        "Porque es el mismo tipo de pregunta que harías sobre cualquier fuente importante",
+                        "Porque hay que desconfiar siempre de la tecnología",
+                        "Porque las respuestas de IA nunca son útiles"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué error frecuente señala la misión sobre resultados de IA?",
+                    [
+                        "Asumir que un resultado es objetivo solo porque lo generó una máquina",
+                        "Revisar siempre el resultado antes de usarlo",
+                        "Preguntar quién puede corregir una decisión automatizada"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué tipo de decisiones requieren especial cuidado con sesgo algorítmico?",
+                    [
+                        "Crédito, empleo y salud, entre otras sensibles",
+                        "Ninguna, todas son iguales",
+                        "Solo las decisiones técnicas"
+                    ],
+                    0
+                ],
+                [
+                    "Según la misión, tener criterio tecnológico también implica...",
+                    [
+                        "Preguntarte quién se beneficia y quién puede quedar afuera de una herramienta",
+                        "Usar siempre la tecnología más nueva",
+                        "Confiar en cualquier resultado automatizado"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué NO es un argumento suficiente en una decisión importante, según la misión?",
+                    [
+                        "'La IA lo dijo', sin más contexto ni revisión",
+                        "Una fuente verificada y contrastada",
+                        "El criterio de una persona capacitada"
+                    ],
+                    0
+                ]
+            ]
         }
     ]
 }
