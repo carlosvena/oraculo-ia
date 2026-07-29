@@ -6,5 +6,6 @@ final class GetCurrentMission {
 
   final MissionRepository _repository;
 
-  Future<Mission> call() => _repository.getCurrentMission();
+  Future<Mission> call({Set<String> completedLessonIds = const <String>{}}) =>
+      _repository.getCurrentMission(completedLessonIds: completedLessonIds);
 }

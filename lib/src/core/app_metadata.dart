@@ -1,12 +1,12 @@
 abstract final class AppMetadata {
-  static const version = '3.0.9';
-  static const buildNumber = '29';
+  static const version = '3.1.0';
+  static const buildNumber = '30';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    'Se sacó temporalmente la función de "botón atrás va a Hoy" para descartarla como causa de que la app se cerrara sola al abrir.',
+    'Arreglo importante: la app nunca avanzaba de la Misión 1 a la 2 — el sistema que decide "cuál es tu misión actual" estaba fijo en el código. Ahora avanza de verdad según lo que vas completando.',
     'Se revirtieron el ícono nuevo y el widget de pantalla de inicio (rompían la apertura de la app). Volvemos a probarlos más adelante, de a uno.',
     'Arreglo urgente: la app rompía al abrir por un error mío en el botón atrás de la 3.0.3. Ya está solucionado.',
     'Misión 017 nueva: criterio ante contenido generado por IA (deepfakes, desinformación).',

@@ -5,15 +5,7 @@ final class SimulatedMissionRepository implements MissionRepository {
   const SimulatedMissionRepository();
 
   @override
-  Future<Mission> getCurrentMission() async {
-    return Mission(
-      id: 'mission-foundations-001',
-      contentVersion: 1,
-      lessonId: 'lesson-models-001',
-      title: 'Entender qué es un modelo de IA',
-      estimatedMinutes: 15,
-      sequence: 1,
-      prerequisiteIds: const <String>[],
-    );
+  Future<Mission> getCurrentMission({Set<String> completedLessonIds = const <String>{}}) async {
+    return nextCoreMission(completedLessonIds);
   }
 }

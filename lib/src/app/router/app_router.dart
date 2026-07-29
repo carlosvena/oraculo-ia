@@ -58,7 +58,22 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 final l10n = AppLocalizations.of(context);
                 final progress = ref.watch(simulatedProgressProvider);
                 final learning = ref.watch(learningStateProvider).value;
-                final statusLabel = switch (progress.status) {
+                final currentMission = ref.watch(currentMissionViewModelProvider).value;
+                final alreadyCompleted =
+                    currentMission != null &&
+                    (learning?.completed.contains(currentMission.lessonId) ?? false);
+                final inProgress =
+                    !alreadyCompleted &&
+                    currentMission != null &&
+                    learning?.currentLessonId == currentMission.lessonId &&
+                    (learning?.currentBlock ?? 0) > 0;
+                final missionStatus =
+                    alreadyCompleted
+                        ? MissionProgressStatus.completed
+                        : inProgress
+                        ? MissionProgressStatus.inProgress
+                        : MissionProgressStatus.notStarted;
+                final statusLabel = switch (missionStatus) {
                   MissionProgressStatus.notStarted =>
                     l10n.missionStatusNotStarted,
                   MissionProgressStatus.inProgress =>
@@ -66,7 +81,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   MissionProgressStatus.completed =>
                     l10n.missionStatusCompleted,
                 };
-                final nextAction = switch (progress.status) {
+                final nextAction = switch (missionStatus) {
                   MissionProgressStatus.notStarted => l10n.nextActionStart,
                   MissionProgressStatus.inProgress => l10n.nextActionContinue,
                   MissionProgressStatus.completed => l10n.nextActionCompleted,
@@ -77,13 +92,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   progress: progress.progress,
                   estimatedMinutes: progress.estimatedMinutes,
                   onContinue: (mission) {
-                    if (learning != null &&
-                        learning.currentLessonId != 'lesson-models-001') {
-                      context.push(
-                        '${AppRoute.lesson}/${learning.currentLessonId}/${learning.currentLessonId}',
-                      );
-                      return;
-                    }
                     ref
                         .read(simulatedProgressProvider.notifier)
                         .startMission001();
