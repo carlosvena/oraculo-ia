@@ -311,8 +311,8 @@
                 "Todavía no",
                 "Sí, la completé"
               ],
-              "correctAnswer": 1,
-              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla."
+              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla.",
+              "correct": 1
             }
           ]
         },
@@ -420,8 +420,8 @@
                 "Todavía no",
                 "Sí, la completé"
               ],
-              "correctAnswer": 1,
-              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla."
+              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla.",
+              "correct": 1
             }
           ]
         },
@@ -618,8 +618,8 @@
                 "Todavía no",
                 "Sí, la completé"
               ],
-              "correctAnswer": 1,
-              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla."
+              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla.",
+              "correct": 1
             }
           ]
         },
@@ -817,8 +817,8 @@
                 "Todavía no",
                 "Sí, la completé"
               ],
-              "correctAnswer": 1,
-              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla."
+              "explanation": "El aprendizaje activo exige producir una respuesta propia, no solo leerla.",
+              "correct": 1
             }
           ]
         },

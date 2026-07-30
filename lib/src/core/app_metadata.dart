@@ -1,12 +1,12 @@
 abstract final class AppMetadata {
-  static const version = '3.3.3';
-  static const buildNumber = '39';
+  static const version = '3.3.4';
+  static const buildNumber = '40';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    'Podés elegir la voz del mentor entre las que tenga instaladas tu celular (Mentor → ícono de ajustes → Voz del mentor). Se guarda tu elección.',
+    'Arreglo de compilación: un campo con el nombre equivocado en el contenido rompía la compilación entera. Ya está corregido.',
     'Colores con más variedad: violeta, coral y verde azulado en vez de un solo tono. Menos monótono.',
     'De paso, los desafíos de las misiones núcleo ya no dicen "supervisor bancario" fijo — se adaptan a tu trabajo real.',
     'Misión 020 nueva: Costos y límites reales de la IA. Van 20 misiones.',

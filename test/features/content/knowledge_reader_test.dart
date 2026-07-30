@@ -15,7 +15,9 @@ void main() {
     expect(content.lessons, hasLength(5));
     final mission = content.lesson('lesson-prompts-002');
     expect(mission.blocks, hasLength(12));
-    expect(mission.blocks.expand((block) => block.questions), hasLength(9));
+    // Antes eran 9: el bloque "Desafío" no tenía pregunta de verificación
+    // cargada (bug que hacía colgar la app en ese bloque). Ahora tiene 1.
+    expect(mission.blocks.expand((block) => block.questions), hasLength(10));
   });
 
   test('rejects editorial content with incompatible schema', () {
