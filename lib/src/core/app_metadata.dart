@@ -1,12 +1,15 @@
 abstract final class AppMetadata {
-  static const version = '3.2.2';
-  static const buildNumber = '35';
+  static const version = '3.3.3';
+  static const buildNumber = '39';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    '2 misiones nuevas: Agentes de IA en la práctica (018) y Poder, sesgo y quién decide (019). Van 19 misiones en total.',
+    'Podés elegir la voz del mentor entre las que tenga instaladas tu celular (Mentor → ícono de ajustes → Voz del mentor). Se guarda tu elección.',
+    'Colores con más variedad: violeta, coral y verde azulado en vez de un solo tono. Menos monótono.',
+    'De paso, los desafíos de las misiones núcleo ya no dicen "supervisor bancario" fijo — se adaptan a tu trabajo real.',
+    'Misión 020 nueva: Costos y límites reales de la IA. Van 20 misiones.',
     'Se revirtieron el ícono nuevo y el widget de pantalla de inicio (rompían la apertura de la app). Volvemos a probarlos más adelante, de a uno.',
     'Arreglo urgente: la app rompía al abrir por un error mío en el botón atrás de la 3.0.3. Ya está solucionado.',
     'Misión 017 nueva: criterio ante contenido generado por IA (deepfakes, desinformación).',

@@ -15,12 +15,131 @@ class MentorVoicePanel extends ConsumerStatefulWidget {
 }
 class _MentorVoicePanelState extends ConsumerState<MentorVoicePanel> {
   final tts=FlutterTts(); double speed=.48; bool speaking=false, handsFree=false;
-  @override void initState(){super.initState(); tts.setLanguage('es-AR'); tts.setCompletionHandler(()=>mounted?setState(()=>speaking=false):null);}
+  List<Map<String, String>> availableVoices = <Map<String, String>>[];
+  String? selectedVoiceName;
+  bool _voiceApplied = false;
+
+  @override
+  void initState(){
+    super.initState();
+    tts.setLanguage('es-AR');
+    tts.setCompletionHandler(()=>mounted?setState(()=>speaking=false):null);
+    _loadVoices();
+  }
+
+  Future<void> _loadVoices() async {
+    try {
+      final raw = await tts.getVoices;
+      final voices = <Map<String, String>>[];
+      if (raw is List) {
+        for (final item in raw) {
+          if (item is Map) {
+            final name = item['name']?.toString();
+            final locale = item['locale']?.toString() ?? '';
+            // Priorizamos voces en español para no abrumar con opciones
+            // en idiomas que la persona probablemente no va a usar.
+            if (name != null && locale.toLowerCase().startsWith('es')) {
+              voices.add({'name': name, 'locale': locale});
+            }
+          }
+        }
+      }
+      if (!mounted) return;
+      setState(() => availableVoices = voices);
+      final saved = ref.read(learningStateProvider).value?.mentorVoiceName ?? '';
+      if (saved.isNotEmpty && voices.any((v) => v['name'] == saved)) {
+        await _applyVoice(saved);
+      }
+    } catch (_) {
+      // Algunos dispositivos no exponen la lista de voces; el mentor
+      // sigue funcionando con la voz por defecto del sistema.
+    }
+  }
+
+  Future<void> _applyVoice(String name) async {
+    final voice = availableVoices.firstWhere(
+      (v) => v['name'] == name,
+      orElse: () => <String, String>{},
+    );
+    if (voice.isEmpty) return;
+    await tts.setVoice({'name': voice['name']!, 'locale': voice['locale']!});
+    if (mounted) setState(() => selectedVoiceName = name);
+  }
+
   @override void didUpdateWidget(covariant MentorVoicePanel oldWidget){super.didUpdateWidget(oldWidget); if(handsFree&&oldWidget.text!=widget.text){_speak();}}
-  Future<void> _speak() async { await tts.setSpeechRate(speed); await tts.speak('${widget.title}. ${widget.text}'); if(mounted)setState(()=>speaking=true); }
+  Future<void> _speak() async {
+    if (!_voiceApplied) {
+      final saved = ref.read(learningStateProvider).value?.mentorVoiceName ?? '';
+      if (saved.isNotEmpty) await _applyVoice(saved);
+      _voiceApplied = true;
+    }
+    await tts.setSpeechRate(speed);
+    await tts.speak('${widget.title}. ${widget.text}');
+    if(mounted)setState(()=>speaking=true);
+  }
   Future<void> _pause() async { await tts.pause(); if(mounted)setState(()=>speaking=false); }
   void _show(String title,String value)=>showModalBottomSheet<void>(context:context,showDragHandle:true,builder:(context)=>SafeArea(child:Padding(padding:const EdgeInsets.all(24),child:Column(mainAxisSize:MainAxisSize.min,crossAxisAlignment:CrossAxisAlignment.start,children:[Text(title,style:Theme.of(context).textTheme.titleLarge),const SizedBox(height:12),Text(value),const SizedBox(height:16),FilledButton(onPressed:()=>Navigator.pop(context),child:const Text('ENTENDIDO'))]))));
   @override void dispose(){tts.stop();super.dispose();}
+
+  void _openVoicePicker() {
+    if (availableVoices.isEmpty) {
+      _show(
+        'Voces del mentor',
+        'Tu celular no compartió una lista de voces en español. Podés '
+            'igual cambiar la voz del sistema desde Ajustes > Accesibilidad '
+            '> Conversión de texto a voz.',
+      );
+      return;
+    }
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (sheetContext) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 4, 20, 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Elegí la voz del mentor', style: Theme.of(sheetContext).textTheme.titleMedium),
+              const SizedBox(height: 4),
+              Text(
+                'Las voces vienen de tu celular. Probá un par: no todas suenan igual de bien en español.',
+                style: Theme.of(sheetContext).textTheme.bodySmall,
+              ),
+              const SizedBox(height: 12),
+              ConstrainedBox(
+                constraints: const BoxConstraints(maxHeight: 320),
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: availableVoices.length,
+                  itemBuilder: (context, index) {
+                    final voice = availableVoices[index];
+                    final name = voice['name']!;
+                    return RadioListTile<String>(
+                      value: name,
+                      groupValue: selectedVoiceName,
+                      title: Text(name, overflow: TextOverflow.ellipsis),
+                      subtitle: Text(voice['locale'] ?? ''),
+                      onChanged: (value) async {
+                        if (value == null) return;
+                        await _applyVoice(value);
+                        await ref
+                            .read(learningStateProvider.notifier)
+                            .setMentorVoice(value);
+                        if (context.mounted) Navigator.pop(context);
+                        await _speak();
+                      },
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   void _openOptions(LearnerProfile profile) {
     showModalBottomSheet<void>(
@@ -36,6 +155,20 @@ class _MentorVoicePanelState extends ConsumerState<MentorVoicePanel> {
               children: [
                 Text('Opciones del mentor', style: Theme.of(sheetContext).textTheme.titleMedium),
                 const SizedBox(height: 8),
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.record_voice_over_outlined),
+                  title: const Text('Voz del mentor'),
+                  subtitle: Text(
+                    selectedVoiceName ?? 'Voz por defecto del sistema',
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () {
+                    Navigator.pop(sheetContext);
+                    _openVoicePicker();
+                  },
+                ),
                 Row(
                   children: [
                     const Text('Velocidad de lectura'),

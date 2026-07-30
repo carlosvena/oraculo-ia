@@ -1947,6 +1947,144 @@
                     0
                 ]
             ]
+        },
+        {
+            "id": "lesson-costos-020",
+            "number": "020",
+            "title": "Costos y límites reales de la IA",
+            "duration": 45,
+            "concepts": [
+                "Costos de IA",
+                "Límites técnicos",
+                "Cuándo NO usar IA"
+            ],
+            "objective": "Entender que la IA tiene costos y límites reales, para decidir con criterio cuándo conviene usarla y cuándo no.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "No todo se resuelve mejor con IA. Hoy vas a aprender a reconocer cuándo conviene usarla y cuándo es mejor un método simple, más barato y más confiable."
+                ],
+                [
+                    "text",
+                    "La IA no es gratis ni instantánea",
+                    "Cada consulta a un modelo grande consume energía y tiempo de cómputo real. Las versiones gratuitas suelen tener límites de uso, y las de pago cobran por cantidad de texto procesado."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Usar un modelo grande para una tarea simple es como pedir un camión para mudar una silla: funciona, pero gastás de más y a veces tarda más que la alternativa simple."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Clasificar 10.000 mensajes por categoría con un modelo grande cuesta y tarda mucho más que usar una regla simple ('si contiene la palabra X, es categoría Y') cuando el patrón es así de directo."
+                ],
+                [
+                    "text",
+                    "Cuándo SÍ conviene usar IA",
+                    "Cuando la tarea requiere entender lenguaje ambiguo, generar texto original, o resumir/razonar sobre información variada que no sigue un patrón fijo."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá una tarea de tu trabajo que hoy resolvés con IA. Preguntate: ¿un método más simple (una planilla, una regla fija) daría un resultado parecido más rápido y más barato?"
+                ],
+                [
+                    "text",
+                    "Límites técnicos actuales",
+                    "Los modelos pueden alucinar, tienen una 'ventana de contexto' limitada (no pueden ver documentos infinitos a la vez), y su conocimiento tiene una fecha de corte — no saben de eventos posteriores a su entrenamiento sin ayuda extra."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien de tu trabajo cuándo NO conviene usar IA para una tarea, con un ejemplo concreto."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Usar IA para todo 'porque está de moda'; no medir cuánto cuesta realmente automatizar algo; ignorar que a veces la solución más simple es más confiable, no solo más barata."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "Tener criterio tecnológico también es saber decir 'esto no necesita IA'. La herramienta correcta es la que resuelve el problema, no la más impresionante."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Por qué la IA no es 'gratis' aunque no pagues directamente?",
+                    [
+                        "Consume energía y tiempo de cómputo real, y suele tener límites de uso",
+                        "Siempre es completamente gratuita sin excepción",
+                        "No tiene ningún costo asociado"
+                    ],
+                    0
+                ],
+                [
+                    "Según la analogía, ¿qué pasa si usás un modelo grande para una tarea simple?",
+                    [
+                        "Es como pedir un camión para mudar una silla: funciona pero gastás de más",
+                        "Siempre es la opción más eficiente",
+                        "Nunca hay alternativas más simples"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuándo conviene usar un método simple en vez de IA?",
+                    [
+                        "Cuando el patrón es directo y una regla fija da el mismo resultado",
+                        "Siempre, la IA nunca conviene",
+                        "Nunca, la IA siempre es mejor"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuándo SÍ conviene usar IA, según la misión?",
+                    [
+                        "Cuando la tarea requiere entender lenguaje ambiguo o generar texto original",
+                        "Solo para tareas repetitivas simples",
+                        "Nunca, siempre hay alternativas mejores"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué es la 'ventana de contexto' de un modelo?",
+                    [
+                        "El límite de cuánta información puede ver a la vez",
+                        "El precio que cobra por consulta",
+                        "El tiempo que tarda en responder"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué significa que el conocimiento de un modelo tenga 'fecha de corte'?",
+                    [
+                        "Que no sabe de eventos posteriores a su entrenamiento sin ayuda extra",
+                        "Que deja de funcionar después de una fecha",
+                        "Que hay que pagar más después de esa fecha"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es un error frecuente al decidir usar IA?",
+                    [
+                        "Usarla para todo 'porque está de moda', sin medir si conviene",
+                        "Medir el costo real de automatizar algo",
+                        "Elegir el método más simple cuando funciona igual de bien"
+                    ],
+                    0
+                ],
+                [
+                    "Según la misión, ¿qué es tener criterio tecnológico?",
+                    [
+                        "Usar siempre la herramienta más nueva e impresionante",
+                        "Saber también decir 'esto no necesita IA' cuando corresponde",
+                        "Automatizar todo sin evaluar alternativas"
+                    ],
+                    1
+                ]
+            ]
         }
     ]
 }

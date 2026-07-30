@@ -11,6 +11,20 @@ import 'package:oraculo_ia/src/features/lessons/presentation/lesson_providers.da
 import 'package:oraculo_ia/src/features/mentor/presentation/mentor_voice_panel.dart';
 import 'package:oraculo_ia/src/features/progress/data/local_learning_state.dart';
 
+/// Arma el texto completo que el mentor debería leer en voz alta: antes
+/// solo leía `block.content` y se saltaba la lista de puntos y el
+/// recuadro destacado (donde suelen ir los ejemplos "entre comillas").
+String _fullReadableText(domain.LessonBlock block) {
+  final parts = <String>[block.content];
+  if (block.items.isNotEmpty) {
+    parts.add(block.items.join('. '));
+  }
+  if (block.prompt != null && !block.prompt!.startsWith('Leer más:')) {
+    parts.add(block.prompt!);
+  }
+  return parts.join('. ');
+}
+
 class LessonScreen extends ConsumerStatefulWidget {
   const LessonScreen({
     required this.missionId,
@@ -34,10 +48,10 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   final List<int?> _quizAnswers = List<int?>.filled(8, null);
   var _restored = false;
 
-  bool get _laboratoryComplete => _laboratoryAnswer == 1;
-
   bool _canContinue(domain.LessonBlock block) => switch (block.type) {
-    domain.LessonBlockType.challenge => _laboratoryComplete,
+    domain.LessonBlockType.challenge =>
+      block.questions.isEmpty ||
+          _laboratoryAnswer == block.questions.first.correctAnswer,
     domain.LessonBlockType.quiz => block.questions.indexed.every(
       (entry) => _quizAnswers[entry.$1] == entry.$2.correctAnswer,
     ),
@@ -211,7 +225,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
               ],
               const SizedBox(height: AppSpacing.lg),
               if (block != null)
-                MentorVoicePanel(title: block.title, text: block.content),
+                MentorVoicePanel(title: block.title, text: _fullReadableText(block)),
               if (block != null) const SizedBox(height: AppSpacing.sm),
               Expanded(
                 child: SingleChildScrollView(
@@ -227,7 +241,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                           selectedAnswer: _laboratoryAnswer,
                           onSelected: (answer) {
                             setState(() => _laboratoryAnswer = answer);
-                            if (answer != current.questions.single.correctAnswer) {
+                            if (answer != current.questions.first.correctAnswer) {
                               ref.read(learningStateProvider.notifier).recordMistake(widget.lessonId);
                             }
                             ref
@@ -302,7 +316,13 @@ class _Laboratory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final data = questions.single;
+    if (questions.isEmpty) {
+      // Este bloque de laboratorio es solo texto/consigna, sin pregunta
+      // de verificación cargada — no hay nada que renderizar acá, el
+      // mentor y el contenido del bloque ya explican la actividad.
+      return const SizedBox.shrink();
+    }
+    final data = questions.first;
     return _QuestionCard(
       question: data.question,
       options: data.options,

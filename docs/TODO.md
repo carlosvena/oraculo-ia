@@ -17,6 +17,7 @@ Sprint 2 no está autorizado. Esta lista no implica aprobación para implementar
 - [ ] Revisar accesibilidad con lector de pantalla y escalado de texto.
 - [ ] Definir comportamiento cuando el alumno abandona una misión a mitad de camino.
 - [ ] Separar definitivamente contenido educativo de recursos de interfaz.
+- [ ] Preguntar nivel inicial (principiante/experto) en el onboarding y usarlo para ajustar la dificultad de las preguntas desde el arranque, no solo el modo Esencial/Intensivo dentro de cada lección.
 
 ## P2 — Futuro, fuera del alcance actual
 

@@ -33,6 +33,7 @@ final class LearningState {
     lastStudyEpoch: json['lastStudyEpoch'] as int? ?? 0,
     learnerName: json['learnerName'] as String? ?? '',
     learnerWork: json['learnerWork'] as String? ?? '',
+    mentorVoiceName: json['mentorVoiceName'] as String? ?? '',
   );
   const LearningState({
     this.currentLessonId = 'lesson-models-001',
@@ -51,6 +52,7 @@ final class LearningState {
     this.lastStudyEpoch = 0,
     this.learnerName = '',
     this.learnerWork = '',
+    this.mentorVoiceName = '',
   });
   final String currentLessonId;
   final int currentBlock;
@@ -68,6 +70,7 @@ final class LearningState {
   final int lastStudyEpoch;
   final String learnerName;
   final String learnerWork;
+  final String mentorVoiceName;
 
   Map<String, Object> toJson() => <String, Object>{
     'currentLessonId': currentLessonId,
@@ -86,6 +89,7 @@ final class LearningState {
     'lastStudyEpoch': lastStudyEpoch,
     'learnerName': learnerName,
     'learnerWork': learnerWork,
+    'mentorVoiceName': mentorVoiceName,
   };
   LearningState copyWith({
     String? currentLessonId,
@@ -104,6 +108,7 @@ final class LearningState {
     int? lastStudyEpoch,
     String? learnerName,
     String? learnerWork,
+    String? mentorVoiceName,
   }) => LearningState(
     currentLessonId: currentLessonId ?? this.currentLessonId,
     currentBlock: currentBlock ?? this.currentBlock,
@@ -121,6 +126,7 @@ final class LearningState {
     lastStudyEpoch: lastStudyEpoch ?? this.lastStudyEpoch,
     learnerName: learnerName ?? this.learnerName,
     learnerWork: learnerWork ?? this.learnerWork,
+    mentorVoiceName: mentorVoiceName ?? this.mentorVoiceName,
   );
 }
 
@@ -249,6 +255,13 @@ final class LearningStateNotifier extends AsyncNotifier<LearningState> {
   Future<void> setProfile({required String name, required String work}) async {
     final current = state.requireValue;
     await _set(current.copyWith(learnerName: name.trim(), learnerWork: work.trim()));
+  }
+
+  /// Guarda qué voz eligió la persona para el mentor (nombre exacto de
+  /// la voz instalada en el celular, viene de flutter_tts.getVoices()).
+  Future<void> setMentorVoice(String voiceName) async {
+    final current = state.requireValue;
+    await _set(current.copyWith(mentorVoiceName: voiceName));
   }
 
   Future<void> restore(LearningState restored) => _set(restored);
