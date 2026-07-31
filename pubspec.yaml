@@ -1,7 +1,7 @@
 name: oraculo_ia
 description: Mentor diario para aprender Inteligencia Artificial en espanol.
 publish_to: none
-version: 3.3.4+40
+version: 3.3.5+41
 
 environment:
   sdk: ">=3.7.0 <4.0.0"
@@ -18,7 +18,6 @@ dependencies:
   flutter_tts: ^4.2.5
   pdf: ^3.11.3
   path_provider: ^2.1.5
-  home_widget: ^0.7.0
 
 dev_dependencies:
   flutter_test:
