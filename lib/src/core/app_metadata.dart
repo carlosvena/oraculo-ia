@@ -1,12 +1,13 @@
 abstract final class AppMetadata {
-  static const version = '3.5.1';
-  static const buildNumber = '44';
+  static const version = '3.6.0';
+  static const buildNumber = '45';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    'El catálogo ahora muestra las 24 misiones agrupadas en 4 actos (Fundamentos → Cómo funciona por dentro → Aplicarlo a tu trabajo → Criterio y sociedad), con una intro que explica el recorrido completo, no una lista plana.',
+    'Widget de pantalla de inicio, intento 4: esta vez 100% nativo, sin ninguna dependencia de Flutter, para eliminar esa causa posible de fallos.',
+    '2 misiones nuevas: IA multimodal (025) y Seguridad práctica (026). Van 26 misiones.',
     'Colores con más variedad: violeta, coral y verde azulado en vez de un solo tono. Menos monótono.',
     'De paso, los desafíos de las misiones núcleo ya no dicen "supervisor bancario" fijo — se adaptan a tu trabajo real.',
     'Misión 020 nueva: Costos y límites reales de la IA. Van 20 misiones.',

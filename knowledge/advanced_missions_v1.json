@@ -2638,6 +2638,282 @@
                     0
                 ]
             ]
+        },
+        {
+            "id": "lesson-multimodal-025",
+            "number": "025",
+            "title": "IA multimodal: imagen, audio y video",
+            "duration": 50,
+            "concepts": [
+                "Multimodalidad",
+                "Generación de imágenes",
+                "Criterio visual"
+            ],
+            "objective": "Entender cómo funcionan los modelos que generan o interpretan imágenes, audio y video, y sus límites actuales.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Hasta ahora vimos texto. Hoy vas a entender cómo la misma lógica se extiende a imágenes, audio y video — y por qué eso trae desafíos nuevos."
+                ],
+                [
+                    "text",
+                    "Qué significa 'multimodal'",
+                    "Un modelo multimodal puede trabajar con más de un tipo de contenido: recibir una imagen y describirla, o recibir texto y generar una imagen, o transcribir audio a texto, todo con el mismo tipo de arquitectura de fondo."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es como un traductor que en vez de traducir entre idiomas, traduce entre 'formas de representar información': de palabras a píxeles, de sonido a texto, y viceversa."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un modelo que recibe una foto de un gráfico de ventas y puede responder preguntas sobre los números que muestra, sin que nadie haya transcrito el gráfico a texto primero."
+                ],
+                [
+                    "text",
+                    "Por qué la generación de imágenes también alucina",
+                    "Igual que con texto, un modelo generando una imagen puede inventar detalles que no pediste: manos con dedos de más, texto ilegible dentro de la imagen, objetos que no tienen sentido físico."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá en una tarea de tu trabajo donde una imagen o un audio sería más útil que un texto (un diagrama, una nota de voz transcripta). Escribí qué revisarías antes de confiar en el resultado generado."
+                ],
+                [
+                    "text",
+                    "Límite importante: la verificación visual es más difícil",
+                    "Verificar si un párrafo de texto tiene un error es relativamente fácil (lo leés). Verificar si una imagen generada tiene un error sutil (una proporción rara, un detalle inventado) requiere mirar con más atención."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien por qué una imagen generada por IA que 'se ve perfecta' todavía necesita revisión, con el mismo criterio que un texto generado."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Usar imágenes generadas por IA en contextos donde la precisión importa (planos, diagramas técnicos) sin verificación experta; no aclarar cuando una imagen fue generada, no fotografiada."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "La multimodalidad expande lo que la IA puede hacer, pero el mismo principio de esta app se mantiene: verificar antes de confiar, sea texto, imagen, audio o video."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Qué significa que un modelo sea 'multimodal'?",
+                    [
+                        "Puede trabajar con más de un tipo de contenido: texto, imagen, audio, video",
+                        "Solo funciona con un idioma a la vez",
+                        "Es un modelo más lento que los demás"
+                    ],
+                    0
+                ],
+                [
+                    "Según la analogía, ¿qué hace un modelo multimodal?",
+                    [
+                        "Traduce entre distintas formas de representar información",
+                        "Solo traduce entre idiomas humanos",
+                        "No tiene ninguna función de traducción"
+                    ],
+                    0
+                ],
+                [
+                    "¿Por qué la generación de imágenes también puede 'alucinar'?",
+                    [
+                        "Puede inventar detalles que no se pidieron, como manos con dedos de más",
+                        "Las imágenes generadas siempre son perfectas",
+                        "No existe el concepto de error en imágenes generadas"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué es más difícil de verificar, según la misión?",
+                    [
+                        "Un error sutil en una imagen generada, comparado con un error en texto",
+                        "Un error de texto, siempre es más difícil",
+                        "Ninguno de los dos necesita verificación"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué deberías revisar antes de confiar en una imagen o audio generado?",
+                    [
+                        "Si tiene detalles inventados o proporciones raras",
+                        "Nada, siempre son confiables",
+                        "Solo el tamaño del archivo"
+                    ],
+                    0
+                ],
+                [
+                    "¿En qué contextos es especialmente riesgoso usar imágenes generadas sin verificación experta?",
+                    [
+                        "Planos o diagramas técnicos donde la precisión importa",
+                        "Fondos de pantalla decorativos",
+                        "Ningún contexto es riesgoso"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué error frecuente señala la misión sobre imágenes generadas?",
+                    [
+                        "No aclarar cuándo una imagen fue generada, no fotografiada",
+                        "Aclarar siempre el origen de una imagen",
+                        "Verificar cada imagen antes de usarla"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué principio se mantiene igual entre texto e imagen, según el cierre de la misión?",
+                    [
+                        "Verificar antes de confiar, sin importar el formato",
+                        "Las imágenes nunca necesitan verificación",
+                        "Solo el texto necesita revisión"
+                    ],
+                    0
+                ]
+            ]
+        },
+        {
+            "id": "lesson-seguridad-026",
+            "number": "026",
+            "title": "Seguridad práctica: qué NO compartirle a una IA",
+            "duration": 45,
+            "concepts": [
+                "Privacidad",
+                "Seguridad de datos",
+                "Uso responsable"
+            ],
+            "objective": "Establecer reglas prácticas y simples sobre qué información es riesgoso compartir con herramientas de IA, y por qué.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Hoy no es sobre qué puede hacer la IA, sino sobre qué NO deberías darle — información que, una vez compartida, no controlás más a dónde va."
+                ],
+                [
+                    "text",
+                    "Por qué importa esto",
+                    "Muchas herramientas de IA gratuitas usan las conversaciones para seguir entrenando sus modelos, salvo que uses una versión empresarial con esa opción desactivada. Lo que escribís puede quedar almacenado."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es como hablar por un walkie-talkie compartido: puede que nadie esté escuchando en este momento, pero no es una llamada privada, y no deberías tratarla como si lo fuera."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un empleado pega el código fuente completo de su empresa en un chat de IA gratuito para que lo revise, sin saber si ese código queda almacenado o se usa para entrenar el modelo — filtrando información confidencial sin darse cuenta."
+                ],
+                [
+                    "text",
+                    "Categorías de riesgo alto",
+                    "Contraseñas y claves de acceso, datos personales de terceros (DNI, direcciones, historiales médicos), información financiera específica, código fuente propietario, contratos confidenciales."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá en algo que compartiste (o casi compartiste) con una IA en el último mes. Evaluá: ¿entraba en alguna categoría de riesgo? ¿Había una forma de pedir lo mismo sin compartir el dato sensible?"
+                ],
+                [
+                    "text",
+                    "Truco simple: anonimizar antes de preguntar",
+                    "En vez de pegar el reclamo real de un cliente con nombre y DNI, podés preguntar con datos inventados que mantengan la misma estructura: 'Un cliente llamado Persona X reclama...' — la ayuda que necesitás no depende de que sean datos reales."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien de tu trabajo la diferencia entre usar IA para una tarea general y usarla con datos sensibles reales de la empresa."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Asumir que 'la versión gratuita es igual de segura que la de pago'; compartir datos de otras personas sin su consentimiento; no revisar la política de privacidad de la herramienta que se usa a diario."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "No se trata de tenerle miedo a la IA, se trata de tratarla como tratarías cualquier canal que no controlás del todo: con la misma precaución que un email a un desconocido."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Por qué muchas herramientas de IA gratuitas representan un riesgo de privacidad?",
+                    [
+                        "Pueden usar las conversaciones para seguir entrenando el modelo",
+                        "Nunca almacenan ninguna información",
+                        "Solo funcionan sin conexión a internet"
+                    ],
+                    0
+                ],
+                [
+                    "Según la analogía, ¿a qué se parece compartir información con una IA gratuita?",
+                    [
+                        "A hablar por un walkie-talkie compartido, no es una llamada privada",
+                        "A una conversación completamente privada y segura",
+                        "A escribir en un diario personal cerrado con llave"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál de estas es una categoría de riesgo alto para compartir con IA?",
+                    [
+                        "Contraseñas y datos personales de terceros",
+                        "El clima de hoy",
+                        "Una pregunta general sobre historia"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué truco simple propone la misión para pedir ayuda sin exponer datos reales?",
+                    [
+                        "Anonimizar la información antes de preguntar, manteniendo la estructura",
+                        "Compartir siempre los datos reales completos",
+                        "No usar nunca IA para nada relacionado al trabajo"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué pasó en el caso real del empleado que pegó código fuente?",
+                    [
+                        "Filtró información confidencial sin saber si quedaba almacenada",
+                        "No pasó nada, fue completamente seguro",
+                        "El código se hizo automáticamente más seguro"
+                    ],
+                    0
+                ],
+                [
+                    "¿Es igual de segura la versión gratuita que la versión de pago con opciones empresariales?",
+                    [
+                        "No necesariamente, y asumir que sí es un error frecuente",
+                        "Sí, son exactamente iguales siempre",
+                        "La versión gratuita siempre es más segura"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué deberías revisar sobre una herramienta de IA que usás seguido?",
+                    [
+                        "Su política de privacidad",
+                        "Solo su velocidad de respuesta",
+                        "Nada, no hace falta revisar nada"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es la actitud que propone la misión hacia la IA en términos de seguridad?",
+                    [
+                        "Tratarla con la misma precaución que un email a un desconocido, sin miedo excesivo",
+                        "Tenerle miedo y no usarla nunca",
+                        "Compartir cualquier información sin ninguna precaución"
+                    ],
+                    0
+                ]
+            ]
         }
     ]
 }

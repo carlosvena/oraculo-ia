@@ -258,7 +258,9 @@ class _Act {
 /// orden se mantenga correcto aunque se agreguen más misiones después.
 List<_Act> _groupIntoActs(List<Lesson> lessons) {
   bool isCore(Lesson l) => RegExp(r'-00[1-5]$').hasMatch(l.id);
-  bool isMechanics(Lesson l) => RegExp(r'-(00[6-9]|01[0-5])$').hasMatch(l.id);
+  bool isMechanics(Lesson l) =>
+      RegExp(r'-(00[6-9]|01[0-5])$').hasMatch(l.id) ||
+      l.id == 'lesson-multimodal-025';
   const applicationIds = <String>{
     'lesson-work-016',
     'lesson-agents-avanzado-018',
