@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:oraculo_ia/l10n/app_localizations.dart';
+import 'package:oraculo_ia/src/core/app_metadata.dart';
 import 'package:oraculo_ia/src/design_system/components/async_content.dart';
 import 'package:oraculo_ia/src/design_system/components/oraculo_scaffold.dart';
 import 'package:oraculo_ia/src/design_system/components/primary_mission_action.dart';
@@ -176,8 +177,10 @@ class CurrentMissionScreen extends ConsumerWidget {
                   ],
                 ),
                 const SizedBox(height: 12),
-                const Center(
-                  child: Text('ORÁCULO IA Beta local · versión 1.8'),
+                Center(
+                  child: Text(
+                    'Aprender IA · versión ${AppMetadata.version}',
+                  ),
                 ),
               ],
             ),

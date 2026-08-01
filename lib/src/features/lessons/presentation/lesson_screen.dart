@@ -44,14 +44,13 @@ class LessonScreen extends ConsumerStatefulWidget {
 class _LessonScreenState extends ConsumerState<LessonScreen> {
   var _currentBlock = 0;
   var _isCompleting = false;
-  int? _laboratoryAnswer;
+  String _laboratoryAnswer = '';
   final List<int?> _quizAnswers = List<int?>.filled(8, null);
   var _restored = false;
 
   bool _canContinue(domain.LessonBlock block) => switch (block.type) {
     domain.LessonBlockType.challenge =>
-      block.questions.isEmpty ||
-          _laboratoryAnswer == block.questions.first.correctAnswer,
+      block.questions.isEmpty || _laboratoryAnswer.trim().length >= 15,
     domain.LessonBlockType.quiz => block.questions.indexed.every(
       (entry) => _quizAnswers[entry.$1] == entry.$2.correctAnswer,
     ),
@@ -154,10 +153,15 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
             lesson != null && block != null && _canContinue(block)
                 ? () => _continue(lesson, visible.length)
                 : null,
-        disabledHint:
-            block?.type == domain.LessonBlockType.quiz
-                ? 'Elegí la respuesta correcta en cada pregunta para poder continuar.'
+        disabledHint: switch (block?.type) {
+          domain.LessonBlockType.quiz =>
+            'Elegí la respuesta correcta en cada pregunta para poder continuar.',
+          domain.LessonBlockType.challenge =>
+            (block?.questions.isNotEmpty ?? false)
+                ? 'Escribí tu respuesta a la actividad para poder continuar.'
                 : null,
+          _ => null,
+        },
       ),
       body: AsyncContent<domain.Lesson>(
         value: lessonValue,
@@ -238,12 +242,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                       child: switch (current.type) {
                         domain.LessonBlockType.challenge => _Laboratory(
                           questions: current.questions,
-                          selectedAnswer: _laboratoryAnswer,
-                          onSelected: (answer) {
-                            setState(() => _laboratoryAnswer = answer);
-                            if (answer != current.questions.first.correctAnswer) {
-                              ref.read(learningStateProvider.notifier).recordMistake(widget.lessonId);
-                            }
+                          answer: _laboratoryAnswer,
+                          onChanged: (text) {
+                            setState(() => _laboratoryAnswer = text);
                             ref
                                 .read(learningStateProvider.notifier)
                                 .savePosition(
@@ -303,33 +304,95 @@ class _TimeMetric extends StatelessWidget {
   }
 }
 
-class _Laboratory extends StatelessWidget {
+class _Laboratory extends StatefulWidget {
   const _Laboratory({
     required this.questions,
-    required this.selectedAnswer,
-    required this.onSelected,
+    required this.answer,
+    required this.onChanged,
   });
 
   final List<domain.LessonQuestion> questions;
-  final int? selectedAnswer;
-  final ValueChanged<int> onSelected;
+  final String answer;
+  final ValueChanged<String> onChanged;
+
+  @override
+  State<_Laboratory> createState() => _LaboratoryState();
+}
+
+class _LaboratoryState extends State<_Laboratory> {
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController(text: widget.answer);
+  }
+
+  @override
+  void didUpdateWidget(covariant _Laboratory oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Si cambió de bloque (otra actividad), el texto viene de otra
+    // respuesta guardada — sincronizamos el controlador con eso.
+    if (widget.answer != _controller.text && widget.answer != oldWidget.answer) {
+      _controller.value = TextEditingValue(
+        text: widget.answer,
+        selection: TextSelection.collapsed(offset: widget.answer.length),
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    if (questions.isEmpty) {
-      // Este bloque de laboratorio es solo texto/consigna, sin pregunta
-      // de verificación cargada — no hay nada que renderizar acá, el
-      // mentor y el contenido del bloque ya explican la actividad.
+    if (widget.questions.isEmpty) {
+      // Este bloque de laboratorio es solo texto/consigna, sin
+      // verificación cargada — no hay nada que renderizar acá.
       return const SizedBox.shrink();
     }
-    final data = questions.first;
-    return _QuestionCard(
-      question: data.question,
-      options: data.options,
-      selectedAnswer: selectedAnswer,
-      correctAnswer: data.correctAnswer,
-      explanation: data.explanation,
-      onSelected: onSelected,
+    final enough = widget.answer.trim().length >= 15;
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.md),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Escribí tu respuesta acá (no alcanza con decir que sí la '
+              'hiciste — contá qué decidiste):',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: AppSpacing.sm),
+            TextField(
+              controller: _controller,
+              maxLines: 4,
+              minLines: 3,
+              onChanged: widget.onChanged,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Tu respuesta a la actividad...',
+              ),
+            ),
+            const SizedBox(height: AppSpacing.xs),
+            Text(
+              enough
+                  ? 'Listo, ya podés continuar.'
+                  : 'Escribí un poco más para poder continuar '
+                      '(${widget.answer.trim().length}/15).',
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color:
+                    enough
+                        ? Theme.of(context).colorScheme.primary
+                        : Theme.of(context).colorScheme.onSurfaceVariant,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,12 +1,13 @@
 abstract final class AppMetadata {
-  static const version = '3.6.0';
-  static const buildNumber = '45';
+  static const version = '3.6.1';
+  static const buildNumber = '46';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    'Widget de pantalla de inicio, intento 4: esta vez 100% nativo, sin ninguna dependencia de Flutter, para eliminar esa causa posible de fallos.',
+    'Arreglado: la pantalla de "Hoy" y el Manual Maestro mostraban un número de versión viejo fijo ("1.8" y "2.6") en vez del real. Ya muestran la versión actual siempre.',
+    'Los desafíos de las misiones ahora piden escribir de verdad tu respuesta (mínimo 15 caracteres), no solo tocar "Sí, la completé" sin esfuerzo.',
     '2 misiones nuevas: IA multimodal (025) y Seguridad práctica (026). Van 26 misiones.',
     'Colores con más variedad: violeta, coral y verde azulado en vez de un solo tono. Menos monótono.',
     'De paso, los desafíos de las misiones núcleo ya no dicen "supervisor bancario" fijo — se adaptan a tu trabajo real.',
