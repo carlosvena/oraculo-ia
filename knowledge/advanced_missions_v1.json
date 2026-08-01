@@ -2085,6 +2085,559 @@
                     1
                 ]
             ]
+        },
+        {
+            "id": "lesson-rag-avanzado-021",
+            "number": "021",
+            "title": "RAG en la práctica: conectar IA con tus propios datos",
+            "duration": 55,
+            "concepts": [
+                "RAG",
+                "Bases de conocimiento",
+                "Fuentes verificables"
+            ],
+            "objective": "Entender cómo funciona RAG (Retrieval-Augmented Generation) para que un modelo responda con información real de tu trabajo, no solo con lo que aprendió en su entrenamiento.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Hoy vas a entender cómo hacer que una IA responda usando TUS documentos reales, no solo lo que aprendió de internet en su entrenamiento."
+                ],
+                [
+                    "text",
+                    "Qué es RAG en criollo",
+                    "RAG significa 'Retrieval-Augmented Generation': antes de responder, el sistema busca información relevante en una base de documentos tuya, y recién ahí genera la respuesta usando eso como referencia."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es la diferencia entre un empleado que responde de memoria (puede confundirse) y uno que primero busca el manual actualizado de la empresa antes de contestar."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un sistema de soporte que, antes de responder una consulta, busca en los manuales internos de la empresa el procedimiento exacto, y arma la respuesta citando esa fuente específica."
+                ],
+                [
+                    "text",
+                    "Por qué importa esto",
+                    "Un modelo sin RAG solo sabe lo que aprendió en su entrenamiento (con fecha de corte) y puede alucinar detalles. Con RAG, puede citar la fuente real y actualizada de donde sacó la información."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá en una base de información de tu trabajo (un manual, una política interna, una lista de precios) que te gustaría que una IA pudiera consultar antes de responder. Escribí qué tipo de preguntas resolvería mejor así."
+                ],
+                [
+                    "text",
+                    "Limitaciones de RAG",
+                    "RAG no es mágico: si la búsqueda inicial no encuentra el documento correcto, la respuesta va a estar mal igual. La calidad de la búsqueda es tan importante como la calidad del modelo."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien de tu trabajo la diferencia entre 'preguntarle a la IA' y 'preguntarle a la IA con RAG conectado a nuestros documentos'."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Confiar en RAG sin verificar que la fuente citada realmente dice lo que la IA afirma; no actualizar la base de documentos y terminar citando información vieja como si fuera actual."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "RAG es lo que separa una IA genérica de una que realmente conoce tu negocio. Pero seguís necesitando buenas fuentes y buena verificación — la herramienta no reemplaza el criterio."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Qué significa RAG?",
+                    [
+                        "Retrieval-Augmented Generation: buscar información antes de generar la respuesta",
+                        "Un tipo de modelo de lenguaje distinto",
+                        "Una técnica para hacer los modelos más rápidos"
+                    ],
+                    0
+                ],
+                [
+                    "Según la analogía, ¿qué hace un sistema con RAG?",
+                    [
+                        "Responde de memoria sin verificar nada",
+                        "Busca el manual actualizado antes de contestar, como un buen empleado",
+                        "Ignora toda la documentación disponible"
+                    ],
+                    1
+                ],
+                [
+                    "¿Por qué RAG ayuda a reducir alucinaciones?",
+                    [
+                        "Porque puede citar la fuente real y actualizada de donde sacó la información",
+                        "Porque el modelo es más grande",
+                        "No tiene relación con las alucinaciones"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué pasa si la búsqueda inicial de RAG no encuentra el documento correcto?",
+                    [
+                        "La respuesta va a estar mal igual, RAG no es mágico",
+                        "El sistema siempre encuentra la respuesta correcta de todas formas",
+                        "No importa, el modelo lo resuelve solo"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué es tan importante como la calidad del modelo en un sistema RAG?",
+                    [
+                        "La calidad de la búsqueda inicial de documentos",
+                        "El color de la interfaz",
+                        "La velocidad de internet únicamente"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es un error frecuente al usar RAG?",
+                    [
+                        "Confiar sin verificar que la fuente citada dice lo que la IA afirma",
+                        "Verificar siempre las fuentes citadas",
+                        "Mantener la base de documentos actualizada"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué diferencia a una IA genérica de una con RAG conectado a tus documentos?",
+                    [
+                        "RAG conoce específicamente la información real de tu negocio",
+                        "No hay ninguna diferencia real",
+                        "RAG es siempre más lenta sin ningún beneficio"
+                    ],
+                    0
+                ],
+                [
+                    "Según la misión, ¿RAG reemplaza el criterio humano?",
+                    [
+                        "Sí, completamente",
+                        "No, seguís necesitando buenas fuentes y verificación",
+                        "RAG no tiene relación con el criterio humano"
+                    ],
+                    1
+                ]
+            ]
+        },
+        {
+            "id": "lesson-futuro-trabajo-022",
+            "number": "022",
+            "title": "El futuro del trabajo con IA: qué cambia y qué no",
+            "duration": 50,
+            "concepts": [
+                "Futuro del trabajo",
+                "Adaptación",
+                "Habilidades humanas"
+            ],
+            "objective": "Pensar con realismo (ni pánico ni hype) cómo la IA cambia el trabajo, y qué habilidades se vuelven más valiosas, no menos.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Ni 'la IA nos va a reemplazar a todos' ni 'esto no me va a afectar'. Hoy vas a pensar con criterio propio qué cambia realmente en el trabajo."
+                ],
+                [
+                    "text",
+                    "Lo que suele pasar con las tecnologías nuevas",
+                    "Históricamente, las tecnologías que automatizan tareas no eliminan trabajos enteros de un día para el otro: cambian qué partes de un trabajo hace una persona y cuáles hace la herramienta."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es como cuando llegó la calculadora: no eliminó a los contadores, cambió qué parte de su trabajo era valiosa (ya no sumar a mano, sí interpretar y decidir)."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un traductor que antes traducía todo desde cero ahora revisa y corrige traducciones que arma una IA: el trabajo cambió de 'generar' a 'supervisar y mejorar', no desapareció."
+                ],
+                [
+                    "text",
+                    "Qué se vuelve MÁS valioso, no menos",
+                    "El criterio para juzgar si un resultado de IA es bueno, la capacidad de hacer las preguntas correctas, y la responsabilidad de decidir qué se publica o se ejecuta con tu nombre."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá en tu propio trabajo: ¿qué parte de lo que hacés hoy podría hacer una IA como primer borrador, y qué parte seguiría necesitando tu criterio para aprobarla?"
+                ],
+                [
+                    "text",
+                    "El riesgo real no es 'la IA me reemplaza'",
+                    "El riesgo real es no aprender a trabajar CON estas herramientas mientras otros sí lo hacen — la brecha no es entre 'con IA' y 'sin IA', es entre 'con criterio' y 'sin criterio'."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien por qué 'la IA me va a reemplazar' es una simplificación, usando el ejemplo del traductor o la calculadora."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Pensar que no hace falta aprender nada nuevo porque 'total no me afecta'; asumir que aprender a usar estas herramientas es solo para gente 'técnica'."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "El trabajo que tenías hace cinco años probablemente ya cambió algo. La pregunta útil no es 'me va a afectar' sino 'qué parte de mi criterio quiero seguir siendo yo quien la aporte'."
+                ]
+            ],
+            "quiz": [
+                [
+                    "Según la misión, ¿qué suele pasar históricamente con las tecnologías que automatizan tareas?",
+                    [
+                        "Eliminan el trabajo entero de un día para el otro",
+                        "Cambian qué partes del trabajo hace una persona y cuáles la herramienta",
+                        "Nunca afectan ningún trabajo"
+                    ],
+                    1
+                ],
+                [
+                    "En el ejemplo de la calculadora, ¿qué cambió para los contadores?",
+                    [
+                        "Dejaron de existir como profesión",
+                        "Qué parte de su trabajo era valiosa (interpretar y decidir, no sumar a mano)",
+                        "Nada cambió en absoluto"
+                    ],
+                    1
+                ],
+                [
+                    "En el ejemplo del traductor, ¿cómo cambió su trabajo?",
+                    [
+                        "De 'generar' a 'supervisar y mejorar', no desapareció",
+                        "Desapareció por completo la profesión",
+                        "No cambió nada"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué se vuelve MÁS valioso según la misión, no menos?",
+                    [
+                        "El criterio para juzgar si un resultado de IA es bueno",
+                        "Sumar números a mano",
+                        "Trabajar sin ninguna herramienta nueva"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es 'el riesgo real', según la misión?",
+                    [
+                        "Que la IA reemplace a todos de golpe",
+                        "No aprender a trabajar con estas herramientas mientras otros sí lo hacen",
+                        "Que la tecnología deje de avanzar"
+                    ],
+                    1
+                ],
+                [
+                    "¿Entre qué está la brecha real, según la misión?",
+                    [
+                        "Entre 'con IA' y 'sin IA'",
+                        "Entre 'con criterio' y 'sin criterio'",
+                        "No hay ninguna brecha real"
+                    ],
+                    1
+                ],
+                [
+                    "¿Aprender a usar estas herramientas es 'solo para gente técnica'?",
+                    [
+                        "Sí, es un error pensar que no",
+                        "Es un error frecuente pensar que sí lo es",
+                        "No tiene relación con esta misión"
+                    ],
+                    1
+                ],
+                [
+                    "¿Cuál es la pregunta útil que propone la misión al final?",
+                    [
+                        "'Me va a afectar la IA'",
+                        "'Qué parte de mi criterio quiero seguir siendo yo quien la aporte'",
+                        "'Cuándo me quedo sin trabajo'"
+                    ],
+                    1
+                ]
+            ]
+        },
+        {
+            "id": "lesson-voces-ia-023",
+            "number": "023",
+            "title": "Voces que piensan la IA: criterio propio ante el debate",
+            "duration": 55,
+            "concepts": [
+                "Pensamiento crítico",
+                "Pergolini",
+                "Debate sobre IA",
+                "Criterio propio"
+            ],
+            "objective": "Contrastar posturas reales de distintos referentes de IA (no todas de acuerdo entre sí) y aplicar la filosofía de Pergolini de experimentar sin perder criterio propio.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "No existe 'la' opinión correcta sobre IA, ni siquiera entre quienes la construyen. Hoy vas a contrastar posturas reales y armar tu propio criterio, no copiar el de nadie."
+                ],
+                [
+                    "text",
+                    "El punto de partida: Pergolini",
+                    "La idea central que atraviesa esta app es simple: experimentar con las herramientas nuevas sin perder el criterio propio. No se trata de rechazar la tecnología ni de tragarla entera — se trata de probarla y decidir vos."
+                ],
+                [
+                    "text",
+                    "La tensión real entre expertos",
+                    "Geoffrey Hinton, considerado uno de los padres de la IA moderna, advirtió públicamente sobre riesgos serios de escalar estos sistemas sin control. Yann LeCun, con una trayectoria igual de relevante, sostiene que predecir la próxima palabra no alcanza para hablar de 'entendimiento' real — dos referentes de primer nivel, en desacuerdo."
+                ],
+                [
+                    "example",
+                    "Otro contraste: negocio vs freno",
+                    "Jensen Huang (Nvidia) y Satya Nadella (Microsoft) impulsan la adopción acelerada de IA en productos y empresas. Yoshua Bengio, en cambio, es de las voces académicas más fuertes pidiendo que el ritmo de despliegue sea una decisión consciente, no automática."
+                ],
+                [
+                    "text",
+                    "Una voz que falta si no la buscás",
+                    "Investigadoras como Timnit Gebru señalan algo distinto: los sistemas de IA heredan los sesgos y prioridades de quienes deciden qué datos usar. Es una perspectiva necesaria que no viene 'del lado de quienes construyen', sino de quienes preguntan a quién sirve lo que se construye."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Elegí dos posturas de esta lección que te parezcan contradictorias entre sí. Escribí, con tus palabras, con cuál estás más de acuerdo y por qué — no hace falta elegir un 'ganador', pero sí tener una razón propia."
+                ],
+                [
+                    "text",
+                    "Por qué importa contrastar, no elegir un gurú",
+                    "Si solo escuchás a quien confirma lo que ya pensabas, no estás ejerciendo criterio — estás buscando que te den la razón. El criterio se ejercita comparando posturas que chocan entre sí."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien por qué ni el optimismo total ni el miedo total sobre IA son, por sí solos, una postura completa — usando al menos dos de los referentes de esta lección."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Asumir que 'los expertos' piensan todos lo mismo; elegir una sola fuente y repetirla sin contrastarla; confundir la fama de alguien con que tenga siempre razón."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "El objetivo de esta app nunca fue que pienses como Pergolini, ni como Hinton, ni como nadie en particular — fue darte con qué construir tu propio criterio. Esta es, en cierto sentido, la misión más importante de todas."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿Cuál es la idea central de Pergolini que atraviesa esta app?",
+                    [
+                        "Experimentar con las herramientas nuevas sin perder el criterio propio",
+                        "Rechazar toda tecnología nueva por precaución",
+                        "Confiar completamente en cualquier herramienta nueva"
+                    ],
+                    0
+                ],
+                [
+                    "¿En qué se diferencian las posturas de Hinton y LeCun?",
+                    [
+                        "Hinton advierte sobre riesgos de escalar sin control; LeCun duda de que predecir texto sea 'entender'",
+                        "Están completamente de acuerdo en todo",
+                        "Ninguno de los dos trabajó en IA"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué caracteriza la postura de Bengio frente a la de Huang o Nadella?",
+                    [
+                        "Pide que el ritmo de despliegue sea una decisión consciente, no automática",
+                        "Está totalmente de acuerdo con acelerar la adopción sin condiciones",
+                        "No tiene ninguna opinión pública sobre el tema"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué perspectiva aporta Timnit Gebru que no viene 'de quienes construyen' la IA?",
+                    [
+                        "Que los sistemas heredan los sesgos y prioridades de quienes deciden qué datos usar",
+                        "Que la IA nunca tiene sesgos de ningún tipo",
+                        "Que solo importa la velocidad de desarrollo"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué significa NO ejercer criterio propio, según la misión?",
+                    [
+                        "Escuchar solo a quien confirma lo que ya pensabas",
+                        "Comparar posturas que chocan entre sí",
+                        "Tener una razón propia para tu opinión"
+                    ],
+                    0
+                ],
+                [
+                    "¿Por qué importa contrastar varias posturas en vez de elegir una sola?",
+                    [
+                        "Porque el criterio se ejercita comparando posturas que chocan entre sí",
+                        "Porque todas las posturas son siempre iguales",
+                        "No importa, cualquier fuente única alcanza"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es un error frecuente al evaluar 'lo que dicen los expertos'?",
+                    [
+                        "Asumir que todos los expertos piensan lo mismo",
+                        "Contrastar varias fuentes distintas",
+                        "Reconocer cuándo dos referentes están en desacuerdo"
+                    ],
+                    0
+                ],
+                [
+                    "Según el cierre de la misión, ¿cuál fue el objetivo real de la app?",
+                    [
+                        "Que pienses exactamente como algún referente en particular",
+                        "Darte con qué construir tu propio criterio",
+                        "Convencerte de una sola postura sobre IA"
+                    ],
+                    1
+                ]
+            ]
+        },
+        {
+            "id": "lesson-medios-ia-024",
+            "number": "024",
+            "title": "IA y medios: la mirada de quien viene de la comunicación",
+            "duration": 50,
+            "concepts": [
+                "Medios",
+                "Contenido generado por IA",
+                "Criterio editorial"
+            ],
+            "objective": "Aplicar la mirada de comunicación (no solo técnica) a cómo la IA está cambiando la producción de contenido, radio, TV y redes.",
+            "sections": [
+                [
+                    "title",
+                    "Tu misión",
+                    "Pergolini construyó su carrera entendiendo medios: radio, TV, contenido. Hoy vas a mirar la IA generativa con esos mismos ojos: no como una curiosidad técnica, sino como una herramienta de producción de contenido con consecuencias reales."
+                ],
+                [
+                    "text",
+                    "La IA ya está en la cadena de producción",
+                    "Guiones asistidos, edición de audio y video, generación de miniaturas, subtítulos automáticos, voces sintéticas para doblaje: la IA generativa ya es parte del proceso de producción de contenido, lo notes o no como espectador."
+                ],
+                [
+                    "analogy",
+                    "Analogía",
+                    "Es como cuando la edición no lineal reemplazó a la moviola: cambió quién hacía qué en la producción, pero la pregunta de fondo ('¿esto vale la pena contarlo así?') siguió siendo humana."
+                ],
+                [
+                    "example",
+                    "Caso real",
+                    "Un canal que usa IA para generar resúmenes automáticos de noticias del día: ahorra tiempo de producción, pero si nadie revisa el resumen, puede reproducir un error o un sesgo de la fuente original sin que nadie se dé cuenta hasta que ya se publicó."
+                ],
+                [
+                    "text",
+                    "El criterio editorial no se automatiza",
+                    "Decidir qué se cuenta, cómo se cuenta, y qué se decide NO contar, sigue siendo una decisión editorial humana. La IA puede acelerar la producción, pero no reemplaza el criterio de qué merece salir al aire."
+                ],
+                [
+                    "challenge",
+                    "Laboratorio",
+                    "Pensá en un contenido (un programa, un canal, una cuenta) que sigas. Identificá una parte de su producción que probablemente ya usa IA (edición, guion, miniaturas) y otra que dudás que la IA pueda reemplazar del todo."
+                ],
+                [
+                    "text",
+                    "Transparencia con la audiencia",
+                    "Cuando un contenido usa voces sintéticas, imágenes generadas o guiones asistidos por IA sin aclararlo, hay una pregunta de confianza con la audiencia que no es solo técnica: es editorial."
+                ],
+                [
+                    "challenge",
+                    "Explicalo con tus palabras",
+                    "Explicale a alguien la diferencia entre 'la IA ayuda a producir contenido' y 'la IA decide qué contenido merece producirse' — y por qué esa segunda parte sigue siendo humana."
+                ],
+                [
+                    "text",
+                    "Errores frecuentes",
+                    "Publicar contenido generado sin revisión editorial humana; no aclarar cuándo algo fue generado o asistido por IA; confundir 'más rápido de producir' con 'mejor contenido'."
+                ],
+                [
+                    "text",
+                    "Qué llevarte de esta misión",
+                    "La IA cambia las herramientas de producción de contenido, no la responsabilidad de quien decide qué se publica. Ese criterio — qué contar y cómo — sigue siendo, como diría Pergolini, un trabajo de experimentar sin perder el eje."
+                ]
+            ],
+            "quiz": [
+                [
+                    "¿En qué partes de la producción de contenido ya está presente la IA generativa?",
+                    [
+                        "Guiones asistidos, edición, miniaturas, subtítulos, voces sintéticas",
+                        "Solo en la distribución final del contenido",
+                        "La IA no tiene ninguna presencia en medios"
+                    ],
+                    0
+                ],
+                [
+                    "Según la analogía, ¿qué cambió con la edición no lineal respecto a la moviola?",
+                    [
+                        "Quién hacía qué en la producción, pero la pregunta de fondo siguió siendo humana",
+                        "Nada cambió en absoluto",
+                        "Eliminó por completo la necesidad de decisiones editoriales"
+                    ],
+                    0
+                ],
+                [
+                    "En el caso de los resúmenes automáticos de noticias, ¿cuál es el riesgo si nadie los revisa?",
+                    [
+                        "Pueden reproducir un error o sesgo de la fuente sin que nadie se entere hasta publicarlo",
+                        "No hay ningún riesgo si la IA los genera",
+                        "Los resúmenes siempre son perfectos sin revisión"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué decisión sigue siendo humana según la misión?",
+                    [
+                        "Qué se cuenta, cómo se cuenta y qué se decide no contar",
+                        "Únicamente la edición de audio",
+                        "Ninguna decisión editorial es humana ya"
+                    ],
+                    0
+                ],
+                [
+                    "¿Por qué la transparencia sobre el uso de IA en contenido es una cuestión editorial?",
+                    [
+                        "Porque afecta la confianza con la audiencia, no es solo un tema técnico",
+                        "Porque no tiene ninguna relación con la audiencia",
+                        "Porque solo importa la velocidad de producción"
+                    ],
+                    0
+                ],
+                [
+                    "¿Cuál es un error frecuente señalado en la misión?",
+                    [
+                        "Publicar contenido generado sin revisión editorial humana",
+                        "Aclarar siempre cuándo algo fue generado por IA",
+                        "Revisar el contenido antes de publicarlo"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué NO cambia la IA, según el cierre de la misión?",
+                    [
+                        "La responsabilidad de quien decide qué se publica",
+                        "Las herramientas técnicas de producción",
+                        "La velocidad de edición de video"
+                    ],
+                    0
+                ],
+                [
+                    "¿Qué diferencia se plantea entre 'ayudar a producir' y 'decidir qué merece producirse'?",
+                    [
+                        "La segunda sigue siendo una decisión humana, la primera puede asistirla la IA",
+                        "Son exactamente lo mismo",
+                        "La IA ya decide ambas cosas por completo"
+                    ],
+                    0
+                ]
+            ]
         }
     ]
 }

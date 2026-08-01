@@ -1,12 +1,12 @@
 abstract final class AppMetadata {
-  static const version = '3.3.5';
-  static const buildNumber = '41';
+  static const version = '3.5.1';
+  static const buildNumber = '44';
   static const buildDate = String.fromEnvironment(
     'BUILD_DATE',
     defaultValue: 'desarrollo local',
   );
   static const releaseNotes = <String>[
-    'Se sacó el widget de pantalla de inicio de nuevo, para descartarlo como causa de que la app no abriera. Todo lo demás (colores, voz, selector de voz) se mantiene.',
+    'El catálogo ahora muestra las 24 misiones agrupadas en 4 actos (Fundamentos → Cómo funciona por dentro → Aplicarlo a tu trabajo → Criterio y sociedad), con una intro que explica el recorrido completo, no una lista plana.',
     'Colores con más variedad: violeta, coral y verde azulado en vez de un solo tono. Menos monótono.',
     'De paso, los desafíos de las misiones núcleo ya no dicen "supervisor bancario" fijo — se adaptan a tu trabajo real.',
     'Misión 020 nueva: Costos y límites reales de la IA. Van 20 misiones.',

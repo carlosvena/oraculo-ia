@@ -245,6 +245,54 @@ class _Field extends StatelessWidget {
   );
 }
 
+class _Act {
+  const _Act(this.title, this.subtitle, this.lessons);
+  final String title;
+  final String subtitle;
+  final List<Lesson> lessons;
+}
+
+/// Agrupa las misiones en 4 actos narrativos, para que el catálogo se
+/// vea como un recorrido con sentido, no como una lista plana de temas
+/// sueltos. Se agrupa por prefijo de id, no por posición, para que el
+/// orden se mantenga correcto aunque se agreguen más misiones después.
+List<_Act> _groupIntoActs(List<Lesson> lessons) {
+  bool isCore(Lesson l) => RegExp(r'-00[1-5]$').hasMatch(l.id);
+  bool isMechanics(Lesson l) => RegExp(r'-(00[6-9]|01[0-5])$').hasMatch(l.id);
+  const applicationIds = <String>{
+    'lesson-work-016',
+    'lesson-agents-avanzado-018',
+    'lesson-costos-020',
+    'lesson-rag-avanzado-021',
+  };
+  final acts = <_Act>[
+    _Act(
+      'Acto 1 · Fundamentos',
+      'Las bases: qué es un modelo, cómo escribirle, qué es un LLM.',
+      lessons.where(isCore).toList(),
+    ),
+    _Act(
+      'Acto 2 · Cómo funciona por dentro',
+      'Transformers, embeddings, entrenamiento, alucinaciones, RAG, agentes.',
+      lessons.where(isMechanics).toList(),
+    ),
+    _Act(
+      'Acto 3 · Aplicarlo a tu trabajo real',
+      'Ya no son ejemplos genéricos: se adaptan a lo que vos hacés.',
+      lessons.where((l) => applicationIds.contains(l.id)).toList(),
+    ),
+  ];
+  final used = acts.expand((a) => a.lessons.map((l) => l.id)).toSet();
+  acts.add(
+    _Act(
+      'Acto 4 · Criterio, ética y sociedad',
+      'La idea que atraviesa toda la app: experimentar sin perder criterio propio.',
+      lessons.where((l) => !used.contains(l.id)).toList(),
+    ),
+  );
+  return acts.where((a) => a.lessons.isNotEmpty).toList();
+}
+
 class CatalogScreen extends ConsumerWidget {
   const CatalogScreen({required this.onOpenLesson, super.key});
   final ValueChanged<Lesson> onOpenLesson;
@@ -259,37 +307,63 @@ class CatalogScreen extends ConsumerWidget {
       data: (content) {
         final learning =
             ref.watch(learningStateProvider).value ?? const LearningState();
+        final acts = _groupIntoActs(content.lessons);
         return ListView(
           children: <Widget>[
             Text('Catálogo', style: Theme.of(context).textTheme.headlineMedium),
             const SizedBox(height: AppSpacing.sm),
             const Text(
-              'Misiones disponibles para desarrollar criterio profesional.',
+              'No son 24 temas sueltos: es un recorrido. Primero las bases, '
+              'después cómo funciona por dentro, después cómo se aplica a tu '
+              'trabajo real, y por último cómo pensarlo con criterio propio '
+              '(la idea que atraviesa toda la app, no solo un tema más).',
             ),
-            const SizedBox(height: AppSpacing.lg),
-            for (var index = 0; index < content.lessons.length; index++)
-              _MissionCard(
-                lesson: content.lessons[index],
-                duration: content.lessons[index].estimatedMinutes,
-                difficulty: index < 2 ? 'Intensiva' : 'Profesional',
-                status:
-                    learning.completed.contains(content.lessons[index].id)
-                        ? 'Completada'
-                        : index == 0 ||
-                            learning.completed.contains(
-                              content.lessons[index - 1].id,
-                            )
-                        ? 'Desbloqueada'
-                        : 'Bloqueada',
-                concepts: content.lessons[index].concepts,
-                onTap:
-                    index == 0 ||
-                            learning.completed.contains(
-                              content.lessons[index - 1].id,
-                            )
-                        ? () => onOpenLesson(content.lessons[index])
+            for (final act in acts) ...[
+              const SizedBox(height: AppSpacing.lg),
+              Text(act.title, style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: 2),
+              Text(
+                act.subtitle,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                ),
+              ),
+              const SizedBox(height: AppSpacing.sm),
+              for (final lesson in act.lessons)
+                _MissionCard(
+                  lesson: lesson,
+                  duration: lesson.estimatedMinutes,
+                  difficulty:
+                      content.lessons.indexOf(lesson) < 2
+                          ? 'Intensiva'
+                          : 'Profesional',
+                  status:
+                      learning.completed.contains(lesson.id)
+                          ? 'Completada'
+                          : (content.lessons.indexOf(lesson) == 0 ||
+                                  learning.completed.contains(
+                                    content
+                                        .lessons[content.lessons.indexOf(
+                                              lesson,
+                                            ) -
+                                            1]
+                                        .id,
+                                  ))
+                              ? 'Desbloqueada'
+                              : 'Bloqueada',
+                  concepts: lesson.concepts,
+                  onTap:
+                      (content.lessons.indexOf(lesson) == 0 ||
+                              learning.completed.contains(
+                                content
+                                    .lessons[content.lessons.indexOf(lesson) -
+                                        1]
+                                    .id,
+                              ))
+                          ? () => onOpenLesson(lesson)
                         : null,
               ),
+            ],
           ],
         );
       },
